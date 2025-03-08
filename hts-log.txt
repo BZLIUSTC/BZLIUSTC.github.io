@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 09 Jan 2025 16:56:56 at http://zblog.localhost +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN100%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F  -%l "zh, en, *" http://zblog.localhost -O1 "C:\Users\a12114\Desktop\pei\1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:00:06	Warning: 	Retry after error 500 (Internal Server Error) at link zblog.localhost/zb_system/cmd.php?act=verify (from zblog.localhost/zb_system/login.php)
+17:03:12	Error: 	"Not Found" (404) at link zblog.localhost/zb_system/1.png (from zblog.localhost/zb_system/script/c_admin_js_add.php?hash=&173295)
+17:03:12	Error: 	"Not Found" (404) at link zblog.localhost/zb_system/2.png (from zblog.localhost/zb_system/script/c_admin_js_add.php?hash=&173295)
+17:03:12	Error: 	"Not Found" (404) at link zblog.localhost/zb_system/1.svg (from zblog.localhost/zb_system/script/c_admin_js_add.php?hash=&173295)
+17:03:12	Error: 	"Not Found" (404) at link zblog.localhost/zb_system/2.svg (from zblog.localhost/zb_system/script/c_admin_js_add.php?hash=&173295)
+17:03:12	Error: 	"Not Found" (404) at link zblog.localhost/zb_system/1.gif (from zblog.localhost/zb_system/script/c_admin_js_add.php?hash=&173295)
+17:03:12	Error: 	"Not Found" (404) at link zblog.localhost/zb_system/2.gif (from zblog.localhost/zb_system/script/c_admin_js_add.php?hash=&173295)
+17:03:12	Error: 	"Not Found" (404) at link zblog.localhost/zb_system/none.gif (from zblog.localhost/zb_system/script/c_admin_js_add.php?hash=&173295)
+17:03:12	Warning: 	Retry after error 500 (Internal Server Error) at link zblog.localhost/zb_system/cmd.php?act=verify (from zblog.localhost/zb_system/login.php)
+17:03:54	Error: 	"Internal Server Error" (500) after 2 retries at link zblog.localhost/zb_system/cmd.php?act=verify (from zblog.localhost/zb_system/login.php)
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 31 seconds : 1299 links scanned, 1288 files written (13020513 bytes overall) [13393716 bytes received at 26210 bytes/sec], 76.4 requests per connection
+(8 errors, 2 warnings, 0 messages)
