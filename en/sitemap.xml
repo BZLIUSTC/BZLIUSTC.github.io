@@ -146,6 +146,11 @@
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/categories/test/"
                 />
@@ -153,11 +158,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh-cn/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
