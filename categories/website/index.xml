@@ -30,7 +30,8 @@ So do not hesitate if any great idea comes.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhouxin.space/notes/using-katex-to-render-math-in-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;某博主的优秀教程&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;试着写一个数学公式：记得一定要用一对&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;/div&amp;gt;&lt;/code&gt;包起来！&lt;/p&gt;
+&lt;p&gt;试着写一个数学公式：记得一定要用一对&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;/div&amp;gt;&lt;/code&gt;包起来！
+如果还无法启用的话，检查根目录config文件里面是不是有&lt;code&gt;math: false&lt;/code&gt;。如果是，改成true就好啦。&lt;/p&gt;
 $$
 \theta :=\theta _0-\alpha \nabla f\left( \theta _0 \right)
 $$</description>
