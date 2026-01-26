@@ -7,20 +7,34 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Thu, 22 Jan 2026 19:43:56 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MyZeroBlog</title>
         <link>http://localhost:1313/p/myzeroblog/</link>
-        <pubDate>Thu, 22 Jan 2026 19:43:56 +0800</pubDate>
+        <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/myzeroblog/</guid>
-        <description>&lt;h1 id=&#34;一级标题&#34;&gt;一级标题
-&lt;/h1&gt;&lt;p&gt;&lt;em&gt;强调文本&lt;/em&gt; &lt;em&gt;强调文本&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;加粗文本&lt;/strong&gt; &lt;strong&gt;加粗文本&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;删除文本&lt;/del&gt;~&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h1 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
+&lt;/h1&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
+a beginner of Hugo &lt;em&gt;static blog&lt;/em&gt; page writer.&lt;/p&gt;
+&lt;p&gt;Thanks to the &lt;strong&gt;hugo-theme-stack&lt;/strong&gt; and manuals written by other bloggers,
+we are able to set up this page so fast. Thank you for all contributors !
+I would by a coffee for you if possible. &lt;del&gt;Nope, noway&lt;/del&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;引用文本&lt;/p&gt;
+&lt;p&gt;This page, as the title said, is a rough work page for any try-outs.
+So do not hesitate if any great idea comes.&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
+&lt;p&gt;Have fun with Hugo.&lt;/p&gt;
+&lt;h1 id=&#34;math-settings&#34;&gt;Math Settings
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;参考文献：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhouxin.space/notes/using-katex-to-render-math-in-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;某博主的优秀教程&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;试着写一个数学公式：记得一定要用一对&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;/div&amp;gt;&lt;/code&gt;包起来！
+如果还无法启用的话，检查根目录config文件里面是不是有&lt;code&gt;math: false&lt;/code&gt;。如果是，改成true就好啦。&lt;/p&gt;
+$$
+\theta :=\theta _0-\alpha \nabla f\left( \theta _0 \right)
+$$</description>
         </item>
         <item>
         <title>Archives</title>
