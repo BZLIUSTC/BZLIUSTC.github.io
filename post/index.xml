@@ -7,14 +7,244 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 28 Jan 2026 11:55:57 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>HTML Learn</title>
+        <link>http://localhost:1313/p/html-learn/</link>
+        <pubDate>Wed, 28 Jan 2026 11:55:57 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/html-learn/</guid>
+        <description>&lt;img src="http://localhost:1313/p/html-learn/front-page.jpg" alt="Featured image of post HTML Learn" /&gt;&lt;p&gt;本文是html学习笔记（暂定为第一篇）。标题可以改，但是注意要和目录名一起改。&lt;/p&gt;
+&lt;h2 id=&#34;content&#34;&gt;Content
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;html 概述
+&lt;ul&gt;
+&lt;li&gt;第一个html文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;基本标签&lt;/li&gt;
+&lt;li&gt;实体符号&lt;/li&gt;
+&lt;li&gt;表格
+&lt;ul&gt;
+&lt;li&gt;背景图片，颜色&lt;/li&gt;
+&lt;li&gt;图片&lt;/li&gt;
+&lt;li&gt;超链接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;列表&lt;/li&gt;
+&lt;li&gt;表单
+&lt;ul&gt;
+&lt;li&gt;html中的id属性&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;div&lt;/code&gt;和&lt;code&gt;span&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;一级标题&#34;&gt;一级标题
+&lt;/h1&gt;&lt;p&gt;sss&lt;/p&gt;
+&lt;h2 id=&#34;html-概述&#34;&gt;HTML 概述
+&lt;/h2&gt;&lt;p&gt;从头开始——第一个html的写法，参考文件&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/my-first-html.html&#34; &gt;第一个html&lt;/a&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 根 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 头 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            标签页标题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 网页体，内容显示到网页上 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        My first HTML page.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        我的第一个HTML文件。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 注释信息的写法 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;基本标签&#34;&gt;基本标签
+&lt;/h2&gt;&lt;p&gt;小知识：html标签不区分大小写；少个尾标签也行。&lt;/p&gt;
+&lt;h3 id=&#34;段落&#34;&gt;段落
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;是段落标签，其中的内容成为一段落。&lt;/p&gt;
+&lt;h3 id=&#34;标题字&#34;&gt;标题字
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;到&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;换行&#34;&gt;换行
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;水平线&#34;&gt;水平线
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;可以通过&lt;code&gt;color&lt;/code&gt;设置属性，例如红色线：&lt;code&gt;&amp;lt;hr color=&amp;quot;red&amp;quot;&amp;gt;&lt;/code&gt;。
+&lt;code&gt;color&lt;/code&gt;成为属性名，&lt;code&gt;&amp;quot;red&amp;quot;&lt;/code&gt;称为属性值。&lt;/p&gt;
+&lt;h3 id=&#34;预留格式&#34;&gt;预留格式
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;保留源码格式。例如&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pre&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    for i in range(10):
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        print(f&amp;#34;i+1={i}&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    print(i)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pre&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;则将打印出已有缩进，不是变成一行打印。&lt;/p&gt;
+&lt;h3 id=&#34;u-i-b-d等&#34;&gt;U, I, B, D等
+&lt;/h3&gt;&lt;p&gt;加粗&lt;code&gt;&amp;lt;b&amp;gt;&lt;/code&gt;，斜体&lt;code&gt;&amp;lt;i&amp;gt;&lt;/code&gt;, 下划线&lt;code&gt;&amp;lt;u&amp;gt;&lt;/code&gt;，划掉&lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;小标：上&lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt;，下&lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;字体标签&#34;&gt;字体标签
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;&amp;lt;font color=&amp;quot;blue&amp;quot; size=13&amp;gt;&lt;/code&gt;可修改颜色，字体等。&lt;/p&gt;
+&lt;h2 id=&#34;实体符号&#34;&gt;实体符号
+&lt;/h2&gt;&lt;h3 id=&#34;碎碎念字符编码&#34;&gt;（碎碎念）字符编码
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这行代码告诉浏览器使用哪一种字符编码打开文件。这要与html文件编写用的编码相同。&lt;/p&gt;
+&lt;h3 id=&#34;空格&#34;&gt;空格
+&lt;/h3&gt;&lt;p&gt;例如要显示大空格，直接打一堆space是没有的，要&lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;是一个空格。&lt;/p&gt;
+&lt;h3 id=&#34;大小于号&#34;&gt;大小于号
+&lt;/h3&gt;&lt;p&gt;小于&lt;code&gt;&amp;amp;lt;&lt;/code&gt;大于&lt;code&gt;&amp;amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;表格&#34;&gt;表格
+&lt;/h2&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/004.html&#34; &gt;004&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;标签描述&#34;&gt;标签描述
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;table 表格&lt;/li&gt;
+&lt;li&gt;tr 表格的一行&lt;/li&gt;
+&lt;li&gt;td 一行中的一列，即单元格&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;参数&#34;&gt;参数
+&lt;/h3&gt;&lt;p&gt;添加边框：&lt;code&gt;&amp;lt;table border=&amp;quot;1px&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;设置单元格高度宽度：&lt;code&gt;width=&amp;quot;300px&amp;quot;&lt;/code&gt;，&lt;code&gt;height=&amp;quot;200px&amp;quot;&lt;/code&gt;。
+属性值还可以设置为&lt;code&gt;50%&lt;/code&gt;，就是页面的一般大。&lt;/p&gt;
+&lt;p&gt;对齐：可为tr或者td设置对齐：&lt;code&gt;align=&amp;quot;right&amp;quot;&lt;/code&gt;，属性值还可为center, left等。&lt;/p&gt;
+&lt;h3 id=&#34;单元格合并&#34;&gt;单元格合并
+&lt;/h3&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/005.html&#34; &gt;005&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;列合并，同一行俩单元格合并，只留第一个td，并添加属性&lt;code&gt;colspan&lt;/code&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 一个单元格 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;1,1&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;colspan&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;1,2&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;行合并，同一列合并，只留第一个td，并添加属性&lt;code&gt;rowspan&lt;/code&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 行合并 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;a&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;b&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;rowspan&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;与下方合并&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;A&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;B&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;th标签&#34;&gt;&lt;code&gt;th&lt;/code&gt;标签
+&lt;/h3&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/006_th%e6%a0%87%e7%ad%be.html&#34; &gt;006&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;用&lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt;代替&lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;，可令内容自动加粗居中。&lt;/p&gt;
+&lt;h3 id=&#34;theadtbodytfoot&#34;&gt;&lt;code&gt;thead&lt;/code&gt;，&lt;code&gt;tbody&lt;/code&gt;，&lt;code&gt;tfoot&lt;/code&gt;
+&lt;/h3&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/007_head_body_foot.html&#34; &gt;007&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;表格可以用&lt;code&gt;thead&lt;/code&gt;，&lt;code&gt;tbody&lt;/code&gt;，&lt;code&gt;tfoot&lt;/code&gt;开分割——目的是方便JS操作表格。
+没有视觉效果，方便后续操作。&lt;/p&gt;
+&lt;h2 id=&#34;背景颜色和图片&#34;&gt;背景颜色和图片
+&lt;/h2&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/008.html&#34; &gt;008&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;背景颜色：在body标签处，设置属性&lt;code&gt;bgcolor&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;背景图片：在body标签处，设置属性&lt;code&gt;background&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;图片&#34;&gt;图片
+&lt;/h2&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/009.html&#34; &gt;009&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;通过&lt;code&gt;&amp;lt;img src=&amp;quot;path/to/your/fig&amp;quot;&amp;gt;&amp;lt;/img&amp;gt;&lt;/code&gt;插入图片。&lt;/p&gt;
+&lt;p&gt;可用属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;src：指定图片路径&lt;/li&gt;
+&lt;li&gt;width：指定图片宽度（高度保持比例自动缩放）&lt;/li&gt;
+&lt;li&gt;height：手动设置就可以拉伸图片&lt;/li&gt;
+&lt;li&gt;title：鼠标悬停时显示提示&lt;/li&gt;
+&lt;li&gt;alt：若图片加载失败的提示信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;超链接&#34;&gt;超链接
+&lt;/h2&gt;&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/HTML-Learn/010.html&#34; &gt;010&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用&lt;code&gt;&amp;lt;a href=&amp;quot;path&amp;quot;&amp;gt;连接文本&amp;lt;/a&amp;gt;&lt;/code&gt;创建文本超链接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;图片超链接：将插入图片的内容包裹在一对&lt;code&gt;&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;中即可。&lt;/li&gt;
+&lt;li&gt;target属性：设置最终打开窗口的位置：
+&lt;ul&gt;
+&lt;li&gt;_self：在当前窗口打开&lt;/li&gt;
+&lt;li&gt;_blank：新窗口打开&lt;/li&gt;
+&lt;li&gt;_parent：当前窗口的父级窗口（窗口嵌套时的上一级）&lt;/li&gt;
+&lt;li&gt;_top：当前窗口的顶级窗口（窗口嵌套时的最高级）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+        <item>
         <title>MyZeroBlog</title>
         <link>http://localhost:1313/p/myzeroblog/</link>
         <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/myzeroblog/</guid>
-        <description>&lt;img src="http://localhost:1313/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h1 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
-&lt;/h1&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
+        <description>&lt;img src="http://localhost:1313/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h2 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
+&lt;/h2&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
 a beginner of Hugo &lt;em&gt;static blog&lt;/em&gt; page writer.&lt;/p&gt;
 &lt;p&gt;Thanks to the &lt;strong&gt;hugo-theme-stack&lt;/strong&gt; and manuals written by other bloggers,
 we are able to set up this page so fast. Thank you for all contributors !
@@ -24,8 +254,8 @@ I would by a coffee for you if possible. &lt;del&gt;Nope, noway&lt;/del&gt;&lt;/
 So do not hesitate if any great idea comes.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Have fun with Hugo.&lt;/p&gt;
-&lt;h1 id=&#34;math-settings&#34;&gt;Math Settings
-&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&#34;math-settings&#34;&gt;Math Settings
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;参考文献：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhouxin.space/notes/using-katex-to-render-math-in-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;某博主的优秀教程&lt;/a&gt;&lt;/p&gt;
@@ -34,7 +264,12 @@ So do not hesitate if any great idea comes.&lt;/p&gt;
 如果还无法启用的话，检查根目录config文件里面是不是有&lt;code&gt;math: false&lt;/code&gt;。如果是，改成true就好啦。&lt;/p&gt;
 $$
 \theta :=\theta _0-\alpha \nabla f\left( \theta _0 \right)
-$$</description>
+$$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
+&lt;/h2&gt;&lt;p&gt;想要添加任何附件，请放到&lt;code&gt;/static/append/&lt;/code&gt;目录中。
+为了管理方便，最好为每篇文章的附件们创建一个子目录，统一存放。&lt;/p&gt;
+&lt;p&gt;reference:
+&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/MyZeroBlog/002.html&#34; &gt;article&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>

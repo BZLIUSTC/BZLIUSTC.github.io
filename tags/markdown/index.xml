@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Markdown on Example Site</title>
-        <link>http://localhost:1313/tags/markdown/</link>
+        <link>https://bzliustc.github.io/tags/markdown/</link>
         <description>Recent content in Markdown on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bzliustc.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MyZeroBlog</title>
-        <link>http://localhost:1313/p/myzeroblog/</link>
+        <link>https://bzliustc.github.io/p/myzeroblog/</link>
         <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/myzeroblog/</guid>
-        <description>&lt;img src="http://localhost:1313/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h1 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
-&lt;/h1&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
+        <guid>https://bzliustc.github.io/p/myzeroblog/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h2 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
+&lt;/h2&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
 a beginner of Hugo &lt;em&gt;static blog&lt;/em&gt; page writer.&lt;/p&gt;
 &lt;p&gt;Thanks to the &lt;strong&gt;hugo-theme-stack&lt;/strong&gt; and manuals written by other bloggers,
 we are able to set up this page so fast. Thank you for all contributors !
@@ -24,8 +24,8 @@ I would by a coffee for you if possible. &lt;del&gt;Nope, noway&lt;/del&gt;&lt;/
 So do not hesitate if any great idea comes.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Have fun with Hugo.&lt;/p&gt;
-&lt;h1 id=&#34;math-settings&#34;&gt;Math Settings
-&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h2 id=&#34;math-settings&#34;&gt;Math Settings
+&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;参考文献：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhouxin.space/notes/using-katex-to-render-math-in-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;某博主的优秀教程&lt;/a&gt;&lt;/p&gt;
@@ -34,15 +34,20 @@ So do not hesitate if any great idea comes.&lt;/p&gt;
 如果还无法启用的话，检查根目录config文件里面是不是有&lt;code&gt;math: false&lt;/code&gt;。如果是，改成true就好啦。&lt;/p&gt;
 $$
 \theta :=\theta _0-\alpha \nabla f\left( \theta _0 \right)
-$$</description>
+$$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
+&lt;/h2&gt;&lt;p&gt;想要添加任何附件，请放到&lt;code&gt;/static/append/&lt;/code&gt;目录中。
+为了管理方便，最好为每篇文章的附件们创建一个子目录，统一存放。&lt;/p&gt;
+&lt;p&gt;reference:
+&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/MyZeroBlog/002.html&#34; &gt;article&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>http://localhost:1313/p/markdown-syntax-guide/</link>
+        <link>https://bzliustc.github.io/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>https://bzliustc.github.io/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1
@@ -268,11 +273,11 @@ $$</description>
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>http://localhost:1313/p/placeholder-text/</link>
+        <link>https://bzliustc.github.io/p/placeholder-text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/placeholder-text/</guid>
-        <description>&lt;img src="http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+        <guid>https://bzliustc.github.io/p/placeholder-text/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
