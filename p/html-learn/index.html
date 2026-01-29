@@ -295,7 +295,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#content">Content</a></li>
+    <li><a href="#内容一览">内容一览</a></li>
     <li><a href="#html-概述">HTML 概述</a></li>
     <li><a href="#基本标签">基本标签</a>
       <ol>
@@ -327,6 +327,14 @@
     <li><a href="#背景颜色和图片">背景颜色和图片</a></li>
     <li><a href="#图片">图片</a></li>
     <li><a href="#超链接">超链接</a></li>
+    <li><a href="#列表">列表</a></li>
+    <li><a href="#表单重点">表单（重点）</a></li>
+    <li><a href="#表单的语法格式">表单的语法格式：</a>
+      <ol>
+        <li><a href="#表单的按钮">表单的按钮</a></li>
+        <li><a href="#一个例子"><em>一个例子</em></a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -407,7 +415,7 @@
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    2 minute read
                 </time>
             </div>
         
@@ -423,7 +431,7 @@
     
     
     <p>本文是html学习笔记（暂定为第一篇）。标题可以改，但是注意要和目录名一起改。</p>
-<h2 id="content">Content
+<h2 id="内容一览">内容一览
 </h2><ul>
 <li>html 概述
 <ul>
@@ -432,13 +440,9 @@
 </li>
 <li>基本标签</li>
 <li>实体符号</li>
-<li>表格
-<ul>
-<li>背景图片，颜色</li>
-<li>图片</li>
+<li>表格</li>
+<li>背景图片，背景颜色</li>
 <li>超链接</li>
-</ul>
-</li>
 <li>列表</li>
 <li>表单
 <ul>
@@ -643,6 +647,110 @@
 </ul>
 </li>
 </ul>
+<h2 id="列表">列表
+</h2><p>无序列表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Apple<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Orange<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Banana<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>其输出形式如下：</p>
+<blockquote>
+<ul>
+<li>Apple</li>
+<li>Orange</li>
+<li>Banana</li>
+</ul>
+</blockquote>
+<p>无序表允许嵌套有序/无序表，参考代码文件<a class="link" href="/append/HTML-Learn/011.html" >011</a>。<code>&lt;ul&gt;</code>标签的<code>type</code>属性可指定样式，例如<code>&quot;circle&quot;</code>是圈圈，<code>&quot;square&quot;</code>是方块。</p>
+<p>有序列表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Asia<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>America<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Arctic<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同样的，有序表可以嵌套列表。<code>&lt;ol&gt;</code>的<code>type</code>属性指定有序编号样式，例如字母、罗马数字、数码等。</p>
+<h2 id="表单重点">表单（重点）
+</h2><p>表单时用来<strong>收集</strong>用户数据，发送请求时会把收集的数据<strong>发送</strong>给主机（例如登录页）。</p>
+<h2 id="表单的语法格式">表单的语法格式：
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 表单项1 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 表单项2 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>表单的属性<code>action</code>和超链接的<code>href</code>类似，可以设置一个目标位置。当按下按钮（如下），自动跳转到此位置。</p>
+<h3 id="表单的按钮">表单的按钮
+</h3><p>表单可以画一个<strong>按钮</strong>，按下即跳转到表单<code>action</code>属性中的目标位置，这要使用<code>&lt;input&gt;</code>标签
+（一对<code>&lt;input&gt;</code>表示输入域，通过展示不同的<code>type</code>显示不同的样式）
+将<code>&lt;input type=&quot;submit&quot;/&gt;</code>作为一个表单写入表单中，即可显示出一个按钮。
+注意，所有能够提交表单的按钮，<code>type</code>必须是<code>&quot;submit&quot;</code>。注意：</p>
+<ul>
+<li><code>type</code>设置为普通按钮<code>button</code>只能点击，不能跳转到<code>action</code>指定的位置；</li>
+<li>在表单外的按钮无法自动跳转</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- 例子：包含此段代码： --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- 浏览器上会显示一个方框按钮，点击会跳转到`form`的type属性值，即目标网站。 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>表单<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;https://www.bing.com&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>若要按钮显示自定义文本，可设置<code>&lt;input value=&gt;</code>属性为自定义文本。</p>
+<h3 id="一个例子"><a class="link" href="/append/HTML-Learn/013.html" ><em>一个例子</em></a>
+</h3><p><code>action</code>属性值的分析：</p>
+<ul>
+<li><code>https://</code>是协议</li>
+<li><code>192.168.154.2</code>是IP</li>
+<li><code>:8080</code>是端口</li>
+<li><code>/oa/login</code>是主机上的一段程序，可用于处理表单提交的信息</li>
+</ul>
+<p><code>&lt;input type=&gt;</code>属性取为<code>text</code>则是可输入文本框，<code>password</code>则是密码框（不显示字符）。</p>
+<p>表单项的<code>name</code>属性决定表单项的输入内容是否提交，没有该属性的表单项输入不会被传递到目标位置。
+并且，向目标位置提交的数据以<code>url?name=value&amp;name=value</code>的键值对格式提交。</p>
+<p>可以测试一下，不加<code>name</code>属性，跳转到的地址栏会显示<code>https://192.168.154.2:8080/oa/login?</code>而没有后续数据。
+添加<code>name</code>属性和属性值后，若是依次输入<code>ustc</code>、<code>1234</code>、<code>qwer</code>，则地址栏为<code>https://192.168.154.2:8080/oa/login?usr_nm=ustc&amp;passwd=qwer</code>这样的内容（UID没有传送数据）。</p>
 </section>
 
 

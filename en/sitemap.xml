@@ -68,11 +68,6 @@
     <lastmod>2026-01-28T11:55:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ja"
                 href="https://bzliustc.github.io/ja/tags/"
                 />
@@ -80,6 +75,11 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://bzliustc.github.io/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://bzliustc.github.io/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -155,6 +155,11 @@
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-cn"
+                href="https://bzliustc.github.io/zh-cn/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="zh-tw"
                 href="https://bzliustc.github.io/zh-tw/categories/test/"
                 />
@@ -162,11 +167,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://bzliustc.github.io/ja/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
