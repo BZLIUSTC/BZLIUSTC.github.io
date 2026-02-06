@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="HTML Learn">
 <meta property='og:description' content="A Draft page for trying!">
 <meta property='og:url' content='https://bzliustc.github.io/p/html-learn/'>
-<meta property='og:site_name' content='Example Site'>
+<meta property='og:site_name' content='Nishizono Mio&#39;s Shelter'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='html' /><meta property='article:published_time' content='2026-01-28T11:55:57&#43;08:00'/><meta property='article:modified_time' content='2026-01-28T11:55:57&#43;08:00'/><meta property='og:image' content='https://bzliustc.github.io/p/html-learn/front-page.jpg' />
 <meta name="twitter:title" content="HTML Learn">
 <meta name="twitter:description" content="A Draft page for trying!"><meta name="twitter:card" content="summary_large_image">
@@ -57,7 +57,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_b5976aa1afdc1d2e.png" width="300"
+                        <img src="/img/my-avatar_hu_449036b95bdfd59d.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -70,8 +70,8 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Example Site</a></h1>
-            <h2 class="site-description">Example description</h2>
+            <h1 class="site-name"><a href="/">Nishizono Mio&#39;s Shelter</a></h1>
+            <h2 class="site-description">The color Beyond Time</h2>
         </div>
     </header><ol class="menu-social">
             
@@ -328,11 +328,33 @@
     <li><a href="#图片">图片</a></li>
     <li><a href="#超链接">超链接</a></li>
     <li><a href="#列表">列表</a></li>
-    <li><a href="#表单重点">表单（重点）</a></li>
-    <li><a href="#表单的语法格式">表单的语法格式：</a>
+    <li><a href="#表单重点">表单（重点）</a>
       <ol>
-        <li><a href="#表单的按钮">表单的按钮</a></li>
-        <li><a href="#一个例子"><em>一个例子</em></a></li>
+        <li><a href="#表单的语法格式">表单的语法格式</a></li>
+        <li><a href="#提交按钮">提交按钮</a>
+          <ol>
+            <li><a href="#一个例子"><em>一个例子</em></a></li>
+          </ol>
+        </li>
+        <li><a href="#单选框和复选框">单选框和复选框</a></li>
+        <li><a href="#下拉列表">下拉列表</a>
+          <ol>
+            <li><a href="#下拉列表支持多选">下拉列表支持多选</a></li>
+          </ol>
+        </li>
+        <li><a href="#文本域">文本域</a></li>
+        <li><a href="#file控件"><code>file</code>控件</a></li>
+        <li><a href="#隐藏域控件">隐藏域控件</a></li>
+        <li><a href="#readonly属性和disabled属性"><code>readonly</code>属性和<code>disabled</code>属性</a></li>
+        <li><a href="#maxlength属性"><code>maxlength</code>属性</a></li>
+      </ol>
+    </li>
+    <li><a href="#html的id属性">HTML的<code>id</code>属性</a></li>
+    <li><a href="#div和span"><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code></a></li>
+    <li><a href="#附录">附录</a>
+      <ol>
+        <li><a href="#html-基础测试练习题">HTML 基础测试练习题</a></li>
+        <li><a href="#html-基础测试练习题---答案">HTML 基础测试练习题 - 答案</a></li>
       </ol>
     </li>
   </ol>
@@ -415,7 +437,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    4 minute read
                 </time>
             </div>
         
@@ -430,7 +452,7 @@
     <section class="article-content">
     
     
-    <p>本文是html学习笔记（暂定为第一篇）。标题可以改，但是注意要和目录名一起改。</p>
+    <p>本文是html学习笔记.</p>
 <h2 id="内容一览">内容一览
 </h2><ul>
 <li>html 概述
@@ -694,8 +716,8 @@
 </div><p>同样的，有序表可以嵌套列表。<code>&lt;ol&gt;</code>的<code>type</code>属性指定有序编号样式，例如字母、罗马数字、数码等。</p>
 <h2 id="表单重点">表单（重点）
 </h2><p>表单时用来<strong>收集</strong>用户数据，发送请求时会把收集的数据<strong>发送</strong>给主机（例如登录页）。</p>
-<h2 id="表单的语法格式">表单的语法格式：
-</h2><div class="highlight"><div class="chroma">
+<h3 id="表单的语法格式">表单的语法格式
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -709,8 +731,9 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>表单的属性<code>action</code>和超链接的<code>href</code>类似，可以设置一个目标位置。当按下按钮（如下），自动跳转到此位置。</p>
-<h3 id="表单的按钮">表单的按钮
+</div><p>参考代码<a class="link" href="append/HTML-Learn/012.html" >012</a>
+表单的属性<code>action</code>和超链接的<code>href</code>类似，可以设置一个目标位置。当按下按钮（如下），自动跳转到此位置。</p>
+<h3 id="提交按钮">提交按钮
 </h3><p>表单可以画一个<strong>按钮</strong>，按下即跳转到表单<code>action</code>属性中的目标位置，这要使用<code>&lt;input&gt;</code>标签
 （一对<code>&lt;input&gt;</code>表示输入域，通过展示不同的<code>type</code>显示不同的样式）
 将<code>&lt;input type=&quot;submit&quot;/&gt;</code>作为一个表单写入表单中，即可显示出一个按钮。
@@ -737,9 +760,11 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>若要按钮显示自定义文本，可设置<code>&lt;input value=&gt;</code>属性为自定义文本。</p>
-<h3 id="一个例子"><a class="link" href="/append/HTML-Learn/013.html" ><em>一个例子</em></a>
-</h3><p><code>action</code>属性值的分析：</p>
+</div><p>若要按钮显示自定义文本，可设置<code>&lt;input value=&gt;</code>属性为自定义文本。
+如果添加了<code>name</code>属性，则会将<code>name=value</code>也发送出去，所以<strong>不要为提交按钮添加<code>name</code>属性！</strong></p>
+<p>此外，<code>&lt;input type=&quot;reset&quot; value=&quot;清空输入&quot;/&gt;&quot;</code>表单项可将表单变回<strong>默认状态</strong>。</p>
+<h4 id="一个例子"><a class="link" href="/append/HTML-Learn/013.html" ><em>一个例子</em></a>
+</h4><p><code>action</code>属性值的分析：</p>
 <ul>
 <li><code>https://</code>是协议</li>
 <li><code>192.168.154.2</code>是IP</li>
@@ -750,7 +775,303 @@
 <p>表单项的<code>name</code>属性决定表单项的输入内容是否提交，没有该属性的表单项输入不会被传递到目标位置。
 并且，向目标位置提交的数据以<code>url?name=value&amp;name=value</code>的键值对格式提交。</p>
 <p>可以测试一下，不加<code>name</code>属性，跳转到的地址栏会显示<code>https://192.168.154.2:8080/oa/login?</code>而没有后续数据。
-添加<code>name</code>属性和属性值后，若是依次输入<code>ustc</code>、<code>1234</code>、<code>qwer</code>，则地址栏为<code>https://192.168.154.2:8080/oa/login?usr_nm=ustc&amp;passwd=qwer</code>这样的内容（UID没有传送数据）。</p>
+添加<code>name</code>属性和属性值后，若是依次输入<code>ustc</code>、<code>1234</code>、<code>qwer</code>，
+则地址栏为<code>https://192.168.154.2:8080/oa/login?usr_nm=ustc&amp;passwd=qwer</code>这样的内容（UID没有传送数据）。
+若某项没有填写又没有默认值，则传递空字符串。</p>
+<h3 id="单选框和复选框">单选框和复选框
+</h3><p>参考代码<a class="link" href="/append/HTML-Learn/013-form.html" ><em>演示表单</em></a></p>
+<p><code>type=&quot;radio&quot;</code>表示一个<strong>单选圆圈</strong>，点击一次可变成实心的表示选中
+<code>name</code>相同的多个<code>radio</code>类型的<code>input</code>表单项只能选中一个
+（换个说法，同一个单选问题的每个<code>input</code>表单项<code>name</code>属性要相同）。
+下面的代码展示了这一特性：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- 性别表单项 --&gt;</span>
+</span></span><span class="line"><span class="cl">性别    男<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n1&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        女<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n1&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">年级    高<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n1&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        低<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n1&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- 其它表单项 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- 这样的表单项是有问题的！因为四个选择框只能选中一个 --&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>改成如下这样就互不影响了。
+此外，程序员需要提供<code>value</code>的值，对应不同选项映射的收集数据的值，
+因为<code>radio</code>类型不知道每个选项要对应哪个值来上传。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">性别    男<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n1&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        女<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n1&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">年级    高<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n2&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        低<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;n2&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>为<code>&lt;input type=&quot;radio&quot;&gt;</code>添加<code>checked</code>属性表示默认选中此表单项。</p>
+<p><code>type=checkbox</code>表示一个<strong>复选框</strong>；<code>name</code>、<code>value</code>和<code>checked</code>属性用法同上。</p>
+<h3 id="下拉列表">下拉列表
+</h3><p>下拉列表通过<code>&lt;select&gt;</code>标签实现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;level&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Middle School<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>College<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>小学二年级<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>&lt;option&gt;</code>表示下拉列表项。
+列表项添加<code>selected</code>属性表示默认选中此项。
+<strong>注意！下拉列表类型输入不再是使用<code>&lt;input&gt;</code>表示，是<code>&lt;select&gt;</code></strong></p>
+<h4 id="下拉列表支持多选">下拉列表支持多选
+</h4><p>参考代码<a class="link" href="/append/HTML-Learn/014.html-" >014</a></p>
+<p>为<code>select</code>标签添加<code>size=&quot;n&quot;</code>属性，即可使得下拉列表一次展现<code>n</code>个选项，并支持滚动条。添加<code>multiple</code>属性，即可支持使用<code>ctrl</code>键进行多选。另外，<code>n=1</code>并添加<code>multiple</code>属性可以显示出下拉复选框。</p>
+<h3 id="文本域">文本域
+</h3><p>一对<code>&lt;textarea&gt;</code>表示一个文本域，可以输入长文本。
+值得注意的是标签对内的所有内容都会作为默认内容显示出来，因此不要有换行或注释在其中。
+不要这么做：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">rows</span><span class="o">=</span><span class="s">&#34;5&#34;</span> <span class="na">cols</span><span class="o">=</span><span class="s">&#34;60&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;intro&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 注释 --&gt;</span>
+</span></span><span class="line"><span class="cl">     123和换行
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="file控件"><code>file</code>控件
+</h3><p><code>&lt;input type=&quot;file&quot;/&gt;</code>可以上传文件。
+至于后台java程序提纲IO流的方式接收文件。</p>
+<h3 id="隐藏域控件">隐藏域控件
+</h3><p><code>&lt;input type=&quot;hidden&quot; name=&quot;usercode&quot; value=&quot;111&quot;/&gt;</code>产生一个隐藏域，
+不在网页上显示，但是可以携带提交内容。</p>
+<h3 id="readonly属性和disabled属性"><code>readonly</code>属性和<code>disabled</code>属性
+</h3><p><code>readonly</code>和<code>disabled</code>属性都使得输入内容不可更改（只读），
+并且<code>disabled</code>使得输入内容不被提交。</p>
+<h3 id="maxlength属性"><code>maxlength</code>属性
+</h3><p>限制输入内容长度，
+例如，作用于<code>type=text</code>的输入域，则最多输入3字符。</p>
+<h2 id="html的id属性">HTML的<code>id</code>属性
+</h2><p>在HTML任何一个节点（标签）上都有<code>id</code>属性，
+一个<code>id</code>代表一个节点（类似于身份证号），
+因而同一个网页中<code>id</code>属性是不能重复的。
+Javascript可以对HTML节点进行改动，这就要用到<code>id</code>来获取节点对象。</p>
+<p>例如，可以像下面为每个节点添加<code>id</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myhtml&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myhead&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;mybody&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;ag.asd.org&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;myform&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="div和span"><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>
+</h2><p>参考代码<a class="link" href="/append/HTML-Learn/019.html" >019</a></p>
+<p><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>都被称为图层，网页可以有多个图层。
+每个图层在网页中都是一个独立的盒子，可以重叠、嵌套。
+图层最主要作用就 —— 网页布局。
+图层通过左上角顶点的x, y轴坐标定位其在网页中的位置（后期可用CSS样式进行定位）。</p>
+<p>两者的区别：<code>div</code>默认情况下独占一行，<code>span</code>不独占行。</p>
+<h2 id="附录">附录
+</h2><h3 id="html-基础测试练习题">HTML 基础测试练习题
+</h3><p>考察范围：基本标签 - 表单（下拉列表）</p>
+<p>一、选择题（共 5 题，每题只有一个正确答案）</p>
+<p>1&ndash;下列哪个标签是 HTML 文档的根标签？（）</p>
+<p><code>A. &lt;head&gt;   B. &lt;body&gt;   C. &lt;html&gt;   D. &lt;!doctype html&gt;</code></p>
+<p>2&ndash;要在网页中插入一张图片，且当图片加载失败时显示提示文字，需设置<img>标签的哪个属性？（）</p>
+<p><code>A. src   B. alt   C. title   D. width</code></p>
+<p>3&ndash;以下关于 HTML 表单的说法，错误的是？（）</p>
+<pre><code>A. 表单的提交按钮type属性值必须为submit
+B. 表单项必须添加name属性才能提交数据
+C. 下拉列表的标签是&lt;input type=&quot;select&quot;&gt;
+D. 重置按钮的作用是将表单恢复为默认状态
+</code></pre>
+<p>4&ndash;若要实现同一行内两个单元格合并，需为<td>标签添加哪个属性？（）</p>
+<p><code>A. rowspan   B. colspan   C. align   D. merge</code></p>
+<p>5&ndash;下列哪个实体符号表示 HTML 中的空格？（）</p>
+<p><code>A. &amp;lt;   B. &amp;gt;   C. &amp;nbsp;   D. &amp;amp;</code></p>
+<p>二、填空题（共 10 题，每空 1 分）</p>
+<p>6&ndash;HTML 文档的基本结构包含<code>&lt;head&gt;</code>和<code>&lt;body&gt;</code>标签，其中<code>&lt;head&gt;</code>标签内的<code>&lt;title&gt;</code>标签用于设置______。</p>
+<p>7&ndash;要实现强制换行效果，需使用单标签______；要添加一条红色水平线，代码为______。</p>
+<p>8&ndash;<code>&lt;pre&gt;</code>标签的作用是______，它会保留源码中的缩进和换行格式。</p>
+<p>9&ndash;HTML 表格中，<code>&lt;th&gt;</code>标签的作用是______，其内容默认______且居中显示。</p>
+<p>10&ndash;超链接标签<code>&lt;a&gt;</code>的核心属性是______，用于指定跳转目标；若要在新窗口打开链接，需设置target属性值为______。</p>
+<p>11&ndash;无序列表的标签是______，列表项的标签是______；若要将无序列表的项目符号改为空心圆，需设置type属性值为______。</p>
+<p>12&ndash;HTML 表单中，单选框的type属性值为______，同一组单选框的______属性值必须相同才能实现互斥效果。</p>
+<p>13&ndash;下拉列表由<code>&lt;select&gt;</code>标签定义，列表项由______标签定义；若要默认选中某列表项，需添加______属性。</p>
+<p>14&ndash;文本域的标签是______，通过rows和cols属性分别设置______和______。</p>
+<p>15&ndash;要设置网页的背景颜色，需在<code>&lt;body&gt;</code>标签中添加______属性；若要设置背景图片，则添加______属性。</p>
+<p>三、编写题（共 3 题，每题需写出完整代码）</p>
+<p>16&ndash;编写一个完整的 HTML 文档，要求包含基本结构（文档声明、<code>&lt;html&gt;</code>、<code>&lt;head&gt;</code>、<code>&lt;body&gt;</code>），<code>&lt;head&gt;</code>中设置页面标题为 “我的第一个 HTML 页面”，<code>&lt;body&gt;</code>中包含一个一级标题 “欢迎学习 HTML” 和一个段落，段落内容为 “这是一道 HTML 编写题的练习内容。”。</p>
+<p>17&ndash;编写一个 HTML 表格，要求如下：
+表格边框为 1 像素；表格包含 2 行 3 列；
+第一行是表头，内容分别为 “姓名”、“年龄”、“班级”；
+第二行内容分别为 “张三”、“20”、“计算机 1 班”；
+表头单元格内容居中加粗（使用<code>&lt;th&gt;</code>标签实现）</p>
+<p>18&ndash;编写一个 HTML 表单，要求如下：
+表单提交目标为https://www.example.com；
+包含以下表单项：</p>
+<ol>
+<li>文本框：用于输入用户名，name属性为username，默认值为 “请输入用户名”</li>
+<li>密码框：用于输入密码，name属性为password</li>
+<li>单选框：性别选择（男、女），name属性为gender，默认选中 “男”</li>
+<li>下拉列表：年级选择（大一、大二、大三），name属性为grade，默认选中 “大二”</li>
+<li>提交按钮和重置按钮，按钮文本分别为 “提交信息” 和 “重置表单”</li>
+</ol>
+<h3 id="html-基础测试练习题---答案">HTML 基础测试练习题 - 答案
+</h3><p>一、CBCBC</p>
+<p>二、填空题答案</p>
+<ul>
+<li>网页标签页的标题</li>
+<li><code>&lt;br&gt;；&lt;hr color=&quot;red&quot;&gt;</code></li>
+<li>预留格式</li>
+<li>定义表头单元格；加粗</li>
+<li><code>href；_blank</code></li>
+<li><code>&lt;ul&gt;；&lt;li&gt;；circle</code></li>
+<li><code>radio；name</code></li>
+<li><code>&lt;option&gt;；selected</code></li>
+<li><code>&lt;textarea&gt;</code>；行数；列数</li>
+<li><code>bgcolor；background</code></li>
+</ul>
+<p>三、编写题答案
+第一题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>我的第一个HTML页面<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>欢迎学习HTML<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>这是一道HTML编写题的练习内容。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第二题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">border</span><span class="o">=</span><span class="s">&#34;1px&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>姓名<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>年龄<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>班级<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>张三<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>20<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>计算机1班<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第三题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;https://www.example.com&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    用户名：<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;username&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;请输入用户名&#34;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    密码：<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;password&#34;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    性别：男<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;gender&#34;</span> <span class="na">checked</span><span class="p">&gt;</span> 女<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;gender&#34;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    年级：
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;grade&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>大一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>大二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>大三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;提交信息&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;reset&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;重置表单&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -821,6 +1142,30 @@
     <h2 class="section-title">Related content</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/css-learn/">
+        
+        
+            <div class="article-image">
+                <img src="/p/css-learn/front-page.3aace876660da8a53c6638e44f1a8b82_hu_89c89457e2b1f874.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post CSS Learn"
+                        
+                        data-hash="md5-OqzodmYNqKU8ZjjkTxqLgg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CSS Learn</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">

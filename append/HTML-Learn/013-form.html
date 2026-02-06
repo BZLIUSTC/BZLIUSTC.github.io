@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>收集表</title>
+    </head>
+    <body>
+        <h2>摸底小问卷</h2>
+        <form action="https://localhost:8080/oa/login">
+            用户名  <input type="text" name="usrname"/><br>
+            密码    <input type="password" name="usrpasswd"/><br>
+            <!-- 两道单选题 -->
+            性别  男<input type="radio"   name="gender"   value="male"/>
+                  女<input type="radio"   name="gender"   value="female"/><br>
+            年级  高<input type="radio"   name="grade"    value="big" checked/>
+                  低<input type="radio"   name="grade"    value="small" checked/><br>
+            <!-- 多选题 -->
+            兴趣 <br>  &nbsp;&nbsp;
+                <input type="checkbox" name="hobby" value="h1">礼&nbsp;
+                <input type="checkbox" name="hobby" value="h2" checked>御&nbsp;
+                <input type="checkbox" name="hobby" value="h3">射&nbsp;
+                <input type="checkbox" name="hobby" value="h4">御&nbsp;
+                <input type="checkbox" name="hobby" value="h5">书&nbsp;
+                <input type="checkbox" name="hobby" value="h6" checked>数&nbsp;
+            <br>
+            <!-- 下拉列表 -->
+            学历<br>
+                <select name="level">
+                    <option value="mid">Middle School</option>
+                    <option value="col">College</option>
+                    <option value="xxenj" selected>小学二年级</option>
+                </select> <br>
+            <!-- 文本域 -->
+            介绍<br> 
+                <textarea rows="5" cols="30" name="intro"></textarea>  <br>
+            <input type="submit" value="登录/注册"/>
+        </form>
+    </body>
+</html>

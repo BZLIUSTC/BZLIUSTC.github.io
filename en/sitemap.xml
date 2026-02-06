@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bzliustc.github.io/</loc>
-    <lastmod>2026-01-28T11:55:57+08:00</lastmod>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -31,7 +31,7 @@
                 />
   </url><url>
     <loc>https://bzliustc.github.io/categories/</loc>
-    <lastmod>2026-01-28T11:55:57+08:00</lastmod>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -58,19 +58,17 @@
                 href="https://bzliustc.github.io/categories/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/tags/html/</loc>
-    <lastmod>2026-01-28T11:55:57+08:00</lastmod>
+    <loc>https://bzliustc.github.io/tags/css/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bzliustc.github.io/p/html-learn/</loc>
-    <lastmod>2026-01-28T11:55:57+08:00</lastmod>
+    <loc>https://bzliustc.github.io/p/css-learn/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/tags/html/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bzliustc.github.io/tags/</loc>
-    <lastmod>2026-01-28T11:55:57+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bzliustc.github.io/ja/tags/"
-                />
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -80,6 +78,11 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://bzliustc.github.io/zh-tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bzliustc.github.io/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -93,6 +96,9 @@
                 />
   </url><url>
     <loc>https://bzliustc.github.io/categories/website/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/html-learn/</loc>
     <lastmod>2026-01-28T11:55:57+08:00</lastmod>
   </url><url>
     <loc>https://bzliustc.github.io/tags/hugo/</loc>
@@ -123,9 +129,6 @@
                 href="https://bzliustc.github.io/page/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://bzliustc.github.io/p/markdown-syntax-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -155,6 +158,11 @@
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="ja"
+                href="https://bzliustc.github.io/ja/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="zh-cn"
                 href="https://bzliustc.github.io/zh-cn/categories/test/"
                 />
@@ -162,11 +170,6 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://bzliustc.github.io/zh-tw/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bzliustc.github.io/ja/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"

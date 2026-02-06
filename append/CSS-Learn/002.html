@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>定义内部样式块对象</title>
+        <!-- 样式块。注意text/css必须写 -->
+        <style type="text/css">
+            /* 标签选择器 */   /* 注意注释形式改变 */
+            div {
+                background-color: #cccc22;
+                width: 150px; 
+                height: 200px;
+                border-style: solid; 
+                border-color: red;
+                border-width: 5px;
+            }
+            /* id选择器 */
+            #input-braket-usrname {
+                background-color: #e3ace4;
+                width: 100px; 
+                height: 20px;
+                border-style: solid; 
+                border-color: #3ad110;
+                border-width: 2px;
+            }
+            /* 类选择器 */
+            .cls1 {
+                font-size: 12px;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 演示标签选择器 -->
+        <div id="1111">
+            DIV里面的文字!
+        </div>
+        <span>SPAN不受div的样式块作用</span>
+        <div id="222">
+            另一个DIV也受div样式块作用!
+        </div>
+        <!-- 演示id选择器 -->
+        <input id="input-braket-usrname" type="text"/>
+        <!-- 演示class选择器 -->
+        <hr class="cls1">
+        <span class="cls1">SPAN区域</span>
+        <p class="cls1">段落</p>
+    </body>
+</html>

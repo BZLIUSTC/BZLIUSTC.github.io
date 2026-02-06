@@ -1,0 +1,17 @@
+#div1 {
+    background-color: aqua;
+    width: 100px; 
+    height: 80px; 
+}
+
+.myinput {
+    border: solid 1px red;
+}
+
+input {
+    border: solid 1px blue;
+}
+
+#3 {
+    border: solid 1px green;
+}
