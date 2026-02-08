@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Themes on Nishizono Mio&#39;s Shelter</title>
+        <title>Themes on Nishizono Mio&#39;s Shaddow</title>
         <link>https://bzliustc.github.io/categories/themes/</link>
-        <description>Recent content in Themes on Nishizono Mio&#39;s Shelter</description>
+        <description>Recent content in Themes on Nishizono Mio&#39;s Shaddow</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
@@ -39,6 +39,9 @@ $$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
 为了管理方便，最好为每篇文章的附件们创建一个子目录，统一存放。&lt;/p&gt;
 &lt;p&gt;reference:
 &lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/MyZeroBlog/002.html&#34; &gt;article&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;侧栏头像和简介&#34;&gt;侧栏头像和简介
+&lt;/h2&gt;&lt;p&gt;标题（网站标题）和简介在根目录的hugo.yaml文件中编辑；
+头像存储的默认根路径为&lt;code&gt;/themes/assets/&lt;/code&gt;，头像路径也在项目根目录的hugo.yaml中设置。&lt;/p&gt;
 </description>
         </item>
         <item>

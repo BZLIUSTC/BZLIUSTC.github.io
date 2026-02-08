@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>边距</title>
+        <style type="text/css">
+            #div1 {
+                width: 200px; 
+                height: 300px; 
+                background-color: #00ffff;
+                border: solid 5px red; 
+                /* 内补丁，在元素内部 */
+                /* 在div1元素左部打一个补丁，其距离左侧10像素 */
+                padding-left: 20px;
+            }
+            #div2 {
+                width: 100px; 
+                height: 100px; 
+                background-color: #04ff00;
+                border: solid 5px rgb(195, 255, 0); 
+                /* 外补丁，在元素外部 */
+                /* 在div2元素顶部打一个补丁，其距离top10像素 */
+                margin-top: 10px;
+            }
+            #div3 {
+                width: 30px; 
+                height: 300px; 
+                background-color: #ff0099;
+                border: solid 5px rgb(255, 200, 0); 
+                /* 外补丁，在元素外部 */
+                /* 在div2元素顶部打一个补丁，其距离top10像素 */
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <div id="div2"></div>
+            <div id="div3"></div>
+        </div>
+    </body>
+</html>

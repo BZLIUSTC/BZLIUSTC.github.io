@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>定位样式position</title>
+        <style type="text/css">
+            #div1 {
+                border: solid 3px green;
+                width: 512px; 
+                height: 384 px; 
+                background-color: rgb(189, 127, 255);
+                /* 定位 */
+                position: absolute; 
+                top: 100px; 
+                left: 50px; 
+            }
+            #pointer:hover {
+                cursor: pointer; 
+                text-decoration: underline;
+                color: rgb(64, 255, 0)
+            }
+            #stop:hover {
+                cursor: not-allowed;  
+                text-decoration: underline;
+                color: red
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <div id="pointer">
+                指针变小手
+            </div>
+            <div id="stop">
+            指针变STOP
+            </div>
+        </div>
+    </body>
+</html>

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="CSS Learn">
 <meta property='og:description' content="CSS学习笔记">
 <meta property='og:url' content='https://bzliustc.github.io/p/css-learn/'>
-<meta property='og:site_name' content='Nishizono Mio&#39;s Shelter'>
+<meta property='og:site_name' content='Nishizono Mio&#39;s Shaddow'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:published_time' content='2026-01-31T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-31T00:00:00&#43;00:00'/><meta property='og:image' content='https://bzliustc.github.io/p/css-learn/front-page.jpg' />
 <meta name="twitter:title" content="CSS Learn">
 <meta name="twitter:description" content="CSS学习笔记"><meta name="twitter:card" content="summary_large_image">
@@ -70,8 +70,14 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Nishizono Mio&#39;s Shelter</a></h1>
-            <h2 class="site-description">The color Beyond Time</h2>
+            <h1 class="site-name"><a href="/">Nishizono Mio&#39;s Shaddow</a></h1>
+            <h2 class="site-description">令白鸟哀叹的天空之蓝——
+无法浸染大海之青，
+互相映照；
+
+与海之接吻令夕阳无法行——
+鸟翔于天，停滞不前，
+乘着风儿，洁白之翼，</h2>
         </div>
     </header><ol class="menu-social">
             
@@ -312,6 +318,24 @@
     </li>
     <li><a href="#隐藏">隐藏</a></li>
     <li><a href="#文本装饰">文本装饰</a></li>
+    <li><a href="#列表">列表</a></li>
+    <li><a href="#鼠标悬停效果">鼠标悬停效果</a></li>
+    <li><a href="#内边距外边距">内边距外边距</a></li>
+    <li><a href="#浮动效果">浮动效果</a></li>
+    <li><a href="#定位">定位</a></li>
+    <li><a href="#鼠标小手">鼠标小手</a></li>
+    <li><a href="#附录">附录</a>
+      <ol>
+        <li><a href="#css基础练习题">CSS基础练习题</a>
+          <ol>
+            <li><a href="#一单选题10-题">（一）单选题（10 题）</a></li>
+            <li><a href="#二填空题10-题">（二）填空题（10 题）</a></li>
+            <li><a href="#三编程题3-题">（三）编程题（3 题）</a></li>
+          </ol>
+        </li>
+        <li><a href="#css基础练习题-参考答案">CSS基础练习题-参考答案</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -392,7 +416,7 @@
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    5 minute read
                 </time>
             </div>
         
@@ -415,10 +439,13 @@ css其实是专门用来修饰HTML的,让HTML更好看，Css是HTML的化妆品�
 <p>CSS是为HTML服务的,所以HTML还是主体,css是依附在HTML上的,
 所以进行css的开发,我们还是需要新建html/htm文件。</p>
 <h2 id="在html中嵌入css的三种方式">在HTML中嵌入CSS的三种方式
-</h2><p>第一种方式:内联定义；
-第二种方式:定义内部样式块对象；
-第三种方式:链入外部样式表文件。</p>
-<p>参考网页：</p>
+</h2><ol>
+<li>内联定义；</li>
+<li>定义内部样式块对象；</li>
+<li>链入外部样式表文件。</li>
+</ol>
+<p>优先级：内联 &gt; 内部样式块对象 &gt; 外部样式表文件
+参考网页：</p>
 <ul>
 <li><a class="link" href="https://documentation.help/CSS2-zh/literature.html"  target="_blank" rel="noopener"
     >苏昱CSS手册网页版</a></li>
@@ -552,6 +579,456 @@ css其实是专门用来修饰HTML的,让HTML更好看，Css是HTML的化妆品�
 <li>&ldquo;overline&rdquo;</li>
 <li>&ldquo;none&rdquo;：无格式，可以消除掉超链接的默认下划线</li>
 </ul>
+<h2 id="列表">列表
+</h2><p>参考代码<a class="link" href="/append/CSS-Learn/004.html" >004</a></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th><code>list-style-type</code> 属性值</th>
+          <th>含义</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>none</td>
+          <td>去掉有序/无序编号</td>
+      </tr>
+      <tr>
+          <td>circle</td>
+          <td>圈形无序编号</td>
+      </tr>
+      <tr>
+          <td>square</td>
+          <td>方形无序编号</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="鼠标悬停效果">鼠标悬停效果
+</h2><p>鼠标悬停效果通过在选择器名后加<code>:hover</code>表示其引导的效果在鼠标放上去时触发。
+注意：冒号前后<strong>不能有空格！</strong> 参考代码<a class="link" href="/append/CSS-Learn/006.html" >006</a>，像这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">cursoreffect</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="内边距外边距">内边距外边距
+</h2><p>可以使用内补丁和外补丁制造div或span之间的相对间隔。
+参考代码<a class="link" href="/append/CSS-Learn/007.html" >007</a>。</p>
+<p>例如，内补丁<code>padding</code>会导致嵌套于其内的子元素距离父元素有补丁间距。
+外补丁<code>margin</code>会导致某个子元素与父元素在外部有补丁间距。</p>
+<blockquote>
+<p>CSS 盒模型</p>
+<ul>
+<li>所有 HTML 元素都可以看成一个矩形盒子，由内到外共 4 层：</li>
+<li>Content（内容区）文字、图片等实际内容，<strong>width、height 就是控制这个区</strong>。</li>
+<li>Padding（内边距）内容到边框之间的距离，属于盒子内部，会撑大盒子。</li>
+<li>Border（边框）盒子的边框，border-width 也会算进盒子总大小。</li>
+<li>Margin（外边距）盒子与其他元素之间的距离，不属于盒子本身，只控制间距。</li>
+</ul>
+</blockquote>
+<h2 id="浮动效果">浮动效果
+</h2><p>参考代码<a class="link" href="/append/CSS-Learn/008.html" >008</a>。
+<code>float: </code>设置为：</p>
+<ul>
+<li>left：文字包围，图片居左</li>
+<li>right：文字包围，图片居右</li>
+</ul>
+<h2 id="定位">定位
+</h2><p>参考代码<a class="link" href="/append/CSS-Learn/009.html" >009</a>，使用<code>position</code>确定定位法，配合<code>top</code>和<code>left</code>定位距离。</p>
+<h2 id="鼠标小手">鼠标小手
+</h2><p>参考代码<a class="link" href="/append/CSS-Learn/009.html" >009</a>。
+通过<code>cursor: </code>设置：</p>
+<ul>
+<li><code>pointer</code>：小手（不要用hand，有兼容问题）</li>
+<li><code>not-allowed</code>：禁止</li>
+</ul>
+<h2 id="附录">附录
+</h2><h3 id="css基础练习题">CSS基础练习题
+</h3><h4 id="一单选题10-题">（一）单选题（10 题）
+</h4><p>1&ndash;以下关于 CSS 的描述错误的是（）</p>
+<pre><code>A. CSS 是层叠样式表，不属于编程语言  
+B. CSS 可以独立于 HTML 运行  
+C. CSS 能修饰 HTML 元素的样式  
+D. CSS 没有变量、控制语句等编程语言特性`
+</code></pre>
+<p><strong>2</strong>&ndash;下列哪种 CSS 嵌入方式优先级最高（）</p>
+<pre><code>A. 外部样式表
+B. 内部样式块
+C. 内联定义（style 属性）
+D. 三者优先级相同`
+</code></pre>
+<p>3&ndash;关于选择器优先级，正确的顺序是（）</p>
+<pre><code>A. 标签选择器 &gt; class 选择器 &gt; id 选择器
+B. id 选择器 &gt; class 选择器 &gt; 标签选择器
+C. class 选择器 &gt; id 选择器 &gt; 标签选择器
+D. id 选择器 &gt; 标签选择器 &gt; class 选择器`
+</code></pre>
+<p>4&ndash;要清除超链接的默认下划线，应设置的样式是（）</p>
+<pre><code>A. text-decoration: underline
+B. text-decoration: overline
+C. text-decoration: none
+D. text-decoration: hidden
+</code></pre>
+<p>5&ndash;鼠标悬停伪类的正确写法是（）</p>
+<pre><code>A. .box :hover {color: red;}
+B. .box:hover { color: red; }
+C. .box hover { color: red; }
+D. .box-&gt;hover { color: red; }
+</code></pre>
+<p>6&ndash;要让元素显示为 “小手” 鼠标样式，正确的属性值是（）</p>
+<pre><code>A. cursor: hand
+B. cursor: pointer
+C. cursor: small-hand
+D. cursor: finger
+</code></pre>
+<p>7&ndash;下列哪个属性用于去掉列表的默认编号（）</p>
+<pre><code>A. list-style: none
+B. list-style-type: none
+C. list-number: hidden
+D. list-type: none
+</code></pre>
+<p><strong>8</strong>&ndash;关于 padding 和 margin，描述正确的是（）</p>
+<pre><code>A. padding 是外边距，margin 是内边距
+B. padding 会增加元素自身的总尺寸
+C. margin 是子元素与父元素内部的间距
+D. padding 不影响元素的布局
+</code></pre>
+<p>9&ndash;要隐藏一个 HTML 元素且不占用页面空间，应设置（）</p>
+<pre><code>A. visibility: hidden
+B. display: none
+C. opacity: 0
+D. hidden: true
+</code></pre>
+<p>10&ndash;外部样式表的引入标签正确的是（）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">A. &lt;link rel=&#34;style&#34; type=&#34;text/css&#34; href=&#34;style.css&#34;&gt;
+</span></span><span class="line"><span class="cl">B. &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;style.css&#34;/&gt;
+</span></span><span class="line"><span class="cl">C. &lt;style src=&#34;style.css&#34; type=&#34;text/css&#34;&gt;&lt;/style&gt;
+</span></span><span class="line"><span class="cl">D. &lt;import rel=&#34;stylesheet&#34; href=&#34;style.css&#34;/&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="二填空题10-题">（二）填空题（10 题）
+</h4><ol start="11">
+<li>CSS 的全称是 __________（层叠样式表）。</li>
+<li>内联定义 CSS 的方式是给 HTML 标签添加 ____________ 属性。</li>
+<li>id 选择器的语法是以 ____________ 开头，class 选择器以 ____________ 开头。</li>
+<li>要实现鼠标悬停时文字颜色变红，伪类写法是 ____________（以 .box 为例）。</li>
+<li>float: left 的效果是 ____________。</li>
+<li>清除列表默认编号的 list-style-type 属性值是 ____________。</li>
+<li>内边距对应的 CSS 属性是 ____________，外边距是 ____________。</li>
+<li>禁止鼠标样式对应的 cursor 属性值是 ____________。</li>
+<li>链接外部样式表的标签中，rel 属性的值必须是 ____________。</li>
+<li>隐藏元素且不占空间的样式是 ____________。</li>
+</ol>
+<h4 id="三编程题3-题">（三）编程题（3 题）
+</h4><h5 id="题目-1基础选择器与样式应用">题目 1：基础选择器与样式应用
+</h5><ul>
+<li>创建 HTML 文件，包含以下元素：</li>
+<li>一个 div（id 为 box1），内容为 “ID 选择器测试”；</li>
+<li>两个 p 标签（class 为 text-normal），内容分别为 “Class 选择器测试 1”“Class 选择器测试 2”；</li>
+<li>一个 h3 标签，内容为 “标签选择器测试”。</li>
+<li>用内部样式块实现：</li>
+<li>id 选择器：box1 背景色 #f0f8ff，宽度 200px，边框为 2px 实线 #333；</li>
+<li>class 选择器：text-normal 字体大小 14px，颜色 #666，<em>行高 1.5</em>；</li>
+<li>标签选择器：h3 文字居中，颜色 #e63946，无下划线。</li>
+</ul>
+<h5 id="题目-2交互效果与列表样式"><strong>题目 2：交互效果与列表样式</strong>
+</h5><ul>
+<li>创建 HTML 文件，包含一个无序列表（ul），列表项为 “首页”“课程”“关于我们”；</li>
+<li>用 CSS 实现：</li>
+<li>去掉列表默认编号，列表项添加 10px <strong>内边距</strong>；</li>
+<li>鼠标悬停在列表项上时，背景色变为 #457b9d，文字颜色变为白色，鼠标样式为小手；</li>
+<li>列表项宽度 100px，边框为 1px 虚线 #ddd；</li>
+<li>新增一个超链接（a 标签），清除默认下划线，鼠标悬停时显示下划线。</li>
+</ul>
+<h5 id="题目-3综合布局与显隐控制">题目 3：综合布局与显隐控制
+</h5><p>创建 HTML 文件，包含：</p>
+<ul>
+<li>一个按钮（button），内容为 “显示 / 隐藏盒子”；</li>
+<li>一个 div（id 为 target-box），初始隐藏，宽度 300px，高度 150px，背景色 #ffd6a5，外边距 20px，内边距 10px；</li>
+<li>用 CSS 设置初始样式，用 JavaScript 实现点击按钮切换 div 的显示 / 隐藏（修改 display 属性）；</li>
+<li>给 div 添加浮动（left），确保显示时文字不会环绕（可在 div 后加 <div style="clear: both;"></div> 清除浮动）。</li>
+</ul>
+<h3 id="css基础练习题-参考答案">CSS基础练习题-参考答案
+</h3><p>BCBCB BBBBB</p>
+<ol>
+<li>Cascading Style Sheet</li>
+<li>style</li>
+<li>#、.</li>
+<li>.box:hover {&hellip;}</li>
+<li>元素左浮动，文字环绕在右侧</li>
+<li>none</li>
+<li>padding、margin</li>
+<li>not-allowed</li>
+<li>stylesheet</li>
+<li>display: none</li>
+</ol>
+<p>代码一</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;zh-CN&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>选择器测试<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* id选择器 */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="nn">box1</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">background-color</span><span class="p">:</span> <span class="mh">#f0f8ff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#333</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* class选择器 */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nc">text-normal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">color</span><span class="p">:</span> <span class="mh">#666</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* 标签选择器 */</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">h3</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">color</span><span class="p">:</span> <span class="mh">#e63946</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;box1&#34;</span><span class="p">&gt;</span>ID选择器测试<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-normal&#34;</span><span class="p">&gt;</span>Class选择器测试1<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-normal&#34;</span><span class="p">&gt;</span>Class选择器测试2<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>标签选择器测试<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>代码二</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;zh-CN&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>交互与列表样式<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">ul</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">list-style-type</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">li</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">dashed</span> <span class="mh">#ddd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">margin</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">li</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">background-color</span><span class="p">:</span> <span class="mh">#457b9d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">color</span><span class="p">:</span> <span class="mh">#1d3557</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>首页<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>课程<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>关于我们<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>测试链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>代码三</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;zh-CN&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>显隐控制与布局<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">#</span><span class="nn">target-box</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="c">/* 初始隐藏 */</span>
+</span></span><span class="line"><span class="cl">            <span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">height</span><span class="p">:</span> <span class="mi">150</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffd6a5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">margin</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">float</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span> <span class="c">/* 左浮动 */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">button</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">padding</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&#34;toggleBox()&#34;</span><span class="p">&gt;</span>显示/隐藏盒子<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;target-box&#34;</span><span class="p">&gt;</span>这是一个可显隐的浮动盒子<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;clear: both;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span> <span class="c">&lt;!-- 清除浮动 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>测试文字，确保浮动清除后不会环绕盒子<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 切换显隐的函数
+</span></span></span><span class="line"><span class="cl">        <span class="kd">function</span> <span class="nx">toggleBox</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">const</span> <span class="nx">box</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;target-box&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="nx">box</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">===</span> <span class="s1">&#39;none&#39;</span> <span class="o">||</span> <span class="nx">box</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">===</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">box</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;block&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">box</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
