@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>函数</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 函数定义
+            function sayHello(x, y) {
+                var z = x + y
+                alert("x + y = " + z)
+            }
+            // 函数调用
+            sayHello(1,3)
+            sayHello()
+            sayHello(1)
+            sayHello(1,2,3)
+            // 另一种函数定义
+            tosum = function(a, b) {return a+b}
+            alert(tosum(10, 20))
+
+            function greeting(usrname) {
+                alert("你好" + usrname)
+            }
+        </script>
+        <!-- 在事件句柄中调用函数 -->
+        <input type="button" value="Hello" onclick="greeting('Zhangsan')"/>
+    </body>
+</html>

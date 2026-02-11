@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="JavaScript学习笔记">
 <title>JavaScript Learn</title>
 
-<link rel='canonical' href='http://localhost:1313/p/javascript-learn/'>
+<link rel='canonical' href='https://bzliustc.github.io/p/javascript-learn/'>
 
 <link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="JavaScript Learn">
 <meta property='og:description' content="JavaScript学习笔记">
-<meta property='og:url' content='http://localhost:1313/p/javascript-learn/'>
+<meta property='og:url' content='https://bzliustc.github.io/p/javascript-learn/'>
 <meta property='og:site_name' content='Nishizono Mio&#39;s Shaddow'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='javascript' /><meta property='article:published_time' content='2026-02-08T15:08:15&#43;08:00'/><meta property='article:modified_time' content='2026-02-08T15:08:15&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/javascript-learn/front-page.jpeg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='javascript' /><meta property='article:published_time' content='2026-02-08T15:08:15&#43;08:00'/><meta property='article:modified_time' content='2026-02-08T15:08:15&#43;08:00'/><meta property='og:image' content='https://bzliustc.github.io/p/javascript-learn/front-page.jpeg' />
 <meta name="twitter:title" content="JavaScript Learn">
 <meta name="twitter:description" content="JavaScript学习笔记"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/p/javascript-learn/front-page.jpeg' />
+    <meta name="twitter:image" content='https://bzliustc.github.io/p/javascript-learn/front-page.jpeg' />
     </head>
     <body class="
     article-page
@@ -238,15 +238,15 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="http://localhost:1313/" selected>English</option>
+                                    <option value="https://bzliustc.github.io/" selected>English</option>
                                 
-                                    <option value="http://localhost:1313/ja/" >日本語</option>
+                                    <option value="https://bzliustc.github.io/ja/" >日本語</option>
                                 
-                                    <option value="http://localhost:1313/zh-cn/" >简体中文</option>
+                                    <option value="https://bzliustc.github.io/zh-cn/" >简体中文</option>
                                 
-                                    <option value="http://localhost:1313/zh-tw/" >正體中文</option>
+                                    <option value="https://bzliustc.github.io/zh-tw/" >正體中文</option>
                                 
-                                    <option value="http://localhost:1313/ar/" >عربي</option>
+                                    <option value="https://bzliustc.github.io/ar/" >عربي</option>
                                 
                             </select>
                         </li>
@@ -279,7 +279,97 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#javascript概述">JavaScript概述</a></li>
+    <li><a href="#javascript包括三块ecmascriptdombom">JavaScript包括三块:ECMAScript、DOM、BOM</a></li>
+    <li><a href="#嵌入js的三种方式以及js注释">嵌入JS的三种方式以及JS注释</a>
+      <ol>
+        <li><a href="#行间事件法">行间事件法</a></li>
+        <li><a href="#页面脚本块嵌入">页面脚本块嵌入</a></li>
+        <li><a href="#引入外部js文件">引入外部JS文件</a></li>
+      </ol>
+    </li>
+    <li><a href="#标识符合关键字">标识符合关键字</a></li>
+    <li><a href="#变量">变量</a>
+      <ol>
+        <li><a href="#变量的声明与赋值">变量的声明与赋值</a></li>
+        <li><a href="#函数的定义和调用">函数的定义和调用</a></li>
+        <li><a href="#局部变量与全局变量">局部变量与全局变量</a></li>
+      </ol>
+    </li>
+    <li><a href="#js数据类型">JS数据类型</a>
+      <ol>
+        <li><a href="#ecmascript6版本之前的数据类型有6种">ECMASCRIPT6版本之前的数据类型有6种</a></li>
+        <li><a href="#typeof运算符">typeof运算符（@@@@@）</a></li>
+        <li><a href="#numebr类型">Numebr类型</a>
+          <ol>
+            <li><a href="#number类型的数据">Number类型的数据</a></li>
+            <li><a href="#isnan-函数">isNaN() 函数</a></li>
+            <li><a href="#number函数">Number()函数</a></li>
+            <li><a href="#parseint函数">parseInt()函数</a></li>
+            <li><a href="#js数学类介绍">JS数学类介绍</a></li>
+          </ol>
+        </li>
+        <li><a href="#boolean类型">Boolean类型</a>
+          <ol>
+            <li><a href="#boolean函数">Boolean()函数</a></li>
+          </ol>
+        </li>
+        <li><a href="#string">String</a>
+          <ol>
+            <li><a href="#length属性">length属性</a></li>
+            <li><a href="#charat">charAt()</a></li>
+            <li><a href="#concat">concat()</a></li>
+            <li><a href="#indexof">indexOf()</a></li>
+            <li><a href="#lastindexof">lastIndexOf()</a></li>
+            <li><a href="#replace">replace()</a></li>
+            <li><a href="#split">split()</a></li>
+            <li><a href="#substr和subtring">substr()和subtring()</a></li>
+            <li><a href="#tolowercase和touppercase">toLowerCase()和toUpperCase()</a></li>
+          </ol>
+        </li>
+        <li><a href="#object">Object</a>
+          <ol>
+            <li><a href="#prototype属性">prototype属性</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#类">类</a>
+      <ol>
+        <li><a href="#定义类">定义类</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -351,7 +441,7 @@
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -367,8 +457,398 @@
     
     
     <p>本文是Javascript学习笔记。</p>
-<h2 id="大标题">大标题！
-</h2>
+<h2 id="javascript概述">JavaScript概述
+</h2><ol>
+<li>简称 JS</li>
+<li>JavaScript语言是一种脚本语言,JavaScript的“目标程序”是以普通文本的形式保存。用记事本是可以直接打开的。</li>
+<li>JavaScript和JScript的关系……</li>
+<li>JavaScript主要用来操作HTML中的节点,产生动态效果；JS是一门编程语言，专门用来操作HTML页面中的节点，产生动态效果</li>
+<li>JavaScript和 Java的区别：毫无关系</li>
+<li>（重要）JS调试要充分利用浏览器开发者页面的<strong>控制台，查看器，网络</strong>面板</li>
+</ol>
+<h2 id="javascript包括三块ecmascriptdombom">JavaScript包括三块:ECMAScript、DOM、BOM
+</h2><ol>
+<li>ECMAScript是ECMA制定的262标准，JavaScript和JScript都遵守这个标准；ECMAScript是JavaScript核心语法</li>
+<li>Document Object Model编程是通过JavaScript对HTML中的dom节点进行操作，DOM是有规范的，DOM规范是W3C制定的</li>
+<li>Browser Object Modle编程是对浏览器本身操作，例如：前进、后退、地址栏、关闭窗口、弹窗等。由于浏览器有不同的厂家制造，所以BOM缺少规范，一般只是有一个默认的行业规范。</li>
+</ol>
+<h2 id="嵌入js的三种方式以及js注释">嵌入JS的三种方式以及JS注释
+</h2><h3 id="行间事件法">行间事件法
+</h3><p>JS是一种<strong>事件驱动</strong>的语言，一般是在发生某个事件时执行某些代码。
+事件有很多种，例如鼠标单机click、鼠标经过mouseover等。
+并且JS中任何一个事件都有对应的事件<strong>句柄</strong>：
+例如click对应事件的句柄是onclick，mouseover对应句柄是onmouseover……
+所有的事件句柄都是以标签的属性形式存在，例如<code>&lt;input type=&quot;buttom&quot;&gt;</code>就有<code>onclick</code>属性，
+<code>onclick</code>的属性值就是注册的代码，只要出发点击事件，就会执行这段代码。</p>
+<p>举个例子（参考代码<a class="link" href="/append/JavaScript-Learn/001.html" >001</a>），目标是“点击按钮Hello, 弹出对话框，框中显示HelloWorld”。</p>
+<p>怎么实现弹窗？
+JS中有内置的BOM对象<code>window</code>，可以直接用，因此我们直接把弹窗函数<code>&quot;window.alert('Hello world');&quot;</code>写在<code>onclick</code>的属性值中。</p>
+<blockquote>
+<p><font color="#70fa00cc">小TIPS<br></p>
+<ul>
+<li>JS中的一条语句可以以一个分号结尾，也可以没有</li>
+<li><code>window.</code>可以省略</font></li>
+</ul>
+</blockquote>
+<h3 id="页面脚本块嵌入">页面脚本块嵌入
+</h3><p>在HTML中嵌入脚本块，脚本块中的代码自上而下逐行执行。
+<strong>脚本块的位置随意（甚至可以在<code>&lt;html&gt;</code>外），并且可有多个。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;警告1&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;警告2&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>注意，如果脚本块前后有DOM网页元素，则其前面的内容会先显示，然后执行脚本，然后再加载后面的内容。</em></p>
+<h3 id="引入外部js文件">引入外部JS文件
+</h3><p>编写.js文件，然后通过<code>&lt;script src=&quot;path/to/your.js&quot;/&gt;</code>引入。
+引入一次.js文件，其中代码就会执行一次。
+并且，使用引入法的脚本块中的代码不会执行，例如下述弹窗不会出现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/javascript&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/local.js&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;弹窗&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="标识符合关键字">标识符合关键字
+</h2><p>标识符规则和java一样</p>
+<h2 id="变量">变量
+</h2><h3 id="变量的声明与赋值">变量的声明与赋值
+</h3><p>回顾：Java中的变量 ——</p>
+<ul>
+<li>声明：<code>int a;</code>，<code>double b;</code>，<code>string s;</code></li>
+<li>赋值：<code>a = 10;</code>，<code>b = 3.14;</code>，<code>s = &quot;hello;</code></li>
+<li>一行可以声明多个变量<code>int a, b=2, c=3;</code></li>
+</ul>
+<p>Java是强类型编译型语言。</p>
+<p>回到JS —— JS是弱类型非编译（脚本）语言，
+参考代码<a class="link" href="/append/JavaScript-Learn/006-variables.html" >006-变量</a>。</p>
+<ul>
+<li>声明：<code>var variable_name</code>，默认赋值undefined（这就是一个具体的值），声明时可赋值</li>
+<li>赋值：<code>variable_name = value</code></li>
+<li>一行声明多个变量：<code>var a, b = 90, c;</code>，意味着a, c赋值undefined，b赋值90</li>
+</ul>
+<p>重点：JS语言是一种弱类型语言，没有编译阶段，直接浏览器打开解释执行。
+在JS中声明变量时不需要指定变量的数据类型；
+程序在运行过程当中，赋什么类型的值，变量就是什么数据类型，并且变量的数据类型是可变的。</p>
+<p>以下JS代码是可行的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">i</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>    <span class="c1">// i为整型
+</span></span></span><span class="line"><span class="cl"><span class="nx">i</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>  <span class="c1">// 变为布尔型
+</span></span></span><span class="line"><span class="cl"><span class="nx">i</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">i</span> <span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>   <span class="c1">// 浮点型 
+</span></span></span><span class="line"><span class="cl"><span class="nx">i</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="函数的定义和调用">函数的定义和调用
+</h3><p>Java中的方法：<code>[修饰符列表] 返回值类型 方法名(形参列表) {方法体}</code>。例如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>JS中的函数：<code>function 函数名(形参列表) {函数体}</code>。例如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>函数要被调用才会执行，不是定义了就会执行的！
+参考代码<a class="link" href="/append/JavaScript-Learn/007-function-basic.html" >007-函数定义和调用</a>。</p>
+<blockquote>
+<p>TIPS<br></p>
+<ul>
+<li>函数调用时的实参列表不用与形参列表对应，参数从左往右一次配入形参。</li>
+<li>JS函数还有另一种定义方式：<code>函数名 = function(形参列表) {函数体}</code></li>
+<li>函数定义的优先级较高，可以在函数定义前调用（参考代码<a class="link" href="/append/JavaScript-Learn/008-function-basic.html" >008-函数定义和调用</a>）</li>
+</ul>
+</blockquote>
+<h3 id="局部变量与全局变量">局部变量与全局变量
+</h3><p>全局变量：在函数体外声明的变量，称为全局变量，在浏览器打开页面时分配空间，直到关闭才销毁；</p>
+<p>局部变量：函数调用时分配空间，函数执行结束后内存释放</p>
+<p>特别的，若一个变量声明时（应该说是定义时赋值）没有用var关键字，则无论是在哪声明的，默认为全局变量。
+使用这种特性的变量必须声明时赋值，不能既不用var又不赋值。
+参考代码<a class="link" href="/append/JavaScript-Learn/009-local-global-var.html" >009-局部全局变量</a>中“特性”。</p>
+<blockquote>
+<p><font color="#f7b500">Topic - 函数可以重载吗<br>
+不可以，同名函数只取最后定义的那个函数来解释，其他同名函数直接消失！根本不可能执行，所以不是覆盖（因为JS函数定义优先级高先解释）。参考代码<a class="link" href="/append/JavaScript-Learn/010.html" >010</a></font></p>
+</blockquote>
+<h2 id="js数据类型">JS数据类型
+</h2><h3 id="ecmascript6版本之前的数据类型有6种">ECMASCRIPT6版本之前的数据类型有6种
+</h3><ul>
+<li>Undefined</li>
+<li>Numebr</li>
+<li>String</li>
+<li>Null（通过<code>=null</code>赋予）</li>
+<li>Boolean</li>
+<li>Object</li>
+</ul>
+<p>其中Undefined, Number, String, Boolean， Null都属于基本数据类型，
+Object属于对象类型（引用数据类型）。</p>
+<p>ECMASCRIPT6版本后的数据类型有8种，多了Symbol, Bigint。</p>
+<h3 id="typeof运算符">typeof运算符（@@@@@）
+</h3><p>typeof运算符可以在代码运行时动态的获取变量的数据类型，使用方法<code>typeof variable_name</code>。
+typeof算符的运算结果的值为以下6个字符串之一（注意是小写）：</p>
+<ul>
+<li>undefined</li>
+<li>numebr</li>
+<li>string</li>
+<li>boolean</li>
+<li>object（null类型数据通过typeof算符作用结果为object）</li>
+<li>function</li>
+</ul>
+<p>在JS中判断字符串是否相等应使用<code>==</code>算符，参考代码<a class="link" href="/append/JavaScript-Learn/011-datatype.html" >011-数据类型</a>。</p>
+<h3 id="numebr类型">Numebr类型
+</h3><h4 id="number类型的数据">Number类型的数据
+</h4><p>类比：Number类型代表了Java中的<code>byte, short, int, long, float, double</code>。</p>
+<p>Number类型都有哪些值？以下均可取
+- -1
+- 0
+- 1
+- 12.34
+- NaN
+- Infinity</p>
+<p>参考代码<a class="link" href="/append/JavaScript-Learn/014-number.html" >014-Number类型</a></p>
+<p>NaN这个值意思是非数，但数据的类型仍是Number，当一个数学表达式运算最终无法返回数字时，值就是NaN。例如<code>100 / &quot;abc&quot;</code>的运算结果就是NaN。</p>
+<blockquote>
+<p>TIPS<br>
+运算式<code>100 + &quot;abc&quot;</code>结果是字符串<code>&quot;100abc&quot;</code>，
+所以这个表达式不是数学表达式，而是字符串拼接的意思，所以返回值类型不是Number
+<br>JS中10/3结果是浮点3.33333</p>
+</blockquote>
+<p>Infinity顾名思义就是无穷大（注意是正无穷）。</p>
+<h4 id="isnan-函数">isNaN() 函数
+</h4><p>形参列表：一个变量<br>
+返回值：Boolean，true代表传参是NaN，否则不是<br>
+作用：用于判断数据是不是数</p>
+<p>注意，这个函数会<strong>首先尝试将数据转换成数字</strong>，若失败则结果是true；
+转换成功则结果为false。
+可以测试</p>
+<ul>
+<li>布尔类型<code>true</code>转换为数字类型是1，<code>false</code>转为0</li>
+<li>数字字符串可以转化为数</li>
+</ul>
+<h4 id="number函数">Number()函数
+</h4><p>Number()函数将不是Number类型的数据转为Numeber类型，
+它把**可以转为Number类型（也就是isNaN()返回true的类型）**的数据转为数字；
+把不可转为Number类型的数据转为NaN；若参数已经是Number类型，保持不变。</p>
+<h4 id="parseint函数">parseInt()函数
+</h4><p>把字符串表示的小数（或者小数）取整数部；注意不是向下取整。
+实际上对于字符串参数，类似于把第一个小数点前面的部分截出来转为数字。
+无法转化的，输出NaN。</p>
+<h4 id="js数学类介绍">JS数学类介绍
+</h4><p>向上取整：<code>Math.ceil(123.456)</code></p>
+<h3 id="boolean类型">Boolean类型
+</h3><p>Boolean类型是原始类型，只有两个值：<code>true</code>，<code>false</code>。</p>
+<h4 id="boolean函数">Boolean()函数
+</h4><p>把非Boolean类型数据转为Boolean类型的数据。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>数据</th>
+          <th>类型</th>
+          <th>转化结果</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>Number</td>
+          <td>false</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>Number</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>&lsquo;abc&rsquo;</td>
+          <td>String</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>''</td>
+          <td>String</td>
+          <td>false</td>
+      </tr>
+      <tr>
+          <td>NaN</td>
+          <td>Number</td>
+          <td>false</td>
+      </tr>
+      <tr>
+          <td>Infinity</td>
+          <td>Number</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>null</td>
+          <td>Null</td>
+          <td>false</td>
+      </tr>
+      <tr>
+          <td>undefined</td>
+          <td>Undefined</td>
+          <td>false</td>
+      </tr>
+      <tr>
+          <td>Object</td>
+          <td>Object</td>
+          <td>true</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>规律：只有<strong>有东西</strong>，结果就是true。
+Boolean()函数不需要我们手动调用，它会被隐式调用。
+例如<code>name=&quot;zhansan&quot;; if(name) {...}</code>中，JS将自动把name变量转为Boolean类型并判断真伪。<br>
+参考代码<a class="link" href="/append/JavaScript-Learn/015.html" >015-Boolean</a>。</p>
+<h3 id="string">String
+</h3><p>String是原始类型。怎么定义一个字符串？在JS中有两种创建方式：</p>
+<ol>
+<li><code>var str = &quot;string&quot;</code> —— 类型是String</li>
+<li><code>var s = new String('string')</code> —— 类型是Object，使用了Object类的子类String，这是JS内置的可以直接用</li>
+</ol>
+<p>不论哪种字符串，其方法和属性都是通用的。以下介绍常用属性和方法。
+参考代码<a class="link" href="/append/JavaScript-Learn/016-string.html" >016</a></p>
+<h4 id="length属性">length属性
+</h4><p>获取字符串长度</p>
+<h4 id="charat">charAt()
+</h4><p>获取指定下标位置的字符，下标从0开始</p>
+<h4 id="concat">concat()
+</h4><p>拼接字符串</p>
+<h4 id="indexof">indexOf()
+</h4><p>获取某个字符串在当前字符串第一次出现的索引</p>
+<h4 id="lastindexof">lastIndexOf()
+</h4><p>获取某个字符串在当前字符串末次出现的索引</p>
+<h4 id="replace">replace()
+</h4><p><code>str.replace(s1, s2)</code>把str中<strong>首次出现</strong>的s1替换为s2（只替换一次）。
+替换所有需要使用正则表达式。</p>
+<h4 id="split">split()
+</h4><p><code>str.split(s)</code>，把str以s为分割拆分为若干字符串，返回一个数组</p>
+<h4 id="substr和subtring">substr()和subtring()
+</h4><p>若只有一个参数<code>n</code>，其行为相同，都是取字符串index为n到index为末尾的字串。</p>
+<p>若两个参数，含义如下<br></p>
+<ul>
+<li><code>substr(startIndex, length)</code></li>
+<li><code>substring(start, end)</code>且不包括end</li>
+</ul>
+<h4 id="tolowercase和touppercase">toLowerCase()和toUpperCase()
+</h4><p>大小写转化</p>
+<h3 id="object">Object
+</h3><p>在JS中内置一个Object类型，可视为所有类型的基类/超类。
+JS中默认定义的类型如无特殊说明，默认继承Object。
+Object类型中的通用属性和方法如下。
+参考代码<a class="link" href="/append/JavaScript-Learn/017.html" >017</a></p>
+<h4 id="prototype属性">prototype属性
+</h4><p>意为原型，这个属性可以为对象动态扩展属性和方法。例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 演示prototype属性
+</span></span></span><span class="line"><span class="cl"><span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">doSome</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;测试Prototype属性&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">o</span><span class="p">.</span><span class="nx">doSome</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过prototype属性为Object拓展了doSome()方法。
+实际上，prototype属性可以为其它类型也扩展属性和方法，例如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nb">String</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sub</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">start</span><span class="p">,</span> <span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="nx">start</span><span class="p">,</span> <span class="nx">length</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="c1">// 扩展String的方法
+</span></span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;1234567&#34;</span><span class="p">.</span><span class="nx">sub</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="类">类
+</h2><h3 id="定义类">定义类
+</h3><p>方法一</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">function 类名(形参列表) {
+</span></span><span class="line"><span class="cl">    this.属性名 = 参数
+</span></span><span class="line"><span class="cl">    this.方法名 = function() {...}
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>方法二</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">类名 = function(形参列表) {
+</span></span><span class="line"><span class="cl">    this.属性名 = 参数
+</span></span><span class="line"><span class="cl">    this.方法名 = function() {...}
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>所以说，function创建一个函数，也创建一个同名类（或者理解为创建一个东西，功能与调用方法有关）。
+若通过<code>函数名();</code>调用，则是当作函数来用；
+若是通过<code>var obj = new 类名()</code>创建对象，则是当作类来用，会在堆中分配空间，
+而obj是堆上对象的引用。</p>
 </section>
 
 
@@ -692,7 +1172,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.c19ca134f5e1f56dd311fd45eb0f5e226f3f84a1d4d8432a216bb50f4341c496.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

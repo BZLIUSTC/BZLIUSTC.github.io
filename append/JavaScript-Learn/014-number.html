@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Number类型</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 无穷和非数
+            var none = 100 / "abc"
+            var inf = -1 / 0
+            console.log(none)
+            console.log(typeof none)
+            console.log(inf)
+            console.log(typeof inf)
+
+            // isNaN()的特性
+            function test(x) {
+                console.log("变量值是 " + x)
+                console.log(" 类型是 " + typeof x)
+                console.log("   "+isNaN(x) + "是NaN")
+            }
+            test(1/'a')
+            test(1/0)
+            test(true)
+            test('Github')
+            test('123')
+            test("123")
+            // Number()
+            function convert(x) {
+                x_ =  Number(x)
+                console.log("变量值是 " + x)
+                console.log(" 转化后是 " + x_)
+            }
+            convert(1/'a')
+            convert(1/0)
+            convert(true)
+            convert('Github')
+            convert('123')
+            convert("123")
+            convert("123.456")
+
+            // parseInt
+            function parsei(x) {
+                x_ =  parseInt(x)
+                console.log("变量值是 " + x)
+                console.log(" 取整后是 " + x_)
+            }
+            parsei("123.456")
+            parsei(123.456)
+            parsei("-123.5")
+            parsei("123.呵呵sawe")
+            parsei("呵呵123.345")
+            parsei("123.456.789")
+            // 使用Math数学类
+            function toceil(x) {
+                x_ =  Math.ceil(x)
+                console.log("变量值是 " + x)
+                console.log(" 转化后是 " + x_)
+            }
+            toceil(123.456)
+            toceil(123.000)
+            
+        </script>
+        <input type="button" value="测试" onclick="sum(true, 12)"/>
+    </body>
+</html>

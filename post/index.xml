@@ -14,8 +14,398 @@
         
         <guid>http://localhost:1313/p/javascript-learn/</guid>
         <description>&lt;img src="http://localhost:1313/p/javascript-learn/front-page.jpeg" alt="Featured image of post JavaScript Learn" /&gt;&lt;p&gt;本文是Javascript学习笔记。&lt;/p&gt;
-&lt;h2 id=&#34;大标题&#34;&gt;大标题！
-&lt;/h2&gt;</description>
+&lt;h2 id=&#34;javascript概述&#34;&gt;JavaScript概述
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;简称 JS&lt;/li&gt;
+&lt;li&gt;JavaScript语言是一种脚本语言,JavaScript的“目标程序”是以普通文本的形式保存。用记事本是可以直接打开的。&lt;/li&gt;
+&lt;li&gt;JavaScript和JScript的关系……&lt;/li&gt;
+&lt;li&gt;JavaScript主要用来操作HTML中的节点,产生动态效果；JS是一门编程语言，专门用来操作HTML页面中的节点，产生动态效果&lt;/li&gt;
+&lt;li&gt;JavaScript和 Java的区别：毫无关系&lt;/li&gt;
+&lt;li&gt;（重要）JS调试要充分利用浏览器开发者页面的&lt;strong&gt;控制台，查看器，网络&lt;/strong&gt;面板&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;javascript包括三块ecmascriptdombom&#34;&gt;JavaScript包括三块:ECMAScript、DOM、BOM
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;ECMAScript是ECMA制定的262标准，JavaScript和JScript都遵守这个标准；ECMAScript是JavaScript核心语法&lt;/li&gt;
+&lt;li&gt;Document Object Model编程是通过JavaScript对HTML中的dom节点进行操作，DOM是有规范的，DOM规范是W3C制定的&lt;/li&gt;
+&lt;li&gt;Browser Object Modle编程是对浏览器本身操作，例如：前进、后退、地址栏、关闭窗口、弹窗等。由于浏览器有不同的厂家制造，所以BOM缺少规范，一般只是有一个默认的行业规范。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;嵌入js的三种方式以及js注释&#34;&gt;嵌入JS的三种方式以及JS注释
+&lt;/h2&gt;&lt;h3 id=&#34;行间事件法&#34;&gt;行间事件法
+&lt;/h3&gt;&lt;p&gt;JS是一种&lt;strong&gt;事件驱动&lt;/strong&gt;的语言，一般是在发生某个事件时执行某些代码。
+事件有很多种，例如鼠标单机click、鼠标经过mouseover等。
+并且JS中任何一个事件都有对应的事件&lt;strong&gt;句柄&lt;/strong&gt;：
+例如click对应事件的句柄是onclick，mouseover对应句柄是onmouseover……
+所有的事件句柄都是以标签的属性形式存在，例如&lt;code&gt;&amp;lt;input type=&amp;quot;buttom&amp;quot;&amp;gt;&lt;/code&gt;就有&lt;code&gt;onclick&lt;/code&gt;属性，
+&lt;code&gt;onclick&lt;/code&gt;的属性值就是注册的代码，只要出发点击事件，就会执行这段代码。&lt;/p&gt;
+&lt;p&gt;举个例子（参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/001.html&#34; &gt;001&lt;/a&gt;），目标是“点击按钮Hello, 弹出对话框，框中显示HelloWorld”。&lt;/p&gt;
+&lt;p&gt;怎么实现弹窗？
+JS中有内置的BOM对象&lt;code&gt;window&lt;/code&gt;，可以直接用，因此我们直接把弹窗函数&lt;code&gt;&amp;quot;window.alert(&#39;Hello world&#39;);&amp;quot;&lt;/code&gt;写在&lt;code&gt;onclick&lt;/code&gt;的属性值中。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#70fa00cc&#34;&gt;小TIPS&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JS中的一条语句可以以一个分号结尾，也可以没有&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;window.&lt;/code&gt;可以省略&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;页面脚本块嵌入&#34;&gt;页面脚本块嵌入
+&lt;/h3&gt;&lt;p&gt;在HTML中嵌入脚本块，脚本块中的代码自上而下逐行执行。
+&lt;strong&gt;脚本块的位置随意（甚至可以在&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;外），并且可有多个。&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;警告1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;警告2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;注意，如果脚本块前后有DOM网页元素，则其前面的内容会先显示，然后执行脚本，然后再加载后面的内容。&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;引入外部js文件&#34;&gt;引入外部JS文件
+&lt;/h3&gt;&lt;p&gt;编写.js文件，然后通过&lt;code&gt;&amp;lt;script src=&amp;quot;path/to/your.js&amp;quot;/&amp;gt;&lt;/code&gt;引入。
+引入一次.js文件，其中代码就会执行一次。
+并且，使用引入法的脚本块中的代码不会执行，例如下述弹窗不会出现：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;text/javascript&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;js/local.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;弹窗&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;标识符合关键字&#34;&gt;标识符合关键字
+&lt;/h2&gt;&lt;p&gt;标识符规则和java一样&lt;/p&gt;
+&lt;h2 id=&#34;变量&#34;&gt;变量
+&lt;/h2&gt;&lt;h3 id=&#34;变量的声明与赋值&#34;&gt;变量的声明与赋值
+&lt;/h3&gt;&lt;p&gt;回顾：Java中的变量 ——&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;声明：&lt;code&gt;int a;&lt;/code&gt;，&lt;code&gt;double b;&lt;/code&gt;，&lt;code&gt;string s;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;赋值：&lt;code&gt;a = 10;&lt;/code&gt;，&lt;code&gt;b = 3.14;&lt;/code&gt;，&lt;code&gt;s = &amp;quot;hello;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;一行可以声明多个变量&lt;code&gt;int a, b=2, c=3;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Java是强类型编译型语言。&lt;/p&gt;
+&lt;p&gt;回到JS —— JS是弱类型非编译（脚本）语言，
+参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/006-variables.html&#34; &gt;006-变量&lt;/a&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;声明：&lt;code&gt;var variable_name&lt;/code&gt;，默认赋值undefined（这就是一个具体的值），声明时可赋值&lt;/li&gt;
+&lt;li&gt;赋值：&lt;code&gt;variable_name = value&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;一行声明多个变量：&lt;code&gt;var a, b = 90, c;&lt;/code&gt;，意味着a, c赋值undefined，b赋值90&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;重点：JS语言是一种弱类型语言，没有编译阶段，直接浏览器打开解释执行。
+在JS中声明变量时不需要指定变量的数据类型；
+程序在运行过程当中，赋什么类型的值，变量就是什么数据类型，并且变量的数据类型是可变的。&lt;/p&gt;
+&lt;p&gt;以下JS代码是可行的：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;    &lt;span class=&#34;c1&#34;&gt;// i为整型
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 变为布尔型
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;3.14&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;// 浮点型 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;函数的定义和调用&#34;&gt;函数的定义和调用
+&lt;/h3&gt;&lt;p&gt;Java中的方法：&lt;code&gt;[修饰符列表] 返回值类型 方法名(形参列表) {方法体}&lt;/code&gt;。例如&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;JS中的函数：&lt;code&gt;function 函数名(形参列表) {函数体}&lt;/code&gt;。例如&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;b&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;函数要被调用才会执行，不是定义了就会执行的！
+参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/007-function-basic.html&#34; &gt;007-函数定义和调用&lt;/a&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TIPS&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;函数调用时的实参列表不用与形参列表对应，参数从左往右一次配入形参。&lt;/li&gt;
+&lt;li&gt;JS函数还有另一种定义方式：&lt;code&gt;函数名 = function(形参列表) {函数体}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;函数定义的优先级较高，可以在函数定义前调用（参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/008-function-basic.html&#34; &gt;008-函数定义和调用&lt;/a&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;局部变量与全局变量&#34;&gt;局部变量与全局变量
+&lt;/h3&gt;&lt;p&gt;全局变量：在函数体外声明的变量，称为全局变量，在浏览器打开页面时分配空间，直到关闭才销毁；&lt;/p&gt;
+&lt;p&gt;局部变量：函数调用时分配空间，函数执行结束后内存释放&lt;/p&gt;
+&lt;p&gt;特别的，若一个变量声明时（应该说是定义时赋值）没有用var关键字，则无论是在哪声明的，默认为全局变量。
+使用这种特性的变量必须声明时赋值，不能既不用var又不赋值。
+参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/009-local-global-var.html&#34; &gt;009-局部全局变量&lt;/a&gt;中“特性”。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#f7b500&#34;&gt;Topic - 函数可以重载吗&lt;br&gt;
+不可以，同名函数只取最后定义的那个函数来解释，其他同名函数直接消失！根本不可能执行，所以不是覆盖（因为JS函数定义优先级高先解释）。参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/010.html&#34; &gt;010&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;js数据类型&#34;&gt;JS数据类型
+&lt;/h2&gt;&lt;h3 id=&#34;ecmascript6版本之前的数据类型有6种&#34;&gt;ECMASCRIPT6版本之前的数据类型有6种
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Undefined&lt;/li&gt;
+&lt;li&gt;Numebr&lt;/li&gt;
+&lt;li&gt;String&lt;/li&gt;
+&lt;li&gt;Null（通过&lt;code&gt;=null&lt;/code&gt;赋予）&lt;/li&gt;
+&lt;li&gt;Boolean&lt;/li&gt;
+&lt;li&gt;Object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中Undefined, Number, String, Boolean， Null都属于基本数据类型，
+Object属于对象类型（引用数据类型）。&lt;/p&gt;
+&lt;p&gt;ECMASCRIPT6版本后的数据类型有8种，多了Symbol, Bigint。&lt;/p&gt;
+&lt;h3 id=&#34;typeof运算符&#34;&gt;typeof运算符（@@@@@）
+&lt;/h3&gt;&lt;p&gt;typeof运算符可以在代码运行时动态的获取变量的数据类型，使用方法&lt;code&gt;typeof variable_name&lt;/code&gt;。
+typeof算符的运算结果的值为以下6个字符串之一（注意是小写）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;undefined&lt;/li&gt;
+&lt;li&gt;numebr&lt;/li&gt;
+&lt;li&gt;string&lt;/li&gt;
+&lt;li&gt;boolean&lt;/li&gt;
+&lt;li&gt;object（null类型数据通过typeof算符作用结果为object）&lt;/li&gt;
+&lt;li&gt;function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在JS中判断字符串是否相等应使用&lt;code&gt;==&lt;/code&gt;算符，参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/011-datatype.html&#34; &gt;011-数据类型&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;numebr类型&#34;&gt;Numebr类型
+&lt;/h3&gt;&lt;h4 id=&#34;number类型的数据&#34;&gt;Number类型的数据
+&lt;/h4&gt;&lt;p&gt;类比：Number类型代表了Java中的&lt;code&gt;byte, short, int, long, float, double&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;Number类型都有哪些值？以下均可取
+- -1
+- 0
+- 1
+- 12.34
+- NaN
+- Infinity&lt;/p&gt;
+&lt;p&gt;参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/011-datatype.html&#34; &gt;014-Number类型&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NaN这个值意思是非数，但数据的类型仍是Number，当一个数学表达式运算最终无法返回数字时，值就是NaN。例如&lt;code&gt;100 / &amp;quot;abc&amp;quot;&lt;/code&gt;的运算结果就是NaN。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TIPS&lt;br&gt;
+运算式&lt;code&gt;100 + &amp;quot;abc&amp;quot;&lt;/code&gt;结果是字符串&lt;code&gt;&amp;quot;100abc&amp;quot;&lt;/code&gt;，
+所以这个表达式不是数学表达式，而是字符串拼接的意思，所以返回值类型不是Number
+&lt;br&gt;JS中10/3结果是浮点3.33333&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Infinity顾名思义就是无穷大（注意是正无穷）。&lt;/p&gt;
+&lt;h4 id=&#34;isnan-函数&#34;&gt;isNaN() 函数
+&lt;/h4&gt;&lt;p&gt;形参列表：一个变量&lt;br&gt;
+返回值：Boolean，true代表传参是NaN，否则不是&lt;br&gt;
+作用：用于判断数据是不是数&lt;/p&gt;
+&lt;p&gt;注意，这个函数会&lt;strong&gt;首先尝试将数据转换成数字&lt;/strong&gt;，若失败则结果是true；
+转换成功则结果为false。
+可以测试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;布尔类型&lt;code&gt;true&lt;/code&gt;转换为数字类型是1，&lt;code&gt;false&lt;/code&gt;转为0&lt;/li&gt;
+&lt;li&gt;数字字符串可以转化为数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;number函数&#34;&gt;Number()函数
+&lt;/h4&gt;&lt;p&gt;Number()函数将不是Number类型的数据转为Numeber类型，
+它把**可以转为Number类型（也就是isNaN()返回true的类型）**的数据转为数字；
+把不可转为Number类型的数据转为NaN；若参数已经是Number类型，保持不变。&lt;/p&gt;
+&lt;h4 id=&#34;parseint函数&#34;&gt;parseInt()函数
+&lt;/h4&gt;&lt;p&gt;把字符串表示的小数（或者小数）取整数部；注意不是向下取整。
+实际上对于字符串参数，类似于把第一个小数点前面的部分截出来转为数字。
+无法转化的，输出NaN。&lt;/p&gt;
+&lt;h4 id=&#34;js数学类介绍&#34;&gt;JS数学类介绍
+&lt;/h4&gt;&lt;p&gt;向上取整：&lt;code&gt;Math.ceil(123.456)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;boolean类型&#34;&gt;Boolean类型
+&lt;/h3&gt;&lt;p&gt;Boolean类型是原始类型，只有两个值：&lt;code&gt;true&lt;/code&gt;，&lt;code&gt;false&lt;/code&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;boolean函数&#34;&gt;Boolean()函数
+&lt;/h4&gt;&lt;p&gt;把非Boolean类型数据转为Boolean类型的数据。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;数据&lt;/th&gt;
+          &lt;th&gt;类型&lt;/th&gt;
+          &lt;th&gt;转化结果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;Number&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Number&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&amp;lsquo;abc&amp;rsquo;&lt;/td&gt;
+          &lt;td&gt;String&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&#39;&#39;&lt;/td&gt;
+          &lt;td&gt;String&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;NaN&lt;/td&gt;
+          &lt;td&gt;Number&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Infinity&lt;/td&gt;
+          &lt;td&gt;Number&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;null&lt;/td&gt;
+          &lt;td&gt;Null&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;undefined&lt;/td&gt;
+          &lt;td&gt;Undefined&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Object&lt;/td&gt;
+          &lt;td&gt;Object&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;规律：只有&lt;strong&gt;有东西&lt;/strong&gt;，结果就是true。
+Boolean()函数不需要我们手动调用，它会被隐式调用。
+例如&lt;code&gt;name=&amp;quot;zhansan&amp;quot;; if(name) {...}&lt;/code&gt;中，JS将自动把name变量转为Boolean类型并判断真伪。&lt;br&gt;
+参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/015.html&#34; &gt;015-Boolean&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;string&#34;&gt;String
+&lt;/h3&gt;&lt;p&gt;String是原始类型。怎么定义一个字符串？在JS中有两种创建方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;var str = &amp;quot;string&amp;quot;&lt;/code&gt; —— 类型是String&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;var s = new String(&#39;string&#39;)&lt;/code&gt; —— 类型是Object，使用了Object类的子类String，这是JS内置的可以直接用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;不论哪种字符串，其方法和属性都是通用的。以下介绍常用属性和方法。
+参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/016-string.html&#34; &gt;016&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;length属性&#34;&gt;length属性
+&lt;/h4&gt;&lt;p&gt;获取字符串长度&lt;/p&gt;
+&lt;h4 id=&#34;charat&#34;&gt;charAt()
+&lt;/h4&gt;&lt;p&gt;获取指定下标位置的字符，下标从0开始&lt;/p&gt;
+&lt;h4 id=&#34;concat&#34;&gt;concat()
+&lt;/h4&gt;&lt;p&gt;拼接字符串&lt;/p&gt;
+&lt;h4 id=&#34;indexof&#34;&gt;indexOf()
+&lt;/h4&gt;&lt;p&gt;获取某个字符串在当前字符串第一次出现的索引&lt;/p&gt;
+&lt;h4 id=&#34;lastindexof&#34;&gt;lastIndexOf()
+&lt;/h4&gt;&lt;p&gt;获取某个字符串在当前字符串末次出现的索引&lt;/p&gt;
+&lt;h4 id=&#34;replace&#34;&gt;replace()
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;str.replace(s1, s2)&lt;/code&gt;把str中&lt;strong&gt;首次出现&lt;/strong&gt;的s1替换为s2（只替换一次）。
+替换所有需要使用正则表达式。&lt;/p&gt;
+&lt;h4 id=&#34;split&#34;&gt;split()
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;str.split(s)&lt;/code&gt;，把str以s为分割拆分为若干字符串，返回一个数组&lt;/p&gt;
+&lt;h4 id=&#34;substr和subtring&#34;&gt;substr()和subtring()
+&lt;/h4&gt;&lt;p&gt;若只有一个参数&lt;code&gt;n&lt;/code&gt;，其行为相同，都是取字符串index为n到index为末尾的字串。&lt;/p&gt;
+&lt;p&gt;若两个参数，含义如下&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;substr(startIndex, length)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;substring(start, end)&lt;/code&gt;且不包括end&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tolowercase和touppercase&#34;&gt;toLowerCase()和toUpperCase()
+&lt;/h4&gt;&lt;p&gt;大小写转化&lt;/p&gt;
+&lt;h3 id=&#34;object&#34;&gt;Object
+&lt;/h3&gt;&lt;p&gt;在JS中内置一个Object类型，可视为所有类型的基类/超类。
+JS中默认定义的类型如无特殊说明，默认继承Object。
+Object类型中的通用属性和方法如下。
+参考代码&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/JavaScript-Learn/017.html&#34; &gt;017&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;prototype属性&#34;&gt;prototype属性
+&lt;/h4&gt;&lt;p&gt;意为原型，这个属性可以为对象动态扩展属性和方法。例如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;o&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 演示prototype属性
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;prototype&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;doSome&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;测试Prototype属性&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;doSome&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;通过prototype属性为Object拓展了doSome()方法。
+实际上，prototype属性可以为其它类型也扩展属性和方法，例如&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;prototype&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;sub&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;start&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;substr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;start&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 扩展String的方法
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;1234567&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;sub&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;类&#34;&gt;类
+&lt;/h2&gt;&lt;h3 id=&#34;定义类&#34;&gt;定义类
+&lt;/h3&gt;&lt;p&gt;方法一&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;function 类名(形参列表) {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    this.属性名 = 参数
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    this.方法名 = function() {...}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;方法二&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;类名 = function(形参列表) {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    this.属性名 = 参数
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    this.方法名 = function() {...}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;所以说，function创建一个函数，也创建一个同名类（或者理解为创建一个东西，功能与调用方法有关）。
+若通过&lt;code&gt;函数名();&lt;/code&gt;调用，则是当作函数来用；
+若是通过&lt;code&gt;var obj = new 类名()&lt;/code&gt;创建对象，则是当作类来用，会在堆中分配空间，
+而obj是堆上对象的引用。&lt;/p&gt;</description>
         </item>
         <item>
         <title>CSS Learn</title>

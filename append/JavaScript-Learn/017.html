@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Object</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var o = new Object()
+            // 演示prototype属性
+            Object.prototype.doSome = function() {
+                console.log("测试Prototype属性")
+            } // 拓展方法
+            Object.prototype.id = "Object_id" // 拓展属性
+            o.doSome()
+            console.log(o.id)
+
+            String.prototype.sub = function(start, length) {
+                return this.substr(start, length)
+            } // 扩展String的方法
+            console.log("1234567".sub(2,3))
+        </script>
+    </body>
+</html>

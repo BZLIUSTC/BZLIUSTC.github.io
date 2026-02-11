@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>局部和全局变量</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 就近原则
+            var name = "张三"
+            function sayHello() {
+                var name = "李四"
+                alert("你好" + name)
+            }
+            alert(name) // 使用张三
+
+            // 特性
+            function boo() {
+                email = 'outlook.com'
+            }
+            function noo() {
+                var mail = '163.com'
+            }
+            boo()
+            noo()
+            alert("email: "+email)  // 正常，因为调用函数时生成了email全局变量; 若不调用一次boo()也不会有email全局变量
+            alert("mail: "+mail)    // 报错，没有mail变量
+        </script>
+        <input type="button" value="Hello" onclick="sayHello()"/> <!-- 使用李四 -->
+        <input type="button" value="Hello2" onclick="alert(name)"/> <!-- 无作用！ -->
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>数据类型</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 六种数据类型
+            // console.log是打印在控制台的意思
+            var a1, a2=10, a3='abc', a4=false, a5=null, a6=sum
+            var a7 = new Object()
+            console.log(typeof a1)
+            console.log(typeof a2)
+            console.log(typeof a3)
+            console.log(typeof a4)
+            console.log(typeof a5)
+            console.log(typeof a6)
+            console.log(typeof sum)
+            console.log(typeof a7)
+
+            // sum函数计算数字之和，若类型不匹配应报错
+            // 所以需要 类型检测
+            function sum(a, b) {
+                if(typeof a == typeof b && typeof a =="number") {
+                    alert("a+b=" + (a+b))
+                    return a + b}
+                alert("非法参数; 类型应为number")
+            }
+        </script>
+        <input type="button" value="SUM" onclick="sum(12,34, 15.67)"/>
+        <input type="button" value="BadSUM" onclick="sum('abc', 12.43)"/>
+    </body>
+</html>
