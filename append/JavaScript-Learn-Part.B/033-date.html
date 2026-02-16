@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Date</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var time = new Date()
+            console.log(time)
+            // 格式转化
+            translateDate = function(dt) {
+                var y = dt.getFullYear()
+                var mm = dt.getMonth() + 1
+                var d = dt.getDate()
+                var w = dt.getDay()
+                console.log(
+                    y+"年"+mm+"月"+d+"日 星期"+w
+                )
+            }
+            translateDate(time)
+            var localTimeString = time.toLocaleString()
+            console.log(localTimeString)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>文本框</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                username_textElt = document.getElementById('username_text')
+                submitElt = document.getElementById('submit')
+                
+                submitElt.onclick = function() {
+                    var username = username_textElt.value;
+                    alert(username)
+                }
+            }
+        </script>
+        Username:
+        <input type="text" id="username_text" name="username"/><br>
+        <input type="submit" id="submit" value="提交用户名"/>
+    </body>
+</html>
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>表单验证</title>
+        <style type="text/css">
+            .error {
+                font-size: 12px;
+                color: red; 
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                var usernameElt = document.getElementById('usernameInput')
+                var passwdElt = document.getElementById('passwdInput')
+                var confirmPasswdElt = document.getElementById('confirmInput')
+                var submitBtnElt = document.getElementById('submitBtn')
+                var formElt = document.getElementById('myForm')
+                // 用户名
+                usernameElt.onblur = function() {
+                    console.log('username失去焦点, 要开始验证')
+                    var name = usernameElt.value.trim() // 去除字符串前后空格
+                    // 不能为空
+                    if(name == "") {
+                        document.getElementById('nameErrNotice').innerHTML = "用户名不能为空"
+                    } else if(name.length<6 || name.length>14) {
+                        // 长度检查
+                        document.getElementById('nameErrNotice').innerHTML = "用户名长度应为6-14字符"
+                    } else{
+                        var regExp = /^[a-zA-Z0-9]+$/
+                        if (regExp.test(name) == false) {
+                            document.getElementById('nameErrNotice').innerHTML = "用户名只能包含字母和数字"
+                        } else {
+                            document.getElementById('nameErrNotice').innerHTML = ""
+                        }
+                    }
+
+                }
+                usernameElt.onfocus = function() {
+                    // 清除提示
+                    document.getElementById('nameErrNotice').innerHTML = ""
+                }
+                // 密码
+                confirmPasswdElt.onblur = function() {
+                    var password = passwdElt.value
+                    var confirmpassword = confirmPasswdElt.value
+                    if(password != confirmpassword) {
+                        document.getElementById('passwdErrNotice').style.color = 'red'
+                        document.getElementById('passwdErrNotice').innerHTML = "密码不一致"
+                    } else {
+                        document.getElementById('passwdErrNotice').style.color = 'green'
+                        document.getElementById('passwdErrNotice').innerHTML = "密码一致"
+                    }
+                }
+                confirmPasswdElt.onfocus = function() {
+                    document.getElementById('passwdErrNotice').innerHTML = ""
+                }
+                // 提交按钮
+                submitBtnElt.onclick = function() {
+                    usernameElt.focus()
+                    usernameElt.blur()
+                    confirmPasswdElt.focus()
+                    confirmPasswdElt.blur()
+                    if(document.getElementById('nameErrNotice').innerHTML == "" && (document.getElementById('passwdErrNotice').innerHTML == "" || document.getElementById('passwdErrNotice').innerHTML == "密码一致")) {
+                        console.log('提交')
+                        formElt.submit()
+                    } else {
+                        console.log('Block')
+                        console.log(document.getElementById('passwdErrNotice').innerHTML)
+                        console.log(document.getElementById('nameErrNotice').innerHTML)
+                    }
+                }
+            }
+        </script>
+        <form action="127.0.1.1" id="myForm">
+            用户名<input type="text" name="username" id="usernameInput"/>
+            <span id="nameErrNotice" class="error"></span>
+            <br>
+            密码<input type="password" name="passwd" id="passwdInput"/>
+            <br>
+            确认密码<input type="password" id="confirmInput"/>
+            <span id="passwdErrNotice" class="error"></span>
+            <br>
+            <!-- <input type="submit" balue="注册" id="submitInput"/><br> -->
+            <input type="button" id="submitBtn" value="注册"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>JSON</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 创建JSON
+            var students = {
+                "total"     : 3,
+                "data"      : [
+                    {
+                        "name"  : '张三',
+                        "age"   : 20
+                    },
+                    {
+                        "name"  : '李四',
+                        "age"   : 19
+                    },
+                    {
+                        "name"  : '王五',
+                        "age"   : 23
+                    }
+                ]
+            }
+            console.log('总人数'+students.total+"人")
+            stu_arr = students.data
+            for(var i=0; i<stu_arr.length; i++) {
+                console.log(stu_arr[i].name+stu_arr[i].age+"岁")
+            }
+        </script>
+    </body>
+</html>

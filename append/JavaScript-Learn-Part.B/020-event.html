@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>事件</title>
+        <style type="text/css">
+            input {
+                border: 1px solid black;
+                width: 100px; 
+                height: 20px;
+            }
+            #mousediv {
+                border: 1px solid black; 
+                background-color: aqua;
+                width: 100px;
+                height: 120px ;
+                font-size: 20px;
+                align-content: center;
+            }
+        </style>
+        <!-- 测试onload: 页面加载完成时触发 -->
+        <body onload="console.log('页面加载完成！')">
+            测试失去焦点
+            <input type="text" onblur="console.log('失去焦点')"/><br>
+            测试得到焦点
+            <input type="text" onfocus="console.log('得到焦点')"/><br>
+            测试单击
+            <input type="button" onclick="console.log('单击')" value="CLICK事件"/><br>
+            测试双击
+            <input type="button" ondblclick="console.log('双击')" value="DBLCLICK事件"/><br>
+            测试keydown, 只要点击输入框按下键盘就会产生事件
+            <input type="text" onkeydown="console.log('keydown...')"/><br>
+            测试keyup, 只要点击输入框按松开键盘就会产生事件
+            <input type="text" onkeyup="console.log('keyup...')"/><br>
+            测试mouse
+            <div id="mousediv" 
+                onmouseover="console.log('鼠标经过')"
+                onmousedown="console.log('鼠标按下')"
+                onmouseout="console.log('鼠标离开')"
+                onmouseup="console.log('鼠标弹起')"
+                onmousemove="console.log('鼠标移动')">
+                测试鼠标有关
+            </div>
+            测试submit, reset
+            <form action="" 
+            onsubmit="alert('表单提交')" 
+            onreset="alert('表单重置')">
+                <input type="submit" value="提交"/>
+                <input type="reset" value="清除"/>
+            </form><br>
+            测试选中文本: 选中松开时会产生事件
+            <textarea rows="5" cols="30"
+            onselect="console.log('文本被选中')"></textarea><br>
+            <input type="text" onselect="console.log('文本选择')"/><br>
+            测试change事件
+            <select onchange="console.log('下拉列表选项改变')">
+                <option value="gz">高中</option>
+                <option value="dz">大专</option>
+                <option value="dx">大学</option>
+                <option selected>-- 请选择学历 --</option>
+            </select>
+        </body>
+        <script type="text/javascript">
+            alert('这个提示框消掉后页面才算加载完成, 才会触发load事件')
+        </script>
+    </head>
+</html>

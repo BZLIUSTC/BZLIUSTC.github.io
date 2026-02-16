@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>void算符</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <!-- 需求描述：
+        保留超链接样式（意思是下划线和颜色等），
+        点击后执行一段JS代码，
+        执行完后保证页面不跳转 -->
+        <script type="text/javascript">
+        </script>
+        <h1>H1</h1>
+        <!-- 以下onclick属性中, 添加javascript:含义是后面跟着一段JS程序 -->
+        <!-- 大多情况下这是可以省略的； -->
+        <input type="button" value="btn" onclick="javascript:alert('Beep')"/>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <a href="javascript:void(0)" onclick="alert('执行JS代码')">超链接但不跳转</a>
+    </body>
+</html>

@@ -2,11 +2,45 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>JS的变量</title>
+        <title>Object</title>
     </head>
     <body>
         <script type="text/javascript">
-            function Emp(empno, empname, salary)
+            // 定义类
+            function Emp(empno, ename, sal) {
+                // 属性
+                this.empno = empno
+                this.ename = ename
+                this.sal = sal
+                // 方法
+                this.work = function() {
+                    console.log(this.ename+" is working")
+                }
+            }
+            // 创建对象
+            var e1 = new Emp()
+            var e2 = new Emp(111)
+            var e3 = new Emp(222, "alice", 123.45)
+            var e4 = new Emp(333, "Bob", 800.01)
+            // 调用方法
+            e1.work()
+            e2.work()
+            e3.work()
+            e4.work()
+            // 访问属性
+            console.log("e4.empno = "+e4.empno)
+            console.log("e4.ename = "+e4.ename) 
+            console.log("e4.sal = "+e4.sal)
+            // 另一种访问属性的写法
+            console.log("e4.empno = "+e4["empno"])
+            console.log("e4.ename = "+e4["ename"]) 
+            console.log("e4.sal = "+e4["sal"])
+            // 为Emp扩展方法
+            Emp.prototype.getSalary = function() {
+                return this.sal
+            }
+            // 使用新方法
+            console.log(e4.ename+" salary is "+e4.getSalary())
         </script>
     </body>
 </html>

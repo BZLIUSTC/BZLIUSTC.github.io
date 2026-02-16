@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>通过id获取和访问元素</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <input type="button" id="btn1" value="Hello"/>
+        <!-- 这一段要在按钮元素后面，否则找不到 -->
+        <script type="text/javascript">
+            alert("RUN...")
+            var mybtn_Element = document.getElementById("btn1")
+            console.log(mybtn_Element)
+            // 访问, 更改输入类型
+            mybtn_Element.type = "text"
+            mybtn_Element.value = "Bye"
+        </script>
+    </body>
+</html>

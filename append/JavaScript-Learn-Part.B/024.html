@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>代码执行顺序</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body onload="pageload()">
+        <script type="text/javascript">
+            function pageload() {
+                console.log("所有元素加载完成......")
+                var mybtn_Element = document.getElementById("btn1")
+                // 通过元素访问事件句柄对应的属性
+                mybtn_Element.onclick = function() {
+                    console.log("单击按钮了, 你好!")
+                }
+            }
+        </script>
+        <input type="button" id="btn1" value="Hello"/>
+    </body>
+</html>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bzliustc.github.io/</loc>
-    <lastmod>2026-02-08T15:08:15+08:00</lastmod>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -31,7 +31,7 @@
                 />
   </url><url>
     <loc>https://bzliustc.github.io/categories/</loc>
-    <lastmod>2026-02-08T15:08:15+08:00</lastmod>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -59,19 +59,19 @@
                 />
   </url><url>
     <loc>https://bzliustc.github.io/tags/css/</loc>
-    <lastmod>2026-02-08T15:08:15+08:00</lastmod>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
     <loc>https://bzliustc.github.io/tags/html/</loc>
-    <lastmod>2026-02-08T15:08:15+08:00</lastmod>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
     <loc>https://bzliustc.github.io/tags/javascript/</loc>
-    <lastmod>2026-02-08T15:08:15+08:00</lastmod>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
-    <loc>https://bzliustc.github.io/p/javascript-learn/</loc>
-    <lastmod>2026-02-08T15:08:15+08:00</lastmod>
+    <loc>https://bzliustc.github.io/p/javascript-learn-part.c/</loc>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
     <loc>https://bzliustc.github.io/tags/</loc>
-    <lastmod>2026-02-08T15:08:15+08:00</lastmod>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -99,6 +99,9 @@
                 />
   </url><url>
     <loc>https://bzliustc.github.io/categories/website/</loc>
+    <lastmod>2026-02-16T17:47:16+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/javascript-learn-part-a/</loc>
     <lastmod>2026-02-08T15:08:15+08:00</lastmod>
   </url><url>
     <loc>https://bzliustc.github.io/p/css-learn/</loc>
@@ -164,6 +167,11 @@
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="ja"
+                href="https://bzliustc.github.io/ja/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="zh-cn"
                 href="https://bzliustc.github.io/zh-cn/categories/test/"
                 />
@@ -171,11 +179,6 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://bzliustc.github.io/zh-tw/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bzliustc.github.io/ja/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"

@@ -7,13 +7,200 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Sun, 08 Feb 2026 15:08:15 +0800</lastBuildDate><atom:link href="https://bzliustc.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>JavaScript Learn</title>
-        <link>https://bzliustc.github.io/p/javascript-learn/</link>
+        <lastBuildDate>Mon, 16 Feb 2026 17:47:16 +0800</lastBuildDate><atom:link href="https://bzliustc.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>JavaScript Learn Part.C</title>
+        <link>https://bzliustc.github.io/p/javascript-learn-part.c/</link>
+        <pubDate>Mon, 16 Feb 2026 17:47:16 +0800</pubDate>
+        
+        <guid>https://bzliustc.github.io/p/javascript-learn-part.c/</guid>
+        <description>&lt;h2 id=&#34;bom和dom&#34;&gt;BOM和DOM
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;BOM包含DOM；&lt;/li&gt;
+&lt;li&gt;使用document对象，实际上是使用&lt;code&gt;window.document&lt;/code&gt;，window一般可省略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dom编程案例&#34;&gt;DOM编程案例
+&lt;/h2&gt;&lt;h3 id=&#34;innerhtml和innertext来操作div和span&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.C/001.html&#34; &gt;innerHTML和innerText来操作div和span&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;通过元素的innerHTML可以设置元素内部（标签对之间）的内容：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;divElt.innerHTML = &amp;quot;&amp;lt;font color=&#39;red&#39;&amp;gt;整个字符串会被当成HTML内容填充到标签对之间&amp;lt;/font&amp;gt;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;通过元素的innerText可以设置元素内部（标签对之间）的内容：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;divElt.innerText = &amp;quot;&amp;lt;font color=&#39;red&#39;&amp;gt;整个字符串会被当成普通字符串内容填充到标签对之间&amp;lt;/font&amp;gt;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;复选框的全选和取消全选&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.C/002.html&#34; &gt;复选框的全选和取消全选&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;需求：某个复选框选中时，所有复选框选中。&lt;/p&gt;
+&lt;p&gt;解决办法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选中即为click事件；&lt;/li&gt;
+&lt;li&gt;document.getElementsByName()获取同名元素&lt;/li&gt;
+&lt;li&gt;复选框选中/未选中。关键是&lt;code&gt;checked&lt;/code&gt;属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;下拉列表选择项&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.C/004.-selectlist.html&#34; &gt;下拉列表选择项&lt;/a&gt;
+&lt;/h3&gt;&lt;h3 id=&#34;案例动态显示表格内容&#34;&gt;案例:&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.C/006.html&#34; &gt;动态显示表格内容&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;业务背景：网页显示学生信息表格，一开始只显示表头，点击按钮后显示所有表项。&lt;/p&gt;
+&lt;p&gt;解决思路：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Java会给出一个JSON格式字符串，包含待显示的数据&lt;/li&gt;
+&lt;li&gt;JS通过eval()解析数据&lt;/li&gt;
+&lt;li&gt;通过拼字拼出tbody的html内容&lt;/li&gt;
+&lt;li&gt;通过属性innerHTML放到表格中，完成显示&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;正则表达式&#34;&gt;正则表达式
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;什么是正则表达式,有什么用?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;正则表达式是一门独立的学科,基本每个语言都支持。&lt;/li&gt;
+&lt;li&gt;正则表达式不是JS专属的。不过在Js中使用居多。&lt;/li&gt;
+&lt;li&gt;通常使用正则表达式进行字符串格式匹配。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;正则表达式是有一堆特殊的符号组成的一个表达式。
+每一个特殊的符号都有特殊的代表含义。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例如:
+qq号的正则表达式。
+邮箱地址的正则表达式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;邮箱地址格式验证:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;程序中有一个邮箱地址的正则表达式。&lt;/li&gt;
+&lt;li&gt;用户输入了一个邮箱地址。&lt;/li&gt;
+&lt;li&gt;那么邮箱地址的正则表达式和邮箱地址进行匹配,能匹配成功,表示合法,反之表示不合法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;对于javascript程序员来说,我们对于正则表达式掌握到什么程度呢?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;第一:能够看懂正则表达式&lt;/li&gt;
+&lt;li&gt;第二:简单的正则要会写&lt;/li&gt;
+&lt;li&gt;第三:&lt;strong&gt;要能够独立的从网络当中搜索到你想要的正则表达式(搜索能力要有)&lt;/strong&gt;，利用手册&lt;/li&gt;
+&lt;li&gt;第四:要会创建Js的正则表达式对象。&lt;/li&gt;
+&lt;li&gt;第五:要会调用Js正则表达式对象的方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.B/intro-of-regularExp.chm&#34; &gt;参考手册&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;常见正则表达式符号&#34;&gt;常见正则表达式符号
+&lt;/h4&gt;&lt;p&gt;1&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;.&lt;/code&gt; 匹配除换行符以外的任意字符 &lt;br&gt;
+&lt;code&gt;\w&lt;/code&gt; 匹配字母或数字或下划线或汉字 &lt;br&gt;
+&lt;code&gt;\s&lt;/code&gt; 匹配任意的空白符 &lt;br&gt;
+&lt;code&gt;\d&lt;/code&gt; 匹配数字 &lt;br&gt;
+&lt;code&gt;\b&lt;/code&gt; 匹配单词的开始或结束 &lt;br&gt;
+&lt;code&gt;^&lt;/code&gt; 匹配字符串的开始 &lt;br&gt;
+&lt;code&gt;$&lt;/code&gt; 匹配字符串的结束 &lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; 重复零次或更多次 &lt;br&gt;
+&lt;code&gt;+&lt;/code&gt; 重复一次或更多次 &lt;br&gt;
+&lt;code&gt;?&lt;/code&gt; 重复零次或一次 &lt;br&gt;
+&lt;code&gt;{n}&lt;/code&gt; 重复n次 &lt;br&gt;
+&lt;code&gt;{n,}&lt;/code&gt; 重复n次或更多次 &lt;br&gt;
+&lt;code&gt;{n,m}&lt;/code&gt; 重复n到m次 &lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;3&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;\W&lt;/code&gt; 匹配任意不是字母，数字，下划线，汉字的字符 &lt;br&gt;
+&lt;code&gt;\S&lt;/code&gt; 匹配任意不是空白符的字符 &lt;br&gt;
+&lt;code&gt;\D&lt;/code&gt; 匹配任意非数字的字符 &lt;br&gt;
+&lt;code&gt;\B&lt;/code&gt; 匹配不是单词开头或结束的位置 &lt;br&gt;
+&lt;code&gt;[^x]&lt;/code&gt; 匹配除了x以外的任意字符 &lt;br&gt;
+&lt;code&gt;[^aeiou]&lt;/code&gt; 匹配除了aeiou这几个字母以外的任意字符 &lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;例子：&lt;br&gt;
+&lt;code&gt;[a-z]{1}&lt;/code&gt;意思是a-z所有字母中任意一个；&lt;br&gt;
+&lt;code&gt;[a-z0-9A-Z]{3,}&lt;/code&gt;意思是a-z，0-9，A-Z字符集合中出现三个&lt;br&gt;
+&lt;code&gt;[1-9][0-9]{4，}&lt;/code&gt;就是QQ号的正则表达式&lt;br&gt;
+&lt;code&gt;^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$&lt;/code&gt;就是匹配邮箱地址&lt;/p&gt;
+&lt;h4 id=&#34;js中创建正则表达式对象&#34;&gt;JS中创建正则表达式对象
+&lt;/h4&gt;&lt;p&gt;方式一：&lt;code&gt;var regExp = /正则表达式/标记&lt;/code&gt;&lt;br&gt;
+标记是可选项，可选值：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;g: 全局&lt;/li&gt;
+&lt;li&gt;i: 忽略大小写&lt;/li&gt;
+&lt;li&gt;m: &lt;font color=grey&gt;不要求掌握&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;方式二：&lt;code&gt;var regExp = new RegExp(&amp;quot;正则表达式&amp;quot;, &amp;quot;标记&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;正则表达式对象的方法&#34;&gt;正则表达式对象的方法
+&lt;/h4&gt;&lt;p&gt;正则表达式对象的&lt;code&gt;test()&lt;/code&gt;方法用于检查字符串是否匹配规则。&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.B/040.html&#34; &gt;参考代码&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;字符串对象可以使用正则表达式：&lt;code&gt;var str = &amp;quot;1970-1-1&amp;quot;.replace(/-/g, &amp;quot;/&amp;quot;)&lt;/code&gt;表示匹配中所有（正则表达式使用&lt;code&gt;g&lt;/code&gt;标记）的减号，替换成斜杠&lt;/p&gt;
+&lt;h3 id=&#34;表单验证&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.C/007.html&#34; &gt;表单验证&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;需求描述：&lt;br&gt;
+(1)用户名不能为空&lt;br&gt;
+(2)用户名必须在6-14位之间&lt;br&gt;
+(3)用户名只能有数字和字母组成,不能含有其它符号(正则表达式)&lt;br&gt;
+(4)密码和确认密码一致&lt;br&gt;
+(5)统一失去焦点验证&lt;br&gt;
+(6)错误提示信息统一在span标签中提示,并且要求字体12号,红色。&lt;br&gt;
+(7)文本框再次获得焦点后,清空错误提示信息&lt;br&gt;
+(8)&lt;strong&gt;最终表单中所有项均合法方可提交&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;核心难点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为了防止用户不听提示而提交，不要用submit按钮，改用button，并用form对象的submit方法提交表单&lt;/li&gt;
+&lt;li&gt;如何在提交前检查输入是否合法？
+&lt;ul&gt;
+&lt;li&gt;方法一：让表单元素先对焦focus再失焦blur，从而触发检查，也就是通过JS代码产生事件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;提示信息的显示/消失用span控制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;案例网页时钟&#34;&gt;案例:&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.C/005.html&#34; &gt;网页时钟&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;需求：点击按钮显示时钟，并且以秒为间隔更新&lt;/p&gt;
+&lt;p&gt;解决办法：&lt;/p&gt;
+&lt;p&gt;执行&lt;code&gt;window.setInterval(&amp;quot;一段JS代码&amp;quot;, milliTime)&lt;/code&gt;会开始周期性执行JS代码。
+这个函数返回一个值，该值传入&lt;code&gt;window.clearInterval()&lt;/code&gt;可以终止此段代码的周期调用。&lt;/p&gt;
+&lt;h2 id=&#34;bom编程案例&#34;&gt;BOM编程案例
+&lt;/h2&gt;&lt;h3 id=&#34;windowopen和close&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn-Part.C/bom-001.html&#34; &gt;window.open()和close()&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;window.open(url, opt)&lt;/code&gt;打开新窗口&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;url: 新页面的字符串&lt;/li&gt;
+&lt;li&gt;opt: &amp;lsquo;_self&amp;rsquo;为当前窗口打开; 默认值&amp;rsquo;_blank&amp;rsquo;; 其他可选值&amp;rsquo;_parent&amp;rsquo;, &amp;lsquo;_top&amp;rsquo;等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;window.close()&lt;/code&gt;关闭当前页面，可用前提是当前页面是由&lt;code&gt;open()&lt;/code&gt;打开的。&lt;/p&gt;
+&lt;h3 id=&#34;windowconirm&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn-Part.C/bom-002.html&#34; &gt;window.conirm()&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;弹出提示框，返回布尔类型&lt;/p&gt;
+&lt;h3 id=&#34;窗口设置为顶级窗口&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn-Part.C/bom-004.html&#34; &gt;窗口设置为顶级窗口&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;应用场景：网页长时间待机后，工作区子窗口要变成登录页并变成顶级&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;top&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!==&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;top&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;href&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;location&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;前进后退&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn-Part.C/bom-006.html&#34; &gt;前进后退&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;跳转到前一页面：
+&lt;code&gt;window.history.back()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;跳转到执行一次回退前的页面：
+&lt;code&gt;window.history.go(1)&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;发送请求的多种方式&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn-Part.C/bom-008.html&#34; &gt;发送请求的多种方式&lt;/a&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;地址栏URL&lt;/li&gt;
+&lt;li&gt;点击超链接&lt;/li&gt;
+&lt;li&gt;提交表单&lt;/li&gt;
+&lt;li&gt;window.open(&amp;lsquo;url&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;js代码: 四种效果相同
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;window.location.href = &#39;https://www.baidu.com&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;window.location = &#39;https://www.baidu.com&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.location.href = &#39;https://www.baidu.com&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;document.location = &#39;https://www.baidu.com&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>JavaScript Learn Part A</title>
+        <link>https://bzliustc.github.io/p/javascript-learn-part-a/</link>
         <pubDate>Sun, 08 Feb 2026 15:08:15 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/javascript-learn/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/javascript-learn/front-page.jpeg" alt="Featured image of post JavaScript Learn" /&gt;&lt;p&gt;本文是Javascript学习笔记。&lt;/p&gt;
+        <guid>https://bzliustc.github.io/p/javascript-learn-part-a/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/javascript-learn-part-a/front-page.jpeg" alt="Featured image of post JavaScript Learn Part A" /&gt;&lt;p&gt;本文是Javascript学习笔记·A，记录JS基础语法。&lt;/p&gt;
 &lt;h2 id=&#34;javascript概述&#34;&gt;JavaScript概述
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;简称 JS&lt;/li&gt;
@@ -151,11 +338,11 @@ JS中有内置的BOM对象&lt;code&gt;window&lt;/code&gt;，可以直接用，�
 &lt;/div&gt;&lt;p&gt;函数要被调用才会执行，不是定义了就会执行的！
 参考代码&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn/007-function-basic.html&#34; &gt;007-函数定义和调用&lt;/a&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;TIPS&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#d401dfcc&#34;&gt;TIPS&lt;br&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;函数调用时的实参列表不用与形参列表对应，参数从左往右一次配入形参。&lt;/li&gt;
 &lt;li&gt;JS函数还有另一种定义方式：&lt;code&gt;函数名 = function(形参列表) {函数体}&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;函数定义的优先级较高，可以在函数定义前调用（参考代码&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn/008-function-basic.html&#34; &gt;008-函数定义和调用&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;函数定义的优先级较高，可以在函数定义前调用（参考代码&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn/008-function-basic.html&#34; &gt;008-函数定义和调用&lt;/a&gt;）&lt;/font&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;局部变量与全局变量&#34;&gt;局部变量与全局变量
@@ -305,30 +492,54 @@ Boolean()函数不需要我们手动调用，它会被隐式调用。
 &lt;/ol&gt;
 &lt;p&gt;不论哪种字符串，其方法和属性都是通用的。以下介绍常用属性和方法。
 参考代码&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn/016-string.html&#34; &gt;016&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;length属性&#34;&gt;length属性
-&lt;/h4&gt;&lt;p&gt;获取字符串长度&lt;/p&gt;
-&lt;h4 id=&#34;charat&#34;&gt;charAt()
-&lt;/h4&gt;&lt;p&gt;获取指定下标位置的字符，下标从0开始&lt;/p&gt;
-&lt;h4 id=&#34;concat&#34;&gt;concat()
-&lt;/h4&gt;&lt;p&gt;拼接字符串&lt;/p&gt;
-&lt;h4 id=&#34;indexof&#34;&gt;indexOf()
-&lt;/h4&gt;&lt;p&gt;获取某个字符串在当前字符串第一次出现的索引&lt;/p&gt;
-&lt;h4 id=&#34;lastindexof&#34;&gt;lastIndexOf()
-&lt;/h4&gt;&lt;p&gt;获取某个字符串在当前字符串末次出现的索引&lt;/p&gt;
-&lt;h4 id=&#34;replace&#34;&gt;replace()
-&lt;/h4&gt;&lt;p&gt;&lt;code&gt;str.replace(s1, s2)&lt;/code&gt;把str中&lt;strong&gt;首次出现&lt;/strong&gt;的s1替换为s2（只替换一次）。
-替换所有需要使用正则表达式。&lt;/p&gt;
-&lt;h4 id=&#34;split&#34;&gt;split()
-&lt;/h4&gt;&lt;p&gt;&lt;code&gt;str.split(s)&lt;/code&gt;，把str以s为分割拆分为若干字符串，返回一个数组&lt;/p&gt;
-&lt;h4 id=&#34;substr和subtring&#34;&gt;substr()和subtring()
-&lt;/h4&gt;&lt;p&gt;若只有一个参数&lt;code&gt;n&lt;/code&gt;，其行为相同，都是取字符串index为n到index为末尾的字串。&lt;/p&gt;
-&lt;p&gt;若两个参数，含义如下&lt;br&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;属性或方法&lt;/th&gt;
+          &lt;th&gt;描述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;length属性&lt;/td&gt;
+          &lt;td&gt;获取字符串长度&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;charAt()&lt;/td&gt;
+          &lt;td&gt;获取指定下标位置的字符，下标从0开始&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;concat()&lt;/td&gt;
+          &lt;td&gt;拼接字符串&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;indexOf()&lt;/td&gt;
+          &lt;td&gt;获取某个字符串在当前字符串第一次出现的索引&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;lastIndexOf()&lt;/td&gt;
+          &lt;td&gt;获取某个字符串在当前字符串末次出现的索引&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;replace()&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;str.replace(s1, s2)&lt;/code&gt;把str中&lt;strong&gt;首次出现&lt;/strong&gt;的s1替换为s2（只替换一次）。替换所有需要使用正则表达式。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;split()&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;str.split(s)&lt;/code&gt;，把str以s为分割拆分为若干字符串，返回一个数组&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substr()和subtring()&lt;/td&gt;
+          &lt;td&gt;若只有一个参数&lt;code&gt;n&lt;/code&gt;，其行为相同，都是取字符串index为n到index为末尾的字串。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;substr()和subtring()：若两个参数，含义如下&lt;br&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;substr(startIndex, length)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;substring(start, end)&lt;/code&gt;且不包括end&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;substring(start, end)&lt;/code&gt;且不包括end
+|toLowerCase()和toUpperCase()   |大小写转化&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;tolowercase和touppercase&#34;&gt;toLowerCase()和toUpperCase()
-&lt;/h4&gt;&lt;p&gt;大小写转化&lt;/p&gt;
 &lt;h3 id=&#34;object&#34;&gt;Object
 &lt;/h3&gt;&lt;p&gt;在JS中内置一个Object类型，可视为所有类型的基类/超类。
 JS中默认定义的类型如无特殊说明，默认继承Object。
@@ -405,7 +616,74 @@ Object类型中的通用属性和方法如下。
 &lt;/div&gt;&lt;p&gt;所以说，function创建一个函数，也创建一个同名类（或者理解为创建一个东西，功能与调用方法有关）。
 若通过&lt;code&gt;函数名();&lt;/code&gt;调用，则是当作函数来用；
 若是通过&lt;code&gt;var obj = new 类名()&lt;/code&gt;创建对象，则是当作类来用，会在堆中分配空间，
-而obj是堆上对象的引用。&lt;/p&gt;</description>
+而obj是堆上对象的引用。参考代码&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn/018.html&#34; &gt;018&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;访问属性&#34;&gt;访问属性
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;方法一：&lt;code&gt;引用.属性名&lt;/code&gt;，例如&lt;code&gt;example_obj.test_property&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;方法二：&lt;code&gt;引用[&amp;quot;属性名&amp;quot;]&lt;/code&gt;，例如&lt;code&gt;example_obj[&amp;quot;test_property&amp;quot;]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;null-nan-undefined的区别&#34;&gt;null, NaN, undefined的区别
+&lt;/h2&gt;&lt;p&gt;参考代码&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/JavaScript-Learn/019.html&#34; &gt;019&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;和的区别&#34;&gt;&lt;code&gt;==&lt;/code&gt;和&lt;code&gt;===&lt;/code&gt;的区别
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;==&lt;/code&gt;是&lt;strong&gt;等同&lt;/strong&gt;运算符，&lt;code&gt;===&lt;/code&gt;是&lt;strong&gt;全等&lt;/strong&gt;运算符。
+前者只比较值是否相等，类似Java的equals方法；后者比较值和数据类型是否相同。&lt;/p&gt;
+&lt;h3 id=&#34;null-nan-undefined的区别-1&#34;&gt;null, NaN, undefined的区别
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;类型互不相同，之间全等运算结果肯定是false&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;null：原始类型，typeof运算结果是object&lt;/li&gt;
+&lt;li&gt;NaN：原始类型，typeof运算结果是number&lt;/li&gt;
+&lt;li&gt;undefined：原始类型，typeof运算符结果是undefined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;null和undefined是等同关系&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;null == NaN ? false&lt;/li&gt;
+&lt;li&gt;null == undefined ? true&lt;/li&gt;
+&lt;li&gt;undefined == NaN ? false&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;NaN不与任何值相同，包括自身&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;NaN == NaN ? false&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;json&#34;&gt;JSON
+&lt;/h2&gt;&lt;h3 id=&#34;eval函数&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.B/035.html&#34; &gt;eval()函数&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;window.eval()&lt;/code&gt;函数可以把一段字符串当成JS代码解释并执行。&lt;/p&gt;
+&lt;h3 id=&#34;创建json对象访问json对象属性&#34;&gt;创建JSON对象，访问JSON对象属性
+&lt;/h3&gt;&lt;p&gt;JSON: JavaScript Object Notation，一种轻量（文本少数据量大）数据交换（不同编程语言之间的数据交换）格式；xml也是一种标准的数据交换格式。&lt;/p&gt;
+&lt;p&gt;JS中的JSON是以对象形式存在的。&lt;/p&gt;
+&lt;h4 id=&#34;语法格式&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/static/append/JavaScript-Learn-Part.B/036-json.html&#34; &gt;语法格式&lt;/a&gt;
+&lt;/h4&gt;&lt;p&gt;创建JSON对象：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;jsonObj&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;属性名&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;属性值&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;属性名&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;属性值&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;属性名&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;属性值&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意，JS中方括弧是数组对象，花括弧是JSON对象。
+属性值可以是任何类型数据，包括JSON对象。&lt;/p&gt;
+&lt;h4 id=&#34;访问json对象属性&#34;&gt;访问JSON对象属性
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;jsonObj.prop&lt;/code&gt;或&lt;code&gt;jsonObj[&amp;quot;prop&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;json数据交换&#34;&gt;JSON数据交换
+&lt;/h4&gt;&lt;p&gt;java和javascript两个语言交换数据可以使用JSON格式的字符串。
+java的JDBC连接数据库查询数据，然后将数据拼接成JSON格式的字符串，
+将JSON格式的字符串传给javascript，然后在javascript当中把json格式
+的字符串转换成JSON对象，这样就可以从json对象中取数据了，这样就完成了
+数据的交换。&lt;/p&gt;</description>
         </item>
         <item>
         <title>CSS Learn</title>

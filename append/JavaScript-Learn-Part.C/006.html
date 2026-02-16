@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>eval+json</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // java给到一个json字符串，表示学生信息数据
+            var textFromJava = "{\"total\":3,\"data\":[{\"name\":\"张三\",\"age\":20},{\"name\":\"李四\",\"age\":19},{\"name\":\"王五\",\"age\":23}]}"
+            window.onload = function() {
+                document.getElementById('seeList').onclick = function() {
+                    window.eval("var stuData = "+textFromJava)
+                    console.log(stuData)
+                    // 第一步，设置总记录条数
+                    document.getElementById('cntSpan').innerHTML = stuData.total
+                    // 第二，拼出table内容
+                    stuArr = stuData.data
+                    tableHTML = ""
+                    for(var i=0; i<stuArr.length; i++) {
+                        var stu = stuArr[i]
+                        // 拼字!
+                        tableHTML += "<tr>";
+                        tableHTML += "<td>"+(i+1)+"</td>";
+                        tableHTML += "<td>"+stu.name+"</td>";
+                        tableHTML += "<td>"+stu.age+"</td>";
+                        tableHTML += "</tr>"
+                    }
+                    console.log(tableHTML )
+                    document.getElementById('stuTbody').innerHTML = tableHTML
+                }
+            }
+        </script>
+        <input id="seeList" type="button" value="查看列表"/>
+        <hr>
+        <table border="1px" width="40%">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                </tr>
+            </thead>
+            <tbody id="stuTbody">
+            </tbody>
+        </table>
+        总记录条数 <span id="cntSpan">0</span> 条
+    </body>
+</html>

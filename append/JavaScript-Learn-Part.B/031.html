@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>内置对象Array</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 创建数组方法一
+            var a1 = []
+            var a2 = [1,2,3,4,5]
+
+            console.log("a2类型 = "+typeof a2)
+            console.log("a2长度 = "+a2.length)
+            console.log("a2首元素 = "+a2[0])
+            console.log("a2末元素 = "+a2[a2.length-1])
+
+            console.log('现在为下标99的元素赋值')
+            a2[9] = false
+            console.log("a2长度 = "+a2.length)
+            console.log("a2末元素 = "+a2[a2.length-1])
+            console.log("a2倒数第二元素 = "+a2[a2.length-2])
+
+            console.log('现在为下标-10的元素赋值')
+            a2[-10] = true
+            console.log("a2所有元素, 使用for..in")
+            for(var index in a2) {
+                console.log("a2["+index+"] = "+a2[index])
+            }
+            console.log("a2所有元素, 使用下标")
+            for(var i=-10;i<a2.length;i++) {
+                console.log("a2["+i+"] = "+a2[i])
+            }
+            console.log("a2长度 = "+a2.length)
+
+            // 创建数组方法二
+            var b1 = new Array() // 创建空数组
+            var b2 = new Array(4)
+            var b3 = new Array(false, NaN, 34.55, 3, 5)
+
+            console.log("b1长度 = "+b1.length)
+            console.log("b2类型 = "+typeof b2)
+            console.log("b3长度 = "+b3.length)
+
+            // 修改元素
+            b3[1] = "str"
+            for(var idx in b3) {console.log("b3["+idx+"] = "+b3[idx])}
+        </script>
+    </body>
+</html>

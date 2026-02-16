@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>注册事件方法二</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <input type="button" id="btn1" value="Hello"/>
+        <script type="text/javascript">
+            greet = function() {
+                console.log("鼠标离开, 再见")
+            }
+            var mybtn_Element = document.getElementById("btn1")
+            // 通过元素访问事件句柄对应的属性
+            mybtn_Element.onclick = function() {
+                console.log("单击按钮了, 你好!")
+            }
+            // 或者这样，不要写成greet()
+            mybtn_Element.onmouseleave = greet
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>完美案例</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                var btn1Elt = document.getElementById("btn1")
+                var btn2Elt = document.getElementById("btn2")
+
+                // 为按钮一绑定单击事件
+                btn1Elt.onclick = function() {
+                    console.log("按钮一单击")
+                }
+
+                // 为按钮二绑定单击事件
+                btn2Elt.onclick = function() {
+                    console.log("按钮二单击")
+                }
+            }
+        </script>
+        <input type="button" id="btn1" value="按钮一"/>
+        <input type="button" id="btn2" value="按钮二"/>
+    </body>
+</html>

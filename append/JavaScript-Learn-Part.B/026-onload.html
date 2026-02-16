@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>代码执行顺序</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body id="b">
+        <script type="text/javascript">
+            /**这段代码在加载页面时会执行！
+             * 这段代码作用是将回调函数pageLoad注册到load事件上（不是执行）
+             * 当页面加载完成时触发load事件
+             * 监听器调用pageLoad() 
+             */
+
+            /**当然可以这样写
+             * var body_obj = document.getElementById("b")
+             * body_obj.onload = pageLoad
+             * 只不过没有必要, 以上对象获取可以简化成window 
+             */
+            window.onload = function() {
+                console.log("所有元素加载完成..................")
+            }
+        </script>
+        <input type="button" id="btn1" value="问候"/>
+    </body>
+</html>
+
+<script type="text/javascript">
+    alert("这是最后一个元素, 只有点击确认后所有元素才算加载完成")
+</script>

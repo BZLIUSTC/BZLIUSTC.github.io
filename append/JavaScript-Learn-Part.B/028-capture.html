@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>捕捉按键</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("username").onkeydown = function(event) {
+                    // 要在这里捕捉键值: 当为Enter时登录
+                    /**要在这里捕捉键值: 当为Enter时登录
+                     * if(按下回车键) {
+                     *     console.log("登录中")
+                     * }
+                     */
+                    // console.log(event)
+                    keycode = event.keyCode
+                    if(keycode == 13) {
+                        console.log("Enter按下, 登录中")
+                    } else if(keycode == 27) {
+                        console.log("Esc按下, 退出")
+                    }
+                }
+            }
+        </script>
+        用户名：<input type="text" id="username"/>
+        <!-- 目标：捕捉到文本框输入完成后的回车键按下 -->
+    </body>
+</html>

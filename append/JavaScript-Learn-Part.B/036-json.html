@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>JSON</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 创建JSON
+            var emp = {
+                "name"  : "Jack", 
+                "age"   : 21, 
+                "married"   : false, 
+                "career"    : "teacher", 
+                "hobby" : ["读书", "滑板", "搞事情"]
+            }
+            // 访问JSON对象
+            console.log(typeof emp)
+            console.log(emp.age)
+            console.log(emp["career"])
+            for (var i=0; i<emp.hobby.length; i++) {
+                console.log("爱好"+(i+1)+" : "+emp.hobby[i])
+            }
+            // JSON对象当作属性值
+            var loc = {
+                "city"      : "北京",
+                "town"      : "大兴"
+            }
+            var user = {
+                "name"      : "zhangsan",
+                "passwd"    : "12345", 
+                "address"   : loc,
+                "contact"   : {
+                    "phone" :"13546726453",
+                    "tel"   :"6372-2347"
+                }
+            }
+            console.log(user.name+"住在"+user.address.city+user.address.town)
+            console.log(user.name+"电话"+user.contact.tel+"手机"+user.contact.phone)
+        </script>
+    </body>
+</html>

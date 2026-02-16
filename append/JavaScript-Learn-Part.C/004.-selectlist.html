@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>获取下拉列表选择项value</title>
+        <style type="text/css">
+            #cityShow {
+                border: #12cc1e solid 2px;
+                height: 200px;
+                width: 400px;
+                font-size: 50px; 
+                position: absolute;
+                /* background-color: yellow; */
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                var selectCityListElt = document.getElementById('city')
+                var cityShowElt = document.getElementById('cityShow')
+
+                selectCityListElt.onchange = function() {
+                    var cityValue = selectCityListElt.value
+                    switch (cityValue) {
+                        case "hefei":
+                            cityShowElt.innerHTML = "大湖名城<br>创新高地"
+                            break;
+                        case "guangzhou":
+                            cityShowElt.innerHTML = "活力大湾区<br>魅力新广州"
+                            break;
+                        case "shijiazhuang":
+                            cityShowElt.innerHTML = "这么近那么美<br>周末到河北"
+                            break;
+                        case "xian":
+                            cityShowElt.innerHTML = "碳水肉夹馍"
+                            break;
+                        default:
+                            cityShowElt.innerHTML = "景点推荐"
+                            break;
+                    }
+                }
+            }
+        </script>
+        <select id="city">
+            <option value="none">--- 选择城市 ---</option>
+            <option value="hefei">合肥</option>
+            <option value="shijiazhuang">石家庄</option>
+            <option value="guangzhou">广州</option>
+            <option value="xian">西安</option>
+        </select>
+        <select id="town">
+            <option>--- 选择县 ---</option>
+        </select><br>
+        <div id="cityShow">景点风采</div>
+    </body>
+</html>

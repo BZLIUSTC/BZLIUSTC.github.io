@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>复选框</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                allSelectElt = document.getElementById('check0')
+                var aihaoElts = document.getElementsByName('aihao')
+                // 全选框
+                allSelectElt.onclick = function() {
+                    for(var i = 0; i < aihaoElts.length; i++) {
+                        aihaoElts[i].checked = allSelectElt.checked
+                    }
+                }
+
+                // 其它框
+                
+                for(var i=0; i<aihaoElts.length; i++) {
+                    aihaoElt = aihaoElts[i]
+                    aihaoElt.onclick = function() {
+                        // 计数选中的数量
+                        var check_count = 0
+                        for(var i=0; i<aihaoElts.length; i++) {
+                            check_count += (aihaoElts[i].checked ? 1 : 0)
+                        }
+                        allSelectElt.checked = (check_count == aihaoElts.length)
+                    }
+                }
+            }
+        </script>
+        <input id="check0" type="checkbox" value="all" value="select_all"/>全选<br>
+        <input id="check1" type="checkbox" value="v1" name="aihao" value="a1"/>冰淇淋<br>
+        <input id="check2" type="checkbox" value="v2" name="aihao" value="a2"/>雪糕<br>
+        <input id="check3" type="checkbox" value="v3" name="aihao" value="a3"/>冰棍<br>
+    </body>
+</html>

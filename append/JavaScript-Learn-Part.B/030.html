@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>语句</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // for in 语句
+            var arr = [true, 4, "abc", 2, NaN, 10, 7] 
+            // 数组对象用中括号创建
+            for (var i=0; i<arr.length; i++) {
+                console.log(arr[i])
+            }
+            console.log('另一种遍历')
+            for (var index in arr) {
+                console.log("index 的类型是"+typeof index)
+                console.log(arr[index])
+            }
+
+            function Emp(x, y, z) {
+                this.propa = x
+                this.propb = y
+                this.propc = z
+            }
+            obj = new Emp(1, "jack", 123.45)
+            for(var prop in obj) {
+                console.log("obj."+prop+" = "+obj[prop])
+            }
+
+            // with语句
+            var x = new Emp(2, "smith", 34,2)
+            with(x) {
+                // 适用with访问属性后不需要写 x.
+                console.log("propa"+propa)
+            }
+        </script>
+    </body>
+</html>

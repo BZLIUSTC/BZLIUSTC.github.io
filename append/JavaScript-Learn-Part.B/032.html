@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Array常用方法</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            Array.prototype.traverse = function() {
+                arr = this
+                for(var i=0; i<arr.length; i++) {
+                    console.log(i+": "+arr[i])
+                }
+            }
+            var arr = new Array()
+
+            console.log('测试Array.push')
+            arr.push(10)
+            arr.push(30)
+            arr.push(20)
+            console.log(arr.push(40))
+            console.log(arr)
+
+            console.log('测试Array.pop')
+            console.log(arr.pop())
+            console.log(arr.length)
+
+            console.log('测试反转')
+            console.log(arr.reverse())
+
+            console.log('测试链接')
+            console.log(arr.join("+@"))
+        </script>
+    </body>
+</html>

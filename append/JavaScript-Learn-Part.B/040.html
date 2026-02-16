@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>正则表达式</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 正则表达式对象
+            var emailRegExp = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+            var email = "mail@outlook.com"
+            // 使用test方法
+            var valid = emailRegExp.test(email)
+            console.log(valid )
+            email = "mail@outlookcom"
+            valid = emailRegExp.test(email)
+            console.log(valid )
+            // 字符串
+            var str = "1970-1-1".replace(/-/g, "/")
+            console.log(str)
+
+
+            window.onload = function() {
+                document.getElementById("mailbox").onkeydown = function(event) {
+                    keycode = event.keyCode
+                    if(keycode == 13) {
+                        console.log("Enter按下, 登录中")
+                        // 检查
+                        email = document.getElementById('mailbox').value
+                        if(!emailRegExp.test(email)) {
+                            alert('邮箱名'+email+"不合法")
+                        } else {
+                            alert('可用的用户名!')
+                        }
+                    } 
+                }
+            }
+        </script>
+        邮箱：<input type="text" id="mailbox"/><br>
+        <font color="grey">Enter提交检查</font>
+    </body>
+</html>

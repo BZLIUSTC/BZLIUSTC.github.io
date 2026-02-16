@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>网页时钟</title>
+        <style type="text/css">
+            #dateClockDiv {
+                width: 600px;
+                padding: 10px;
+                background-color:rgb(255, 255, 255);
+                display: none;
+            }
+            .time {
+                border: "red" 2px dashed;
+                background-color: #12cc1e;
+                margin: 5px; 
+            }
+            .time:hover {
+                background-color: aqua;
+            }
+            #dateDiv {
+                font-size: 30px;
+            }
+            #clockDiv {
+                font-size: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                var clockDivElt = document.getElementById('clockDiv')
+                var dateDivElt = document.getElementById('dateDiv')
+                var stopTimeInputElt = document.getElementById('stopTimeInput')
+                var dateClockDivElt = document.getElementById('dateClockDiv')
+                var showTimeInputElt = document.getElementById('showTimeInput')
+
+                // 按钮
+                showTimeInputElt.onclick = function() {
+                        if(showTimeInputElt.checked == false) {
+                            dateClockDivElt.style.display = "none"
+                        } else {
+                            dateClockDivElt.style.display = "block"
+                        }
+                }
+
+                //暂停
+                stopTimeInputElt.onclick = function() {
+                    var interval = 10
+                    if(this.value == "启动"){
+                        intervalID = window.setInterval("displayTime()", interval)
+                        dateClockDivElt.style.display = "block"
+                        showTimeInputElt.checked = true
+                        this.value = "暂停"
+                    } else {
+                        window.clearInterval(intervalID)
+                        this.value = "启动"
+                    }
+                }
+
+                printLog = function() {
+                    console.log('Log')
+                }
+
+                displayTime = function() {
+                    var nowTime = new Date()
+                    var year = nowTime.getFullYear()
+                    var month = nowTime.getMonth()+1
+                    var date = nowTime.getDate()
+                    var day_en = nowTime.getDay()
+                    var day = ""
+                    // console.log(day_en)
+                    switch (day_en) {
+                        case 1:
+                            day = "一"
+                            break;
+                        case 2:
+                            day = "二"
+                            break;
+                        case 3:
+                            day = "三"
+                            break;
+                        case 4:
+                            day = "四"
+                            break;
+                        case 5:
+                            day = "五"
+                            break;
+                        case 6:
+                            day = "六"
+                            break;
+                        case 0:
+                            day = "日"
+                            break;
+                        default:
+                            break;
+                    }
+                    var hh = nowTime.getHours()
+                    var mm = nowTime.getMinutes()
+                    var ss = nowTime.getSeconds()
+                    var sss = nowTime.getMilliseconds()
+                    var nowDate = year+"年 "+month+"月 "+date+"日 星期"+day
+                    var nowClock = hh+" : "+mm+" : "+ss+" . "+sss
+                    dateDivElt.innerText = nowDate
+                    clockDivElt.innerText = nowClock
+                }
+
+            }
+        </script>
+        <input id="showTimeInput" type="checkbox"/>显示时间
+        <input id="stopTimeInput" type="button" value="启动"/>
+        <div id="dateClockDiv">
+            <div  class="time" id="dateDiv"></div>
+            <div  class="time" id="clockDiv"></div>
+        </div>
+    </body>
+</html>
