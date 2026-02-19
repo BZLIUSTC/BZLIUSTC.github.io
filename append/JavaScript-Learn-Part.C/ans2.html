@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表展示</title>
+    <style type="text/css">
+        /* 搜索区域 */
+        .search-area {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-input {
+            width: 200px;
+            height: 30px;
+            padding: 0 5px;
+        }
+        .search-btn, .clear-btn {
+            height: 30px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        /* 商品列表 */
+        .goods-container {
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden; /* 清除浮动 */
+        }
+        .goods-item {
+            width: 200px;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .goods-item:hover {
+            border-color: #ff6700;
+            background-color: #f5f5f5;
+        }
+        .goods-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .goods-price {
+            color: red;
+            margin-bottom: 5px;
+        }
+        .goods-stock {
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-area">
+        <input type="text" class="search-input" id="searchInput" placeholder="请输入商品名称">
+        <button class="search-btn" id="searchBtn">搜索</button>
+        <button class="clear-btn" id="clearBtn">清空列表</button>
+    </div>
+    <div class="goods-container" id="goodsContainer"></div>
+
+    <script type="text/javascript">
+        // 预设商品数据
+        var goodsData = [
+            {name: "小米手机", price: 1999, stock: 100},
+            {name: "华为平板", price: 2999, stock: 50},
+            {name: "苹果耳机", price: 1299, stock: 80},
+            {name: "小米手环", price: 199, stock: 200},
+            {name: "华为手表", price: 1599, stock: 80}
+        ];
+
+        // 获取元素
+        var searchInput = document.getElementById('searchInput');
+        var searchBtn = document.getElementById('searchBtn');
+        var clearBtn = document.getElementById('clearBtn');
+        var goodsContainer = document.getElementById('goodsContainer');
+
+        // 渲染商品列表
+        function renderGoods(list) {
+            var html = '';
+            list.forEach(function(item) {
+                html += '<div class="goods-item">';
+                html += '<div class="goods-name">' + item.name + '</div>';
+                html += '<div class="goods-price">¥' + item.price + '</div>';
+                html += '<div class="goods-stock">库存：' + item.stock + '件</div>';
+                html += '</div>';
+            });
+            goodsContainer.innerHTML = html;
+        }
+
+        // 页面加载默认渲染
+        window.onload = function() {
+            renderGoods(goodsData);
+        }
+
+        // 搜索功能
+        searchBtn.onclick = function() {
+            var keyword = searchInput.value.trim().toLowerCase();
+            var filterList = goodsData.filter(function(item) {
+                return item.name.toLowerCase().indexOf(keyword) !== -1;
+            });
+            renderGoods(filterList);
+        }
+
+        // 清空列表
+        clearBtn.onclick = function() {
+            goodsContainer.innerHTML = '';
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+批改结果
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>2</title>
+        <style type="text/css">
+            #searchBox {
+                width: 200px;
+            }
+            .btn {
+                margin-left: 10px;
+            }
+            /* 商品容器：清除浮动 */
+            #Holder {
+                overflow: hidden;
+            }
+            /* 商品卡片 */
+            .good {
+                width: 200px;
+                border: 1px solid #eee;
+                border-radius: 8px;
+                padding: 10px;
+                margin: 10px;
+                float: left;
+                box-sizing: border-box; /* 保证宽度不溢出 */
+            }
+            .good:hover {
+                border-color: #ff6700;
+                background-color: #f5f5f5;
+            }
+            .goodName {
+                font-weight: bold; /* 修正字体加粗 */
+            }
+            .goodPrice {
+                color: red;
+            }
+            .goodStock {
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <input id="searchBox" type="text" placeholder="商品名"/>
+        <input class="btn" id="find" type="button" value="搜索"/>
+        <input class="btn" id="clearList" type="button" value="清空列表"/>
+        
+        <div id="Holder"></div>
+
+        <script type="text/javascript">
+            var goodsData = [
+                {name: "小米手机", price: 1999, stock: 100},
+                {name: "华为平板", price: 2999, stock: 50},
+                {name: "苹果耳机", price: 1299, stock: 80},
+                {name: "小米手环", price: 199, stock: 200},
+                {name: "华为手表", price: 1599, stock: 80}
+            ];
+
+            // 生成商品HTML
+            function GenHTMLByGoodsList(goodList) {
+                var html = ""
+                for(var i=0; i<goodList.length; i++) {
+                    var item = goodList[i]
+                    // 用索引做id，避免中文
+                    html += '<div class="good" id="good_item' + i + '">\n'
+                    html += '<div class="goodName" id="goodName_item' + i + '">' + item.name + '</div>\n'
+                    html += '<div class="goodPrice" id="goodPrice_item' + i + '">￥' + item.price + '</div>\n'
+                    // 修正库存的class为goodStock
+                    html += '<div class="goodStock" id="goodStock_item' + i + '">库存' + item.stock + '件</div>\n</div>\n'
+                }
+                console.log('生成了html文本')
+                return html
+            }
+
+            // 渲染HTML到容器
+            function PrintHTMLtoGoodsDiv(htmlText) {
+                var goodsDivElt = document.getElementById('Holder')
+                goodsDivElt.innerHTML = htmlText
+                console.log("打印htmlText")
+            }
+
+            window.onload = function() {
+                var searchElt = document.getElementById('searchBox')
+                var findElt = document.getElementById('find')
+                var clearElt = document.getElementById('clearList')
+
+                // 初始渲染所有商品
+                var htmltext = GenHTMLByGoodsList(goodsData)
+                PrintHTMLtoGoodsDiv(htmltext)
+
+                // 搜索功能
+                findElt.onclick = function() {
+                    var goodsList = goodsData // 声明局部变量
+                    var searchText = searchElt.value.trim().toLowerCase()
+                    var resultList = []
+
+                    // 空关键词显示所有商品
+                    if(searchText === "") {
+                        resultList = goodsData
+                    } else {
+                        console.log('执行匹配字符串:='+searchText)
+                        for(var i=0; i<goodsList.length; i++) {
+                            var item = goodsList[i]
+                            var name = item.name.toLowerCase()
+                            console.log('尝试匹配 '+name)
+                            // 修正长度判断，不终止循环
+                            if(name.length >= searchText.length && name.indexOf(searchText) != -1)  {
+                                resultList.push(item)
+                                console.log('找到'+name+'包含搜索字符串')
+                            }
+                        }
+                    }
+
+                    var html = GenHTMLByGoodsList(resultList)
+                    PrintHTMLtoGoodsDiv(html)
+                    // 可选：清空输入框
+                    searchElt.value = ""
+                }
+
+                // 清空列表
+                clearElt.onclick = function() {
+                    PrintHTMLtoGoodsDiv("")
+                }
+            }
+        </script>
+    </body>
+</html>
+
+-->

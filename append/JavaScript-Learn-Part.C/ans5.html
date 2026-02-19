@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息表格管理</title>
+    <style type="text/css">
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .search-area {
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 200px;
+            height: 30px;
+            padding: 0 5px;
+        }
+        .search-btn {
+            height: 30px;
+            cursor: pointer;
+        }
+        .form-area {
+            margin-bottom: 20px;
+        }
+        .form-area input {
+            width: 150px;
+            height: 30px;
+            padding: 0 5px;
+            margin: 0 5px;
+        }
+        .submit-btn {
+            height: 30px;
+            background-color: #17a2b8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0 15px;
+        }
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .student-table th, .student-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .student-table th {
+            background-color: #f8f9fa;
+        }
+        .student-table tr:hover {
+            background-color: #e9ecef;
+        }
+        .oper-btn {
+            width: 60px;
+            height: 28px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 0 2px;
+        }
+        .edit-btn {
+            background-color: #ffc107;
+            color: white;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 搜索区域 -->
+        <div class="search-area">
+            <input type="text" class="search-input" id="searchInput" placeholder="请输入学生姓名">
+            <button class="search-btn" id="searchBtn">查询</button>
+        </div>
+
+        <!-- 新增表单 -->
+        <div class="form-area">
+            <input type="text" id="nameInput" placeholder="姓名">
+            <input type="text" id="ageInput" placeholder="年龄">
+            <input type="text" id="classInput" placeholder="班级">
+            <button class="submit-btn" id="submitBtn">新增</button>
+            <input type="hidden" id="editIndex" value="-1"> <!-- 标记修改的索引 -->
+        </div>
+
+        <!-- 学生表格 -->
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>班级</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript">
+        // 学生数据
+        var students = [
+            {name: "张三", age: 18, class: "计算机1班"},
+            {name: "李四", age: 19, class: "软件2班"},
+            {name: "王五", age: 17, class: "网络3班"}
+        ];
+
+        // 获取元素
+        var searchInput = document.getElementById('searchInput');
+        var searchBtn = document.getElementById('searchBtn');
+        var nameInput = document.getElementById('nameInput');
+        var ageInput = document.getElementById('ageInput');
+        var classInput = document.getElementById('classInput');
+        var submitBtn = document.getElementById('submitBtn');
+        var editIndex = document.getElementById('editIndex');
+        var tableBody = document.getElementById('tableBody');
+
+        // 渲染表格
+        function renderTable(list) {
+            var html = '';
+            list.forEach(function(item, index) {
+                html += '<tr>';
+                html += '<td>' + item.name + '</td>';
+                html += '<td>' + item.age + '</td>';
+                html += '<td>' + item.class + '</td>';
+                html += '<td>';
+                html += '<button class="oper-btn edit-btn" data-index="' + index + '">修改</button>';
+                html += '<button class="oper-btn delete-btn" data-index="' + index + '">删除</button>';
+                html += '</td>';
+                html += '</tr>';
+            });
+            tableBody.innerHTML = html;
+        }
+
+        // 页面加载渲染
+        window.onload = function() {
+            renderTable(students);
+        }
+
+        // 搜索功能
+        searchBtn.onclick = function() {
+            var keyword = searchInput.value.trim().toLowerCase();
+            var filterList = students.filter(function(item) {
+                return item.name.toLowerCase().indexOf(keyword) !== -1;
+            });
+            renderTable(filterList);
+        }
+
+        // 新增/修改功能
+        submitBtn.onclick = function() {
+            var name = nameInput.value.trim();
+            var age = ageInput.value.trim();
+            var className = classInput.value.trim();
+
+            // 验证
+            if (name === '') {
+                alert('姓名不能为空！');
+                return;
+            }
+            if (isNaN(age) || age <= 0) {
+                alert('年龄必须是有效数字！');
+                return;
+            }
+
+            var index = editIndex.value;
+            if (index === '-1') {
+                // 新增
+                students.push({
+                    name: name,
+                    age: age,
+                    class: className
+                });
+            } else {
+                // 修改
+                students[index] = {
+                    name: name,
+                    age: age,
+                    class: className
+                };
+                // 恢复按钮状态
+                submitBtn.innerText = '新增';
+                editIndex.value = '-1';
+            }
+
+            // 清空输入框
+            nameInput.value = '';
+            ageInput.value = '';
+            classInput.value = '';
+            // 重新渲染
+            renderTable(students);
+        }
+
+        // 操作按钮事件委托
+        tableBody.onclick = function(e) {
+            var target = e.target;
+            var index = target.getAttribute('data-index');
+            
+            if (target.className.includes('edit-btn')) {
+                // 修改
+                var student = students[index];
+                nameInput.value = student.name;
+                ageInput.value = student.age;
+                classInput.value = student.class;
+                submitBtn.innerText = '修改';
+                editIndex.value = index;
+            } else if (target.className.includes('delete-btn')) {
+                // 删除
+                if (confirm('确定删除该学生信息吗？')) {
+                    students.splice(index, 1);
+                    renderTable(students);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

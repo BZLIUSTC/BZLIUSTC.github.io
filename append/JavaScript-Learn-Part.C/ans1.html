@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册表单</title>
+    <style type="text/css">
+        /* 表单整体样式 */
+        .register-form {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* 输入框样式 */
+        .form-item {
+            margin-bottom: 10px;
+        }
+        .form-item label {
+            display: inline-block;
+            width: 80px;
+        }
+        .form-item input {
+            width: 100%;
+            height: 30px;
+            padding: 0 5px;
+            box-sizing: border-box;
+        }
+        .form-item input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        /* 错误提示 */
+        .error-tip {
+            font-size: 12px;
+            color: red;
+            margin-left: 5px;
+            display: none;
+        }
+        /* 按钮样式 */
+        .btn {
+            width: 100%;
+            height: 35px;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-btn {
+            background-color: #007bff;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .reset-btn {
+            background-color: #6c757d;
+        }
+        .gender-item {
+            display: inline-block;
+            width: auto !important;
+        }
+    </style>
+</head>
+<body>
+    <form class="register-form" id="registerForm" action="#">
+        <div class="form-item">
+            <label>用户名：</label>
+            <input type="text" id="username" placeholder="请输入6-14位字母/数字">
+            <span class="error-tip" id="usernameTip">用户名格式错误</span>
+        </div>
+        <div class="form-item">
+            <label>密码：</label>
+            <input type="password" id="pwd" placeholder="请输入至少8位密码">
+            <span class="error-tip" id="pwdTip">密码不能为空且长度≥8</span>
+        </div>
+        <div class="form-item">
+            <label>确认密码：</label>
+            <input type="password" id="repwd" placeholder="请再次输入密码">
+            <span class="error-tip" id="repwdTip">两次密码不一致</span>
+        </div>
+        <div class="form-item">
+            <label>手机号：</label>
+            <input type="text" id="phone" placeholder="请输入11位手机号">
+            <span class="error-tip" id="phoneTip">手机号格式错误</span>
+        </div>
+        <div class="form-item">
+            <label>邮箱：</label>
+            <input type="text" id="email" placeholder="请输入邮箱地址">
+            <span class="error-tip" id="emailTip">邮箱格式错误</span>
+        </div>
+        <div class="form-item">
+            <label>性别：</label>
+            <input type="radio" name="gender" class="gender-item" value="男" checked>男
+            <input type="radio" name="gender" class="gender-item" value="女">女
+        </div>
+        <button type="button" class="btn submit-btn" id="submitBtn">注册</button>
+        <button type="reset" class="btn reset-btn" id="resetBtn">重置</button>
+    </form>
+
+    <script type="text/javascript">
+        // 获取元素
+        var username = document.getElementById('username');
+        var pwd = document.getElementById('pwd');
+        var repwd = document.getElementById('repwd');
+        var phone = document.getElementById('phone');
+        var email = document.getElementById('email');
+        var submitBtn = document.getElementById('submitBtn');
+        var resetBtn = document.getElementById('resetBtn');
+        var registerForm = document.getElementById('registerForm');
+
+        // 错误提示元素
+        var usernameTip = document.getElementById('usernameTip');
+        var pwdTip = document.getElementById('pwdTip');
+        var repwdTip = document.getElementById('repwdTip');
+        var phoneTip = document.getElementById('phoneTip');
+        var emailTip = document.getElementById('emailTip');
+
+        // 验证规则
+        function checkUsername() {
+            var val = username.value.trim();
+            var reg = /^[a-zA-Z0-9]{6,14}$/;
+            if (val === '' || !reg.test(val)) {
+                usernameTip.style.display = 'inline';
+                return false;
+            }
+            usernameTip.style.display = 'none';
+            return true;
+        }
+
+        function checkPwd() {
+            var val = pwd.value.trim();
+            if (val === '' || val.length < 8) {
+                pwdTip.style.display = 'inline';
+                return false;
+            }
+            pwdTip.style.display = 'none';
+            return true;
+        }
+
+        function checkRepwd() {
+            var val = repwd.value.trim();
+            if (val !== pwd.value.trim()) {
+                repwdTip.style.display = 'inline';
+                return false;
+            }
+            repwdTip.style.display = 'none';
+            return true;
+        }
+
+        function checkPhone() {
+            var val = phone.value.trim();
+            var reg = /^\d{11}$/;
+            if (val === '' || !reg.test(val)) {
+                phoneTip.style.display = 'inline';
+                return false;
+            }
+            phoneTip.style.display = 'none';
+            return true;
+        }
+
+        function checkEmail() {
+            var val = email.value.trim();
+            var reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+            if (val === '' || !reg.test(val)) {
+                emailTip.style.display = 'inline';
+                return false;
+            }
+            emailTip.style.display = 'none';
+            return true;
+        }
+
+        // 失去焦点验证
+        username.onblur = checkUsername;
+        pwd.onblur = checkPwd;
+        repwd.onblur = checkRepwd;
+        phone.onblur = checkPhone;
+        email.onblur = checkEmail;
+
+        // 获得焦点清空提示
+        username.onfocus = function() {
+            usernameTip.style.display = 'none';
+        }
+        pwd.onfocus = function() {
+            pwdTip.style.display = 'none';
+        }
+        repwd.onfocus = function() {
+            repwdTip.style.display = 'none';
+        }
+        phone.onfocus = function() {
+            phoneTip.style.display = 'none';
+        }
+        email.onfocus = function() {
+            emailTip.style.display = 'none';
+        }
+
+        // 注册按钮点击
+        submitBtn.onclick = function() {
+            var isUsernameOk = checkUsername();
+            var isPwdOk = checkPwd();
+            var isRepwdOk = checkRepwd();
+            var isPhoneOk = checkPhone();
+            var isEmailOk = checkEmail();
+
+            if (isUsernameOk && isPwdOk && isRepwdOk && isPhoneOk && isEmailOk) {
+                alert('注册成功！');
+                // registerForm.submit(); // 实际项目中打开此注释提交表单
+            } else {
+                alert('请检查输入内容！');
+            }
+        }
+
+        // 重置按钮清空提示
+        resetBtn.onclick = function() {
+            usernameTip.style.display = 'none';
+            pwdTip.style.display = 'none';
+            repwdTip.style.display = 'none';
+            phoneTip.style.display = 'none';
+            emailTip.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

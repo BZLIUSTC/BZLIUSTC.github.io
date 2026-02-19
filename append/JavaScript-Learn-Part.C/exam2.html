@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>2</title>
+        <style type="text/css">
+            #searchBox {
+                width: 200px;
+            }
+            .btn {
+                margin-left: 10px;
+            }
+            /* 商品*/
+            .good {
+                width: 200px;
+                border: 1px solid #eee;
+                border-radius: 8px;
+                padding: 10px;
+                margin: 10px;
+                float: left;
+                /* TODO 修改建议: 增加这一个可以使得width=内容+内边距+边框，更可控 */
+                box-sizing: border-box; /* 新增：保证宽度不溢出 */
+            }
+            .good:hover {
+                border-color: #ff6700;
+                background-color: #f5f5f5;
+                /* float:none; */
+            }
+            .goodName {
+                /* font: bold; */
+                /* TODO 修改要求：加粗是font-weight*/
+                font-weight: bold;
+            }
+            .goodPrice {
+                color: red;
+            }
+            .goodStock {
+                color: grey;
+            }
+
+            /* TODO 如何清除浮动*/
+            #Holder {
+                overflow: hidden;
+                /*
+                在CSS中，overflow: hidden; 是一个常用的属性，用于控制当元素内容超出其容器时的显示方式。它有以下几个主要功能：
+                1. 隐藏溢出内容
+                当一个元素的内容超出其设定的宽度和高度时，使用 overflow: hidden; 可以隐藏超出的部分。
+                2. 清除浮动
+                在使用浮动布局时，父元素可能无法检测到子元素的高度，导致父元素高度为0。此时，可以使用 overflow: hidden; 来清除浮动，使父元素的高度能够包含所有子元素。例如：
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var goodsData = [
+                {name: "小米手机", price: 1999, stock: 100},
+                {name: "华为平板", price: 2999, stock: 50},
+                {name: "苹果耳机", price: 1299, stock: 80},
+                {name: "小米手环", price: 199, stock: 200},
+                {name: "华为手表", price: 1599, stock: 80}
+            ];
+
+            // 依照商品列表（json对象的数组）渲染
+            /*
+            <span class="good" id="good_itemname">
+                <div class="goodName" id="goodName_itemname">商品名</div>
+                <div class="goodPrice" id="goodPrice_itemname">价格</div>
+                <div class="goodStock" id="goodStock_itemname">存货</div>
+            </span>
+            */
+            function GenHTMLByGoodsList(goodList) {
+                var html = ""
+                for(var i=0; i<goodList.length; i++) {
+                    var item = goodList[i]
+                    html += '<span class="good" id="good_item'
+                    html += item.name
+                    html += '">\n'
+                    html += '<div class="goodName" id="goodName_item'
+                    html += item.name
+                    html += '">'
+                    html += item.name
+                    html += '</div>\n'
+
+                    html += '<div class="goodPrice" id="goodPrice_item'
+                    html += item.name
+                    html += '">￥'
+                    html += item.price
+                    html += '</div>\n'
+
+                    html += '<div class="goodStock" id="goodStock_item'
+                    html += item.name
+                    html += '">库存'
+                    html += item.stock
+                    html += '件</div>\n</span>\n'
+                }
+                console.log('生成了html文本')
+                // console.log(html)
+                return html
+            }
+
+            function PrintHTMLtoGoodsDiv(htmlText) {
+                var goodsDivElt = document.getElementById('Holder')
+                goodsDivElt.innerHTML = htmlText
+                console.log("打印htmlText")
+            }
+
+            window.onload = function() {
+                var searchElt = document.getElementById('searchBox')
+                var findElt = document.getElementById('find')
+                var clearElt = document.getElementById('clearList')
+
+                var htmltext = GenHTMLByGoodsList(goodsData)
+                PrintHTMLtoGoodsDiv(htmltext)
+
+                findElt.onclick = function() {
+                    var goodsList = goodsData
+                    var searchText = searchElt.value.trim().toLowerCase()
+                    var resultList = []
+                    if(searchText == "") {return}
+                    console.log('执行匹配字符串:='+searchText)
+                    for(var i=0; i<goodsList.length; i++) {
+                        var item = goodsList[i]
+                        var name = item.name.toLowerCase()
+                        console.log('尝试匹配 '+name)
+                        if(name.length < searchText.length) {continue}
+                        if(name.indexOf(searchText) != -1)  {
+                            console.log(name.indexOf(searchText))
+                            resultList.push(item)
+                            console.log('找到'+name+'包含搜索字符串')
+                        }
+                    }
+
+                    var html = GenHTMLByGoodsList(resultList)
+                    PrintHTMLtoGoodsDiv(html)
+                }
+
+                clearElt.onclick = function() {
+                    PrintHTMLtoGoodsDiv("")
+                }
+            }
+        </script>
+    </body>
+    <input id="searchBox" type="text" placeholder="商品名"/>
+    <input class="btn" id="find" type="button" value="搜索"/>
+    <input class="btn" id="clearList" type="button" value="清空列表"/>
+    <div id="Holder">
+    </div>
+</html>

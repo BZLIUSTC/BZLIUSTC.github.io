@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>待办事项清单</title>
+    <style type="text/css">
+        .todo-container {
+            width: 300px;
+            margin: 50px auto;
+        }
+        .todo-input {
+            width: 200px;
+            height: 30px;
+            padding: 0 5px;
+        }
+        .add-btn {
+            height: 30px;
+            cursor: pointer;
+        }
+        .filter-btn {
+            margin: 10px 5px 10px 0;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .filter-btn.active {
+            background-color: #28a745;
+            color: white;
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .todo-item.done {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .btn {
+            width: 60px;
+            height: 25px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .complete-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <input type="text" class="todo-input" id="todoInput" placeholder="请输入待办事项">
+        <button class="add-btn" id="addBtn">添加</button>
+        
+        <div class="filter-area">
+            <button class="filter-btn active" id="allBtn">全部</button>
+            <button class="filter-btn" id="todoBtn">未完成</button>
+            <button class="filter-btn" id="doneBtn">已完成</button>
+        </div>
+
+        <ul class="todo-list" id="todoList"></ul>
+    </div>
+
+    <script type="text/javascript">
+        // 待办数据
+        var todoListData = [];
+        var currentFilter = 'all'; // all/todo/done
+
+        // 获取元素
+        var todoInput = document.getElementById('todoInput');
+        var addBtn = document.getElementById('addBtn');
+        var todoList = document.getElementById('todoList');
+        var allBtn = document.getElementById('allBtn');
+        var todoBtn = document.getElementById('todoBtn');
+        var doneBtn = document.getElementById('doneBtn');
+
+        // 渲染待办列表
+        function renderTodo() {
+            var html = '';
+            var filterData = [];
+            
+            // 筛选数据
+            if (currentFilter === 'all') {
+                filterData = todoListData;
+            } else if (currentFilter === 'todo') {
+                filterData = todoListData.filter(item => !item.isDone);
+            } else if (currentFilter === 'done') {
+                filterData = todoListData.filter(item => item.isDone);
+            }
+
+            // 生成HTML
+            filterData.forEach(function(item, index) {
+                html += '<li class="todo-item ' + (item.isDone ? 'done' : '') + '" data-index="' + index + '">';
+                html += '<span>' + item.content + '</span>';
+                html += '<div>';
+                html += '<button class="btn complete-btn">完成</button>';
+                html += '<button class="btn delete-btn">删除</button>';
+                html += '</div>';
+                html += '</li>';
+            });
+            todoList.innerHTML = html;
+        }
+
+        // 添加待办
+        addBtn.onclick = function() {
+            var content = todoInput.value.trim();
+            if (content === '') {
+                alert('待办事项不能为空！');
+                return;
+            }
+            todoListData.push({
+                content: content,
+                isDone: false
+            });
+            todoInput.value = '';
+            renderTodo();
+        }
+
+        // 事件委托 - 完成/删除
+        todoList.onclick = function(e) {
+            var target = e.target;
+            var index = target.parentElement.parentElement.getAttribute('data-index');
+            
+            if (target.className.includes('complete-btn')) {
+                // 切换完成状态
+                todoListData[index].isDone = !todoListData[index].isDone;
+            } else if (target.className.includes('delete-btn')) {
+                // 删除待办
+                if (confirm('确定删除该待办吗？')) {
+                    todoListData.splice(index, 1);
+                }
+            }
+            renderTodo();
+        }
+
+        // 筛选按钮
+        function setFilter(type) {
+            currentFilter = type;
+            // 重置按钮样式
+            allBtn.className = 'filter-btn';
+            todoBtn.className = 'filter-btn';
+            doneBtn.className = 'filter-btn';
+            // 激活当前按钮
+            if (type === 'all') allBtn.className += ' active';
+            if (type === 'todo') todoBtn.className += ' active';
+            if (type === 'done') doneBtn.className += ' active';
+            // 重新渲染
+            renderTodo();
+        }
+
+        allBtn.onclick = function() { setFilter('all'); }
+        todoBtn.onclick = function() { setFilter('todo'); }
+        doneBtn.onclick = function() { setFilter('done'); }
+    </script>
+</body>
+</html>

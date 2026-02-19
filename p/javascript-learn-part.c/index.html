@@ -10,9 +10,10 @@
 <meta property='og:description' content="JavaScript学习笔记三">
 <meta property='og:url' content='https://bzliustc.github.io/p/javascript-learn-part.c/'>
 <meta property='og:site_name' content='Nishizono Mio&#39;s Shaddow'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='javascript' /><meta property='article:published_time' content='2026-02-16T17:47:16&#43;08:00'/><meta property='article:modified_time' content='2026-02-16T17:47:16&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='javascript' /><meta property='article:published_time' content='2026-02-16T17:47:16&#43;08:00'/><meta property='article:modified_time' content='2026-02-16T17:47:16&#43;08:00'/><meta property='og:image' content='https://bzliustc.github.io/p/javascript-learn-part.c/front-page.jpg' />
 <meta name="twitter:title" content="JavaScript Learn Part.C">
-<meta name="twitter:description" content="JavaScript学习笔记三">
+<meta name="twitter:description" content="JavaScript学习笔记三"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://bzliustc.github.io/p/javascript-learn-part.c/front-page.jpg' />
     </head>
     <body class="
     article-page
@@ -327,6 +328,19 @@
         <li><a href="#发送请求的多种方式">发送请求的多种方式</a></li>
       </ol>
     </li>
+    <li><a href="#附录">附录</a>
+      <ol>
+        <li><a href="#js练习题二">JS练习题二</a>
+          <ol>
+            <li><a href="#单选题">单选题</a></li>
+            <li><a href="#不定项">不定项</a></li>
+            <li><a href="#填空题">填空题</a></li>
+            <li><a href="#编程题">编程题</a></li>
+          </ol>
+        </li>
+        <li><a href="#js练习题二-参考答案">JS练习题二-参考答案</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -338,8 +352,20 @@
 
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/p/javascript-learn-part.c/">
+                <img src="/p/javascript-learn-part.c/front-page_hu_9c597509a43f7109.jpg"
+                        srcset="/p/javascript-learn-part.c/front-page_hu_9c597509a43f7109.jpg 800w, /p/javascript-learn-part.c/front-page_hu_4bcfd967707c4d19.jpg 1600w"
+                        width="800" 
+                        height="594" 
+                        loading="lazy"
+                        alt="Featured image of post JavaScript Learn Part.C" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
@@ -395,7 +421,7 @@
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    6 minute read
                 </time>
             </div>
         
@@ -416,12 +442,12 @@
 <li>使用document对象，实际上是使用<code>window.document</code>，window一般可省略</li>
 </ul>
 <h2 id="dom编程案例">DOM编程案例
-</h2><h3 id="innerhtml和innertext来操作div和span"><a class="link" href="/static/append/JavaScript-Learn-Part.C/001.html" >innerHTML和innerText来操作div和span</a>
+</h2><h3 id="innerhtml和innertext来操作div和span"><a class="link" href="/append/JavaScript-Learn-Part.C/001.html" >innerHTML和innerText来操作div和span</a>
 </h3><p>通过元素的innerHTML可以设置元素内部（标签对之间）的内容：</p>
 <p><code>divElt.innerHTML = &quot;&lt;font color='red'&gt;整个字符串会被当成HTML内容填充到标签对之间&lt;/font&gt;&quot;</code></p>
 <p>通过元素的innerText可以设置元素内部（标签对之间）的内容：</p>
 <p><code>divElt.innerText = &quot;&lt;font color='red'&gt;整个字符串会被当成普通字符串内容填充到标签对之间&lt;/font&gt;&quot;</code></p>
-<h3 id="复选框的全选和取消全选"><a class="link" href="/static/append/JavaScript-Learn-Part.C/002.html" >复选框的全选和取消全选</a>
+<h3 id="复选框的全选和取消全选"><a class="link" href="/append/JavaScript-Learn-Part.C/002.html" >复选框的全选和取消全选</a>
 </h3><p>需求：某个复选框选中时，所有复选框选中。</p>
 <p>解决办法：</p>
 <ul>
@@ -429,8 +455,8 @@
 <li>document.getElementsByName()获取同名元素</li>
 <li>复选框选中/未选中。关键是<code>checked</code>属性</li>
 </ul>
-<h3 id="下拉列表选择项"><a class="link" href="/static/append/JavaScript-Learn-Part.C/004.-selectlist.html" >下拉列表选择项</a>
-</h3><h3 id="案例动态显示表格内容">案例:<a class="link" href="/static/append/JavaScript-Learn-Part.C/006.html" >动态显示表格内容</a>
+<h3 id="下拉列表选择项"><a class="link" href="/append/JavaScript-Learn-Part.C/004.-selectlist.html" >下拉列表选择项</a>
+</h3><h3 id="案例动态显示表格内容">案例:<a class="link" href="/append/JavaScript-Learn-Part.C/006.html" >动态显示表格内容</a>
 </h3><p>业务背景：网页显示学生信息表格，一开始只显示表头，点击按钮后显示所有表项。</p>
 <p>解决思路：</p>
 <ol>
@@ -472,7 +498,7 @@ qq号的正则表达式。
 <li>第五:要会调用Js正则表达式对象的方法。</li>
 </ul>
 <ol start="3">
-<li><a class="link" href="/static/append/JavaScript-Learn-Part.B/intro-of-regularExp.chm" >参考手册</a></li>
+<li><a class="link" href="/append/JavaScript-Learn-Part.B/intro-of-regularExp.chm" >参考手册</a></li>
 </ol>
 <h4 id="常见正则表达式符号">常见正则表达式符号
 </h4><p>1</p>
@@ -518,9 +544,9 @@ qq号的正则表达式。
 </ul>
 <p>方式二：<code>var regExp = new RegExp(&quot;正则表达式&quot;, &quot;标记&quot;)</code></p>
 <h4 id="正则表达式对象的方法">正则表达式对象的方法
-</h4><p>正则表达式对象的<code>test()</code>方法用于检查字符串是否匹配规则。<a class="link" href="/static/append/JavaScript-Learn-Part.B/040.html" >参考代码</a></p>
+</h4><p>正则表达式对象的<code>test()</code>方法用于检查字符串是否匹配规则。<a class="link" href="/append/JavaScript-Learn-Part.B/040.html" >参考代码</a></p>
 <p>字符串对象可以使用正则表达式：<code>var str = &quot;1970-1-1&quot;.replace(/-/g, &quot;/&quot;)</code>表示匹配中所有（正则表达式使用<code>g</code>标记）的减号，替换成斜杠</p>
-<h3 id="表单验证"><a class="link" href="/static/append/JavaScript-Learn-Part.C/007.html" >表单验证</a>
+<h3 id="表单验证"><a class="link" href="/append/JavaScript-Learn-Part.C/007.html" >表单验证</a>
 </h3><p>需求描述：<br>
 (1)用户名不能为空<br>
 (2)用户名必须在6-14位之间<br>
@@ -540,10 +566,11 @@ qq号的正则表达式。
 </li>
 <li>提示信息的显示/消失用span控制</li>
 </ul>
-<h3 id="案例网页时钟">案例:<a class="link" href="/static/append/JavaScript-Learn-Part.C/005.html" >网页时钟</a>
+<h3 id="案例网页时钟">案例:<a class="link" href="/append/JavaScript-Learn-Part.C/005.html" >网页时钟</a>
 </h3><p>需求：点击按钮显示时钟，并且以秒为间隔更新</p>
 <p>解决办法：</p>
 <p>执行<code>window.setInterval(&quot;一段JS代码&quot;, milliTime)</code>会开始周期性执行JS代码。
+特别的，如果代码是一个函数，可以不加引号和括弧，只写函数名。
 这个函数返回一个值，该值传入<code>window.clearInterval()</code>可以终止此段代码的周期调用。</p>
 <h2 id="bom编程案例">BOM编程案例
 </h2><h3 id="windowopen和close"><a class="link" href="/append/JavaScript-Learn-Part.C/bom-001.html" >window.open()和close()</a>
@@ -589,6 +616,431 @@ qq号的正则表达式。
 </ul>
 </li>
 </ul>
+<h2 id="附录">附录
+</h2><h3 id="js练习题二">JS练习题二
+</h3><h4 id="单选题">单选题
+</h4><p>1 &ndash; 执行var arr = new Array(3); arr[5] = 10;后，arr[4]的值是？（）</p>
+<p><code>A. undefined B. null C. 0 D. 报错</code></p>
+<p>2 &ndash; Date 对象的getMonth()方法返回值为 5，代表的实际月份是？（）</p>
+<p><code>A. 4 月 B. 5 月 C. 6 月 D. 7 月</code></p>
+<p>3 &ndash; 以下关于innerHTML和innerText的区别，说法正确的是？（）</p>
+<pre><code>A. innerHTML 会解析 HTML 标签，innerText 仅作为普通文本
+B. innerText 会解析 HTML 标签，innerHTML 仅作为普通文本
+C. 两者都会解析 HTML 标签
+D. 两者都仅作为普通文本
+</code></pre>
+<p>4 &ndash; 获取页面中所有name=&ldquo;hobby&quot;的复选框，正确的方法是？（）</p>
+<pre><code>A. document.getElementById (&quot;hobby&quot;)
+B. document.getElementsByName (&quot;hobby&quot;)
+C. document.getElementsByTagName (&quot;hobby&quot;)
+D. document.querySelector (&quot;hobby&quot;)
+</code></pre>
+<p><font color="red">5</font> &ndash; 正则表达式<code>\d</code>的含义是？（）</p>
+<p><code>A. 匹配任意空白符 B. 匹配数字 C. 匹配字母 / 数字 / 下划线 D. 匹配除换行外任意字符</code></p>
+<p>6 &ndash; 创建忽略大小写的正则表达式/abc/，正确的写法是？（）</p>
+<pre><code>A. var reg = /abc/i 
+B. var reg = new RegExp (&quot;abc&quot;, &quot;g&quot;)
+C. var reg = /abc/g 
+D. var reg = new RegExp (&quot;abc&quot;, &quot;m&quot;)
+</code></pre>
+<p>7 &ndash; 以下能实现 “每隔 1 秒执行一次showTime()函数” 的代码是？（）</p>
+<pre><code>A. window.setTimeout (&quot;showTime ()&quot;, 1000)
+B. window.setInterval (showTime, 1000)
+C. window.setInterval (&quot;showTime ()&quot;, 1)
+D. window.setTimeout (showTime, 1)
+</code></pre>
+<p>8 &ndash; 关闭由window.open()打开的当前窗口，正确的代码是？（）</p>
+<p><code>A. window.close () B. window.stop () C. window.exit () D. window.shut ()</code></p>
+<p>9 &ndash; 表单验证中，要判断密码框 (pwd) 和确认密码框 (repwd) 的值一致，正确的判断条件是？（）</p>
+<pre><code>A. pwd.value == repwd.value 
+B. pwd == repwd
+C. pwd.innerText == repwd.innerText 
+D. pwd.innerHTML == repwd.innerHTML
+</code></pre>
+<p>10 &ndash; 以下代码执行后str的值是？（）</p>
+<p><code>var str = &quot;2026-02-16&quot;.replace(/-/g, &quot;/&quot;)</code></p>
+<p><code>A. &quot;2026/02/16&quot; B. &quot;2026-02/16&quot; C. &quot;2026/02-16&quot; D. &quot;20260216&quot;</code></p>
+<p>11 &ndash; Date 对象的getTime()方法返回的是？（）</p>
+<pre><code>A. 当前时间的小时数 
+B. 1970/01/01 00:00:00 到现在的毫秒数
+C. 当前时间的分钟数 
+D. 当前时间的时间戳（秒数）
+</code></pre>
+<p><font color="red">12</font> &ndash; 要让下拉列表的选中变化触发事件，应使用的事件名是？（）</p>
+<p><code>A. onclick B. onchange C. onblur D. onfocus</code></p>
+<p>13 &ndash; 以下关于 BOM 和 DOM 的关系，正确的是？（）</p>
+<p><code>A. DOM 包含 BOM B. BOM 包含 DOM C. 两者相互独立 D. 两者完全等同</code></p>
+<p>14 &ndash; 正则表达式^[1-9][0-9]{4,}$匹配的是？（）</p>
+<pre><code>A. 至少 4 位的数字 
+B. 至少 5 位的数字（首位非 0）
+C. 4-5 位的数字 
+D. 任意长度的数字（首位非 0）
+</code></pre>
+<p>15 &ndash; 关于数组push方法，以下描述正确的是？（）</p>
+<pre><code>A. 向数组开头添加元素，返回新数组长度
+B. 向数组末尾添加元素，返回被添加的元素
+C. 向数组末尾添加元素，返回新数组长度
+D. 向数组开头添加元素，返回被添加的元素
+</code></pre>
+<h4 id="不定项">不定项
+</h4><p>16 &ndash; 以下创建数组的方式，正确的有？（）</p>
+<pre><code>A. var arr = {1, 2, 3}; 
+B. var arr = Array ();
+C. var arr = new Array (5); 
+D. var arr = new Array (&quot;a&quot;, &quot;b&quot;);
+</code></pre>
+<p>17 &ndash; 关于数组方法，以下说法正确的有？（）</p>
+<pre><code>A. pop () 方法会删除数组最后一个元素并返回该元素
+B. reverse () 方法会反转数组并返回数组引用
+C. join (&quot;,&quot;) 会将数组元素用逗号连接成字符串
+D. push () 方法可以一次添加多个元素
+</code></pre>
+<p>18 &ndash; 以下属于 Date 对象的方法有？（）</p>
+<p><code>A. getFullYear () B. getDay () C. getMinutes () D. toLocaleString ()</code></p>
+<p>19 &ndash; 以下关于复选框checked属性，正确的描述有？（）</p>
+<pre><code>A. 该属性值为布尔类型
+B. 设置chk.checked = true可选中复选框
+C. 获取chk.checked可判断是否选中
+D. 该属性只能通过 HTML 标签设置，无法通过 JS 修改
+</code></pre>
+<p>20 &ndash; 以下正则表达式标记，正确的有？（）</p>
+<p><code>A. g（全局匹配） B. i（忽略大小写） C. m（多行匹配） D. s（单行匹配）</code></p>
+<p>21 &ndash; 以下能实现 “页面跳转至百度” 的代码有？（）</p>
+<pre><code>A. window.location.href = &quot;https://www.baidu.com&quot;
+B. document.location = &quot;https://www.baidu.com&quot;
+C. window.open(&quot;https://www.baidu.com&quot;, &quot;_self&quot;)
+D. window.history.go(&quot;https://www.baidu.com&quot;)
+</code></pre>
+<p>22 &ndash; 表单验证的触发时机，符合笔记要求的有？（）</p>
+<pre><code>A. 文本框失去焦点（onblur）时验证
+B. 文本框获得焦点（onfocus）时清空错误提示
+C. 点击提交按钮前统一验证所有项
+D. 页面加载时自动验证所有项
+</code></pre>
+<p>23 &ndash; 关于window.setInterval()和window.clearInterval()，正确的有？（）</p>
+<pre><code>A. setInterval () 返回一个标识 ID，用于 clearInterval () 终止执行
+B. clearInterval () 需要传入 setInterval () 返回的 ID 才能生效
+C. setInterval () 的第一个参数可以是字符串形式的 JS 代码
+D. setInterval () 的第二个参数单位是秒
+</code></pre>
+<p>24 &ndash; 以下关于正则表达式符号，含义正确的有？（）</p>
+<pre><code>A. *：重复一次或更多次 
+B. +：重复零次或更多次
+C. ?：重复零次或一次 
+D. {n,m}：重复 n 到 m 次（包含 n 和 m）
+</code></pre>
+<p>35 &ndash; 以下关于 BOM 的操作，正确的有？（）</p>
+<pre><code>A. window.confirm () 会弹出确认框，返回字符串
+B. window.history.back () 可返回上一页
+C. window.top !== window.self 表示当前窗口不是顶级窗口
+D. window.open () 默认在当前窗口（_self）打开链接
+</code></pre>
+<h4 id="填空题">填空题
+</h4><p>JS 数组是可变长的，越界下标赋值会自动扩容，未赋值的扩展元素默认值为______。</p>
+<p>数组pop()方法会弹出末尾元素并返回，数组长度会______。</p>
+<p>Date 对象的getDay()方法返回星期数，______代表周一到周日（填写数值范围）。</p>
+<p>document对象的完整写法是______，其中window可省略。</p>
+<p>要将 HTML 标签解析后填充到元素中，应使用______属性；仅填充普通文本用______属性。</p>
+<p>获取同名复选框的方法是document.______()。</p>
+<p>下拉列表选中变化的事件名是______。</p>
+<p>正则表达式中，\w匹配______、数字、下划线或汉字。</p>
+<p>正则表达式^匹配字符串的______，$匹配字符串的______。</p>
+<p>创建正则表达式的两种方式：字面量/正则/标记和new ______(&ldquo;正则&rdquo;, &ldquo;标记&rdquo;)。</p>
+<p>正则表达式对象的______() 方法用于检查字符串是否匹配规则。</p>
+<p>表单验证中，要让所有项合法后才能提交，应使用______按钮替代 submit 按钮，通过form.submit()提交。</p>
+<p>window.setInterval()的第二个参数单位是______。</p>
+<p>终止setInterval()的周期性执行，需调用window.______()并传入标识 ID。</p>
+<p>window.open()的第二个参数为______时，在当前窗口打开链接。</p>
+<p>跳转到前一页面的 BOM 方法是window.history.______()。</p>
+<p>QQ 号的正则表达式是______（填写笔记中的表达式）。</p>
+<p>表单验证中，错误提示信息要求字体______号、______色。</p>
+<p>Date 对象的getTime()方法返回自 1970/01/01 00:00:00 的______数。</p>
+<p>字符串的replace()方法结合正则g标记，可______替换所有匹配的内容。</p>
+<h4 id="编程题">编程题
+</h4><h5 id="编程题-1用户注册表单表单验证--css-样式--事件处理">编程题 1：用户注册表单（表单验证 + CSS 样式 + 事件处理）
+</h5><p>题目要求：
+实现一个符合以下要求的用户注册表单页面：</p>
+<ol>
+<li>
+<p>HTML 结构（30 分）</p>
+<ul>
+<li>包含表单（action 设为#），表单项：用户名、密码、确认密码、手机号、邮箱、性别单选框、注册按钮、重置按钮；</li>
+<li>每个输入项对应<label>标签，错误提示用<span>（初始隐藏）；</li>
+<li>手机号和邮箱输入框添加placeholder提示。</li>
+</ul>
+</li>
+<li>
+<p>CSS 样式（20 分）</p>
+<ul>
+<li>表单整体居中，宽度 400px，内边距 20px，边框 1px 实线 #ccc；</li>
+<li>输入框宽度 100%，高度 30px，margin-bottom 10px；</li>
+<li>错误提示文字：12px、红色、margin-left 5px；</li>
+<li>按钮宽度 100%，高度 35px，注册按钮背景色 #007bff，鼠标悬停时背景色 #0056b3，重置按钮背景色 #6c757d；</li>
+<li>输入框获取焦点时边框颜色变为 #007bff。</li>
+</ul>
+</li>
+<li>
+<p>JS 验证逻辑（50 分）</p>
+<ul>
+<li>失去焦点验证：<br>
+✅ 用户名：非空、6-14 位、仅字母 / 数字（正则：<code>/^[a-zA-Z0-9]{6,14}$/</code>）；<br>
+✅ 密码：非空、长度≥8；<br>
+✅ 确认密码：与密码一致；<br>
+✅ 手机号：非空、11 位数字（正则：<code>/^\d{11}$/</code>）；<br>
+✅ 邮箱：符合邮箱格式（正则：<code>/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/</code>）；<br></li>
+<li>输入框获得焦点时清空对应错误提示；</li>
+<li>点击注册按钮时，触发所有输入项的验证，全部合法则弹出 “注册成功”，否则阻止表单提交；</li>
+<li>点击重置按钮时，清空所有输入和错误提示。</li>
+</ul>
+</li>
+<li>
+<p>评分标准</p>
+<ul>
+<li>HTML 结构完整、语义化（30 分）；</li>
+<li>CSS 样式符合要求，交互样式生效（20 分）；</li>
+<li>每个输入项的验证逻辑正确（每项 8 分，共 40 分）；</li>
+<li>按钮点击逻辑正确（10 分）。</li>
+</ul>
+</li>
+</ol>
+<h5 id="编程题-2商品列表展示侧重dom-操作--css-布局--数据渲染">编程题 2：商品列表展示（侧重：DOM 操作 + CSS 布局 + 数据渲染）
+</h5><p>题目要求：
+实现一个商品列表页面，支持动态渲染和样式控制：</p>
+<ol>
+<li>
+<p>HTML 结构（20 分）</p>
+<ul>
+<li>包含：搜索框、搜索按钮、商品列表容器（<code>&lt;div&gt;</code>）、清空列表按钮；</li>
+<li>商品列表初始为空，渲染后每个商品项包含：商品名称、价格、库存（用<code>&lt;div&gt;/&lt;span&gt;</code>布局）。</li>
+</ul>
+</li>
+<li>
+<p>CSS 样式（30 分）</p>
+<ul>
+<li>搜索区域：输入框宽度 200px，按钮 margin-left 10px；</li>
+<li>商品列表：每个商品项为独立卡片，宽度 200px，边框 1px 实线 #eee，内边距 10px，margin 10px，浮动左对齐；</li>
+<li>商品名称：字体加粗，价格红色，库存灰色；</li>
+<li>鼠标悬停商品卡片时，边框颜色变为 #ff6700，背景色 #f5f5f5；</li>
+<li>清除浮动，避免布局错乱。???</li>
+</ul>
+</li>
+<li>
+<p>JS 功能（50 分）</p>
+</li>
+</ol>
+<ul>
+<li>页面加载完成后，默认渲染所有商品；</li>
+<li>搜索功能：输入商品名称关键词，点击搜索按钮筛选商品（忽略大小写）；</li>
+<li>清空列表：点击按钮清空商品列表容器内容；</li>
+<li>动态渲染逻辑：通过拼接 HTML 字符串 + innerHTML实现，而非手动创建节点。</li>
+</ul>
+<p>预设商品数据（JSON 格式）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">goodsData</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;小米手机&#34;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mi">1999</span><span class="p">,</span> <span class="nx">stock</span><span class="o">:</span> <span class="mi">100</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;华为平板&#34;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mi">2999</span><span class="p">,</span> <span class="nx">stock</span><span class="o">:</span> <span class="mi">50</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;苹果耳机&#34;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mi">1299</span><span class="p">,</span> <span class="nx">stock</span><span class="o">:</span> <span class="mi">80</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;小米手环&#34;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mi">199</span><span class="p">,</span> <span class="nx">stock</span><span class="o">:</span> <span class="mi">200</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;华为手表&#34;</span><span class="p">,</span> <span class="nx">price</span><span class="o">:</span> <span class="mi">1599</span><span class="p">,</span> <span class="nx">stock</span><span class="o">:</span> <span class="mi">80</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>评分标准
+<ul>
+<li>HTML 结构合理（20 分）；</li>
+<li>CSS 布局、样式、交互效果符合要求（30 分）；</li>
+<li>默认渲染商品列表（15 分）；</li>
+<li>搜索筛选功能正确（20 分）；</li>
+<li>清空列表功能正确（15 分）。</li>
+</ul>
+</li>
+</ol>
+<h5 id="编程题-3待办事项清单侧重事件绑定--css-显隐--数组操作">编程题 3：待办事项清单（侧重：事件绑定 + CSS 显隐 + 数组操作）
+</h5><p>题目要求：
+实现一个待办事项（TODO）清单页面，支持增删改查：</p>
+<ol>
+<li>
+<p>HTML 结构（20 分）</p>
+<ul>
+<li>包含：输入框（待办内容）、添加按钮、待办列表（<code>&lt;ul&gt;</code>）、完成 / 未完成筛选按钮；</li>
+<li>每个待办项包含：文本、完成按钮、删除按钮。</li>
+</ul>
+</li>
+<li>
+<p>CSS 样式（30 分）</p>
+<ul>
+<li>待办列表宽度 300px，列表项无默认编号（list-style-type: none），内边距 10px，边框 1px 实线 #ddd，margin 5px 0；</li>
+<li>已完成的待办项：文字划线（text-decoration: line-through）、颜色 #999；</li>
+<li>筛选按钮：margin 5px，点击时背景色变为 #28a745；</li>
+<li>完成 / 删除按钮：margin-left 10px，小尺寸（宽 60px，高 25px）。</li>
+</ul>
+</li>
+<li>
+<p>JS 功能（50 分）</p>
+<ul>
+<li>存储待办数据：用数组保存，每个项包含content（文本）、isDone（是否完成）；</li>
+<li>添加待办：输入非空内容，点击添加按钮，新增待办项到列表，清空输入框；</li>
+<li>完成待办：点击完成按钮，切换待办项的isDone状态，同步更新样式；</li>
+<li>删除待办：点击删除按钮，从数组和页面中移除对应项；</li>
+<li>筛选功能：点击 “完成” 按钮只显示已完成项，点击 “未完成” 只显示未完成项，点击 “全部” 显示所有项；</li>
+<li>所有事件绑定采用 “获取元素 + 赋值事件句柄” 方式（而非行间事件）。</li>
+</ul>
+</li>
+<li>
+<p>评分标准</p>
+<ul>
+<li>HTML 结构完整（20 分）；</li>
+<li>CSS 样式、筛选按钮交互、完成项样式符合要求（30 分）；</li>
+<li>添加待办功能正确（10 分）；</li>
+<li>完成 / 删除待办功能正确（20 分）；</li>
+<li>筛选功能正确（20 分）。</li>
+</ul>
+</li>
+</ol>
+<h5 id="编程题-4网页计算器侧重js-运算--css-布局--事件委托">编程题 4：网页计算器（侧重：JS 运算 + CSS 布局 + 事件委托）
+</h5><p>题目要求：
+实现一个简易计算器，支持加减乘除运算：</p>
+<ol>
+<li>
+<p>HTML 结构（25 分）</p>
+<ul>
+<li>包含：显示框（<code>&lt;input type=&quot;text&quot;</code>，只读）、数字按钮（0-9）、运算符按钮（+、-、×、÷）、等号按钮、清空按钮；</li>
+<li>按钮用<code>&lt;button&gt;</code>标签，按计算器布局排列（4 列）。</li>
+</ul>
+</li>
+<li>
+<p>CSS 样式（25 分）</p>
+<ul>
+<li>计算器整体居中，宽度 300px，边框 2px 实线 #333，内边距 10px；</li>
+<li>显示框：宽度 100%，高度 40px，字体大小 18px，文本右对齐，margin-bottom 10px；</li>
+<li>按钮：宽度 70px，高度 70px，字体大小 16px，margin 2px；</li>
+<li>运算符按钮背景色 #ff9500，等号按钮背景色 #ff3b30，清空按钮背景色 #e6e6e6；</li>
+<li>按钮点击时（:active）背景色加深。</li>
+</ul>
+</li>
+<li>
+<p>JS 功能（50 分）</p>
+<ul>
+<li>显示框初始为空，点击数字 / 运算符按钮，内容追加到显示框；</li>
+<li>点击等号按钮：</li>
+<li>✅ 解析显示框中的运算表达式（如 “12+34”），计算结果并显示；</li>
+<li>✅ 处理除零错误，弹出提示 “除数不能为 0”；</li>
+<li>✅ 处理非法表达式，弹出提示 “表达式错误”；</li>
+<li>点击清空按钮，清空显示框；</li>
+<li>事件处理：采用事件委托（给按钮父容器绑定点击事件），而非逐个绑定按钮事件。</li>
+</ul>
+</li>
+<li>
+<p>评分标准</p>
+<ul>
+<li>HTML 结构符合计算器布局（25 分）；</li>
+<li>CSS 样式、按钮交互效果符合要求（25 分）；</li>
+<li>数字 / 运算符输入功能正确（15 分）；</li>
+<li>运算逻辑正确（含除零 / 非法表达式处理）（25 分）；</li>
+<li>事件委托实现（10 分）。</li>
+</ul>
+</li>
+</ol>
+<h5 id="编程题-5动态表格管理系统侧重表格操作--css-样式--json-数据">编程题 5：动态表格管理系统（侧重：表格操作 + CSS 样式 + JSON 数据）
+</h5><p>题目要求：
+实现一个学生信息表格管理页面，支持新增、删除、修改、查询：</p>
+<ol>
+<li>
+<p>HTML 结构（20 分）</p>
+<ul>
+<li>包含：查询输入框、查询按钮、新增表单（姓名、年龄、班级）、提交按钮、学生信息表格（表头：姓名、年龄、班级、操作）；</li>
+<li>操作列包含 “修改”“删除” 按钮，表格边框 1px 实线。</li>
+</ul>
+</li>
+<li>
+<p>CSS 样式（30 分）</p>
+<ul>
+<li>表格宽度 80%，居中，单元格内边距 8px，表头背景色 #f8f9fa，文字居中；</li>
+<li>表格行鼠标悬停时背景色 #e9ecef；</li>
+<li>新增表单：输入框宽度 150px，margin 5px，提交按钮背景色 #17a2b8；</li>
+<li>修改 / 删除按钮：分别为 #ffc107、#dc3545，小尺寸（宽 60px，高 28px）。</li>
+</ul>
+</li>
+<li>
+<p>JS 功能（50 分）</p>
+<ul>
+<li>页面加载完成后，渲染学生数据到表格；</li>
+<li>新增功能：表单验证（姓名非空、年龄为数字），验证通过后添加到数组并刷新表格；</li>
+<li>删除功能：点击删除按钮，确认（confirm）后删除对应学生，刷新表格；</li>
+<li>修改功能：点击修改按钮，将学生信息填充到新增表单，提交按钮变为 “修改”，点击后更新数据并恢复按钮文本；</li>
+<li>查询功能：输入姓名关键词，筛选并渲染符合条件的学生。</li>
+</ul>
+</li>
+</ol>
+<p>预设学生数据（JSON 格式）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">students</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;张三&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">18</span><span class="p">,</span> <span class="kr">class</span><span class="o">:</span> <span class="s2">&#34;计算机1班&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;李四&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">19</span><span class="p">,</span> <span class="kr">class</span><span class="o">:</span> <span class="s2">&#34;软件2班&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;王五&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">17</span><span class="p">,</span> <span class="kr">class</span><span class="o">:</span> <span class="s2">&#34;网络3班&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">];</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>评分标准
+<ul>
+<li>HTML 结构完整、表格布局合理（20 分）；</li>
+<li>CSS 样式、表格交互效果符合要求（30 分）；</li>
+<li>初始渲染 / 新增 / 删除功能正确（每项 10 分，共 30 分）；</li>
+<li>修改功能正确（10 分）；</li>
+<li>查询功能正确（10 分）。</li>
+</ul>
+</li>
+</ol>
+<h3 id="js练习题二-参考答案">JS练习题二-参考答案
+</h3><p>ACABB ABAAA BBBBB</p>
+<p>CD ABC ABCD ABC ABC ABC ABC ABC CD BC</p>
+<ol>
+<li>undefined</li>
+<li>减一（或：减少 1）</li>
+<li>1-7 4. window.document</li>
+<li>innerHTML、innerText</li>
+<li>getElementsByName</li>
+<li>onchange</li>
+<li>字母</li>
+<li>开始、结束</li>
+<li>RegExp</li>
+<li>test</li>
+<li>button</li>
+<li>毫秒（或：millisecond）</li>
+<li>clearInterval</li>
+<li>_self</li>
+<li>back</li>
+<li>[1-9][0-9]{4，}（或：^[1-9][0-9]{4,}$）</li>
+<li>12、红</li>
+<li>毫秒</li>
+<li>全局</li>
+</ol>
+<p>编程题参考答案:<br>
+<a class="link" href="/append/JavaScript-Learn-Part.C/ans1.html" >第1题</a><br>
+<a class="link" href="/append/JavaScript-Learn-Part.C/ans2.html" >第2题</a><br>
+<a class="link" href="/append/JavaScript-Learn-Part.C/ans3.html" >第3题</a><br>
+<a class="link" href="/append/JavaScript-Learn-Part.C/ans4.html" >第4题</a><br>
+<a class="link" href="/append/JavaScript-Learn-Part.C/ans5.html" >第5题</a><br></p>
 
 </section>
 
@@ -664,6 +1116,30 @@ qq号的正则表达式。
     <h2 class="section-title">Related content</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/javascript-learn-part.b/">
+        
+        
+            <div class="article-image">
+                <img src="/p/javascript-learn-part.b/front-page.b93b8adb98a613a273b1cf9013f9c609_hu_234f0d26c4aecd9d.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post JavaScript Learn Part.B"
+                        
+                        data-hash="md5-uTuK25imE6Jzsc&#43;QE/nGCQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">JavaScript Learn Part.B</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
@@ -756,30 +1232,6 @@ qq号的正则表达式。
 
         <div class="article-details">
             <h2 class="article-title">MyZeroBlog</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/markdown-syntax-guide/">
-        
-        
-            <div class="article-image">
-                <img src="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.c514d916917173a48a42e0114b469961_hu_cd6a07a0d3af7b3e.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Markdown Syntax Guide"
-                        
-                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Markdown Syntax Guide</h2>
         </div>
     </a>
 </article>

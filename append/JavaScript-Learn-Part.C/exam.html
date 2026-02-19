@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>表单</title>
+        <style type="text/css">
+            /* 表单 */
+            #form {
+                width: 400px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                position: absolute; left: 50%; top: 50%;
+                transform: translate(-50%, -50%); 
+            }
+            .inputBox {
+                width: 100%;
+                height: 30px;
+                margin-bottom: 10px;
+                border: 1px solid black;
+                /* TODO 批改建议 */
+                box-sizing: border-box; /* 新增：保证width:100%不溢出 */
+                outline: none; /* 新增：清除默认焦点外框，避免样式冲突 */
+            }
+            /* TODO 批改建议 */
+            /* .inputBox:focus {
+                border-color: #007bff;
+            } */
+            .errorNotice {
+                font-size: 12px;
+                color: red;
+                margin-left: 5px;
+                /* TODO 批改建议：通过display控制可使得表单长度随提示span消失而变化，而不仅仅是清空字符串 */
+                display: none;
+            }
+            .btn {
+                width: 100%;
+                height: 35px;
+                /* border-style: hidden; */
+            }
+            #submitBtn {
+                background-color: #007bff;
+            }
+            #resetBtn {
+                background-color: #6c757d;
+            }
+            #submitBtn:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                var nameElt = document.getElementById('name')
+                var passwdElt = document.getElementById('passwd')
+                var confirmElt = document.getElementById('cpasswd')
+                var emailElt = document.getElementById('email')
+                var phoneElt = document.getElementById('phone')
+
+                var nameErrElt = document.getElementById('nameErrorNotice')
+                var passwdErrElt = document.getElementById('passwdErrorNotice')
+                var confirmErrElt = document.getElementById('cpasswdErrorNotice')
+                var phoneErrElt = document.getElementById('phoneErrorNotice')
+                var emailErrElt = document.getElementById('emailErrorNotice')
+
+                var submitElt = document.getElementById('submitBtn')
+                var resetElt = document.getElementById('resetBtn')
+                var formElt = document.getElementById('form')
+
+                nameElt.onblur = function() {
+                    var name = nameElt.value.trim()
+                    if(name == "") {
+                        nameErrElt.innerHTML = "用户名不能为空"
+                        nameErrElt.style.display = "block"
+                    } else if(name.length < 6 || name.length > 14) {
+                        nameErrElt.innerHTML = "用户名长度应为6至14字符"
+                        nameErrElt.style.display = "block"
+                    } else {
+                        var nameRegExp = /^[a-zA-Z0-9]{6,14}$/
+                        if(nameRegExp.test(name) == false) {
+                            nameErrElt.innerHTML = "用户名只能由字母和数字组成"
+                            nameErrElt.style.display = "block"
+                        } else {
+                            nameErrElt.style.display = "none"
+                        }
+                    }
+                }
+                nameElt.onfocus = function() {
+                    nameErrElt.style.display = "none"
+                }
+
+                passwdElt.onblur = function() {
+                    var password = passwdElt.value 
+                    // TODO 批改建议: 增加为空特判
+                    if(password.length < 8) {
+                        passwdErrElt.style.display = "block"
+                        passwdErrElt.innerHTML = "密码长度不小于8位"
+                    }
+
+                    var password = passwdElt.value 
+                    var confirm = confirmElt.value 
+                    if(password != confirm) {
+                        confirmErrElt.innerHTML = "密码不一致"
+                        confirmErrElt.style.display = "block"
+                    }
+                }
+                passwdElt.onfocus = function() {
+                    passwdErrElt.style.display = "none"
+                    confirmErrElt.style.display = "none"
+                }
+
+                confirmElt.onblur = function() {
+                    var password = passwdElt.value 
+                    var confirm = confirmElt.value 
+                    if(password != confirm) {
+                        confirmErrElt.innerHTML = "密码不一致"
+                        confirmErrElt.style.display = "block"
+                    }
+                }
+                confirmElt.onfocus = function() {
+                    confirmErrElt.style.display = "none"
+                }
+
+                phoneElt.onblur = function() {
+                    var number = phoneElt.value
+                    if(number == "") {
+                        phoneErrElt.innerHTML = "手机号不可为空"
+                        phoneErrElt.style.display = "block"
+                    } else {
+                        var phoneRegExp = /^\d{11}$/
+                        if(!phoneRegExp.test(number)) {
+                            phoneErrElt.innerHTML = "请输入有效的手机号"
+                            phoneErrElt.style.display = "block"
+                        }
+                    }
+                }
+                phoneElt.onfocus = function() {
+                    phoneErrElt.style.display = "none"
+                }
+
+                emailElt.onblur = function() {
+                    var email = emailElt.value 
+                    var emailRegExp = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+                    // TODO 批改建议: 增加为空特判
+                    if(!emailRegExp.test(email)) {
+                        emailErrElt.innerHTML = "邮箱格式不正确"
+                        emailErrElt.style.display = "block"
+                    }
+                }
+                emailElt.onfocus = function() {
+                    emailErrElt.style.display = "none"
+                }
+
+                submitElt.onclick = function() {
+                    nameElt.focus()
+                    nameElt.blur()
+                    passwdElt.focus()
+                    passwdElt.blur()
+                    confirmElt.focus()
+                    confirmElt.blur()
+                    phoneElt.focus()
+                    phoneElt.blur()
+                    emailElt.focus()
+                    emailElt.blur()
+
+                    var nameOK = nameErrElt.style.display == "none"
+                    var passwdOK = passwdErrElt.style.display == "none"
+                    var phoneOK = phoneErrElt.style.display == "none"
+                    var emailOK = emailErrElt.style.display == "none"
+
+                    var genderOK = document.getElementById('genderM').checked || document.getElementById('genderW').checked
+                    
+
+                    if(nameOK && passwdOK && phoneOK && emailOK && !genderOK){
+                        console.log(genderOK)
+                        alert('请选择性别')
+                    } else {
+                        console.log('sex ok')
+                    }
+                    if(nameOK && passwdOK && phoneOK && emailOK && genderOK) {
+                        alert("注册成功")
+                        formElt.submit()
+                    } else {
+                        console.log("reg false")
+                    }
+                }
+
+                resetElt.onclick = function() {
+                    if(window.confirm("是否清空表单?")) {
+                        formElt.reset()
+                        // TODO 批改建议: 要清空错误提示
+                        passwdErrElt.style.display = "none"
+                    }
+                }
+                
+                // document.getElementById('debug').onclick = function() {
+                //     console.log(document.getElementById('genderM').checked)
+                //     console.log(document.getElementById('genderW').checked)
+                //     var genderOK = document.getElementById('genderM').checked || document.getElementById('genderW').checked
+                //     console.log(genderOK)
+                // }
+            }
+        </script>
+        <form id="form" action="127.0.1.1">
+            用户名<input class="inputBox" id="name" type="text" name="username"/>
+            <span class="errorNotice" id="nameErrorNotice"></span>
+            <br>
+            密码<input class="inputBox" id="passwd" type="password" name="password"/>
+            <span class="errorNotice" id="passwdErrorNotice"></span>
+            <br>
+            确认密码<input class="inputBox" id="cpasswd" type="password"/>
+            <span class="errorNotice" id="cpasswdErrorNotice"></span>
+            <br>
+            手机号<input class="inputBox" id="phone" type="text" name="phoneNumber" placeholder="输入13位手机号"/>
+            <span class="errorNotice" id="phoneErrorNotice"></span>
+            <br>
+            邮箱<input class="inputBox" id="email" type="text" name="emailAddress" placeholder="输入完整邮箱地址"/>
+            <span class="errorNotice" id="emailErrorNotice"></span>
+            <br>
+            性别
+            <br>
+            <input id="genderM" type="radio" name="gender" value="1"/>男 
+            <input id="genderW" type="radio" name="gender" value="0"/>女 <br>
+            <input class="btn" id="submitBtn" type="button" value="注册"/>
+            <input class="btn" id="resetBtn" type="button" value="重置"/><br>
+            <!-- <input class="btn" id="debug" type="button" value="debug"/> -->
+        </form>
+    </body>
+</html>
