@@ -1,0 +1,126 @@
+例子：考察如下的
+部门表
++--------+------------+
+| deptno | dname      |
++--------+------------+
+|     10 | ACCOUNTING |
+|     20 | RESEARCH   |
+|     30 | SALES      |
+|     40 | OPERATIONS |
++--------+------------+
+
+员工表
++-------+--------+--------+
+| empno | ename  | deptno |
++-------+--------+--------+
+|  7369 | SMITH  |     20 |
+|  7499 | ALLEN  |     30 |
+|  7521 | WARD   |     30 |
+|  7566 | JONES  |     20 |
+|  7654 | MARTIN |     30 |
+|  7698 | BLAKE  |     30 |
+|  7782 | CLARK  |     10 |
+|  7788 | SCOTT  |     20 |
+|  7839 | KING   |     10 |
+|  7844 | TURNER |     30 |
+|  7876 | ADAMS  |     20 |
+|  7900 | JAMES  |     30 |
+|  7902 | FORD   |     20 |
+|  7934 | MILLER |     10 |
++-------+--------+--------+
+
+如果把【部门表】当作“需要帮助表”，【员工表】当作【不需要帮助的表】，来做外连接过滤，意味着：
+
+对于部门x (x in (10, 20, 30) )，员工表总存在至少一行，它的部门编号等于 x；
+与此同时，部门 40 发现员工表没有一个员工部门编号是40；
+
+这种情况下: 
+
+执行：select * from dept left join emp
+
+报错：ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+
+执行：select * from dept left join emp on 1=1 
+得到的临时表，这和 from dept join emp 结果完全一样
++--------+------------+----------+-------+--------+-----------+------+------------+---------+---------+--------+
+| DEPTNO | DNAME      | LOC      | EMPNO | ENAME  | JOB       | MGR  | HIREDATE   | SAL     | COMM    | DEPTNO |
++--------+------------+----------+-------+--------+-----------+------+------------+---------+---------+--------+
+|     10 | ACCOUNTING | NEW YORK |  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |
+|     10 | ACCOUNTING | NEW YORK |  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |
+|     10 | ACCOUNTING | NEW YORK |  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |
+|     10 | ACCOUNTING | NEW YORK |  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |
+|     10 | ACCOUNTING | NEW YORK |  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |
+|     10 | ACCOUNTING | NEW YORK |  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |
+|     10 | ACCOUNTING | NEW YORK |  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |
+|     10 | ACCOUNTING | NEW YORK |  7788 | SCOTT  | ANALYST   | 7566 | 1987-04-19 | 3000.00 |    NULL |     20 |
+|     10 | ACCOUNTING | NEW YORK |  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |
+|     10 | ACCOUNTING | NEW YORK |  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |
+|     10 | ACCOUNTING | NEW YORK |  7876 | ADAMS  | CLERK     | 7788 | 1987-05-23 | 1100.00 |    NULL |     20 |
+|     10 | ACCOUNTING | NEW YORK |  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |
+|     10 | ACCOUNTING | NEW YORK |  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |
+|     10 | ACCOUNTING | NEW YORK |  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |
+|     20 | RESEARCH   | DALLAS   |  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |
+|     20 | RESEARCH   | DALLAS   |  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |
+|     20 | RESEARCH   | DALLAS   |  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |
+|     20 | RESEARCH   | DALLAS   |  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |
+|     20 | RESEARCH   | DALLAS   |  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |
+|     20 | RESEARCH   | DALLAS   |  7788 | SCOTT  | ANALYST   | 7566 | 1987-04-19 | 3000.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |
+|     20 | RESEARCH   | DALLAS   |  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |
+|     20 | RESEARCH   | DALLAS   |  7876 | ADAMS  | CLERK     | 7788 | 1987-05-23 | 1100.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |
+|     20 | RESEARCH   | DALLAS   |  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |
+|     30 | SALES      | CHICAGO  |  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |
+|     30 | SALES      | CHICAGO  |  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |
+|     30 | SALES      | CHICAGO  |  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |
+|     30 | SALES      | CHICAGO  |  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |
+|     30 | SALES      | CHICAGO  |  7788 | SCOTT  | ANALYST   | 7566 | 1987-04-19 | 3000.00 |    NULL |     20 |
+|     30 | SALES      | CHICAGO  |  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |
+|     30 | SALES      | CHICAGO  |  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7876 | ADAMS  | CLERK     | 7788 | 1987-05-23 | 1100.00 |    NULL |     20 |
+|     30 | SALES      | CHICAGO  |  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |
+|     30 | SALES      | CHICAGO  |  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |
+|     30 | SALES      | CHICAGO  |  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |
+|     40 | OPERATIONS | BOSTON   |  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |
+|     40 | OPERATIONS | BOSTON   |  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |
+|     40 | OPERATIONS | BOSTON   |  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |
+|     40 | OPERATIONS | BOSTON   |  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |
+|     40 | OPERATIONS | BOSTON   |  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |
+|     40 | OPERATIONS | BOSTON   |  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |
+|     40 | OPERATIONS | BOSTON   |  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |
+|     40 | OPERATIONS | BOSTON   |  7788 | SCOTT  | ANALYST   | 7566 | 1987-04-19 | 3000.00 |    NULL |     20 |
+|     40 | OPERATIONS | BOSTON   |  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |
+|     40 | OPERATIONS | BOSTON   |  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |
+|     40 | OPERATIONS | BOSTON   |  7876 | ADAMS  | CLERK     | 7788 | 1987-05-23 | 1100.00 |    NULL |     20 |
+|     40 | OPERATIONS | BOSTON   |  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |
+|     40 | OPERATIONS | BOSTON   |  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |
+|     40 | OPERATIONS | BOSTON   |  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |
++--------+------------+----------+-------+--------+-----------+------+------------+---------+---------+--------+
+
+执行：select * from dept left join emp on dept.deptno=emp.deptno;
+得到临时表，可以看下最后一行
++--------+------------+----------+-------+--------+-----------+------+------------+---------+---------+--------+
+| DEPTNO | DNAME      | LOC      | EMPNO | ENAME  | JOB       | MGR  | HIREDATE   | SAL     | COMM    | DEPTNO |
++--------+------------+----------+-------+--------+-----------+------+------------+---------+---------+--------+
+|     10 | ACCOUNTING | NEW YORK |  7782 | CLARK  | MANAGER   | 7839 | 1981-06-09 | 2450.00 |    NULL |     10 |
+|     10 | ACCOUNTING | NEW YORK |  7839 | KING   | PRESIDENT | NULL | 1981-11-17 | 5000.00 |    NULL |     10 |
+|     10 | ACCOUNTING | NEW YORK |  7934 | MILLER | CLERK     | 7782 | 1982-01-23 | 1300.00 |    NULL |     10 |
+|     20 | RESEARCH   | DALLAS   |  7369 | SMITH  | CLERK     | 7902 | 1980-12-17 |  800.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7566 | JONES  | MANAGER   | 7839 | 1981-04-02 | 2975.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7788 | SCOTT  | ANALYST   | 7566 | 1987-04-19 | 3000.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7876 | ADAMS  | CLERK     | 7788 | 1987-05-23 | 1100.00 |    NULL |     20 |
+|     20 | RESEARCH   | DALLAS   |  7902 | FORD   | ANALYST   | 7566 | 1981-12-03 | 3000.00 |    NULL |     20 |
+|     30 | SALES      | CHICAGO  |  7499 | ALLEN  | SALESMAN  | 7698 | 1981-02-20 | 1600.00 |  300.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7521 | WARD   | SALESMAN  | 7698 | 1981-02-22 | 1250.00 |  500.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7654 | MARTIN | SALESMAN  | 7698 | 1981-09-28 | 1250.00 | 1400.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7698 | BLAKE  | MANAGER   | 7839 | 1981-05-01 | 2850.00 |    NULL |     30 |
+|     30 | SALES      | CHICAGO  |  7844 | TURNER | SALESMAN  | 7698 | 1981-09-08 | 1500.00 |    0.00 |     30 |
+|     30 | SALES      | CHICAGO  |  7900 | JAMES  | CLERK     | 7698 | 1981-12-03 |  950.00 |    NULL |     30 |
+|     40 | OPERATIONS | BOSTON   |  NULL | NULL   | NULL      | NULL | NULL       |    NULL |    NULL |   NULL |
++--------+------------+----------+-------+--------+-----------+------+------------+---------+---------+--------+

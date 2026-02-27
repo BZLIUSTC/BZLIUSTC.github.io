@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="MySQL Learn Note">
+<title>MySQL Learn</title>
+
+<link rel='canonical' href='https://bzliustc.github.io/p/mysql-learn/'>
+
+<link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="MySQL Learn">
+<meta property='og:description' content="MySQL Learn Note">
+<meta property='og:url' content='https://bzliustc.github.io/p/mysql-learn/'>
+<meta property='og:site_name' content='Nishizono Mio&#39;s Shaddow'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='mysql' /><meta property='article:tag' content='javaweb' /><meta property='article:tag' content='website' /><meta property='article:published_time' content='2026-02-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://bzliustc.github.io/p/mysql-learn/front-page.png' />
+<meta name="twitter:title" content="MySQL Learn">
+<meta name="twitter:description" content="MySQL Learn Note"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://bzliustc.github.io/p/mysql-learn/front-page.png' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/my-avatar_hu_449036b95bdfd59d.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Nishizono Mio&#39;s Shaddow</a></h1>
+            <h2 class="site-description">令白鸟哀叹的天空之蓝——
+无法浸染大海之青，
+互相映照；
+
+与海之接吻令夕阳无法行——
+鸟翔于天，停滞不前，
+乘着风儿，洁白之翼，</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://bzliustc.github.io/" selected>English</option>
+                                
+                                    <option value="https://bzliustc.github.io/ja/" >日本語</option>
+                                
+                                    <option value="https://bzliustc.github.io/zh-cn/" >简体中文</option>
+                                
+                                    <option value="https://bzliustc.github.io/zh-tw/" >正體中文</option>
+                                
+                                    <option value="https://bzliustc.github.io/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#mysql服务器介绍">MySql服务器介绍</a></li>
+    <li><a href="#表文件数据库和数据服务器">表文件，数据库和数据服务器</a></li>
+    <li><a href="#数据库服务器分类">数据库服务器分类</a>
+      <ol>
+        <li><a href="#关系型数据库服务器">关系型数据库服务器</a></li>
+        <li><a href="#非关系型数据库服务器">非关系型数据库服务器</a></li>
+      </ol>
+    </li>
+    <li><a href="#关系数据库服务器分类">关系数据库服务器分类</a></li>
+    <li><a href="#mysql基础使用">MySql基础使用</a>
+      <ol>
+        <li><a href="#配置">配置</a></li>
+        <li><a href="#sql命令和分类">SQL命令和分类</a></li>
+        <li><a href="#ddl命令">DDL命令</a>
+          <ol>
+            <li><a href="#通知mysql服务器管理数据库">通知MySQL服务器管理数据库</a></li>
+            <li><a href="#通知mysql管理表文件">通知Mysql管理表文件</a></li>
+            <li><a href="#通知mysqlfwq对表文件重的字段进行维护">通知MySQLfwq对表文件重的字段进行维护</a></li>
+          </ol>
+        </li>
+        <li><a href="#dml命令">DML命令</a>
+          <ol>
+            <li><a href="#insert-对指定表文件插入数据行">insert: 对指定表文件插入数据行</a></li>
+            <li><a href="#表文件备份">表文件备份</a></li>
+            <li><a href="#数据行备份">数据行备份</a></li>
+            <li><a href="#删除命令">删除命令</a></li>
+            <li><a href="#更新命令">更新命令</a></li>
+          </ol>
+        </li>
+        <li><a href="#dql命令">DQL命令</a>
+          <ol>
+            <li><a href="#单表查询7个命令">单表查询：7个命令</a></li>
+            <li><a href="#多表查询连接查询合并--联合查询合并">多表查询：连接查询合并 / 联合查询合并</a></li>
+            <li><a href="#子查询依赖子查询--独立子查询">子查询：依赖子查询 / 独立子查询</a></li>
+            <li><a href="#自关联查询">自关联查询</a></li>
+            <li><a href="#查询结果中解释字段的来源">查询结果中解释字段的来源</a></li>
+            <li><a href="#特殊查询案例行列转化">特殊查询案例：行列转化</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#附录">附录</a>
+      <ol>
+        <li><a href="#mysql-基础语法练习题">MySQL 基础语法练习题</a>
+          <ol>
+            <li><a href="#一单选题20-题每题-2-分共-40-分">一、单选题（20 题，每题 2 分，共 40 分）</a></li>
+            <li><a href="#二填空题10-题每空-1-分共-20-分">二、填空题（10 题，每空 1 分，共 20 分）</a></li>
+            <li><a href="#纠错题3-题每题-10-分共-30-分">纠错题（3 题，每题 10 分，共 30 分）</a></li>
+            <li><a href="#编程题3-题每题-15-分共-45-分">编程题（3 题，每题 15 分，共 45 分）</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/mysql-learn/">
+                <img src="/p/mysql-learn/front-page_hu_f31aef25f2267ad3.png"
+                        srcset="/p/mysql-learn/front-page_hu_f31aef25f2267ad3.png 800w, /p/mysql-learn/front-page_hu_456e4ab6a1606356.png 1600w"
+                        width="800" 
+                        height="502" 
+                        loading="lazy"
+                        alt="Featured image of post MySQL Learn" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/javaweb/" >
+                Javaweb
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/mysql-learn/">MySQL Learn</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            MySQL Learn Note
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-02-20T00:00:00Z'>Feb 20, 2026</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    13 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>本文是mysql学习笔记.</p>
+<h2 id="mysql服务器介绍">MySql服务器介绍
+</h2><p>MySQL软件说白了，就是一段带有main方法的Java类，
+用来定位和操作表文件。</p>
+<h2 id="表文件数据库和数据服务器">表文件，数据库和数据服务器
+</h2><ul>
+<li>
+<p>表文件</p>
+<ul>
+<li>表文件后缀名为<code>.frm</code></li>
+<li>表文件以行（记录）为单位存储数据</li>
+<li>表文件由一个标题行+若干数据行组成</li>
+</ul>
+</li>
+<li>
+<p>数据库：存储表文件的目录</p>
+</li>
+<li>
+<p>数据库服务器：专门操作表文件</p>
+</li>
+</ul>
+<h2 id="数据库服务器分类">数据库服务器分类
+</h2><h3 id="关系型数据库服务器">关系型数据库服务器
+</h3><ol>
+<li>尽可能为用户提供详尽的信息描述</li>
+<li>运行时往往需要从大量的表文件提取数据,因此运行速度相对较慢</li>
+<li>MySql是关系数据库服务器</li>
+</ol>
+<h3 id="非关系型数据库服务器">非关系型数据库服务器
+</h3><ol>
+<li>尽可能快速为用户提供关键数据</li>
+<li>使用key-value形式进行数据存储</li>
+<li>Redis是非关系数据库服务器</li>
+</ol>
+<h2 id="关系数据库服务器分类">关系数据库服务器分类
+</h2><p>甲骨文的：Oracle和MySql</p>
+<p>微软的：SqlServer</p>
+<h2 id="mysql基础使用">MySql基础使用
+</h2><h3 id="配置">配置
+</h3><p>配置文件在<code>\your\path\to\MySQL\MySQL Server 5.5\my.ini</code>下。</p>
+<p>登录：命令<code>mysql -uUserName -pPassword</code>不要空格，其中-u, -p是用户名、密码关键字。</p>
+<p>启动关闭：Windows安装的MySql可以在services.msc中控制开启关闭。</p>
+<h3 id="sql命令和分类">SQL命令和分类
+</h3><p>SQL == Struct Query Language，大多命令都是<strong>查询</strong>数据。
+不同关系型数据库服务器使用的SQL命令语法95%+都是一样的。
+SQL不区分大小写，数据也没有大小写。</p>
+<p>SQL命令分类如下：</p>
+<ul>
+<li>DDL命令 (Database Defined Language)：管理当前数据库和表文件</li>
+<li>DML命令 (Data Modify Language)：数据维护命令，用于修改表文件的数据，主要就是insert, delete, update</li>
+<li><strong>DQL命令</strong> (Data Query Language)：数据查询命令，查询表文件中的数据</li>
+</ul>
+<p>SQL语句有很多,最好进行分门别类,这样更容易记忆。分为:</p>
+<ul>
+<li>
+<p>DQL:</p>
+<ul>
+<li>数据查询语言(凡是带有select关键字的都是查询语句)</li>
+<li>select &hellip;</li>
+</ul>
+</li>
+<li>
+<p>DML:</p>
+<ul>
+<li>数据操作语言(凡是对表当中的数据进行增删改的都是DML)，这个主要是操作表中的数据data</li>
+<li>insert delete update</li>
+<li>insert 增</li>
+<li>delete 删</li>
+<li>update 改</li>
+</ul>
+</li>
+<li>
+<p>DDL:</p>
+<ul>
+<li>数据定义语言</li>
+<li>凡是带有create、drop、alter的都是DDL。</li>
+<li>DDL主要操作的是表的结构。不是表中的数据。</li>
+<li>create:新建,等同于增</li>
+<li>drop:删除</li>
+<li>alter:修改</li>
+<li>这个增删改和DML不同,这个主要是对表结构进行操作。</li>
+</ul>
+</li>
+<li>
+<p>TCL:</p>
+<ul>
+<li>事务控制语言</li>
+<li>事务提交: commit</li>
+<li>事务回滚: rollback</li>
+</ul>
+</li>
+<li>
+<p>DCL：</p>
+<ul>
+<li>数据控制语言</li>
+<li>授权grant，撤权revoke</li>
+</ul>
+</li>
+</ul>
+<h3 id="ddl命令">DDL命令
+</h3><h4 id="通知mysql服务器管理数据库">通知MySQL服务器管理数据库
+</h4><ul>
+<li>show databases; ：查看所有数据库名称；</li>
+<li>create database YourDBName; ：新建数据库</li>
+<li>drop database YourDBName; ：删除数据库</li>
+</ul>
+<h4 id="通知mysql管理表文件">通知Mysql管理表文件
+</h4><ul>
+<li>use TargetDBName; ：通知MySQL对指定数据库进行操作；</li>
+<li>show tables; ：查看所有表文件名称</li>
+<li>create table YourTableName(字段名 数据类型);</li>
+</ul>
+<p>例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">create</span> <span class="n">table</span> <span class="n">student_tb</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sid</span>     <span class="ne">int</span><span class="p">,</span>            <span class="o">--</span> <span class="err">学号</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sname</span>   <span class="n">varchar</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>     <span class="o">--</span> <span class="err">名字，字符串类型用</span><span class="n">varchar</span><span class="err">，</span><span class="mi">10</span><span class="err">表示最多存</span><span class="mi">10</span><span class="err">个字符</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>show create table YourTableName; ：查看当前表文件的字段结构信息</li>
+<li>drop table YourTableName; ：删掉一张表</li>
+</ul>
+<h4 id="通知mysqlfwq对表文件重的字段进行维护">通知MySQLfwq对表文件重的字段进行维护
+</h4><ul>
+<li>alter table 表名 add 新字段名 数据类型; ：为表格添加字段</li>
+<li>alter table 表名 drop 要删的字段名; ：删除一个字段</li>
+<li>alter table 表名 change 旧字段名 新约束; ：更改字段的约束（例如类型，规范等）</li>
+<li>alter table 表名 modify 旧字段名 新字段名 新约束; ：改字段的名字和约束（例如类型，规范等）</li>
+</ul>
+<h3 id="dml命令">DML命令
+</h3><h4 id="insert-对指定表文件插入数据行">insert: 对指定表文件插入数据行
+</h4><p>格式：<code>insert into 表名 (字段名1, 字段名2, ...) values (值1, 值2, ...);</code>；<br>
+简化版格式：<code>insert into 表名 values (值1, 值2, ...);</code>，使用场景是为所有字段赋值（值数量等于字段数量）</p>
+<p>批处理插入：一次性添加多条数据；<br>
+格式：<code>insert into 表名 values (值1, 值2, ...)(值1, 值2, ...)(值1, 值2, ...);</code>每组值数量等于字段数量</p>
+<h4 id="表文件备份">表文件备份
+</h4><p>一般先备份表，操作，没问题后再覆盖！<br>
+格式：<code>create table 新表 select * from 旧表</code>，备份旧表，表结构和内容完全一样</p>
+<h4 id="数据行备份">数据行备份
+</h4><p>有时候只需要备份数据行而非整个表<br>
+格式：<code>insert into 新表 select * from 旧表</code>，将旧表中的数据行复制到新表，要求新表的字段类型、字段排列顺序与旧表结构一致（但是字段名可以不一样）。</p>
+<h4 id="删除命令">删除命令
+</h4><p>删除表所有数据行<br>
+格式：<code>delete from 表名</code>，删掉表文件所有数据行</p>
+<p>有条件删除<br>
+格式：<code>delect from 表名 where 条件</code>，将符合条件的数据行删掉</p>
+<p>举例：对于这样一张表格：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+------+--------+------+--------+
+</span></span><span class="line"><span class="cl">| sid  | sname  | age  | gender |
+</span></span><span class="line"><span class="cl">+------+--------+------+--------+
+</span></span><span class="line"><span class="cl">|   10 | MIKE   |   23 | NULL   |
+</span></span><span class="line"><span class="cl">|   20 | SMITH  | NULL | W      |
+</span></span><span class="line"><span class="cl">|   20 | SMITH  |   19 | M      |
+</span></span><span class="line"><span class="cl">|   40 | JACK   | NULL | W      |
+</span></span><span class="line"><span class="cl">|   50 | god    |   12 | W      |
+</span></span><span class="line"><span class="cl">|   60 | evil   |   30 | M      |
+</span></span><span class="line"><span class="cl">|   70 | Comee  |   22 | W      |
+</span></span><span class="line"><span class="cl">|   80 | Wdcd   |   24 | W      |
+</span></span><span class="line"><span class="cl">|   90 | Ablach |   17 | M      |
+</span></span><span class="line"><span class="cl">+------+--------+------+--------+
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行<code>delete from student_tb where sid&gt;=70;</code>将删除学号大于等于70的数据行。</p>
+<h4 id="更新命令">更新命令
+</h4><p>修改所有数据行<br>
+格式：<code>update 表名 set 字段一=新值, 字段二=新值, ...;</code>，将表<strong>所有数据行</strong>的指定字段变为指定值</p>
+<p>修改条件数据行：将满足条件的数据行数据更新<br>
+格式：<code>update 表名 set 字段一=新值, 字段二=新值 where 条件</code></p>
+<h3 id="dql命令">DQL命令
+</h3><p>TIPS：样例数据库可以通过执行<a class="link" href="/append/MySQL-Learn/create.sql" >创建文件</a>得到，以下都是使用这个数据库进行操作。</p>
+<h4 id="单表查询7个命令">单表查询：7个命令
+</h4><p>临时表的概念：除了from命令，其它6个命令都是使用上一个命令生成的临时表进行操作<br>
+临时表的生存周期：被下一条命令使用后立即销毁<br>
+只有group by 命令可以生成多个临时表，，另外5个命令执行都生成一个查询表。<br>
+只有having命令不产生新的查询表。<br></p>
+<p>查询语句的书写顺序：<code>select 字段名, 函数, 子查询 from 表名</code>；
+其中条件查询增加一个where命令：<code>select 字段名, 函数, 子查询 from 表名 where 条件</code>，示例<code>SELECT ename, job FROM emp WHERE sal&gt;=3000;</code><br>
+下面对各个元素进行介绍：</p>
+<h5 id="from-select-where-三个命令">from, select, where 三个命令
+</h5><ul>
+<li><strong>from命令</strong>：相对于读取流，把表文件加载到内存中形成临时表，供后续使用；执行优先级：一个查询语句中永远是from最先执行。<code>from tbName name2</code>可为表tbName取别名name2</li>
+<li><strong>select命令</strong>：取出指定字段所有数据，生成新的临时表</li>
+<li><strong>where</strong>命令：遍历临时表，定位满足条件的数据行，并读取生成新的临时表；执行优先级：from &gt; where &gt; select，where使用的是from生成的临时表</li>
+</ul>
+<h5 id="条件表达式">条件表达式
+</h5><p>表达式可以是：关系表达式，逻辑表达式，MySQL提供的特殊运算符。如下</p>
+<ul>
+<li>等于关系：<code>=</code>；例如<code>ename='smith'</code>，<code>deptno=20</code>；</li>
+<li>不等于关系：<code>!=</code>；</li>
+<li>逻辑运算符：与<code>and</code>、或<code>or</code>；例如<code>sal&lt;3000 or deptno=10</code>；</li>
+<li>特殊 between &hellip; and：查询区间，例如<code>sal=&lt;3000 and sal&gt;=1000</code>等效于<code>sal between 1000 and 3000</code>；</li>
+<li>特殊 in：查询字段值在某集合中，例如<code>job='salesman' or job='clerk'</code>等效于<code>job in ('salesman','clerk')</code>；</li>
+<li>特殊 not &hellip; in：查询字段值不在某集合中，例如<code>job!='salesman' and job!='clerk'</code>等效于<code>job not in ('salesman','clerk')</code>；</li>
+<li>特殊 is null：查询字段值为NULL（未定即未赋值）；不能写成<code>comm = null</code>，因为mysql中null不允许参与任何运算，要写成<code>comm is null</code>；</li>
+<li>特殊 is not null：查询字段值不为NULL（未定即未赋值）；</li>
+<li>特殊 like：模糊查询，例如<code>ename like 's%'</code>查询姓名以s开头的数据行，百分号是通配符；<code>%s</code>和<code>%s%</code>同理。下面介绍一些通配符
+<ul>
+<li><code>%</code>：任意长度的字符串</li>
+<li><code>_</code>：一个任意字符</li>
+</ul>
+</li>
+</ul>
+<h5 id="聚合函数">聚合函数
+</h5><ul>
+<li><code>max(字段名)</code>：统计当前字段下所有数据的最大值；示例<code>select max(sal) from emp where deptno=20;</code>；函数<code>max(字段名)</code>同理；</li>
+<li><code>avg(字段名)</code>：统计当前字段下所有数据的平均值</li>
+<li><code>sum(字段名)</code>：统计当前字段下所有数据求和</li>
+<li><code>count(字段名)</code>：统计当前字段下数据不为NULL的个数</li>
+<li><code>count(*)</code>：统计当前临时表总行数</li>
+<li><code>group by 字段名</code>：</li>
+</ul>
+<h5 id="group-by-命令">group by 命令
+</h5><p><font color='aqua'>考虑如下案例：分类汇总，查询各部门编号和部门下人数</font></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">job</span><span class="p">,</span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">deptno</span><span class="o">=</span><span class="mi">20</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">job</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>group by命令执行优先级：<code>where &gt; group by &gt; select</code><br>
+命令书写顺序：就像上面这样select &ndash;&gt; from &ndash;&gt; where &ndash;&gt; group by<br>
+工作原理：</p>
+<ul>
+<li>group by首先计算分组字段中的数据种类，</li>
+<li>然后把有相同特征的数据合并到同一个临时表（因此若有多个特征，会生成多张临时表！）,</li>
+<li><strong>select的行为取决于提供临时表的命令（重点 @@@@@）</strong>
+<ol>
+<li>如果select操作的临时表由 where 或 from 提供，则肯定只有一张临时表，select会把指定字段所有数据“剪出来”生成新的数据表</li>
+<li>如果select操作的临时表由 group by 提供，则一般是多张临时表，select将依次操作每一个临时表，操作每个临时表时只读取第一行数据行，然后把读到的数据行合并为新的临时表</li>
+</ol>
+</li>
+</ul>
+<p>上述命令的临时表生成过程<a class="link" href="/append/MySQL-Learn/001.txt" >见此</a>。</p>
+<p><code>group by 字段一, 字段二, ...</code>多字段分组规则：<br>
+group by 后续有多个字段，字段顺序对查询结果没有任何影响<br>
+group by 每次执行只能对一个字段开始分组，因此<code>group by deptno,job</code>要执行两次group by 命令<br>
+group by 从第二次执行开始使用的前一个group by得到的临时表</p>
+<p><font color='aqua'>练习：查询各部门编号，部门下职位名称，以及职位人数</font></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="n">job</span><span class="p">,</span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="n">job</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><font color='aqua'>以上代码，先对deptno分组得到三张临时表，然后将三表分别对job分组，一共得到9张临时表，所以执行结果就是9条数据行的。</font></p>
+<h5 id="having-命令">having 命令
+</h5><p>考虑如下案例：查询部门20下，各个职位人数（自动忽略低于2人的职位）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="n">job</span><span class="p">,</span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">deptno</span><span class="o">=</span><span class="mi">20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">job</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">having</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">2</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>having 命令执行优先级：<code>group by &gt; having &gt; select</code><br>
+命令书写顺序：就像上面这样 select &ndash;&gt; from &ndash;&gt; where &ndash;&gt; group by &ndash;&gt; having<br>
+having 命令不能独立出现在查询语句中，必须配合 group by使用，having 总是跟在 group by 后面<br>
+工作原理：</p>
+<ul>
+<li>having执行完不生成<strong>新的</strong>临时表</li>
+<li>having 会遍历group by生成的所有临时表，对每个表检查条件，把不符合条件的<strong>临时表</strong>整个删掉</li>
+<li>having 的判断条件一般是一个聚合函数，如果是单行判定条件则用首行</li>
+</ul>
+<blockquote>
+<p><font color='aqua'>TIPS: having 和 where 的区别<br></p>
+<ol>
+<li>操作单位不同，where 每次操作<strong>一行数据</strong>，因此条件不能有聚合函数；having 每次操作<strong>一个临时表</strong></font><font color='aqua'></li>
+<li>功能不同，where 将满足条件的数据行读取出来生成一个全新临时表；having 将不满足条件的临时表进行销毁处理</font></li>
+</ol>
+</blockquote>
+<h5 id="order-by-排序查询命令">order by 排序查询命令
+</h5><p><font color='aqua'>考虑如下案例：查询部门20下各个职位人数，查询结果按职位人数升序（降序）排列</font></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="n">job</span><span class="p">,</span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">deptno</span><span class="o">=</span><span class="mi">20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">job</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">asc</span><span class="p">;</span><span class="w"> </span><span class="cm">/*降序则为desc，默认asc*/</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>order by的执行顺序：<code>select &gt; order by</code><br>
+命令书写顺序：就像上面这样select &ndash;&gt; from &ndash;&gt; where &ndash;&gt; group by &ndash;&gt; having &ndash;&gt; order by 排序字段名 标记<br>
+工作原理：</p>
+<ul>
+<li>ORDER BY 专门操作SELECT生成的临时表；</li>
+<li>ORDER BY 根据排序字段内容，按照标记的顺序要求，对临时表数据行进行重新排序，</li>
+<li>并将排序后数据行生成一个全新临时表</li>
+</ul>
+<p>例如上述案例中，select执行后生成如下的临时表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+-----------+-------------+----------+
+</span></span><span class="line"><span class="cl">| job       | avg(sal)    | count(*) |
+</span></span><span class="line"><span class="cl">+-----------+-------------+----------+
+</span></span><span class="line"><span class="cl">| ANALYST   | 3000.000000 |        2 |
+</span></span><span class="line"><span class="cl">| CLERK     | 1037.500000 |        4 |
+</span></span><span class="line"><span class="cl">| MANAGER   | 2758.333333 |        3 |
+</span></span><span class="line"><span class="cl">| PRESIDENT | 5000.000000 |        1 |
+</span></span><span class="line"><span class="cl">| SALESMAN  | 1400.000000 |        4 |
+</span></span><span class="line"><span class="cl">+-----------+-------------+----------+
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>order by count(*) asc;</code>将按照count(*)字段进行升排序（因此这里的count(*)不是聚合函数而是字段名），生成如下临时表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">+-----------+-------------+----------+
+</span></span><span class="line"><span class="cl">| job       | avg(sal)    | count(*) |
+</span></span><span class="line"><span class="cl">+-----------+-------------+----------+
+</span></span><span class="line"><span class="cl">| PRESIDENT | 5000.000000 |        1 |
+</span></span><span class="line"><span class="cl">| ANALYST   | 3000.000000 |        2 |
+</span></span><span class="line"><span class="cl">| MANAGER   | 2758.333333 |        3 |
+</span></span><span class="line"><span class="cl">| CLERK     | 1037.500000 |        4 |
+</span></span><span class="line"><span class="cl">| SALESMAN  | 1400.000000 |        4 |
+</span></span><span class="line"><span class="cl">+-----------+-------------+----------+
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此外，oder by 跟的字段名可以用字段编号来代替，例如avg(sal)是临时表第2个字段，<code>order by 2 asc;</code>就是对临时表的avg(sal)字段升排序。</p>
+<p>多字段排序<code>order by 字段一 标记, 字段二 标记, ...</code>，优先级依次递减<br>
+：例如若要对所有员工信息按部门编号升序、工资降序、入职日期升序排列，则写为<code>order by deptno asc, sal desc, hiredate asc;</code></p>
+<h5 id="limit-命令">limit 命令
+</h5><font color='aqua'>
+考虑如下案例：查询平均工资最高的两个部门
+</font>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="n">deptno</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">asc</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">limit</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> 
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行优先级：<code>order by &gt; limit</code><br>
+工作原理：<code>limit start,cnt</code>把临时表的第start行开始的共cnt行数据取出来构成新的临时表；<br>
+注意：首行数据是第0行；start end 不得为负，若limit无法取出任何数据（例如编号溢出）则返回空表，不报错</p>
+<h5 id="小结">小结
+</h5><p>1 &ndash; 执行优先级from &gt; where &gt; group by &gt; having &gt; order by &gt; limit</p>
+<p>2 &ndash; 书写格式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="err">字段【可多个逗号分隔】</span><span class="p">,</span><span class="w"> </span><span class="err">函数</span><span class="p">,</span><span class="w"> </span><span class="err">子查询</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="err">表</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="err">行定位条件</span><span class="w"> </span><span class="err">【关系</span><span class="p">,</span><span class="w"> </span><span class="err">逻辑</span><span class="p">,</span><span class="w"> </span><span class="err">特殊运算</span><span class="p">;</span><span class="w"> </span><span class="err">不能用聚合函数】</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="err">字段【可多个逗号分隔】</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">having</span><span class="w"> </span><span class="err">表条件</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="err">排序字段</span><span class="w"> </span><span class="err">标记【可多组逗号分隔】</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">limit</span><span class="w"> </span><span class="k">start</span><span class="w"> </span><span class="n">cnt</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>3 &ndash; 复杂的查询一定要按照执行顺序来写，才不会混乱</p>
+<h4 id="多表查询连接查询合并--联合查询合并">多表查询：连接查询合并 / 联合查询合并
+</h4><h5 id="隶属关系">隶属关系
+</h5><p>隶属关系的两端，拥有方与从属方，在MySQL中被分为三类：</p>
+<p>一对一，例如一个人一个身份证<br>
+一对多，例如一个老师多个学生<br>
+多对多，例如</p>
+<p>一对多：一方表（拥有方） &mdash; 多方表（从属方），一方表每条数据在多方表也只有一条数据<br>
+例如，dept表作为拥有表，emp作为从属表，一个部门有多位员工</p>
+<p>一对一：一方表（拥有方） &mdash; 多方表（从属方），只不过一方表每条数据在多方表也只有一条数据<br>
+例如，“学号-姓名”表作为拥有方，“学号-身份证号”表作为从属方，一个学生只对应一个身份证号码</p>
+<p>多对多：实际是两个互相的一对多关系，一般要三张表来描述这个关系
+例如，student表、course表都是一方表，score表是student的多方表，也是course的多方表：因为一个学生可以有多门课成绩，一个课程可由多个学生考试得分</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>字段分类</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>主键字段</td>
+          <td>主键字段相当于数据行的身份证，主键字段的值相当于<br>唯一编号来唯一标识一行数据，不能为NULL或重复</td>
+      </tr>
+      <tr>
+          <td>非主键字段</td>
+          <td>非主键字段用来解释主键字段（附加信息）</td>
+      </tr>
+      <tr>
+          <td>外键字段</td>
+          <td>只存在于多方表，属于非主键字段，建立数据间隶属关系</td>
+      </tr>
+  </tbody>
+</table></div>
+<h5 id="多表查询">多表查询
+</h5><p>多表查询，就是将两张表文件的数据行合并到同一个临时表并展示的过程。</p>
+<p>执行流程：(1) 将两个表的数据行合并到全新的临时表中；(2) 使用6个查询命令（少了from命令）对新的临时表进行操作</p>
+<p>有两种合并方案：连接查询合并 / 联合查询合并</p>
+<h5 id="连接合并查询">连接合并查询
+</h5><p>连接查询合并方案:</p>
+<ol>
+<li>要求两张表之间必须存在隶属关系</li>
+<li>将两张表数据行沿着【水平方向】拼接，例如dept首行与emp首行拼接为<font color='orange'>10 Account NewYork</font><font color='aqua'> 7369 smith clerk 800 10</font></li>
+<li>展示给用户一个合法的隶属关系数据</li>
+</ol>
+<p>格式：<code>from 一方表 join 多方表</code>或者<code>from 多方表 join 一方表</code>，两个写法<strong>效果完全一样</strong><br>
+工作原理：</p>
+<ul>
+<li>from 把两张表放入内存，即得2个临时表</li>
+<li>join 把两个临时表水平拼接得到新的临时表</li>
+<li>“拼接”规则：
+<ol>
+<li>临时表字段个数 = 一方表字段个数 + 多方表字段个数</li>
+<li>临时表字段名称为<code>原始表名.字段名</code>，例如<code>from dept join emp</code>得到的临时表首尾字段为<code>dept.deptno</code>和<code>emp.deptno</code>（不要用打印表的方法查看字段名！）<cite>【注释】<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></li>
+<li>临时表数据行数 = 一方表数据行数 * 多方表数据行数</li>
+<li>拼接方式：一方表每行数据与多方表所有数据进行拼接</li>
+<li>连接合并必然产生<cite><font color='brown'>脏数据</font><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></cite>必须去掉</li>
+</ol>
+</li>
+</ul>
+<p>下面介绍过滤脏数据，筛选合法数据的两种方法：内连接过滤 / 外联过滤</p>
+<h5 id="连接合并---内连接过滤-方案">连接合并 - 内连接过滤 方案
+</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="err">一方表</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="err">多方表</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">on</span><span class="w"> </span><span class="err">合法数据判定条件</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>on 的行为与 where 高度相似：工作原理</p>
+<ul>
+<li>遍历临时表每个数据行</li>
+<li>把符合条件的数据行取出来构成新的临时表</li>
+<li>与where的区别：on 目标是抓取合法数据行</li>
+</ul>
+<p>合法数据行的判断条件：</p>
+<ol>
+<li>若多方表存在明显的外键字段：<code>on 当前行.来自一方表的主键值 = 当前行.来自多方表的外键值</code>，如下</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">dept</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">emp</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">on</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><font color='aqua'>案例：查询部门名+平均工资：</font></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dname</span><span class="p">,</span><span class="k">avg</span><span class="p">(</span><span class="n">emp</span><span class="p">.</span><span class="n">sal</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">dept</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="cm">/*整一行就是造新临时表*/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><font color='orange'>E.G. 查询部门20的名称及其下各职位的人数<br>
+方案一<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">dname</span><span class="p">,</span><span class="n">emp</span><span class="p">.</span><span class="n">job</span><span class="p">,</span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">dept</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="o">=</span><span class="mi">20</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">job</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>方案二，把筛选dept=20的定位条件放到on也是可以的，只不过这样可读性差<br></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">dname</span><span class="p">,</span><span class="n">emp</span><span class="p">.</span><span class="n">job</span><span class="p">,</span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">dept</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">and</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="o">=</span><span class="mi">20</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">job</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></font>
+</blockquote>
+<ol start="2">
+<li>若多方表没有外键字段，则根据实际生活的隶属关系进行判断：<code>on 实际隶属关系</code></li>
+</ol>
+<font color='aqua'>
+案例：查询员工姓名、工资、工资等级；<br>这个问题中工资等级给出了工资范围（拥有方），一个等级对应多个员工（隶属方）。
+也即我们要根据实际含义推出隶属关系，得到一方表和多方表。
+</font>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">ename</span><span class="p">,</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">sal</span><span class="p">,</span><span class="w"> </span><span class="n">salgrade</span><span class="p">.</span><span class="n">grade</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">salgrade</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">on</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">sal</span><span class="w"> </span><span class="k">between</span><span class="w"> </span><span class="n">salgrade</span><span class="p">.</span><span class="n">losal</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">salgrade</span><span class="p">.</span><span class="n">hisal</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="连接合并---外连接过滤-方案">连接合并 - 外连接过滤 方案
+</h5><p>外连接过滤方案:</p>
+<ol>
+<li>将两张表划分为【需要帮助表】与【不需要帮助表】</li>
+<li>确保【需要帮助表】所有的数据行都要进入到合法临时表</li>
+<li>如果【需要帮助表】某个数据与【不需要帮助表】所有数据行都无法匹配成功（意思是 on 条件无法满足），此时需要将这个数据行作为一个独立的数据行填充到新的临时表,缺失的数据都是NULL值</li>
+</ol>
+<p>根据以上说法，有如下结论：</p>
+<ul>
+<li>外连接必须加 on 条件（不加语法报错）</li>
+<li>若把 on 条件设为恒真 例如<code>1=1</code>，临时表结果与直接join连接完全一样<a class="link" href="/append/MySQL-Learn/002.txt" >【详见测试】</a></li>
+<li>加上了 on 条件，满足条件的表项当然会被取出；同时如果“需要帮助表”的某行从未与“不需要帮助表”的所有行达成 on 条件，它也会进入临时表
+命令格式：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="err">需要帮助表</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="err">不需要帮助表</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">on</span><span class="w"> </span><span class="err">合法定位条件</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个命令与<code>from 不需要帮助表 right join 需要帮助表 on 合法定位条件</code>效果相同。</p>
+<blockquote>
+<font color='aqua'>
+案例：查询所有部门名称和下属人数（0人的部门也要展示）
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="p">,</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">dname</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="n">emp</span><span class="p">.</span><span class="n">empno</span><span class="p">)</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="cm">/* 这里一定要用empno统计，因为left join 会产生empno为NULL的数据行，不能计入 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">dept</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">dept</span><span class="p">.</span><span class="n">deptno</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">empno</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">null</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></font>
+</blockquote>
+<h5 id="联合查询合并">联合查询合并
+</h5><ol>
+<li>不要求两张临时表之间存在隶属关系</li>
+<li>要求两张临时表字段结构必须保持一致【守段个数,字段类型,字段类型排列顺序】</li>
+<li>将两张临时表数据行沿着<strong>垂直方向堆砌</strong>到新临时表</li>
+<li>生成临时表字段只能来自于第一个临时表字段</li>
+<li>union 合并出的临时表会把<strong>完全相同的数据行只保留一个</strong>；如果要禁用此功能要使用<code>union all</code></li>
+<li>联合查询的应用场景主要是 “行转列” 查询</li>
+</ol>
+<p>命令格式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="err">字段一</span><span class="p">,</span><span class="w"> </span><span class="err">字段二</span><span class="p">,</span><span class="w"> </span><span class="err">字段三</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表一</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">union</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="err">字段甲</span><span class="p">,</span><span class="w"> </span><span class="err">字段乙</span><span class="p">,</span><span class="w"> </span><span class="err">字段丙</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">表二</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意：若要对某字段进行排序等操作，只能使用字段一，二，三等，因为生成临时表的字段名只来自于第一个临时表字段。</p>
+<h4 id="子查询依赖子查询--独立子查询">子查询：依赖子查询 / 独立子查询
+</h4><blockquote>
+<p><font color='aqua'>问题引入：查询部门20工资高于公司平均工资的员工信息<br>
+需求：如何先得到平均工资来用于定位条件呢？<br>
+解决：子查询</font></p>
+</blockquote>
+<h5 id="子查询的概念">子查询的概念
+</h5><p>七个查询命令执行时需要从当前临时表获得相关数据才可以正常运行，
+如果无法从当前临时表得到需要数据则无法运行。此时MySql服务器
+允许开发人员通过<strong>一个完整的查询语句</strong>，为当前查询命令提供需要的数据
+从而保证查询正常执行 —— 这个提供数据帮助的查询语句就是子查询。</p>
+<h5 id="子查询与7个查询命令的关系">子查询与7个查询命令的关系
+</h5><ol>
+<li>from 命令功能是：从外存复制表文件到内存形成临时表，或者定位内存中的临时表。
+对于后者，子查询就可以为select命令提供临时表。考察如下例子：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">SubQueryTempTable</span><span class="p">.</span><span class="n">ename</span><span class="p">,</span><span class="w"> </span><span class="n">SubQueryTempTable</span><span class="p">.</span><span class="n">job</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">empno</span><span class="p">,</span><span class="w"> </span><span class="n">ename</span><span class="p">,</span><span class="w"> </span><span class="n">job</span><span class="p">,</span><span class="w"> </span><span class="n">sal</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">SubQueryTempTable</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个案例中，<code>(select empno, ename, job, sal from emp)</code>是一个子查询，生成一个临时表供 from 使用；
+此外，由于子查询得到的临时表是匿名的,
+为了 select 能够使用其字段名，要用 <code>as SubQueryTemporaryTable</code> 为子查询得到的临时表命名。</p>
+<ol start="2">
+<li>where 命令的定位条件若需要用统计数据（如最值、平均等），就可以用子查询得到结果。考察如下例子：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="k">and</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">sal</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>
+<p>group by 后面跟的是分组字段名，因此无法使用子查询</p>
+</li>
+<li>
+<p>having 可以使用子查询，为 having 的表舍选条件提供数据。</p>
+</li>
+</ol>
+<blockquote>
+<p><font color='aqua'>案例，查询部门平均工资高于公司平均工资的部门信息</font></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">having</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>select：可以把子查询得到的数据作为select展示的信息</li>
+</ol>
+<blockquote>
+<p><font color='aqua'>案例，打印员工姓名、工资、公司平均工资</font></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">ename</span><span class="p">,</span><span class="w"> </span><span class="n">sal</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>
+<p>order by：不能使用子查询【但是子查询语句可以作为字段名供order by 使用】</p>
+</li>
+<li>
+<p>limit：不能使用子查询</p>
+</li>
+</ol>
+<p>子查询分为独立子查询和依赖子查询。</p>
+<h5 id="独立子查询">独立子查询
+</h5><p>含义：独立子查询不需要其服务的查询命令提供帮助</p>
+<p>独立子查询工作规则：</p>
+<ul>
+<li>独立子查询返回结果相当于“常量”，不随着执行的时机和次数而改变</li>
+<li>独立子查询会在 “其服务的查询命令” 执行前 先执行</li>
+<li>独立子查询在 “其服务的查询命令” 执行时 不会被调用</li>
+</ul>
+<p>例如：<code>from emp where sal &gt; (select avg(sal) from emp);</code>先执行一次子查询得到平均工资；
+接着，where 遍历员工表并检验条件，检验过程直接使用先前子查询返回的结果，不会在遍历中执行子查询。
+<a class="link" href="/append/MySQL-Learn/003.md" >参考案例</a></p>
+<h5 id="依赖子查询尽量不用">依赖子查询【尽量不用】
+</h5><p><font color='aqua'>案例：查询工资高于所在部门的部门平均工资的员工信息</font></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">ename</span><span class="p">,</span><span class="n">sal</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">tanother</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">tanother</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">sal</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">t1</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>特点：不能在其服务的查询命令执行前执行，而且会多次执行读外存，效率极低！<br>
+连接查询和自关联查询，可以完全替代依赖子查询的功能，仍是上面的例子（重点 @@@@@）：</p>
+<p>第一步，写出产生 部门-部门平均工资 临时表 的语句：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_sal</span><span class="w"> </span><span class="cm">/*可见 as 除了表，还可以为字段起别名 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>第二步，把这个表与emp表做连接合并，并过滤；注意为临时表添加名字才符合语法规范</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">sub_deptno</span><span class="p">,</span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">sub_avsl</span><span class="w">  </span><span class="cm">/*起名可以玩得花一点*/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">DeptAvgSal</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">on</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DeptAvgSal</span><span class="p">.</span><span class="n">sub_deptno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>第三步，where 抓取员工工资高于部门平均工资的行，最后用select切出想要的字段</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">ename</span><span class="p">,</span><span class="w"> </span><span class="n">sal</span><span class="p">,</span><span class="w"> </span><span class="n">DeptAvgSal</span><span class="p">.</span><span class="n">sub_avsl</span><span class="p">,</span><span class="w"> </span><span class="n">sub_avsl</span><span class="w"> </span><span class="cm">/*后两个字段切出来是一样的*/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">sub_deptno</span><span class="p">,</span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">sub_avsl</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">DeptAvgSal</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">on</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">deptno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DeptAvgSal</span><span class="p">.</span><span class="n">sub_deptno</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">emp</span><span class="p">.</span><span class="n">sal</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">sub_avsl</span><span class="p">;</span><span class="w"> </span><span class="cm">/* 如所见，如果字段没有歧义，可以直接用而不需要加表名 dot */</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="自关联查询">自关联查询
+</h4><p><font color='aqua'>案例：查询员工及其上级的工资，有依赖子查询、自关联 两种方法实现</font></p>
+<p>依赖子查询法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">ename</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">sal</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">ename</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">t1</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">empno</span><span class="o">=</span><span class="n">emp</span><span class="p">.</span><span class="n">mgr</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">senior_name</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">sal</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">t2</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">t2</span><span class="p">.</span><span class="n">empno</span><span class="o">=</span><span class="n">emp</span><span class="p">.</span><span class="n">mgr</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">senior_sal</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>自关联法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">ename</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">my_name</span><span class="p">,</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">sal</span><span class="w"> </span><span class="n">my_sal</span><span class="p">,</span><span class="w"> </span><span class="n">t2</span><span class="p">.</span><span class="n">ename</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">senior_name</span><span class="p">,</span><span class="w">  </span><span class="n">t2</span><span class="p">.</span><span class="n">sal</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">senior_sal</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="cm">/* 注意要用 left join，因为老板 President 没有上级 ^_^ */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">t1</span><span class="w"> </span><span class="k">left</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">t2</span><span class="w"> </span><span class="cm">/* 搞出两张表来用 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">on</span><span class="w"> </span><span class="n">t1</span><span class="p">.</span><span class="n">mgr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">t2</span><span class="p">.</span><span class="n">empno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="查询结果中解释字段的来源">查询结果中解释字段的来源
+</h4><p>解释字段：在SELECT执行之前,在<strong>临时表动态生成一个列</strong>。
+列中内容用于对临时表每一行数据进行解释分析</p>
+<p>解释数据来源:</p>
+<ol>
+<li>来自于聚合函数</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="w"> </span><span class="k">max</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;DEPT TOP SALARY&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;AVERAGE SALARY&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>来自于独立子查询</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="w"> </span><span class="k">max</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;DEPT TOP SALARY&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;DEPT AVERAGE SALARY&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;COMPANY AVERAGE SALARY&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>开发人员手动设置</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">deptno</span><span class="p">,</span><span class="w"> </span><span class="k">max</span><span class="p">(</span><span class="n">sal</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;DEPT TOP SALARY&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Morning&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;Notice&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">deptno</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>来自 case &hellip; end 语句
+case &hellip; end 语句在 select 前执行，它会遍历临时表每行数据，
+对每一行数据生成动态的解释内容。
+执行完毕时， case &hellip; end 生成的解释数据构成新的一列。</li>
+</ol>
+<p>格式：case &hellip; end 进行多分支值判断（类似于switch case）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="k">case</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">when</span><span class="w"> </span><span class="err">当前数据行字段值区间判断</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;解释数据一&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">when</span><span class="w"> </span><span class="err">当前数据行字段值区间判断</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;解释数据二&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">when</span><span class="w"> </span><span class="err">当前数据行字段值区间判断</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;解释数据三&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;默认解释数据&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">end</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;解释字段&#39;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><font color='aqua'>案例：按照员工薪资打印提示</font></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">ename</span><span class="p">,</span><span class="w"> </span><span class="n">sal</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="k">case</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="n">sal</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4000</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;Rich Man&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="n">sal</span><span class="w"> </span><span class="k">between</span><span class="w"> </span><span class="mi">2400</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="mi">3999</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;Fine Class&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="n">sal</span><span class="w"> </span><span class="k">between</span><span class="w"> </span><span class="mi">1500</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="mi">2399</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;Modest Person&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;Fresh Clerk&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">end</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">COMMENT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>格式：case &hellip; end 进行等值判断（类似于switch case）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="k">case</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">when</span><span class="w"> </span><span class="err">值一</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;解释数据甲&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">when</span><span class="w"> </span><span class="err">值二</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;解释数据乙&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">when</span><span class="w"> </span><span class="err">值三</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;解释数据丙&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;默认解释数据&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">end</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;解释字段&#39;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><font color='aqua'>案例：按照员工薪资打印提示</font></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">ename</span><span class="p">,</span><span class="w"> </span><span class="n">sal</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">(</span><span class="k">case</span><span class="w"> </span><span class="n">job</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="s1">&#39;president&#39;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;TOP&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="s1">&#39;manager&#39;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;SENIOR&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="s1">&#39;analyst&#39;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;SMART&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;WORST&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">end</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">COMMENT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="特殊查询案例行列转化">特殊查询案例：行列转化
+</h4><h5 id="行转列">行转列
+</h5><p><font color='aqua'>案例：成绩单如下</font></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>sname</th>
+          <th>phy_score</th>
+          <th>cns_score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>mike</td>
+          <td>12</td>
+          <td>13</td>
+      </tr>
+      <tr>
+          <td>alice</td>
+          <td>34</td>
+          <td>78</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><font color='aqua'>需要转为如下形式</font></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>sname</th>
+          <th>course</th>
+          <th>score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>mike</td>
+          <td>phy</td>
+          <td>12</td>
+      </tr>
+      <tr>
+          <td>mike</td>
+          <td>cns</td>
+          <td>13</td>
+      </tr>
+      <tr>
+          <td>alice</td>
+          <td>phy</td>
+          <td>34</td>
+      </tr>
+      <tr>
+          <td>alice</td>
+          <td>cns</td>
+          <td>78</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>这就要用到行列转化。</p>
+<p>行转列 —— 有固定公式即联合合并方案：
+把成绩单的1、2字段作为临时表A，1、3字段作为临时表B，然后把AB联合合并</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">sname</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">NAME</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;physics&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">COURSE</span><span class="p">,</span><span class="w"> </span><span class="n">phy_score</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">SCORE</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">scoresheet</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">union</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">sname</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;chinese&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s1">&#39;COURSE&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">cns_score</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">scoresheet</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">sname</span><span class="w"> </span><span class="k">desc</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="列转行">列转行
+</h5><blockquote>
+<p><font color='aqua'>案例：成绩单如下</font></p>
+</blockquote>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>sname</th>
+          <th>course</th>
+          <th>score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>mike</td>
+          <td>phy</td>
+          <td>12</td>
+      </tr>
+      <tr>
+          <td>mike</td>
+          <td>cns</td>
+          <td>13</td>
+      </tr>
+      <tr>
+          <td>alice</td>
+          <td>phy</td>
+          <td>34</td>
+      </tr>
+      <tr>
+          <td>alice</td>
+          <td>cns</td>
+          <td>78</td>
+      </tr>
+  </tbody>
+</table></div>
+<blockquote>
+<p><font color='aqua'>需要转为如下形式</font></p>
+</blockquote>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>sname</th>
+          <th>phy_score</th>
+          <th>cns_score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>mike</td>
+          <td>12</td>
+          <td>13</td>
+      </tr>
+      <tr>
+          <td>alice</td>
+          <td>34</td>
+          <td>78</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>这就用到列转行。列转行有自关联查询、分组+case-end 实现。</p>
+<ol>
+<li>自关联法</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">sname</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">NAME</span><span class="p">,</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">score</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">PHY_SCORE</span><span class="p">,</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="n">score</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">CNS_SCORE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">s1</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">s2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">where</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">sname</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="n">sname</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">s1</span><span class="p">.</span><span class="n">course</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;phy&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">s2</span><span class="p">.</span><span class="n">course</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;cns&#39;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>case end 法
+分组的作用是把多行数据变为一行（压缩）</li>
+</ol>
+<p>仔细分析下面的代码，从命令执行顺序入手，逐步分析临时表。
+提示：执行顺序和功能</p>
+<ol>
+<li>from 加载表</li>
+<li>group by 分成两张临时表</li>
+<li>select 下有函数max，下套子查询，所以先执行子查询</li>
+<li>case end 为两张表的每行数据按规则创建新的一列</li>
+<li>select + max对两张临时表进行操作：
+<ul>
+<li>牢记：select 面对多张临时表时，利用聚合函数 max() 处理每一张表的首行，然后只生成一行数据</li>
+<li>select 取出sname姓名，以及分数 （max聚合函数给出）</li>
+<li>把两张临时表得到的两行数据拼接</li>
+</ul>
+</li>
+<li><a class="link" href="/append/MySQL-Learn/004.xlsx" >参考文件</a></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">sname</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">max</span><span class="w"> </span><span class="p">((</span><span class="k">case</span><span class="w"> </span><span class="n">course</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="s1">&#39;phy&#39;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">end</span><span class="p">))</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">phy_score</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">max</span><span class="w"> </span><span class="p">((</span><span class="k">case</span><span class="w"> </span><span class="n">course</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="s1">&#39;cns&#39;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">end</span><span class="p">))</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">cns_score</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">from</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">sname</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="附录">附录
+</h2><h3 id="mysql-基础语法练习题">MySQL 基础语法练习题
+</h3><p><a class="link" href="/append/MySQL-Learn/answer.sql" >参考答案</a><br>
+<a class="link" href="/append/MySQL-Learn/999.sql" >作答</a></p>
+<h4 id="一单选题20-题每题-2-分共-40-分">一、单选题（20 题，每题 2 分，共 40 分）
+</h4><p>1 &ndash; 以下不属于关系型数据库的是（）</p>
+<p><code>A. MySQL B. Oracle C. Redis D. SQL Server</code></p>
+<p>2 &ndash; SQL 命令中，ALTER TABLE属于哪类命令（）</p>
+<p><code>A. DML B. DDL C. DQL D. TCL</code></p>
+<p>3 &ndash; 关于WHERE和HAVING的区别，错误的是（）</p>
+<pre><code>A. WHERE 操作行，HAVING 操作分组临时表
+B. WHERE 可以使用聚合函数，HAVING 不可以
+C. WHERE 执行优先级高于 HAVING
+D. HAVING 必须配合 GROUP BY 使用
+</code></pre>
+<p>4 &ndash; 模糊查询中，匹配 “姓名以 S 开头且长度为 5” 的条件是（）</p>
+<p><code>A. ename like 'S%' B. ename like 'S____' C. ename like '% S' D. ename like 'S__'</code></p>
+<p>5 &ndash; 以下关于 NULL 值判断的正确写法是（）</p>
+<p><code>A. comm = NULL B. comm == NULL C. comm is NULL D. comm &lt;&gt; NULL</code></p>
+<p>6 &ndash; DQL 命令执行优先级正确的是（）</p>
+<pre><code>A. FROM &gt; WHERE &gt; GROUP BY &gt; HAVING &gt; SELECT &gt; ORDER BY &gt; LIMIT
+B. WHERE &gt; FROM &gt; GROUP BY &gt; HAVING &gt; SELECT &gt; ORDER BY &gt; LIMIT
+C. FROM &gt; GROUP BY &gt; WHERE &gt; HAVING &gt; SELECT &gt; ORDER BY &gt; LIMIT
+D. FROM &gt; WHERE &gt; HAVING &gt; GROUP BY &gt; SELECT &gt; ORDER BY &gt; LIMIT
+</code></pre>
+<p>7 &ndash; 关于视图插入数据报错Field doesn&rsquo;t have a default value，核心原因是（）</p>
+<pre><code>A. 视图本身不支持插入操作 
+B. 底层表主键字段无默认值且未赋值
+C. 视图字段数量与底层表不一致 
+D. MySQL 版本不兼容
+</code></pre>
+<p>8 &ndash; 多表连接查询中，LEFT JOIN的核心特点是（）</p>
+<pre><code>A. 只保留两张表匹配的数据行 
+B. 保证左表所有行都保留，无匹配则补 NULL
+C. 保证右表所有行都保留，无匹配则补 NULL 
+D. 自动去重重复数据行
+</code></pre>
+<p>9 &ndash; 以下LIMIT用法正确的是（）</p>
+<p><code>A. LIMIT 2,5 B. LIMIT 5 2 C. LIMIT -1,5 D. LIMIT 5,-2</code></p>
+<p>10 &ndash; 联合查询（UNION）的前提条件是（）</p>
+<pre><code>A. 两张表必须有外键关联 
+B. 两张表字段个数、类型、顺序一致
+C. 两张表必须是同一张库中的表 
+D. 必须配合 WHERE 条件使用
+</code></pre>
+<p>11 &ndash; 关于GROUP BY多字段分组，正确的是（）</p>
+<pre><code>A. 字段顺序会影响查询结果 
+B. 每次只能对一个字段分组，多字段需多次分组 
+C. 分组后 SELECT 可读取每个临时表所有行数据 
+D. 不能与聚合函数配合使用
+</code></pre>
+<p>12 &ndash; 以下属于 TCL 命令的是（）</p>
+<p><code>A. GRANT B. COMMIT C. ALTER D. SELECT</code></p>
+<p>13 &ndash; 备份表结构和数据的正确命令是（）</p>
+<pre><code>A. INSERT INTO 新表 SELECT * FROM 旧表 
+B. CREATE TABLE 新表 SELECT * FROM 旧表
+C. ALTER TABLE 新表 COPY * FROM 旧表 
+D. BACKUP TABLE 旧表 TO 新表
+</code></pre>
+<p>14 &ndash; 自关联查询中，EMP t1 LEFT JOIN EMP t2 ON t1.mgr = t2.empno的作用是（）</p>
+<p><code>A. 查询员工和其上级信息 B. 查询员工和下属信息C. 去重员工表数据 D. 统计员工薪资</code></p>
+<p>15 &ndash; 以下UPDATE命令语法正确的是（）</p>
+<pre><code>A. UPDATE emp SET sal=5000 WHERE deptno=10;
+B. UPDATE emp sal=5000 WHERE deptno=10;
+C. UPDATE emp SET sal=5000 deptno=10;
+D. UPDATE emp SET sal=5000; WHERE deptno=10;
+</code></pre>
+<p>16 &ndash; 关于子查询，说法错误的是（）</p>
+<pre><code>A. 独立子查询只执行一次，效率高 
+B. 依赖子查询会多次执行，效率低
+C. GROUP BY 后可以使用子查询 
+D. FROM 后可以使用子查询生成临时表
+</code></pre>
+<p>17 &ndash; 列转行查询中，CASE&hellip;END配合MAX()的核心作用是（）</p>
+<p><code>A. 过滤不符合条件的数据行 B. 将多行数据压缩为一行C. 对数据进行排序 D. 去重重复数据</code></p>
+<p>18 &ndash; 以下DELETE命令正确的是（）</p>
+<pre><code>A. DELETE emp WHERE sid&gt;=70; 
+B. DELETE FROM emp WHERE sid&gt;=70;
+C. DELETE * FROM emp WHERE sid&gt;=70; 
+D. DELETE emp SET sid&gt;=70;
+</code></pre>
+<p>19 &ndash; 关于ORDER BY，错误的是（）</p>
+<p><code>A. 可以使用字段编号代替字段名 B. 多字段排序优先级依次递减 C. 执行优先级高于 SELECT D. 默认升序（ASC）</code></p>
+<p>20 &ndash; 外键字段的特点是（）</p>
+<pre><code>A. 存在于一方表（拥有方） 
+B. 属于主键字段
+C. 既存在于一方表（拥有方），也存在于多方表（从属方） 
+D. 可以为 NULL 且重复
+</code></pre>
+<h4 id="二填空题10-题每空-1-分共-20-分">二、填空题（10 题，每空 1 分，共 20 分）
+</h4><p>考查重点：需要记忆的语法、规则、概念</p>
+<ul>
+<li>SQL 不区分______，数据也没有______。</li>
+<li>聚合函数中，统计临时表总行数的是______，统计字段非 NULL 值个数的是______。</li>
+<li>模糊查询中，%代表______，<code>_</code>代表______。</li>
+<li>数据库服务器分为关系型和非关系型，其中 Redis 属于______，MySQL 属于______。</li>
+<li>DQL 命令中，______命令执行优先级最高，______命令执行优先级最低（限 7 大查询命令）。</li>
+<li>表文件的后缀名是______，数据库是存储______的目录。</li>
+<li>联合查询中，______会自动去重重复数据行，______会保留所有数据行。</li>
+<li>行转列的核心实现方案是______，列转行的核心实现方案是______或______。</li>
+<li>LIMIT start, cnt中，首行数据的 start 值是______，若 start 超出数据行范围，返回______。</li>
+<li>数据隶属关系分为_____、_____、_____三类，其中多对多关系需要______张表描述。</li>
+</ul>
+<h4 id="纠错题3-题每题-10-分共-30-分">纠错题（3 题，每题 10 分，共 30 分）
+</h4><p>题目要求：指出每道题中 SQL 语句的错误，并写出修正后的完整语句。<br>
+使用的数据库仍由<a class="link" href="/append/MySQL-Learn/create.sql" >create.sql</a>提供。</p>
+<ul>
+<li>
+<p>查询部门 20 中薪资高于公司平均工资的员工姓名和薪资<br>
+<code>SELECT ename, sal FROM emp WHERE deptno=20 AND sal &gt; AVG(sal);</code></p>
+</li>
+<li>
+<p>统计各部门各职位的人数，要求只显示人数≥2 的分组<br>
+<code>SELECT deptno, job, COUNT(*) FROM emp GROUP BY deptno, job WHERE COUNT(*)&gt;=2;</code></p>
+</li>
+<li>
+<p>插入员工数据（EMP 表字段：EMPNO, ENAME, JOB, SAL, DEPTNO）<br>
+<code>INSERT INTO emp (ename, job, sal) VALUES ('LUCY', 'CLERK', 2000);</code></p>
+</li>
+<li>
+<p>删除 EMP 表中薪资低于 1000 且部门编号为 30 的员工<br>
+<code>DELETE emp WHERE sal&lt;1000 and deptno=30;</code></p>
+</li>
+<li>
+<p>左连接查询所有部门名称及下属人数（含 0 人部门）<br>
+<code>SELECT dept.dname, COUNT(*) FROM dept LEFT JOIN emp ON dept.deptno=emp.deptno WHERE emp.empno IS NOT NULL GROUP BY dept.deptno;</code></p>
+</li>
+<li>
+<p>查询员工姓名、薪资及薪资等级（SALGRADE 表字段：GRADE, LOSAL, HISAL）<br>
+<code>SELECT emp.ename, emp.sal, salgrade.grade FROM emp JOIN salgrade ON emp.sal &gt;= salgrade.losal and emp.sal &lt;= salgrade.hisal;</code></p>
+</li>
+<li>
+<p>列转行查询（成绩表：SNAME, COURSE, SCORE），将多行转为 “姓名 - 物理成绩 - 语文成绩” 格式<br>
+<code>SELECT sname, CASE course when 'phy' then score else then 0 end as phy_score, CASE course when 'cns' then score else then 0 end as cns_score FROM score GROUP BY sname;</code></p>
+</li>
+</ul>
+<h4 id="编程题3-题每题-15-分共-45-分">编程题（3 题，每题 15 分，共 45 分）
+</h4><p>配套数据库脚本生成文件<a class="link" href="/append/MySQL-Learn/exam_db.sql" >exam_db.sql</a></p>
+<p>第38题</p>
+<ol>
+<li>员工薪资分析业务需求：查询各部门的部门编号、部门名称、最高薪资、平均薪资，以及该部门平均薪资与公司平均薪资的差值（命名为 SAL_DIFF），要求只显示平均薪资高于 2000 的部门，结果按最高薪资降序排列。</li>
+<li>员工上级信息查询业务需求：使用自关联查询所有员工的姓名、薪资、上级姓名、上级薪资，若员工无上级（如 KING），则上级姓名和薪资显示为 “无”，结果按员工部门编号升序、薪资降序排列。</li>
+</ol>
+<p>第39题：</p>
+<p>子需求 1（基础查询 + 条件过滤）</p>
+<ul>
+<li>查询 “2026 年 1 月” 参加考试的所有学生姓名、课程名、成绩，要求：</li>
+<li>排除成绩为 NULL（缺考）的记录；</li>
+<li>只显示成绩≥80 分的记录；</li>
+<li>结果按课程名升序、成绩降序排列。</li>
+</ul>
+<p>子需求 2（分组 + 聚合 + Having）</p>
+<ul>
+<li>统计每门课程的参考人数、平均分、最高分、最低分，要求：</li>
+<li>参考人数按 “成绩非 NULL” 统计；</li>
+<li>只显示平均分≥85 分的课程；</li>
+<li>结果按平均分降序排列；</li>
+<li>字段别名分别为：课程名、参考人数、平均分、最高分、最低分。</li>
+</ul>
+<p>子需求 3（多表连接 + 外连接）</p>
+<ul>
+<li>查询所有学生的姓名、所选课程数、总成绩（缺考课程不计入总成绩），要求：</li>
+<li>即使学生未选任何课程（如新增学生），也需显示（课程数为 0，总成绩为 0）；</li>
+<li>结果按总成绩降序排列，总成绩相同按姓名升序排列。</li>
+</ul>
+<p>子需求 4（子查询 + 连接）</p>
+<ul>
+<li>查询 “Mathematics” 课程中成绩高于该课程平均分的学生信息，要求：</li>
+<li>显示学生姓名、性别、成绩、该课程平均分（别名：课程平均分）；</li>
+<li>禁止使用依赖子查询（必须用独立子查询 + 连接实现）。</li>
+</ul>
+<p>子需求 5（行列转换 + 联合查询）</p>
+<ul>
+<li>列转行：将成绩表转换为 “学生姓名 - 数学成绩 - 英语成绩 - 物理成绩 - 语文成绩” 格式（缺考科目成绩显示 0）；</li>
+<li>行转列：将上述列转行结果，转回 “学生姓名 - 课程名 - 成绩” 格式；<font color='red'>【不熟练！需要反复记忆】</font></li>
+<li>统计每个性别的学生各课程平均分（显示：性别、课程名、平均分）。</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>表名.字段 的写法是在哪都可以用的，只不过单表查询不存在歧义是可以省略表名&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>一方表每行数据与多方表所有数据进行拼接，会捏造出例如clerk smith（7369）在部门20,30,40工作的错误数据！&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/mysql/">Mysql</a>
+        
+            <a href="/tags/javaweb/">Javaweb</a>
+        
+            <a href="/tags/website/">Website</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 春节序曲
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
