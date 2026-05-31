@@ -167,7 +167,7 @@ SQL不区分大小写，数据也没有大小写。&lt;/p&gt;
 &lt;/h4&gt;&lt;p&gt;删除表所有数据行&lt;br&gt;
 格式：&lt;code&gt;delete from 表名&lt;/code&gt;，删掉表文件所有数据行&lt;/p&gt;
 &lt;p&gt;有条件删除&lt;br&gt;
-格式：&lt;code&gt;delect from 表名 where 条件&lt;/code&gt;，将符合条件的数据行删掉&lt;/p&gt;
+格式：&lt;code&gt;delete from 表名 where 条件&lt;/code&gt;，将符合条件的数据行删掉&lt;/p&gt;
 &lt;p&gt;举例：对于这样一张表格：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

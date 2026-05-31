@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Homework on Nishizono Mio&#39;s Shaddow</title>
+        <link>https://bzliustc.github.io/tags/homework/</link>
+        <description>Recent content in Homework on Nishizono Mio&#39;s Shaddow</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>春节序曲</copyright>
+        <lastBuildDate>Mon, 01 Jun 2026 00:14:09 +0800</lastBuildDate><atom:link href="https://bzliustc.github.io/tags/homework/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Answer to Homework-3 of Electromanetics.A</title>
+        <link>https://bzliustc.github.io/p/answer-to-homework-3-of-electromanetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>https://bzliustc.github.io/p/answer-to-homework-3-of-electromanetics.a/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-3-of-electromanetics.a/front-page.png" alt="Featured image of post Answer to Homework-3 of Electromanetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 3 of the course Electromanetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/5/31;
+Status: editing, @ updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 1.15 - 1.23, 2.1 - 2.3, 2.5 以及补充作业&lt;/p&gt;
+&lt;h2 id=&#34;115&#34;&gt;1.15
+&lt;/h2&gt;&lt;p&gt;(1)把正电荷$Q$从O点沿弧$OCD$移到D，电荷$-q$对正电荷$Q$不做功，又因为做功与路径无关，电荷$+q$对$Q$做的功为
+&lt;/p&gt;
+$$
+\int_{OCD}Q\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{l}=\int_{OD}Q\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{l}=\int_{l}^{3l}\frac{qQ\mathrm{d} r}{4\pi\varepsilon _0r^2 }=\frac{qQ}{6\pi\varepsilon_0l}
+$$&lt;p&gt;(2)$+q$对$Q$做的功：
+&lt;/p&gt;
+$$
+W_+=\int_{3l}^{\infty}\frac{-qQ\mathrm{d} r}{4\pi\varepsilon_0 r^2}=\frac{-qQ}{12\pi\varepsilon_0l}
+$$&lt;p&gt;
+$-q$对$Q$做的功
+&lt;/p&gt;
+$$
+W_-=\int_{l}^{\infty}\frac{qQ\mathrm{d} r}{4\pi\varepsilon_0 r^2}=\frac{qQ}{4\pi\varepsilon_0l}
+$$&lt;p&gt;
+根据叠加原理，总功
+&lt;/p&gt;
+$$
+W=W_++W_-=\frac{qQ}{6\pi\varepsilon_0l}
+$$&lt;h2 id=&#34;116&#34;&gt;1.16
+&lt;/h2&gt;&lt;p&gt;证明：取柱形高斯面，上下底面分别记为$a$，$b$，高为$h$，轴向与电场线方向平行，底面积为足够小的$\Delta S$。由高斯定理得：$-E_a\Delta S+E_b\Delta S =0$，得$E_a=E_b$。
+即同一电场线上任意两点电场强度相等。&lt;/p&gt;
+&lt;p&gt;作矩形回路$abcd$，由环路定理得
+&lt;/p&gt;
+$$
+\int_{abcd}\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{l}=\int_{ab}\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{l}+\int_{bc}\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{l}+\int_{cd}\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{l}+\int_{da}\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{l}=0
+$$&lt;p&gt;
+即
+&lt;/p&gt;
+$$
+E_ah-E_dh=0,\quad E_a=E_d
+$$&lt;p&gt;
+因此，不同电场线的任意两点的场强也相等。&lt;/p&gt;
+&lt;h2 id=&#34;117&#34;&gt;1.17
+&lt;/h2&gt;&lt;p&gt;设无限远处为电势零点，根据叠加原理
+&lt;/p&gt;
+$$
+\begin{align*}
+    U&amp;=\frac{-2q}{4\pi\varepsilon_0r}+\frac{q}{4\pi\varepsilon_0\sqrt{r^2+l^2-2lr\cos\theta}}+\frac{q}{4\pi\varepsilon_0\sqrt{r^2+l^2+2lr\cos\theta}}\\
+    &amp;=\frac{q}{4\pi\varepsilon_0r}\left[ -2+\frac{1}{\sqrt{1+\left(\frac{l}{r}\right)^2-2\left(\frac{l}{r}\right)\cos\theta}}+\frac{1}{\sqrt{1+\left(\frac{l}{r}\right)^2+2\left(\frac{l}{r}\right)\cos\theta}} \right]
+\end{align*}
+$$&lt;p&gt;
+对于远处$r\gg l$，利用泰勒展开式
+&lt;/p&gt;
+$$
+\frac{1}{\sqrt{1+x}}=1-\frac{1}{2}x+\frac{3}{8}x^2+\cdots
+$$&lt;p&gt;
+保留二阶小量，有
+&lt;/p&gt;
+$$
+\begin{align*}
+    U&amp;=\frac{q}{4\pi\varepsilon_0r}\left[ -2+1-\frac{1}{2}\left(\frac{l^2}{r^2}-\frac{2l}{r}\cos\theta\right)+\frac{3}{8}\left(\frac{l^2}{r^2}-\frac{2l}{r}\cos\theta\right)^2\right.\\
+    &amp;\quad \left.+1-\frac{1}{2}\left(\frac{l^2}{r^2}+\frac{2l}{r}\cos\theta\right)+\frac{3}{8}\left(\frac{l^2}{r^2}+\frac{2l}{r}\cos\theta\right)^2\right]\\
+    &amp;=\frac{q}{4\pi\varepsilon_0r}\left(-\frac{l^2}{r^2}+\frac{3l^2}{r^2}\cos^2\theta+\cdots\right)\\
+    &amp;=\frac{ql^2}{4\pi\varepsilon_0r^3}(3\cos^2\theta-1)
+\end{align*}
+$$&lt;p&gt;
+电场为
+&lt;/p&gt;
+$$
+\begin{align*}
+    \boldsymbol{E}&amp;=-\nabla U=-\frac{\partial U}{\partial r}\boldsymbol{e}_r-\frac{1}{r}\frac{\partial U}{\partial\theta}\boldsymbol{e}_{\theta}\\
+         &amp;=\frac{3ql^2(3\cos^2\theta-1)}{4\pi\varepsilon_0r^4}\boldsymbol{e}_r+\frac{3ql^2\sin\theta \cos\theta}{2\pi\varepsilon_0r^4}\boldsymbol{e}_{\theta}\\
+         &amp;=\frac{3ql^2}{4\pi\varepsilon_0r^4}\left[(3\cos^2\theta-1)\boldsymbol{e}_r+2\sin\theta \cos\theta\boldsymbol{e}_{\theta}\right]
+\end{align*}
+$$&lt;h2 id=&#34;118&#34;&gt;1.18
+&lt;/h2&gt;&lt;p&gt;同1.17，保留二阶小量，得
+&lt;/p&gt;
+$$
+U=\frac{3ql^2}{4\pi\varepsilon_0r^3}\sin\theta \cos\theta
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+\boldsymbol{E}=-\nabla U=-\frac{9ql^2\sin\theta \cos\theta}{4\pi\varepsilon_0r^4}\boldsymbol{e}_r+\frac{3ql^2\cos2\theta}{4\pi\varepsilon_0r^4}\boldsymbol{e}_{\theta}
+$$&lt;h2 id=&#34;119&#34;&gt;1.19
+&lt;/h2&gt;&lt;p&gt;(1)以圆筒轴为$z$轴建立柱坐标系，由对称性可知，电场只有$\boldsymbol{r}$分量，且仅与$r$有关。取与圆筒共轴、高为$h$、半径为$r$的圆柱面为高斯面，电通量$\varPhi=\oint\boldsymbol{E}\cdot \mathrm{d}\boldsymbol{S}=2\pi rhE$，利用高斯定理可得
+&lt;/p&gt;
+$$
+r&lt;a,\quad \varPhi=0,\quad E=0
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+a\le r\le b,\quad \varPhi=\frac{h\lambda_e}{\varepsilon_0},\quad E=\frac{\lambda_e}{2\pi\varepsilon_0r}
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+r&gt;b,\quad \varPhi=0,\quad E=0
+$$&lt;p&gt;设外筒为电势零点位置，则
+&lt;/p&gt;
+$$
+U=-\int_b^rE\mathrm{d} r=
+\begin{cases}
+\displaystyle \frac{\lambda_e}{2\pi\varepsilon_0}\ln\frac{b}{a}, &amp; r\le a\\[6pt]
+\displaystyle \frac{\lambda_e}{2\pi\varepsilon_0}\ln\frac{b}{r}, &amp; a\le r\le b\\[6pt]
+0, &amp; r\ge b
+\end{cases}
+$$&lt;p&gt;(2)两筒间的电势差为
+&lt;/p&gt;
+$$
+\Delta U = U(a)-U(b)=\frac{\lambda_e}{2\pi\varepsilon_0}\ln\frac{b}{a}
+$$&lt;h2 id=&#34;120&#34;&gt;1.20
+&lt;/h2&gt;&lt;p&gt;(1)以氢原子核为球心，取半径$R$与$R+\mathrm{d} R$的球壳，场点$P$到球心距离为$r$。球壳体积元$\mathrm{d}V=2\pi R^2\sin\theta \mathrm{d}R\mathrm{d}\theta$，所带电荷量$\mathrm{d} q=\rho(R)\mathrm{d}V=2\pi R^2 \rho(R) \sin\theta \mathrm{d}R\mathrm{d}\theta$。其在$P$点产生的电势为
+&lt;/p&gt;
+$$
+\mathrm{d} U=\frac{\mathrm{d} q}{4\pi \varepsilon_0\sqrt{R^2+r^2-2Rr\cos\theta}}=\frac{\rho(R)R^2\sin\theta \mathrm{d}R\mathrm{d} \theta}{2\varepsilon_0\sqrt{R^2+r^2-2Rr\cos\theta}}
+$$&lt;p&gt;对$\theta$和$R$积分得$P$点电势
+&lt;/p&gt;
+$$
+U=\frac{1}{2\varepsilon_0}\int_0^{\infty}\rho(R)R^2\mathrm{d} R\int_0^{\pi}\frac{\sin\theta \mathrm{d} \theta}{\sqrt{R^2+r^2-2Rr\cos\theta}}
+$$&lt;p&gt;其中积分&lt;/p&gt;
+$$
+\int_0^{\pi}\frac{\sin\theta \mathrm{d} \theta}{\sqrt{R^2 + r^2 - 2 Rr \cos \theta}}= \left.\frac{\sqrt{R^2 + r^2 - 2Rr \cos \theta}}{Rr} \right|_{0} ^ {\pi}= \begin{cases}\dfrac{2}{r}, &amp; R &lt; r\\[6pt]\dfrac{2}{R}, &amp; R &gt; r\end{cases}
+$$&lt;p&gt;代回积分表达式得
+&lt;/p&gt;
+$$
+\begin{align*}
+   U&amp;=\frac{1}{\varepsilon_0r} \int_0^r\rho(R)R^2\mathrm{d} R+\frac{1}{\varepsilon_0}\int_r^{\infty}\rho(R)R\mathrm{d} R\\
+   &amp;=\frac{-q}{\pi\varepsilon_0a^3r}\int_0^re^{-\frac{2R}{a}}R^2\mathrm{d} R-\frac{q}{\pi\varepsilon_0a^3}\int_r^{\infty}e^{-\frac{2R}{a}}R\mathrm{d} R\\
+   &amp;=-\frac{q}{\pi\varepsilon_0a^3r}\left[-\frac{a^3}{4}\left(\frac{2r^2}{a^2}+\frac{2r}{a}+1\right)e^{-\frac{2r}{a}}+\frac{a^3}{4}\right]-\frac{q}{\pi\varepsilon_0a^3}\left[\frac{a^3}{4}\left(\frac{2r}{a}+1\right)e^{-\frac{2r}{a}}\right]\\
+   &amp;=\frac{q}{4\pi\varepsilon_0}\left[\left(\frac{1}{a}+\frac{1}{r}\right)e^{-\frac{2r}{a}}-\frac{1}{r}\right]
+\end{align*}
+$$&lt;p&gt;（2）所有电荷在$r$处产生的电势为
+&lt;/p&gt;
+$$
+U_{all}=U+\frac{q}{4\pi\varepsilon_0r}=\frac{q}{4\pi\varepsilon_0}\left(\frac{1}{a}+\frac{1}{r}\right)e^{-\frac{2r}{a}}
+$$&lt;p&gt;本题也可先由高斯定理求出电场，再积分求解电势。&lt;/p&gt;
+&lt;h2 id=&#34;121&#34;&gt;1.21
+&lt;/h2&gt;&lt;p&gt;先求单个带电圆面产生的电势。取圆面上以圆心为原点、半径$r$、宽度$\mathrm{d}r$的环带，环带电荷量$\mathrm{d}q=2\pi\sigma r\mathrm{d}r$，它在轴线上离圆心为$x$处产生的电势为
+&lt;/p&gt;
+$$
+\mathrm{d}U=\frac{\mathrm{d} q}{4\pi\varepsilon_0\sqrt{x^2+r^2}}=\frac{\sigma r\mathrm{d} r}{2\varepsilon_0\sqrt{x^2+r^2}}
+$$&lt;p&gt;积分得总电势
+&lt;/p&gt;
+$$
+U=\frac{\sigma}{2\varepsilon_0}\int_0^R\frac{r\mathrm{d} r}{\sqrt{x^2+r^2}}=\frac{\sigma}{2\varepsilon_0}\left(\sqrt{x^2+R^2}-|x|\right)
+$$&lt;p&gt;对题中两个圆面，各自产生的电势为
+&lt;/p&gt;
+$$
+U_+=\frac{\sigma}{2\varepsilon_0}\left[\sqrt{\left(x-\frac{l}{2}\right)^2+R^2}-\left|x-\frac{l}{2}\right|\right]
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+U_-=-\frac{\sigma}{2\varepsilon_0}\left[\sqrt{\left(x+\frac{l}{2}\right)^2+R^2}-\left|x+\frac{l}{2}\right|\right]
+$$&lt;p&gt;二者叠加
+&lt;/p&gt;
+$$
+U=\frac{\sigma}{2\varepsilon_0}\left[\left|x+\frac{l}{2}\right|-\left|x-\frac{l}{2}\right|+\sqrt{\left(x-\frac{l}{2}\right)^2+R^2}-\sqrt{\left(x+\frac{l}{2}\right)^2+R^2}\right]
+$$&lt;p&gt;因$l\ll R$，对根式项做近似
+&lt;/p&gt;
+$$
+\begin{align*}
+    \sqrt{\left(x-\frac{l}{2}\right)^2+R^2}-\sqrt{\left(x+\frac{l}{2}\right)^2+R^2}
+    &amp;\approx\sqrt{x^2-xl+R^2}-\sqrt{x^2+xl+R^2}\\
+    &amp;=\sqrt{x^2+R^2}\left[ \left(1-\frac{xl}{x^2+R^2}\right)^{\frac{1}{2}} -\left(1+\frac{xl}{x^2+R^2}\right)^{\frac{1}{2}} \right]\\
+    &amp;\approx\sqrt{x^2+R^2}\left[1-\frac{xl}{2(x^2+R^2)}-1-\frac{xl}{2(x^2+R^2)}\right]\\
+    &amp;=-\frac{xl}{\sqrt{x^2+R^2}}
+\end{align*}
+$$&lt;p&gt;另有
+&lt;/p&gt;
+$$
+\left|x+\frac{l}{2}\right|-\left|x-\frac{l}{2}\right|=
+\begin{cases}
+l, &amp; x&gt;\dfrac{l}{2}\\[6pt]
+2x, &amp; -\dfrac{l}{2}\le x\le \dfrac{l}{2}\\[6pt]
+-l, &amp; x&lt;-\dfrac{l}{2}
+\end{cases}
+$$&lt;p&gt;代入电势表达式：
+&lt;/p&gt;
+$$
+U=
+\begin{cases}
+\displaystyle \frac{\sigma l}{2\varepsilon_0}\left(1-\frac{x}{\sqrt{x^2+R^2}}\right), &amp; x&gt;\dfrac{l}{2}\\[6pt]
+\displaystyle \frac{\sigma x}{2\varepsilon_0}\left(2-\frac{l}{\sqrt{x^2+R^2}}\right)\approx\frac{\sigma x}{\varepsilon_0}, &amp; -\dfrac{l}{2}\le x\le \dfrac{l}{2}\\[6pt]
+\displaystyle -\frac{\sigma l}{2\varepsilon_0}\left(1+\frac{x}{\sqrt{x^2+R^2}}\right), &amp; x&lt;-\dfrac{l}{2}
+\end{cases}
+$$&lt;p&gt;(2)电场强度
+&lt;/p&gt;
+$$
+\boldsymbol{E}=-\frac{\mathrm{d} U}{\mathrm{d} x}\boldsymbol{e}_x=
+\begin{cases}
+\displaystyle \frac{\sigma l R^2}{2\varepsilon_0\left(x^2+R^2\right)^{\frac{3}{2}}}\boldsymbol{e}_x, &amp; x&gt;\dfrac{l}{2}\\[6pt]
+\displaystyle -\frac{\sigma}{\varepsilon_0}\boldsymbol{e}_x, &amp; -\dfrac{l}{2}\le x\le\dfrac{l}{2}\\[6pt]
+\displaystyle \frac{\sigma l R^2}{2\varepsilon_0\left(x^2+R^2\right)^{\frac{3}{2}}}\boldsymbol{e}_x, &amp; x&lt;-\dfrac{l}{2}
+\end{cases}
+$$&lt;h2 id=&#34;122&#34;&gt;1.22
+&lt;/h2&gt;&lt;p&gt;设立方体的边长为$2a$，将其分为8个边长为$a$的小正方体。设每个小正方体电荷在大正方体中心产生的电势为$U$，由叠加原理，大正方体中心电势为$8U$。&lt;/p&gt;
+&lt;p&gt;取大正方体中心为原点$O$，$xyz$轴与棱边平行，电荷密度为$\rho$，则
+&lt;/p&gt;
+$$
+U=\int_0^a\int_0^a\int_0^a\frac{\rho \mathrm{d} x\mathrm{d} y\mathrm{d} z}{4\pi\varepsilon_0 \sqrt{x^2+y^2+z^2}}
+$$&lt;p&gt;大正方体在顶点$(a,a,a)$处的电势为
+&lt;/p&gt;
+$$
+\int_{-a}^a\int_{-a}^a\int_{-a}^a\frac{\rho \mathrm{d} x\mathrm{d} y\mathrm{d} z}{4\pi\varepsilon_0 \sqrt{(x-a)^2+(y-a)^2+(z-a)^2}}
+$$&lt;p&gt;令$x&amp;rsquo;=\dfrac{x-a}{2},\ y&amp;rsquo;=\dfrac{y-a}{2},\ z&amp;rsquo;=\dfrac{z-a}{2}$，雅可比行列式
+&lt;/p&gt;
+$$
+\left|\frac{\partial(x,y,z)}{\partial(x&#39;,y&#39;,z&#39;)}\right|=8
+$$&lt;p&gt;积分化为
+&lt;/p&gt;
+$$
+\int_{-a}^0\int_{-a}^0\int_{-a}^0\frac{\rho \cdot 8\,\mathrm{d} x&#39;\mathrm{d} y&#39;\mathrm{d} z&#39;}{4\pi\varepsilon_0 \sqrt{(2x&#39;)^2+(2y&#39;)^2+(2z&#39;)^2}}
+=4\int_0^a\int_0^a\int_0^a\frac{\rho \mathrm{d} x&#39;\mathrm{d} y&#39;\mathrm{d} z&#39;}{4\pi\varepsilon_0 \sqrt{x&#39;^2+y&#39;^2+z&#39;^2}}
+=4U
+$$&lt;p&gt;八个顶点总电势为$32U$，是中心电势的4倍。&lt;/p&gt;
+&lt;h2 id=&#34;123&#34;&gt;1.23
+&lt;/h2&gt;&lt;p&gt;（1）考察点电荷$q$与总电荷量为$Q$的均匀带电球面$S$。将$q$从无穷远移到球心外侧、距球心$R$处，由高斯定理，球面外电场等效于电荷集中在球心，移动外力做功为$\dfrac{qQ}{4\pi\varepsilon_0R}$。&lt;/p&gt;
+&lt;p&gt;固定点电荷$q$，将带电球面从无穷远移至球心距$q$为$R$处，做功同样为$\dfrac{qQ}{4\pi\varepsilon_0R}$。由此可知：球面外任一电荷在球面上产生电势的平均值，等于该电荷在球心处产生的电势；多电荷系统满足叠加原理，结论依然成立。&lt;/p&gt;
+&lt;p&gt;（2）结合(1)的结论分析两项电势：球面内无电荷时对应第二项；仅球面内存在点电荷$q$时，球面上电荷在球内产生电场为零，$q$与球面电荷的电势能和$q$在球内位置无关，等效于$q$置于球心，由此得到第一项。&lt;/p&gt;
+&lt;h2 id=&#34;21&#34;&gt;2.1
+&lt;/h2&gt;&lt;p&gt;(1)证明：由对称性，电场仅存在垂直于金属板的分量。金属内部电场强度为0，取柱形高斯面，两底面分别处于两块金属板内部。由高斯定理，高斯面侧面与底面电通量均为0，故面内总电荷为0，得$\sigma_2+\sigma_3= 0$，即相对两面电荷面密度大小相等、符号相反。&lt;/p&gt;
+&lt;p&gt;由场强叠加原理，左侧金属板内部场强为各表面电场叠加：
+&lt;/p&gt;
+$$
+\frac{\sigma_1}{\varepsilon_0}=\frac{\sigma_2+\sigma_3+\sigma_4}{\varepsilon_0}
+$$&lt;p&gt;
+可得$\sigma_1=\sigma_4$。&lt;/p&gt;
+&lt;p&gt;(2)结合条件
+&lt;/p&gt;
+$$
+(\sigma_1+\sigma_2)S=Q_1,\quad (\sigma_3+\sigma_4)S=Q_2,\quad \sigma_1=\sigma_4,\quad \sigma_2+\sigma_3= 0
+$$&lt;p&gt;
+解得
+&lt;/p&gt;
+$$
+Q_{11}=Q_{24}=\frac{Q_1+Q_2}{2},\quad Q_{12}=-Q_{23}=\frac{Q_1-Q_2}{2}
+$$&lt;h2 id=&#34;22&#34;&gt;2.2
+&lt;/h2&gt;&lt;p&gt;内球电势为0，与无穷远电势相等。设内球带电量为$q$，由对称性电场沿径向且仅与$r$有关，取同心球面为高斯面，各区域场强：
+&lt;/p&gt;
+$$
+E(r &lt; R_1)=0,\quad E(R_1 &lt; r &lt; R_2)=\frac{q}{4\pi\varepsilon_0r^2}
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+E(R_2&lt; r &lt; R_3)=0,\quad E(r &gt; R_3)=\frac{q+Q}{4\pi\varepsilon_0r^2}
+$$&lt;p&gt;内球电势
+&lt;/p&gt;
+$$
+U=\int_{R_1}^{\infty}E\mathrm{d}r=\int_{R_1}^{R_2}E\mathrm{d}r+\int_{R_2}^{\infty}E\mathrm{d}r
+=\frac{q}{4\pi\varepsilon_0}\left(\frac{1}{R_1}-\frac{1}{R_2}\right)+\frac{q+Q}{4\pi\varepsilon_0R_3}
+$$&lt;p&gt;由$U=0$解得
+&lt;/p&gt;
+$$
+q=\frac{R_1R_2Q}{R_1R_3-R_1R_2-R_2R_3}
+$$&lt;p&gt;代入求外球壳电势：
+&lt;/p&gt;
+$$
+U=\frac{q+Q}{4\pi\varepsilon_0R_3}=\frac{(R_1-R_2)Q}{4\pi\varepsilon_0(R_1R_3-R_1R_2-R_2R_3)}
+$$&lt;h2 id=&#34;23&#34;&gt;2.3
+&lt;/h2&gt;&lt;p&gt;取肥皂泡上一圆形面元，相对球心张角为$\theta$，面积$\pi (r\theta)^2$，周长$2\pi r\theta$。表面张力合力垂直面元、指向球心；薄膜内外两侧均存在表面张力，结合近似$\sin\theta\approx\theta$，可得单位面积外侧压力：
+&lt;/p&gt;
+$$
+\frac{\Delta F}{\Delta S}=\frac{2\pi r\theta\cdot \alpha\cdot \theta \cdot 2}{\pi(r\theta)^2}=\frac{4\alpha}{r}
+$$&lt;p&gt;不带电时泡内压强$p_0$满足：$\displaystyle p_0=p+\frac{4\alpha}{r}$。
+肥皂泡带电后半径变为$R$，气体等温膨胀，内部气压$\displaystyle p_1=\frac{r^3p_0}{R^3}$。&lt;/p&gt;
+&lt;p&gt;带电表面单位面积所受电场力：面电荷密度$\sigma_e=\dfrac{Q}{4\pi R^2}$，受力处等效场强$E&amp;rsquo;=\dfrac{\sigma_e}{2\varepsilon_0}$，电场力向外，对应等效压强
+&lt;/p&gt;
+$$
+\frac{\Delta F}{\Delta S}=\sigma_e E&#39;=\frac{\sigma_e^2}{2\varepsilon_0}=\frac{Q^2}{32\pi^2\varepsilon_0R^4}
+$$&lt;p&gt;带电后压力平衡条件：
+&lt;/p&gt;
+$$
+\frac{r^3}{R^3}\left(p+\frac{4\alpha}{r}\right)+\frac{Q^2}{32\pi^2\varepsilon_0R^4}=p+\frac{4\alpha}{R}
+$$&lt;p&gt;整理得
+&lt;/p&gt;
+$$
+\frac{Q^2}{32\pi^2\varepsilon_0R^4}=(R^3-r^3)p+4\alpha(R^2-r^2)
+$$&lt;h2 id=&#34;25&#34;&gt;2.5
+&lt;/h2&gt;&lt;p&gt;$r\gg R$时，导体$A$与腔内电荷$q_1、q_2$整体近似为点电荷。点电荷与导体间相互作用力大小相等、方向相反：
+&lt;/p&gt;
+$$
+\boldsymbol{F}_q=-\boldsymbol{F}_A=\frac{q(q_1+q_2)}{4\pi\varepsilon_0r^3}\boldsymbol{r}
+$$&lt;p&gt;由静电屏蔽，腔内电场仅由腔内壁感应电荷决定；腔内电荷位于空腔中心，内壁感应电荷均匀分布，腔内电荷所受合力为0，即$F_{q_1}=F_{q_2}=0$。&lt;/p&gt;
+&lt;h2 id=&#34;补充作业&#34;&gt;补充作业
+&lt;/h2&gt;&lt;p&gt;电荷密度$\displaystyle \rho=\frac{3Q}{4\pi a^3}$，将右半球拆分为多层球壳，薄层等效面密度$\sigma=\rho \mathrm{d} r$。
+由高斯定理，场强$\displaystyle E=\frac{\rho \boldsymbol{r}}{3\varepsilon_0}$。面元受力
+&lt;/p&gt;
+$$
+\mathrm{d}\boldsymbol{F}=\boldsymbol{E}\sigma \mathrm{d}S
+=\frac{\rho^2\boldsymbol{r}\mathrm{d} r}{3\varepsilon_0}\cdot r^2\sin\theta \mathrm{d}\phi \mathrm{d}\theta
+=\frac{\rho^2r^3\sin\theta }{3\varepsilon_0}\mathrm{d} r\mathrm{d}\phi \mathrm{d}\theta\,\boldsymbol{e}_r
+$$&lt;p&gt;由对称性，总电场力仅有$x$分量：
+&lt;/p&gt;
+$$
+F=F_x=\int_0^{\pi}\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\int_0^R\frac{\rho^2r^3\sin^2\theta }{3\varepsilon_0}\cos\phi \mathrm{d} r\mathrm{d}\phi \mathrm{d}\theta
+=\frac{3Q^2}{64\pi\varepsilon_0R^2}
+$$&lt;h2 id=&#34;批改反馈&#34;&gt;批改反馈
+&lt;/h2&gt;&lt;p&gt;1.17、1.18 可利用偶极电场与矢量$\boldsymbol{l}$点乘的方式计算四极子电势，计算更加简便。&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-2 of Electromanetics.A</title>
+        <link>https://bzliustc.github.io/p/answer-to-homework-2-of-electromanetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:10:22 +0800</pubDate>
+        
+        <guid>https://bzliustc.github.io/p/answer-to-homework-2-of-electromanetics.a/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-2-of-electromanetics.a/front-page.png" alt="Featured image of post Answer to Homework-2 of Electromanetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 2 of the course Electromanetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/5/31;
+Status: editing, @ updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 1.5 - 1.14&lt;/p&gt;
+&lt;h2 id=&#34;15&#34;&gt;1.5
+&lt;/h2&gt;&lt;p&gt;（1）二三象限的点电荷在A处的电场为
+&lt;/p&gt;
+$$
+\boldsymbol{E}_{23}=-2\times\frac{ql/2}{4\pi\varepsilon_0 \left[(l/2)^2+(x+l/2)^2\right]^{3/2}} \boldsymbol{e}_y
+$$&lt;p&gt;
+一四象限的点电荷在A处的电场为
+&lt;/p&gt;
+$$
+\boldsymbol{E}_{14}=2\times\frac{ql/2}{4\pi\varepsilon_0 \left[(l/2)^2+(x-l/2)^2\right]^{3/2}} \boldsymbol{e}_y
+$$&lt;p&gt;
+于是A的总电场为
+&lt;/p&gt;
+$$
+\boldsymbol{E}=\frac{ql}{4\pi\varepsilon_0}\left[
+\frac{1}{ \left[(l/2)^2+(x-l/2)^2\right]^{3/2}} - 
+\frac{1}{ \left[(l/2)^2+(x+l/2)^2\right]^{3/2}}
+\right] \boldsymbol{e}_y
+$$&lt;p&gt;（2）当$x\gg l$时
+&lt;/p&gt;
+$$
+\frac{1}{ \left[(l/2)^2+(x-l/2)^2\right]^{3/2}} = 
+\frac{1}{x^3} \left(1-\frac{l}{x}+\frac{2l^2}{x^2}\right)^{-3/2}
+\approx
+\frac{1}{x^3} \left(1+\frac{3l}{2x}-\frac{3l^2}{x^2}\right)
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+\frac{1}{ \left[(l/2)^2+(x+l/2)^2\right]^{3/2}} = 
+\frac{1}{x^3} \left(1+\frac{l}{x}+\frac{2l^2}{x^2}\right)^{-3/2}
+\approx
+\frac{1}{x^3} \left(1-\frac{3l}{2x}-\frac{3l^2}{x^2}\right)
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+\boldsymbol{E} = \frac{3ql^2}{4\pi\varepsilon_0x^4} \boldsymbol{e}_y
+$$&lt;h2 id=&#34;16&#34;&gt;1.6
+&lt;/h2&gt;&lt;p&gt;解法一：设D为直径AC上任一点，D到环心O的距离为$r$，要证明D点的电场$\boldsymbol{E}$垂直于AC，只需证明$\boldsymbol{E}$沿AC方向的分量为零即可。&lt;/p&gt;
+&lt;p&gt;设环的半径为$R$，则B处弧元$R \mathrm{d}\theta$上的电荷量为$\mathrm{d} q=\lambda_0 \sin \theta R \mathrm{d} \theta$，
+它在D点产生的电场强度$\mathrm{d}\boldsymbol{E}$的大小为
+&lt;/p&gt;
+$$
+\mathrm{d} E=\frac{\mathrm{d} q}{4\pi\varepsilon_0 x^2}
+$$&lt;p&gt;
+式中，$x$是B到D的距离，其值为$x=\sqrt{R^2+r^2-2Rr\cos \theta}$，$\mathrm{d}\boldsymbol{E}$沿AC方向的分量为
+&lt;/p&gt;
+$$
+\mathrm{d} E_x=\mathrm{d} E \cos \alpha
+$$&lt;p&gt;
+&lt;/p&gt;
+$$
+E_x = \frac{\lambda_0 R}{4\pi\varepsilon_0}\int_0^\pi \frac{R\sin\theta\cos\theta - r\sin\theta}
+{\left(R^2+r^2-2Rr\cos \theta\right)^{3/2}}\mathrm{d} \theta
+$$&lt;p&gt;积分分子第一项
+&lt;/p&gt;
+$$
+\int_0^\pi \frac{\sin\theta\cos\theta}{\left(R^2+r^2-2Rr\cos\theta\right)^{3/2}}\mathrm{d} \theta =
+R\int_{-1}^1 \frac{u\mathrm{d} u}{\left(R^2+r^2-2Rru\right)^{3/2}}=
+\frac{2r}{R(R^2-r^2)}
+$$&lt;p&gt;
+其中用到不定积分公式
+&lt;/p&gt;
+$$
+\frac{x\mathrm{d} x}{(a+bx)^{3/2}} = 
+\frac{2}{b^2} \left(
+\sqrt{a+bx}+\frac{a}{\sqrt{a+bx}}
+\right)
+$$&lt;p&gt;积分分子第二项
+&lt;/p&gt;
+$$
+\int_0^\pi \frac{\sin\theta\mathrm{d}\theta}{\left(R^2+r^2-2Rr\cos\theta\right)^{3/2}} = 
+-\frac{2r}{R(R^2-r^2)}
+$$&lt;p&gt;综上可得 $E_x=0$。&lt;/p&gt;
+&lt;p&gt;解法二：题目等价于证明AC是等势面，直接计算D点的电势：
+&lt;/p&gt;
+$$
+\varphi_D = \frac{\lambda_0R}{4\pi\varepsilon_0}\int_0^\pi 
+\frac{\sin\theta\mathrm{d} \theta}{\sqrt{R^2+r^2-2Rr\cos\theta}}
+$$&lt;p&gt;设$t=r/R&amp;lt;1$，根据积分
+&lt;/p&gt;
+$$
+\int_1^{-1} \frac{-\mathrm{d} x}{\sqrt{1+t^2-2tx}}=\left.\frac{\sqrt{1+t^2-2tx}}{t}  \right| _{-1}^1=2
+$$&lt;p&gt;
+可证明AC为等势面，因此电场线必然垂直于AC。&lt;/p&gt;
+&lt;h2 id=&#34;17&#34;&gt;1.7
+&lt;/h2&gt;&lt;p&gt;根据对称性可以判断，O点的电场与两直线平行，只需计算平行分量。&lt;/p&gt;
+&lt;p&gt;用电场强度叠加原理求解，先计算半圆上的电荷对O点电场的贡献。
+设圆的半径为$R$，圆上任意一点的位置由矢径与直径AB之间的夹角$\theta(\in [0,\pi])$表示。
+考察位于$\theta$处的线电荷元$\mathrm{d} q=\lambda R\mathrm{d} \theta$，
+它在O点产生的电场强度的平行分量（背离圆弧、指向右侧为正）为
+&lt;/p&gt;
+$$
+\mathrm{d} E_{1\parallel} = \frac{\lambda R \mathrm{d} \theta}{4\pi\varepsilon_0 R^2}\sin\theta
+$$&lt;p&gt;将上式在$[0,\pi]$上积分，求得整个半圆弧电荷对O点电场的贡献
+&lt;/p&gt;
+$$
+E_1=\frac{\lambda}{2\pi\varepsilon_0 R}
+$$&lt;p&gt;再求两条半无穷直线电荷对O点电场平行分量的贡献，其值等于单根半无穷直线电荷贡献的2倍。
+取其中一条半无穷长直线电荷，以其与半圆弧连接处为起点，沿直线取坐标$x$，
+则该处线电荷元$\mathrm{d} q=\lambda\mathrm{d} x$在O点产生的电场强度平行分量（向右为正）为
+&lt;/p&gt;
+$$
+\mathrm{d} E_{2\parallel} = \frac{\lambda\mathrm{d} x}{4\pi\varepsilon_0(R^2+x^2)}\cdot\frac{x}{\sqrt{R^2+x^2}}
+$$&lt;p&gt;在区间$[0,\infty)$积分后加倍，求得两条半无穷长直线电荷对O点电场的总贡献为
+&lt;/p&gt;
+$$
+E_2=-\frac{\lambda}{2\pi\varepsilon_0R}
+$$&lt;p&gt;将两部分贡献求和得 $E_1+E_2=0$，故O点电场为零。&lt;/p&gt;
+&lt;h2 id=&#34;18&#34;&gt;1.8
+&lt;/h2&gt;&lt;p&gt;偶极子平行于OQ时，偶极子受力
+&lt;/p&gt;
+$$
+\boldsymbol{F} = \frac{1}{4\pi\varepsilon_0}\left[\frac{-qQ}{(D-l/2)^2}+\frac{qQ}{(D+l/2)^2}\right]\boldsymbol{e}_x = 
+\frac{-QD\boldsymbol{p}}{2\pi\varepsilon_0\left[D^2-(l/2)^2\right]^2}
+$$&lt;p&gt;偶极子所受库仑力经过偶极子中心，以偶极子中心为参考点，力矩为0。&lt;/p&gt;
+&lt;p&gt;偶极子垂直于OQ时，偶极子受力只有$y$方向分量，$x$方向分量为零：
+&lt;/p&gt;
+$$
+\boldsymbol{F}=2\times \frac{qQ}{4\pi\varepsilon_0\left[D^2+(l/2)^2\right]}\cdot\frac{l/2}{\sqrt{D^2+(l/2)^2}}=
+\frac{Q\boldsymbol{p}}{4\pi\varepsilon_0\left[D^2+l^2/4\right]^{3/2}}
+$$&lt;p&gt;仍以偶极子中心为参考点，仅力的$x$分量对力矩有贡献，所受力矩为
+&lt;/p&gt;
+$$
+\begin{aligned}
+\boldsymbol{L}
+&amp; = \left(\frac{-l}{2}\boldsymbol{e}_y\right)\times \frac{-qQ\boldsymbol{e}_x}{4\pi\varepsilon_0\left[D^2+l^2/4\right]^{3/2}} + \left(\frac{l}{2}\boldsymbol{e}_y\right)\times \frac{qQ\boldsymbol{e}_x}{4\pi\varepsilon_0\left[D^2+l^2/4\right]^{3/2}} \\
+&amp; =\frac{qQDl\boldsymbol{e}_z}{4\pi\varepsilon_0\left[D^2+l^2/4\right]^{3/2}} 
+=\frac{QD\boldsymbol{p}\times\boldsymbol{e}_x}{4\pi\varepsilon_0\left[D^2+l^2/4\right]^{3/2}}
+\end{aligned}
+$$&lt;h2 id=&#34;19&#34;&gt;1.9
+&lt;/h2&gt;&lt;p&gt;（1）由题意，半径为$R_2$的外球带电$Q_2=4\pi\sigma R_2^2$，
+球外电场为零即$E(r&amp;gt;R_2)=0$。设内球面带电量$Q_1$，
+取以体系中心为圆心、半径大于$R_2$的球面为高斯面，由高斯定理：
+&lt;/p&gt;
+$$
+\oint_{S(r=R_2)}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=\frac{Q}{\varepsilon_0}=\frac{Q_1+Q_2}{\varepsilon_0}=0
+$$&lt;p&gt;可得内球面带电量和电荷面密度
+&lt;/p&gt;
+$$
+Q_1=-Q_2=-4\pi\sigma R_2^2,\quad
+\sigma_1= - \frac{R_2^2}{R_1^2}\sigma
+$$&lt;p&gt;（2）以O为球心作半径满足$r\in(R_1,R_2)$的球形高斯面$S_r$，
+由对称性可知面上电场沿径向、大小均匀，由高斯定理推得
+&lt;/p&gt;
+$$
+\oint_{S_r}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=E(r)\oint_{S_r}\mathrm{d} S = 
+4\pi r^2 E = \frac{Q_1}{\varepsilon_0}
+$$&lt;p&gt;从而求得两球面间离球心为$r$处的电场强度为
+&lt;/p&gt;
+$$
+\boldsymbol{E}(r) = -\frac{\sigma R_2^2 \boldsymbol{r}}{\varepsilon_0 r^3}, \quad (R_1 &lt; r &lt; R_2)
+$$&lt;p&gt;（3）内球面内部无任何电荷，结合高斯定理与球对称性可知，内部电场为零。&lt;/p&gt;
+&lt;h2 id=&#34;110&#34;&gt;1.10
+&lt;/h2&gt;&lt;p&gt;首先根据对称性可分析出电场只有$x$分量；
+根据叠加原理，将空间电场视作带电板各薄层微元电场的叠加。&lt;/p&gt;
+&lt;p&gt;在位置$x$处、厚度为$\mathrm{d} x$的薄板，在空间$P$点产生的电场为
+&lt;/p&gt;
+$$
+\mathrm{d}\boldsymbol{E}(x_P;x)=\frac{\sigma(x)}{2\varepsilon_0} \operatorname{sgn}(x_P-x)\boldsymbol{e}_x,\quad
+\sigma(x)=\rho(x)\mathrm{d} x = kx\mathrm{d} x
+$$&lt;p&gt;式中$\operatorname{sgn}(\cdot)$为符号函数。对电场积分可得空间任意位置电场：
+&lt;/p&gt;
+$$
+E(x)=\int_0^b\frac{kx}{2\varepsilon_0} \operatorname{sgn}(x_P-x)\mathrm{d} x
+$$$$
+\boldsymbol{E}(x&gt;b)=-\boldsymbol{E}(x&lt;0)=\frac{kb^2}{4\varepsilon_0}\boldsymbol{e}_x,\quad
+\boldsymbol{E}(x\in(0,b))=\frac{k(2x^2-b^2)}{4\varepsilon_0}\boldsymbol{e}_x
+$$&lt;h2 id=&#34;111&#34;&gt;1.11
+&lt;/h2&gt;&lt;p&gt;（1）电荷密度呈球对称分布，核外总电量由体积分计算：
+&lt;/p&gt;
+$$
+Q=\int_{V}\rho\mathrm{d} V=-q=-1.60\times10^{-19} \ (\mathrm{C})
+$$&lt;p&gt;此处用到$\Gamma$函数：
+&lt;/p&gt;
+$$
+\Gamma(t\in\mathbb{Z^+})=\int_0^\infty e^{-x} x^{t-1} \mathrm{d} x=(t-1)!
+$$&lt;p&gt;（2）由对称性，电场仅有径向分量 $\boldsymbol{E}=E_r(r)\boldsymbol{e}_r$，结合积分形式高斯定理：
+&lt;/p&gt;
+$$
+\oint_{S(r)} \boldsymbol{E}\cdot \mathrm{d} \boldsymbol{S} = 4\pi r^2 E_r(r) 
+= \frac{1}{\varepsilon_0}
+\int_0^r 4\pi r&#39;^2 \rho(r&#39;)\mathrm{d} r&#39; 
+$$&lt;p&gt;解得
+&lt;/p&gt;
+$$
+\boldsymbol{E}(r)=\frac{q}{4\pi\varepsilon_0}\left[
+\left(
+\frac{2}{a^2}+\frac{2}{ar}+\frac{1}{r^2}
+\right)
+e^{-2r/a}
+-\frac{1}{r^2}
+\right]\boldsymbol{e}_r
+$$&lt;p&gt;&lt;strong&gt;变式习题&lt;/strong&gt;
+取球极坐标，若空间电场为
+&lt;/p&gt;
+$$
+\boldsymbol{E}(r)=\frac{q}{4\pi\varepsilon_0}
+\left(
+\frac{2}{a^2}+\frac{2}{ar}+\frac{1}{r^2}
+\right)
+e^{-2r/a}
+\boldsymbol{e}_r
+$$&lt;p&gt;
+求全空间电荷分布。&lt;/p&gt;
+&lt;p&gt;若直接使用球坐标散度公式 $\rho=\varepsilon_0\nabla\cdot\boldsymbol{E}$ 计算，会得到错误结果：
+&lt;/p&gt;
+$$
+\rho(r)=-q e^{-2r/a}/(\pi a^3)
+$$&lt;p&gt;原因：$r&amp;gt;0$ 处散度公式成立，但 $r=0$ 处未引入$\delta$广义函数时，散度运算无意义。
+需利用关系 $\nabla\cdot\left(\dfrac{\boldsymbol{e}_r}{r^2}\right)=4\pi\delta(\boldsymbol{r})$ 处理原点奇点。&lt;/p&gt;
+&lt;p&gt;对含指数项的场做展开：
+&lt;/p&gt;
+$$
+\nabla \cdot \left(\frac{e^{-2r/a}}{r^2} \boldsymbol{e}_r\right) = 
+\nabla \cdot \left(  \frac{1-2r/a+O(r^2)}{r^2} \boldsymbol{e}_r \right) = 
+4\pi\delta(\boldsymbol{r})
+$$&lt;p&gt;该电场为本题原电场叠加点状原子核（质子）后的分布，$\delta$ 函数对应理想点电荷原子核。&lt;/p&gt;
+&lt;h2 id=&#34;112&#34;&gt;1.12
+&lt;/h2&gt;&lt;p&gt;此题与教材1.5节例题1.8思路、过程、结果完全一致，答案：
+&lt;/p&gt;
+$$
+\frac{\rho\boldsymbol{a}}{3\varepsilon_0}
+$$&lt;p&gt;
+其中$\boldsymbol{a}$为连接正电球心与负电球心的矢量。&lt;/p&gt;
+&lt;h2 id=&#34;113&#34;&gt;1.13
+&lt;/h2&gt;&lt;p&gt;解法一：本题思路和解法与习题1.10完全一致。&lt;/p&gt;
+&lt;p&gt;解法二：根据微分形式高斯定理与对称性，原点附近区域电场仅有$x$分量：
+&lt;/p&gt;
+$$
+\frac{\partial E_x}{\partial x} = \frac{\rho(x)}{\varepsilon_0}
+$$$$
+\frac{\partial E_x}{\partial x}\big|_{x_{\mathrm{n}}&lt;x&lt;0} = \frac{N_{\mathrm{D}}e}{\varepsilon_0},\quad
+\frac{\partial E_x}{\partial x}\big|_{0&lt;x&lt;x_{\mathrm{p}}} = -\frac{N_{\mathrm{P}}e}{\varepsilon_0}
+$$&lt;p&gt;由电荷守恒 $N_{\mathrm{D}}e - N_{\mathrm{P}}e = 0$，可知pn结外部电场为0，联立微分方程即可解出区间内电场。&lt;/p&gt;
+&lt;h2 id=&#34;114&#34;&gt;1.14
+&lt;/h2&gt;&lt;p&gt;设场点到圆柱轴线的距离$r$远小于柱长，将圆柱体近似为无限长柱体。
+由对称性，电场沿径向$\boldsymbol{e}_r$，大小仅与$r$有关。
+取高为$h$、半径为$r$的柱形高斯面$S$，由高斯定理：
+&lt;/p&gt;
+$$
+\oint_{S} \boldsymbol{E}\cdot\mathrm{d} \boldsymbol{S} = 2\pi rhE = 
+\frac{1}{\varepsilon_0}\int_0^r 2\pi r \rho(r)\mathrm{d} r = 
+\frac{\pi h\rho_0 a^2}{\varepsilon_0}\cdot\frac{r}{r^2+a^2}
+$$$$
+\boldsymbol{E} = \frac{a^2\rho_0r\boldsymbol{e}_r}{2\varepsilon_0 (a^2+r^2)}
+$$&lt;p&gt;（勘误建议：《习题解答》1.14中第一行算式第二项、第二行算式系数存在笔误，对应系数均应为$2$；该书最终答案正确。）&lt;/p&gt;
+&lt;h2 id=&#34;批改反馈意见&#34;&gt;批改反馈意见
+&lt;/h2&gt;&lt;p&gt;1.5 尽量不要用$k$代替$\dfrac{1}{4\pi\varepsilon_0}$；部分同学误将条件看成$\dfrac{x}{l}\ll1$，导致过程与答案出错。&lt;/p&gt;
+&lt;p&gt;1.8 本题无$D\gg l$近似条件，禁止直接使用偶极子远场结论。&lt;/p&gt;
+&lt;p&gt;1.11 第一问积分区间为无穷区间，仅积分到$a$属于错误；第二问积分疏漏会丢失$\dfrac{1}{r^2}$项。&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-1 of Electromanetics.A</title>
+        <link>https://bzliustc.github.io/p/answer-to-homework-1-of-electromanetics.a/</link>
+        <pubDate>Sun, 31 May 2026 23:43:06 +0800</pubDate>
+        
+        <guid>https://bzliustc.github.io/p/answer-to-homework-1-of-electromanetics.a/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-1-of-electromanetics.a/front-page.jpg" alt="Featured image of post Answer to Homework-1 of Electromanetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 1 of the course Electromanetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/5/31;
+Status: editing, @ updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 1.1 - 1.4&lt;/p&gt;
+&lt;h2 id=&#34;11&#34;&gt;1.1
+&lt;/h2&gt;&lt;p&gt;解：(1)设地球上带电$Q_E$,月球带电$Q_M$,地球质量为$m$,太阳质量为$M$，则
+&lt;/p&gt;
+$$
+\frac{GMm}{r^2}=\frac{Q_EQ_M}{4\pi\varepsilon_0r^2},\quad Q_E+Q_M=Q
+$$&lt;p&gt;
+由基本不等式得
+&lt;/p&gt;
+$$
+\begin{align*}
+Q=Q_E+Q_M&amp;\ge2\sqrt{Q_EQ_M}=2\sqrt{4\pi\varepsilon_0GMm}\\
+             &amp;=2\sqrt{\frac{6.67\times10^{-11}\times5.98\times10^{24}\times7.34\times10^{22}}{9.00\times10^{9}}}\\
+             &amp;\approx1.14\times10^{14}\ (\text{C})
+\end{align*}
+$$&lt;p&gt;(2)设$Q_E=kM,\ Q_M=km$，则
+&lt;/p&gt;
+$$
+ Q=k(M+m),\quad \frac{GMm}{r^2}=\frac{k^2Mm}{4\pi\varepsilon_0r^2}
+$$&lt;p&gt;
+得$k=\sqrt{4\pi\varepsilon_0G}$，于是
+&lt;/p&gt;
+$$
+Q=\sqrt{4\pi\varepsilon_0G}(M+m)=\sqrt{\frac{6.67\times10^{-11}}{9.00\times10^9}}(5.98\times10^{24}+7.34\times10^{22})\approx5.21\times10^{14}\ (\text{C})
+$$&lt;h2 id=&#34;12&#34;&gt;1.2
+&lt;/h2&gt;&lt;p&gt;证明：质点速度为$v=\dfrac{2\pi r}{T}$，质点做圆周运动，所以
+&lt;/p&gt;
+$$
+\frac{Qq}{4\pi\varepsilon_0r^2}=\frac{m}{r}\left(\frac{2\pi r}{T}\right)^2
+$$&lt;p&gt;
+整理得
+&lt;/p&gt;
+$$
+\frac{r^3}{T^2}=\frac{Qq}{16\pi^3\varepsilon_0m}
+$$&lt;h2 id=&#34;13&#34;&gt;1.3
+&lt;/h2&gt;&lt;p&gt;解：（1）证：处在O点的粒子受到来自三个顶点的库仑力大小相等，均为$\dfrac{|Q|q}{4\pi\varepsilon_0r^2},\ r=\dfrac{a}{\sqrt{3}}$，三个力均指向顶点且两两夹角均为$120^\circ$，合力为0。&lt;/p&gt;
+&lt;p&gt;（2）过O点垂直于三角形所在平面做$x$轴，当粒子处于$x$处，三个电荷对粒子的合力为（与三角形所在平面平行的分量相互抵消）
+&lt;/p&gt;
+$$
+F=\frac{3Qq}{4\pi\varepsilon_0(r^2+x^2)^{\frac{3}{2}}}\cdot\frac{x}{\sqrt{r^2+x^2}}
+$$&lt;p&gt;
+当$x\ll r$ 时
+&lt;/p&gt;
+$$
+F\approx\frac{3Qqx}{4\pi\varepsilon_0r^3}
+$$&lt;p&gt;
+再由牛顿第二定律得
+&lt;/p&gt;
+$$
+m\frac{d^2 x}{dt^2}-\frac{3qQx}{4\pi\varepsilon_0r^3}=0
+$$&lt;p&gt;
+这表明粒子在作简谐运动，角频率$\omega=\left(\frac{-3Qq}{4\pi\varepsilon_0mr^3}\right)^{\frac{1}{2}}$。&lt;/p&gt;
+&lt;p&gt;于是频率
+&lt;/p&gt;
+$$
+\begin{align*}
+    \nu&amp;=\frac{\omega}{2\pi}=\frac{1}{2\pi}\left(\frac{-3Qq}{4\pi\varepsilon_0mr^3}\right)^{\frac{1}{2}}\\
+    &amp;=\frac{1}{2\pi}\left(\frac{3\times4.8\times10^{-19}\times1.6\times10^{-19}\times8.99\times10^9}{2.3\times10^{-26}\times\left(\frac{3\times10^{-10}}{\sqrt{3}}\right)^3}\right)^{\frac{1}{2}}\\
+    &amp;\approx2.1\times10^{13}\ (\text{Hz})
+\end{align*}
+$$&lt;h2 id=&#34;14&#34;&gt;1.4
+&lt;/h2&gt;&lt;p&gt;解：设处于中垂面上的点电荷与连线的距离为$r$，$q_0$受到的力与中垂面平行，大小为
+&lt;/p&gt;
+$$
+F=\frac{2Qq_0r}{4\pi\varepsilon_0(l^2+r^2)^{\frac{3}{2}}}
+$$&lt;p&gt;
+当$\dfrac{dF}{dr}=0$时，$F$取极值，此时有
+&lt;/p&gt;
+$$
+\frac{l^2-2r^2}{(l^2+r^2)^{\frac{3}{2}}}=0
+$$&lt;p&gt;
+解得$r=\dfrac{l}{\sqrt{2}}$，验证得该值为极大值，因此点电荷受力极大所在位置的轨迹是一个半径为$\dfrac{l}{\sqrt{2}}$的圆。&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
