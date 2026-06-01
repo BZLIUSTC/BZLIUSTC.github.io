@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="MySQL Learn Part B Note">
+<title>MySQL Learn Part B</title>
+
+<link rel='canonical' href='http://localhost:1313/p/mysql-learn-part-b/'>
+
+<link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="MySQL Learn Part B">
+<meta property='og:description' content="MySQL Learn Part B Note">
+<meta property='og:url' content='http://localhost:1313/p/mysql-learn-part-b/'>
+<meta property='og:site_name' content='Nishizono Mio&#39;s Shaddow'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='mysql' /><meta property='article:tag' content='javaweb' /><meta property='article:tag' content='website' /><meta property='article:published_time' content='2026-02-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-26T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/front-page.png' />
+<meta name="twitter:title" content="MySQL Learn Part B">
+<meta name="twitter:description" content="MySQL Learn Part B Note"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/front-page.png' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/my-avatar_hu_449036b95bdfd59d.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Nishizono Mio&#39;s Shaddow</a></h1>
+            <h2 class="site-description">令白鸟哀叹的天空之蓝——
+无法浸染大海之青，
+互相映照；
+
+与海之接吻令夕阳无法行——
+鸟翔于天，停滞不前，
+乘着风儿，洁白之翼，</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="http://localhost:1313/" selected>English</option>
+                                
+                                    <option value="http://localhost:1313/ja/" >日本語</option>
+                                
+                                    <option value="http://localhost:1313/zh-cn/" >简体中文</option>
+                                
+                                    <option value="http://localhost:1313/zh-tw/" >正體中文</option>
+                                
+                                    <option value="http://localhost:1313/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#mysql服务器管理规则">MySQL服务器管理规则</a>
+      <ol>
+        <li><a href="#存储引擎">存储引擎</a></li>
+        <li><a href="#约束管理方案">约束管理方案</a>
+          <ol>
+            <li><a href="#非空约束">非空约束</a></li>
+            <li><a href="#唯一性约束">唯一性约束</a></li>
+            <li><a href="#主键约束">主键约束</a></li>
+            <li><a href="#外键约束">外键约束</a></li>
+            <li><a href="#自定义约束">自定义约束</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#视图背-">视图（背 @@@）</a></li>
+    <li><a href="#索引-index--sql优化必考-">索引 index &ndash; SQL优化（必考 @@@）</a>
+      <ol>
+        <li><a href="#什么是索引">什么是索引</a></li>
+        <li><a href="#索引的操作">索引的操作：</a></li>
+        <li><a href="#执行计划">执行计划</a></li>
+        <li><a href="#索引失效">索引失效</a></li>
+      </ol>
+    </li>
+    <li><a href="#事务管理-transaction">事务管理 Transaction</a></li>
+    <li><a href="#事务的使用原则-acid">事务的使用原则 ACID</a></li>
+    <li><a href="#字段值的数据类型">字段值的数据类型</a>
+      <ol>
+        <li><a href="#整型">整型</a></li>
+        <li><a href="#小数">小数</a></li>
+        <li><a href="#字符串常考-">字符串（常考 @@@）</a></li>
+      </ol>
+    </li>
+    <li><a href="#jdbc-通信规范">JDBC 通信规范</a>
+      <ol>
+        <li><a href="#jar包基础知识">jar包基础知识</a></li>
+        <li><a href="#jdbc通信规范介绍">JDBC通信规范介绍</a></li>
+        <li><a href="#jdbc开发步骤">JDBC开发步骤</a></li>
+        <li><a href="#使用jdbc访问数据库">使用JDBC访问数据库</a></li>
+        <li><a href="#dml-三条命令">DML 三条命令</a></li>
+        <li><a href="#dql命令">DQL命令</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/mysql-learn-part-b/">
+                
+                    <img src="/front-page.png" loading="lazy" alt="Featured image of post MySQL Learn Part B" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/javaweb/" >
+                Javaweb
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/mysql-learn-part-b/">MySQL Learn Part B</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            MySQL Learn Part B Note
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-02-26T00:00:00Z'>Feb 26, 2026</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>本文是mysql学习笔记.</p>
+<h2 id="mysql服务器管理规则">MySQL服务器管理规则
+</h2><h3 id="存储引擎">存储引擎
+</h3><p>含义：mysql服务器提供表文件管理方案</p>
+<p>查看mysql服务器存在存储引擎<code>show engines</code></p>
+<p>修改mysql服务器默认存储引擎：通过修改my.ini设置默认存储引擎 <code>default-storage-engine=myisam</code></p>
+<p>查看表文件依赖存储引擎<code>show create table 表文件</code></p>
+<p>修改表文件依赖存储引擎<code>alter table表文件 engine=新存储引擎名</code></p>
+<p>INNODB与MYISAM 区别</p>
+<ol>
+<li>
+<p>myisam:</p>
+<ul>
+<li>采用三个文件存储信息 【xx.frm &mdash;- 字段信息、xx.myd &mdash; 数据行、xx.myi &mdash;- 索引】</li>
+<li>增加表文件操作速度,不支持事务管理</li>
+<li>如果表文件操作以查询为主,建议采用myisam</li>
+</ul>
+</li>
+<li>
+<p>innodb:</p>
+<ul>
+<li>采用frm文件存储信息（字段,数据行,索引）</li>
+<li>增加表文件数据安全性。在九种存储引擎中唯一支持事务管理</li>
+</ul>
+</li>
+</ol>
+<h3 id="约束管理方案">约束管理方案
+</h3><p>确保字段内容符合实际情况。</p>
+<p>MySQL有五种约束：</p>
+<h4 id="非空约束">非空约束
+</h4><p>不允许字段值为NULL。格式<code>create table tb(字段名 字段类型 not null)</code></p>
+<h4 id="唯一性约束">唯一性约束
+</h4><p>字段值不能重复，但是可有多个NULL。格式<code>create table tb(字段名 字段类型 unique)</code></p>
+<h4 id="主键约束">主键约束
+</h4><p>用于管理主键字段，不能重复也不能为NULL。格式<code>create table tb(字段名 字段类型 primary key)</code></p>
+<h4 id="外键约束">外键约束
+</h4><p>用于管理外键字段，要求字段值必须来自于一方表主键字段已经存在的值，同时允许NULL。
+格式<code>alter table 多方表 add constraint 约束对象名 foreign key(多方表外键字段名) references 一方表(一方表主键字段名)</code></p>
+<p>例如，为emp添加了约束：<code>alter table emp add constraint extkey_deptno foreign key(deptno) references dept(deptno)</code>，
+那么就无法执行如下添加：<code>insert into emp(empno,ename,deptno) values(555,'Nagisa',50)</code></p>
+<h4 id="自定义约束">自定义约束
+</h4><h2 id="视图背-">视图（背 @@@）
+</h2><p>视图是MySQL提供的内置管理对象。
+视图对象内部采用 键值对 的形式存储，key 存储查询语句，value 存储查询语句对应字段管理权.</p>
+<p>这是由于，大项目中一个数据库可服务于多个业务，要对不同业务访问数据库做权限管理。</p>
+<p>例子：视图一对象</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>key&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</th>
+          <th>value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>select deptno from dept</td>
+          <td>deptno 使用权</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>视图的创建：<code>create view 视图对象名 as 查询语句</code>，例如<code>create view view_one as select empno,ename,job,sal from emp</code></p>
+<p>视图的作用：</p>
+<ol>
+<li>提高查询语句的复用率。举例：可以直接使用<code>select * from view_one</code>，直接得到<code>select ename,job,sal from emp</code>的结果。
+这有利于复用复杂的查询语句</li>
+<li>分发开发者对表的使用权力。举例：
+<ul>
+<li>插<code>insert into view_one(empno,ename,job) values(7766,'MIO', 'Manager')</code><cite>注意<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></li>
+<li>删<code>delete from view_one where ename='Nagisa'</code>，</li>
+<li>改<code>update view_one set ename='BoBB' where ename='AliceWang'</code>
+避免开发者直接操作整个emp表的所有字段</li>
+</ul>
+</li>
+</ol>
+<h2 id="索引-index--sql优化必考-">索引 index &ndash; SQL优化（必考 @@@）
+</h2><h3 id="什么是索引">什么是索引
+</h3><ol>
+<li>索引存在硬盘中一个数组</li>
+<li>数组有序存放表文件中某个字段下所有数据以及数据所在行数</li>
+<li>如果表文件采用INNODB引擎管理,索引存在frm文件；如果表文件采用myisam引擎管理,索引存在myi文件</li>
+<li>索引作用: 减少遍历临时表中数据行次数,增加查询速度【但是增删查会影响速度，因为要更新索引】</li>
+</ol>
+<p>例如<a class="link" href="/static/append/MySQL-Learn-Part.B/005.xlsx" >参考脚本</a>中，为年龄字段构建索引。
+一般来说，<code>where age=20</code>定位条件要遍历整张表，若有索引则会使用Btree算法</p>
+<h3 id="索引的操作">索引的操作：
+</h3><ul>
+<li>查看已经存在的索引：<code>show index from 表名</code>；MySQL自动为主键、外键约束设置索引</li>
+<li>创建索引：<code>create index 索引名 on 表名(字段名)</code></li>
+<li>删除索引：<code>drop index 索引名 on 表名</code></li>
+</ul>
+<h3 id="执行计划">执行计划
+</h3><p>作用：查看一条查询语句是通过 索引还是遍历 来获取数据行<br>
+格式：<code>explain 查询语句</code>，查询结果中的 type 代表运行速度（all 最慢），rows 为实际遍历行数</p>
+<p>type 有几种取值：</p>
+<ul>
+<li>all：最烂，没有通过索引定位数据行而是全表扫描。SQL优化要避免存在 all 级别的语句；</li>
+<li>index：比较烂，采用全表扫描定位数据行，但select数据抓取是从索引中得到的（几乎没优化）。SQL优化要避免存在 all 级别的语句；</li>
+<li>range：还行，采用索引提供数据行位置，同时一次<strong>返回多个数据行</strong>。range级别并不稳定，如果通过索引返回的行数 &gt; 总行数三分之一，则MySQL（处于性能考虑）会放弃使用索引。SQL优化的最低标准；</li>
+<li>ref：理想，采用索引提供数据行位置，每次返回一行数据。SQL优化的最高标准；</li>
+<li>const：最快，采用聚簇索引提供数据行位置</li>
+</ul>
+<blockquote>
+<p><font color='aqua'>聚簇与非聚簇索引<br>
+非主键字段的索引是非聚簇索引；主键字段的索引是聚簇索引。<br>
+聚簇索引的 value 不再是行号，而是完整的一行数据，因此节省了通过行号读内存数据的时间（读索引这一步就完成了）</font></p>
+</blockquote>
+<h3 id="索引失效">索引失效
+</h3><ol>
+<li>如果通过索引定位行数达到了总行数1/3时,必然导致索引失效</li>
+<li>如果在索引字段进行数学运算,必然导致索引失效</li>
+<li>如果在索引字段进行函数处理,必然导致索引失效</li>
+<li>前置模糊查询可以达到range；后置模糊查询和包含模糊查询一定会导致索引失效</li>
+<li>使用MySQL自动类型转化，必然导致索引失效</li>
+</ol>
+<p><a class="link" href="/static/append/MySQL-Learn-Part.B/005.xlsx" >参考脚本</a></p>
+<h2 id="事务管理-transaction">事务管理 Transaction
+</h2><p>什么是事务<br>
+对于采用innodb管理的表文件,在进行数据修改时(insert,update,delete)
+mysql服务器自动对当前表文件中数据进行一次备份然后再进行操作。这个备份就是事务</p>
+<p>事务作用<br>
+在操作之后,如果需要反悔。可以通过事务覆盖表文件实现操作撤销</p>
+<p>事务管理方式</p>
+<ol>
+<li>mysql服务器自动管理事务，如果当前DML命令无法正常执行。此时mysql服务器使用事务撤销本次操作。如果当前DML命令正常执行,mysql服务器销毁掉事务</li>
+<li>手动事务管理方式,要求mysql服务器将多个SQL命令产生备份，交给同一个事务对象管理，操作完毕后由开发人员根据实际情况决定是否测校</li>
+</ol>
+<p>手动事务管理格式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">start</span><span class="w"> </span><span class="k">transaction</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">执行任何操作
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">rollback</span><span class="p">;</span><span class="w"> </span><span class="cm">/* 回滚，期间操作无效，备份回复，事务结束 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">commit</span><span class="p">;</span><span class="w"> </span><span class="cm">/* 提交，期间操作生效，无法撤销，事务结束 */</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="事务的使用原则-acid">事务的使用原则 ACID
+</h2><p>Atom 原子性：只有来自于同一个业务中的SQL命令才应该交给同一个事务管理对象进行管理。</p>
+<p>例如，撤销部门20并删除其下员工信息，则可归为同一事务；
+删除一员工信息，同时新增一部门，这不是一件事情，不应该用同一事务管理。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">start</span><span class="w"> </span><span class="k">transaction</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">delete</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">dept</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">deptno</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">delete</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">emp</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">deptno</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">commit</span><span class="p">;</span><span class="w"> </span><span class="cm">/* rollback; */</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Consistency 一致性：一个多分支业务只要有一个分支执行失败或反悔（rollback），则就应该将事务中所有sql操作视为无效。</p>
+<p>Isolation 隔离性：两个事务对同一表的操作应当彼此互相影响（与多线程有关）</p>
+<p>Durability 持久性：commit 后无法恢复</p>
+<h2 id="字段值的数据类型">字段值的数据类型
+</h2><h3 id="整型">整型
+</h3><p>用 int 即可</p>
+<h3 id="小数">小数
+</h3><ul>
+<li>float, 7位有效数字</li>
+<li>double, 15位有效数字</li>
+<li>decimal(M, D)，定点小数，以字符串存储，主要用于货币计算</li>
+</ul>
+<h3 id="字符串常考-">字符串（常考 @@@）
+</h3><p>char(m)：固定不可变字符串。意思是可以接受的字符个数固定，赋值时不能超过这个个数。磁盘上存贮值的空间是<strong>固定</strong>的。</p>
+<p>例如，字段类型 <code>char(5)</code>，则不论存什么内容，都占那么多空间。
+若存入<code>'abc'</code>，则内存中是<code>'abc  '</code>；但是，SQL读取char类型数据时会自动把空格抹掉</p>
+<p>varchar(m)：固定不可变字符串。意思是可以接受的字符个数固定，赋值时不能超过这个个数。磁盘上存贮值的空间是可变的。
+存入合法的不同长度的值，占用存储大小不一样。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">drop</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="p">(</span><span class="n">s1</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="k">values</span><span class="p">(</span><span class="s1">&#39;ab &#39;</span><span class="p">,</span><span class="s1">&#39;ab &#39;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="k">length</span><span class="p">(</span><span class="n">s1</span><span class="p">),</span><span class="k">length</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">test</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="cm">/*输出结果2,3,原因如上*/</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="jdbc-通信规范">JDBC 通信规范
+</h2><h3 id="jar包基础知识">jar包基础知识
+</h3><ol>
+<li>以.jar结尾文件。类似于压缩文件</li>
+<li>jar包存放class文件,用于工程与工程之间类文件复用</li>
+</ol>
+<p>jar包的分类</p>
+<ol>
+<li>第一方jar包:SUN公司提供JDK.jar</li>
+<li>第二方jar包:开发人员自行生成jar</li>
+<li>第三方jar包:其他人或则组织提供jar</li>
+</ol>
+<p>接口与jar包开发形式</p>
+<ol>
+<li>开发人员不需要关心工具类实现细节</li>
+<li>开发人员只需要根据固有步骤组装工具类即可完成开发任务</li>
+</ol>
+<h3 id="jdbc通信规范介绍">JDBC通信规范介绍
+</h3><ol>
+<li>JDBC通信规范是SUN公司提供通信规范,用于让Java应用程序与关系型数据库服务器进行通信标准</li>
+<li>SUN公司为JDBC通信规范提供一套接口,存在JDK.jar中java.sql包</li>
+<li>JDBC通信规范涉及的接口实现类由关系型数据库服务器厂商提供以jar包形式对外输出。</li>
+<li>普通的Java应用程序工程师只需要将指定jar包引入到工程,并按照JDBC规范指定开发流程进行命令组装即可实现与数据库服务器通信</li>
+</ol>
+<p>JDBC规范中接口介绍</p>
+<ol>
+<li>java.sql.Connection：指定连接通道管理规则</li>
+<li>java.sql.PrepareStatement：指定数据通道“交通工具”管理规则</li>
+<li>java.sql.ResultSet：指定临时表操作规则</li>
+<li>java.sql.DriverManager工具类：负责在java类与数据库服务器之间建立连接通道</li>
+</ol>
+<h3 id="jdbc开发步骤">JDBC开发步骤
+</h3><ol>
+<li>
+<p>建立连接通道 &ndash; DriverManager</p>
+</li>
+<li>
+<p>建立交通工具 &ndash; PreparedStatement</p>
+</li>
+<li>
+<p>由交通工具负责将SQL命令推送到数据库服务器，服务器返回结果由交通工具带回发送请求的java类中</p>
+</li>
+<li>
+<p>销毁通信涉及所有资源（交通工具、连接通道），以节省资源</p>
+</li>
+</ol>
+<p>使用JDBC协议连接到MySQL需要用到MySQL提供的jar包：
+<a class="link" href="https://downloads.mysql.com/archives/c-j/"  target="_blank" rel="noopener"
+    >下载链接</a>，注意主版本号要与MySQL主版本号对应。
+<a class="link" href="/static/append/MySQL-Learn-Part.B/mysql-connector-java-5.1.49.zip" >直接下载</a>。
+将jar包复制到Module目录下，右键 Add as Library 即可添加。</p>
+<h3 id="使用jdbc访问数据库">使用JDBC访问数据库
+</h3><h3 id="dml-三条命令">DML 三条命令
+</h3><p>模板如下，遵循：</p>
+<ul>
+<li>DriverManager建立通道对象A（需要参数：url，用户名和密码）</li>
+<li>对象A建立PreparedStatement交通工具对象B（需要参数：SQL命令）</li>
+<li>对象B执行方法，从而向数据库服务器发送请求并接受返回内容（调用恰当的方法，DML要用<code>executeUpdate()</code>，DQL要用<code>executeQuery()</code>）</li>
+<li>executeUpdate()返回受影响的行数，无异常则执行成功</li>
+<li>想知道对象方法返回类型，就用ctrl查看接口的定义即可</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nn">com.foo.test</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.Connection</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.DriverManager</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.sql.PreparedStatement</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// DML命令，insert, delete, update 命令的模板即如下,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 只需要改sqlCommand 即可</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">CmdInsertProc</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// throw Exception 必须加, 否则getConnection报错无法处理</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 命令</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">sqlCommand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;insert into dept values(60, &#39;ASSIST&#39;, &#39;SHANGHAI&#39;)&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 基本信息</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">userName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;root&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">passwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;pb23000061&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;jdbc:mysql://localhost:3306/sandbox&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 1. 建立通道</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Connection</span><span class="w"> </span><span class="n">con</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DriverManager</span><span class="p">.</span><span class="na">getConnection</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">userName</span><span class="p">,</span><span class="w"> </span><span class="n">passwd</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 2. 建立交通工具</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">PreparedStatement</span><span class="w"> </span><span class="n">prep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">con</span><span class="p">.</span><span class="na">prepareStatement</span><span class="p">(</span><span class="n">sqlCommand</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 3. 发送和收回</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">rowsAffected</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">prep</span><span class="p">.</span><span class="na">executeUpdate</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">rowsAffected</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;行受影响&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// 4. 销毁资源, 不要搞错顺序</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">prep</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="n">prep</span><span class="p">.</span><span class="na">close</span><span class="p">();}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">con</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="n">con</span><span class="p">.</span><span class="na">close</span><span class="p">();}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="dql命令">DQL命令
+</h3><div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>使用视图操作表最终会作用于底层表，因此使用视图操作表文件也要始终满足表的字段约束，否则失败&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/mysql/">Mysql</a>
+        
+            <a href="/tags/javaweb/">Javaweb</a>
+        
+            <a href="/tags/website/">Website</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/mysql-learn/">
+        
+        
+            <div class="article-image">
+                <img src="/p/mysql-learn/front-page.767bad1b19443581f18624f501120dbf_hu_6648ad0e34ba7ee0.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post MySQL Learn"
+                        
+                        data-hash="md5-dnutGxlENYHxhiT1ARINvw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MySQL Learn</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 春节序曲
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c19ca134f5e1f56dd311fd45eb0f5e226f3f84a1d4d8432a216bb50f4341c496.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

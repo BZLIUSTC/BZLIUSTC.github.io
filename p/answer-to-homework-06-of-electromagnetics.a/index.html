@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="This page is the ONELINE MIRROR VERSION of the answer to homework 6 of the course Electromagnetics.A, CourseID PHYS1004.09, 2026 Spring, 5401, USTC. Last update : 2026/6/1; Status: @ editing, updating, final\n">
+<title>Answer to Homework-06 of Electromagnetics.A</title>
+
+<link rel='canonical' href='https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/'>
+
+<link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="Answer to Homework-06 of Electromagnetics.A">
+<meta property='og:description' content="This page is the ONELINE MIRROR VERSION of the answer to homework 6 of the course Electromagnetics.A, CourseID PHYS1004.09, 2026 Spring, 5401, USTC. Last update : 2026/6/1; Status: @ editing, updating, final\n">
+<meta property='og:url' content='https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/'>
+<meta property='og:site_name' content='Nishizono Mio&#39;s Shaddow'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='electromagnetics' /><meta property='article:tag' content='homework' /><meta property='article:tag' content='answer' /><meta property='article:published_time' content='2026-06-01T00:14:09&#43;08:00'/><meta property='article:modified_time' content='2026-06-01T00:14:09&#43;08:00'/><meta property='og:image' content='https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/front-page%20%283%29.png' />
+<meta name="twitter:title" content="Answer to Homework-06 of Electromagnetics.A">
+<meta name="twitter:description" content="This page is the ONELINE MIRROR VERSION of the answer to homework 6 of the course Electromagnetics.A, CourseID PHYS1004.09, 2026 Spring, 5401, USTC. Last update : 2026/6/1; Status: @ editing, updating, final\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/front-page%20%283%29.png' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/my-avatar2_hu_493c64fa9f1067b6.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Nishizono Mio&#39;s Shaddow</a></h1>
+            <h2 class="site-description">李冰宰, 大三, 中国科学技术大学, 少年班学院, OOE系, 光电信息科学与工程方向。LIBINGZAI, Junior, School of the Gifted Young, 
+Dept. OOE, USTC, Major in Optoelectronic Information Science and Engineering.</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/bzliustc/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://bzliustc.github.io/" selected>English</option>
+                                
+                                    <option value="https://bzliustc.github.io/ja/" >日本語</option>
+                                
+                                    <option value="https://bzliustc.github.io/zh-cn/" >简体中文</option>
+                                
+                                    <option value="https://bzliustc.github.io/zh-tw/" >正體中文</option>
+                                
+                                    <option value="https://bzliustc.github.io/ar/" >عربي</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#题目">题目</a></li>
+    <li><a href="#习题222">习题2.22</a></li>
+    <li><a href="#习题223">习题2.23</a></li>
+    <li><a href="#习题224">习题2.24</a></li>
+    <li><a href="#习题225">习题2.25</a></li>
+    <li><a href="#习题226">习题2.26</a></li>
+    <li><a href="#习题227">习题2.27</a></li>
+    <li><a href="#习题31">习题3.1</a></li>
+    <li><a href="#习题32">习题3.2</a></li>
+    <li><a href="#习题33">习题3.3</a></li>
+    <li><a href="#反馈意见">反馈意见</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/answer-to-homework-06-of-electromagnetics.a/">
+                <img src="/p/answer-to-homework-06-of-electromagnetics.a/front-page%20%283%29_hu_18cefb036a084dbe.png"
+                        srcset="/p/answer-to-homework-06-of-electromagnetics.a/front-page%20%283%29_hu_18cefb036a084dbe.png 800w, /p/answer-to-homework-06-of-electromagnetics.a/front-page%20%283%29_hu_eec6545989124c2f.png 1600w"
+                        width="800" 
+                        height="500" 
+                        loading="lazy"
+                        alt="Featured image of post Answer to Homework-06 of Electromagnetics.A" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/teacher-assistance/" >
+                Teacher Assistance
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/answer-to-homework-06-of-electromagnetics.a/">Answer to Homework-06 of Electromagnetics.A</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-06-01T00:14:09&#43;08:00'>Jun 01, 2026</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>This page is the ONELINE MIRROR VERSION of the answer to homework 6 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final</p>
+<h2 id="题目">题目
+</h2><p>电磁学.第三版.习题 2.12-2.21</p>
+<h2 id="习题222">习题2.22
+</h2><p>采用电像法求解。原电荷$+q(a, b)$共有三个像电荷：
+</p>
+$$-q(-a, b), \quad+q(-a,-b), \quad-q(a,-b)$$<p>区域 $x \geq 0,\ y \geq 0,\ -\infty \leq z \leq \infty$ 内的电势由原电荷与三个像电荷共同产生：
+</p>
+$$
+\begin{aligned}
+U(x, y, z)= & \frac{q}{4 \pi \varepsilon_{0}}\left(\frac{1}{\sqrt{(x-a)^{2}+(y-b)^{2}+z^{2}}}+\frac{1}{\sqrt{(x+a)^{2}+(y+b)^{2}+z^{2}}}\right. \\
+& \left.-\frac{1}{\sqrt{(x-a)^{2}+(y+b)^{2}+z^{2}}}-\frac{1}{\sqrt{(x+a)^{2}+(y-b)^{2}+z^{2}}}\right)
+\end{aligned}
+$$<p>电场分量：
+</p>
+$$
+E_{x}=-\frac{\partial U}{\partial x}=\frac{q}{4 \pi \varepsilon_{0}}\left(\frac{x-a}{r_{1}^{3}}+\frac{x+a}{r_{2}^{3}}-\frac{x-a}{r_{3}^{3}}-\frac{x+a}{r_{4}^{3}}\right)
+$$<p>
+</p>
+$$
+E_{y}=-\frac{\partial U}{\partial y}=\frac{q}{4 \pi \varepsilon_{0}}\left(\frac{y-b}{r_{1}^{3}}+\frac{y+b}{r_{2}^{3}}-\frac{y+b}{r_{3}^{3}}-\frac{y-b}{r_{4}^{3}}\right)
+$$<p>
+</p>
+$$
+E_{z}=-\frac{\partial U}{\partial z}=\frac{q}{4 \pi \varepsilon_{0}}\left(\frac{z}{r_{1}^{3}}+\frac{z}{r_{2}^{3}}-\frac{z}{r_{3}^{3}}-\frac{z}{r_{4}^{3}}\right)
+$$<p>当 $x=0$（竖直导体平面），有 $r_{1}=r_{4},\ r_{2}=r_{3}$，得 $E_{y}=0$；
+当 $y=0$（水平导体平面），有 $r_{1}=r_{3},\ r_{2}=r_{4}$，此时：
+</p>
+$$
+E_{y}=\frac{q b}{2 \pi \varepsilon_{0}}\left(\frac{1}{\left[(x+a)^{2}+b^{2}+z^{2}\right]^{3 / 2}}-\frac{1}{\left[(x-a)^{2}+b^{2}+z^{2}\right]^{3 / 2}}\right)
+$$<p>水平导体平面的面电荷密度：
+</p>
+$$
+\sigma_{e}(x, 0, z)=\varepsilon_{0} E_{y}=-\frac{q b}{2 \pi}\left(\frac{1}{\left[(x-a)^{2}+b^{2}+z^{2}\right]^{3 / 2}}-\frac{1}{\left[(x-a)^{2}+b^{2}+z^{2}\right]^{3 / 2}}\right)
+$$<h2 id="习题223">习题2.23
+</h2><p>(1) 由电像法，球外像电荷电量与位置：
+</p>
+$$
+q'=-\frac{R}{d} q,\quad b=\frac{R^{2}}{d}
+$$<p>球内电场为原电荷与像电荷电场叠加：
+</p>
+$$
+\boldsymbol{E}=\frac{1}{4\pi\varepsilon_0}\left(
+\frac{q}{r_1^2}\boldsymbol{e}_{r1}+\frac{q'}{r_2^2}\boldsymbol{e}_{r2}\right)
+$$<p>
+</p>
+$$
+=\frac{q}{4\pi\varepsilon_0}\left(
+(r^2+d^2-2rd\cos\theta)^{-1}\boldsymbol{e}_{r1}-
+\frac{R/d}{r^2+d^2-2rd\cos\theta}\boldsymbol{e}_{r2}
+\right)
+$$<p>电势：
+</p>
+$$
+U=\frac{q}{4\pi\varepsilon_0}\left(
+(r^2+d^2-2rd\cos\theta)^{-1/2}-
+\frac{R}{\sqrt{r^2+d^2-2rd\cos\theta}}
+\right)
+$$<p>接地导体球壳内表面总带电量为 $-q$，可通过高斯定理，或对表面场强积分面电荷密度证明。</p>
+<p>(2) 导体球壳总带电量为 $Q$，额外叠加均匀虚拟面电荷 $Q&rsquo;=Q+q$。该电荷对球内电场无影响，仅叠加常数电势：
+</p>
+$$
+\frac{Q'}{4 \pi \varepsilon_{0} R}=\frac{Q+q}{4 \pi \varepsilon_{0} R}
+$$<p>球内总电势：
+</p>
+$$
+U_2=U_1+\frac{Q+q}{4\pi\varepsilon_0 R}
+$$<h2 id="习题224">习题2.24
+</h2><p>金属板置于 $x=0$ 平面，线电荷位于 $(b,0)$，像线电荷位于 $(-b,0)$，线密度 $-\lambda_{e}$。取金属板为电势零点，轴线上电势：
+</p>
+$$
+U=-\frac{\lambda_{e}}{2 \pi \varepsilon_{0}} \ln |b-x|+\frac{\lambda_{e}}{2 \pi \varepsilon_{0}} \ln |b+x|=\frac{\lambda_{e}}{2 \pi \varepsilon_{0}} \ln \left|\frac{b+x}{b-x}\right|
+$$<p>导线与金属板电势差：
+</p>
+$$
+\Delta U=U(x=b-a)-U(x=0)=\frac{\lambda_{e}}{2 \pi \varepsilon_{0}} \ln \left(\frac{2 b-a}{a}\right) \approx \frac{\lambda_{e}}{2 \pi \varepsilon_{0}} \ln \left(\frac{2 b}{a}\right)
+$$<p>单位长度电容：
+</p>
+$$
+C=\frac{\lambda_{e}}{\Delta U} = \frac{2 \pi \varepsilon_{0}}{\ln \left(\dfrac{2 b}{a}\right)}
+$$<h2 id="习题225">习题2.25
+</h2><p>导体球外点电荷$Q$使球面产生感应电荷，将系统拆分为两组叠加计算：</p>
+<ol>
+<li>点电荷$Q$与像电荷 $q&rsquo;=-\dfrac{RQ}{r}$，$r&rsquo;=\dfrac{R^2}{r}$，此部分球面感应总电荷 $Q_1=q&rsquo;$；</li>
+<li>球面均匀带电 $Q_2$，满足 $Q_1+Q_2=Q$。</li>
+</ol>
+<p>点电荷所受合力：
+</p>
+$$
+F=\frac{q}{4\pi\varepsilon_0}\left(\frac{q'}{(r-r')^2}+\frac{Q_2}{r^2}\right)
+$$<p>由 $F=0$ 解得：
+</p>
+$$
+\frac{r}{R}=\frac{1+\sqrt{5}}{2}
+$$<h2 id="习题226">习题2.26
+</h2><p>仅保留 $R/d$ 首阶近似，两球等效为：各自带均匀电荷 $Q-q&rsquo;$，球心连线上距球心 $r=R^2/d$ 处存在像电荷 $q&rsquo;=-\dfrac{RQ}{d}$。</p>
+<p>总库仑力由三部分叠加：
+</p>
+$$
+F=\frac{(Q-q')^2}{4\pi\varepsilon_0 d^2}+2\frac{Qq'}{4\pi\varepsilon_0(d-r)^2}+\frac{q'^2}{4\pi\varepsilon_0 (d-2r)^2}
+$$<p>展开并保留最低阶项，得：
+</p>
+$$
+F=\frac{Q^2}{4\pi\varepsilon_0 d^2}-\frac{Q^2R^3}{\pi\varepsilon_0 d^5}
+$$<h2 id="习题227">习题2.27
+</h2><p>镜像法构造无穷多组像电荷，初始电荷：
+</p>
+$$
+q_1=4\pi\varepsilon_0 R U_0
+$$<p>递推关系：
+</p>
+$$
+q_n=-\frac{R}{2R-b_{n-1}}q_{n-1},\quad
+b_n=\frac{R^2}{2R-b_{n-1}}
+$$<p>化简得递推式：
+</p>
+$$
+\frac{1}{q_n}+\frac{2}{q_{n-1}}+\frac{2}{q_{n-2}}=0
+$$<p>解得通项：
+</p>
+$$
+q_n=(-1)^{n+1}\frac{q_1}{n}
+$$<p>球面总电量为无穷级数求和：
+</p>
+$$
+Q=\sum_{n=1}^\infty 2q_n=2q_1\ln 2
+$$<p>电容：
+</p>
+$$
+C=\frac{Q}{U_0}=8\pi\varepsilon_0R \ln 2
+$$<h2 id="习题31">习题3.1
+</h2><p>两质子间库仑力：
+</p>
+$$
+F=\frac{q^{2}}{4 \pi \varepsilon_{0} r_{0}^{2}}=\frac{9 \times 10^{9} \times\left(1.6 \times 10^{-19}\right)^{2}}{\left(6 \times 10^{-15}\right)^{2}}=6.4\ \text{(N)}
+$$<p>相互作用能：
+</p>
+$$
+W=\frac{q^{2}}{4 \pi \varepsilon_{0} r_{0}}=\frac{9 \times 10^{9} \times\left(1.6 \times 10^{-19}\right)^{2}}{6 \times 10^{-15}} \approx 3.84 \times 10^{-14}\ \text{(J)}
+$$<h2 id="习题32">习题3.2
+</h2><p>(1) 各对电荷相互作用能：
+</p>
+$$
+W_{12}=\frac{q_{1} q_{2}}{4 \pi \varepsilon_{0} a}=\frac{(-q) \cdot 2 q}{4 \pi \varepsilon_{0} a}=-\frac{q^{2}}{2 \pi \varepsilon_{0} a}
+$$<p>
+</p>
+$$
+W_{23}=\frac{q_{2} q_{3}}{4 \pi \varepsilon_{0} a}=\frac{2 q \cdot(-q)}{4 \pi \varepsilon_{0} a}=-\frac{q^{2}}{2 \pi \varepsilon_{0} a}
+$$<p>
+</p>
+$$
+W_{13}=\frac{q_{1} q_{3}}{4 \pi \varepsilon_{0} \cdot 2a}=\frac{(-q) \cdot(-q)}{8 \pi \varepsilon_{0} a}=\frac{q^{2}}{8 \pi \varepsilon_{0} a}
+$$<p>(2) 系统总相互作用能：
+</p>
+$$
+W=W_{12}+W_{23}+W_{13}=-\frac{7 q^{2}}{8 \pi \varepsilon_{0} a}
+$$<h2 id="习题33">习题3.3
+</h2><p>(1) 系统相互作用能公式：
+</p>
+$$
+W=\frac{1}{2} \sum_{i=1}^{N} q_{i} U_{i}
+$$<p>正电荷处电势：
+</p>
+$$
+U_{+}=\frac{1}{4 \pi \varepsilon_{0}}\left(-\frac{Q}{a}+\frac{Q}{\sqrt{3} a}-\frac{Q}{2 a}+\frac{Q}{\sqrt{3} a}-\frac{Q}{a}\right)=\frac{Q}{4 \pi \varepsilon_{0} a}\left(\frac{2}{\sqrt{3}}-\frac{5}{2}\right)
+$$<p>负电荷处电势 $U_{-}=-U_{+}$，系统共3个正电荷、3个负电荷，总作用能：
+</p>
+$$
+W=3 Q U_{+}=\frac{3 Q^{2}}{4 \pi \varepsilon_{0} a}\left(\frac{2}{\sqrt{3}}-\frac{5}{2}\right)
+$$<p>(2) 移走两个相邻电荷后，剩余系统作用能：
+</p>
+$$
+\begin{aligned}
+W_{1}= & \frac{Q}{8 \pi \varepsilon_{0}}\left(-\frac{Q}{a}+\frac{Q}{\sqrt{3} a}-\frac{Q}{2 a}\right)-\frac{Q}{8 \pi \varepsilon_{0}}\left(\frac{Q}{a}+\frac{Q}{a}-\frac{Q}{\sqrt{3} a}\right) \\
+& +\frac{Q}{8 \pi \varepsilon_{0}}\left(-\frac{Q}{a}-\frac{Q}{a}+\frac{Q}{\sqrt{3} a}\right)-\frac{Q}{8 \pi \varepsilon_{0}}\left(\frac{Q}{a}-\frac{Q}{\sqrt{3} a}+\frac{Q}{2 a}\right) \\
+= & \frac{Q^{2}}{4 \pi \varepsilon_{0} a}\left(\frac{2}{\sqrt{3}}-\frac{7}{2}\right)
+\end{aligned}
+$$<p>被移走两电荷的相互作用能：
+</p>
+$$
+W_{2}=-\frac{Q^{2}}{4 \pi \varepsilon_{0} a}
+$$<p>外力做功等于系统能量增量：
+</p>
+$$
+A=W_{1}+W_{2}-W=\frac{Q^{2}}{4 \pi \varepsilon_{0} a}\left(3-\frac{4 \sqrt{3}}{3}\right)
+$$<h2 id="反馈意见">反馈意见
+</h2><p>2.25：部分同学模型梳理不清，电荷间作用关系判断错误，系数计算出错。
+3.3：多数同学遗漏被移走两个电荷自身的相互作用能。</p>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/electromagnetics/">Electromagnetics</a>
+        
+            <a href="/tags/homework/">Homework</a>
+        
+            <a href="/tags/answer/">Answer</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/answer-to-homework-01-of-electromagnetics.a/">
+        
+        
+            <div class="article-image">
+                <img src="/p/answer-to-homework-01-of-electromagnetics.a/front-page.aa132417b5025574193f0e9e3e6fb5b6_hu_a217a440017a5e3.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Answer to Homework-01 of Electromagnetics.A"
+                        
+                        data-hash="md5-qhMkF7UCVXQZPw6ePm&#43;1tg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Answer to Homework-01 of Electromagnetics.A</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/answer-to-homework-02-of-electromagnetics.a/">
+        
+        
+            <div class="article-image">
+                <img src="/p/answer-to-homework-02-of-electromagnetics.a/front-page.e7c65e00304600b12bf4bd77b080954a_hu_ef9ed315141f4682.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Answer to Homework-02 of Electromagnetics.A"
+                        
+                        data-hash="md5-58ZeADBGALEr9L13sICVSg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Answer to Homework-02 of Electromagnetics.A</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/answer-to-homework-03-of-electromagnetics.a/">
+        
+        
+            <div class="article-image">
+                <img src="/p/answer-to-homework-03-of-electromagnetics.a/front-page.aae772d6e0d39341b76bd964ba6e284d_hu_3ffa27d1cd3b69b4.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Answer to Homework-03 of Electromagnetics.A"
+                        
+                        data-hash="md5-qudy1uDTk0G3a9lkum4oTQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Answer to Homework-03 of Electromagnetics.A</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/answer-to-homework-04-of-electromagnetics.a/">
+        
+        
+            <div class="article-image">
+                <img src="/p/answer-to-homework-04-of-electromagnetics.a/front-page.d571eaa33da9da23472a6009c7022f1b_hu_3ebb4753f1d86e17.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Answer to Homework-04 of Electromagnetics.A"
+                        
+                        data-hash="md5-1XHqoz2p2iNHKmAJxwIvGw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Answer to Homework-04 of Electromagnetics.A</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/answer-to-homework-05-of-electromagnetics.a/">
+        
+        
+            <div class="article-image">
+                <img src="/p/answer-to-homework-05-of-electromagnetics.a/front-page%20%282%29.7200d8c0d995aa34762a2fd48b7c1e92_hu_6fb8339b84393eb1.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Answer to Homework-05 of Electromagnetics.A"
+                        
+                        data-hash="md5-cgDYwNmVqjR2Ki/Ui3wekg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Answer to Homework-05 of Electromagnetics.A</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 春节序曲
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
