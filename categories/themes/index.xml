@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Themes on Nishizono Mio&#39;s Shaddow</title>
+        <title>Themes on CALLUVISSE, Lv4 mailler</title>
         <link>https://bzliustc.github.io/categories/themes/</link>
-        <description>Recent content in Themes on Nishizono Mio&#39;s Shaddow</description>
+        <description>Recent content in Themes on CALLUVISSE, Lv4 mailler</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
@@ -54,7 +54,9 @@ $$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pagerSize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;在hugo中添加html内容&#34;&gt;在Hugo中添加HTML内容
+&lt;/h2&gt;&lt;p&gt;(参考)[https://www.ququ123.top/2025/10/hugo-custom-html-guide/]&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>

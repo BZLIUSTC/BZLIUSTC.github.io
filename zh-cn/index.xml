@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>西园美鱼的小屋</title>
+        <title>珂陌的缨信使</title>
         <link>https://bzliustc.github.io/zh-cn/</link>
-        <description>Recent content on 西园美鱼的小屋</description>
+        <description>Recent content on 珂陌的缨信使</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>春节序曲</copyright>
@@ -88,7 +88,357 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://bzliustc.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <description>
+&lt;style&gt;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: &#34;Segoe UI&#34;, &#34;Microsoft YaHei&#34;, sans-serif;
+  transition: all 0.3s ease;
+}
+:root {
+  --bg-body: #f5f7fa;
+  --bg-card: #ffffff;
+  --text-main: #222222;
+  --text-secondary: #555555;
+  --border-color: #eee;
+  --section-line: #2c5c97;
+  --item-box-bg: #e8f0fb;
+  --item-text-color: #1a4980;
+  --table-border: #ddd;
+  --table-row-bg: #f9fafb;
+}
+.cv-dark {
+  --bg-body: #1a1a2e;
+  --bg-card: #252940;
+  --text-main: #e6e6e6;
+  --text-secondary: #b0b0c0;
+  --border-color: #3a3f5c;
+  --section-line: #5a98e5;
+  --item-box-bg: #2d3b55;
+  --item-text-color: #63b0ff;
+  --table-border: #444966;
+  --table-row-bg: #2c324a;
+}
+.cv-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 50px 60px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  position: relative;
+  color: var(--text-main);
+}
+.cv-avatar {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--section-line);
+}
+.cv-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cv-header {
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.cv-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 4px solid var(--section-line);
+  padding-left: 12px;
+  margin: 35px 0 15px;
+  color: var(--section-line);
+}
+.cv-item-head {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  background: var(--item-box-bg);
+  color: var(--item-text-color);
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.cv-gpa {
+  background: var(--item-box-bg);
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+.cv-table tr td {
+  border: 1px solid var(--table-border);
+  padding: 8px 12px;
+}
+.cv-table tr:nth-child(even) {
+  background-color: var(--table-row-bg);
+}
+ul {
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+li {
+  margin-bottom: 5px;
+}
+ 
+.cv-controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 999;
+}
+.cv-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.cv-en { display: none; }
+.cv-zh { display: block; }
+&lt;/style&gt;
+
+&lt;div class=&#34;cv-container&#34;&gt;
+  
+  &lt;div class=&#34;cv-controls&#34;&gt;
+    &lt;button class=&#34;cv-btn&#34; id=&#34;cvMode&#34;&gt;☀️ Light&lt;/button&gt;
+    &lt;button class=&#34;cv-btn&#34; id=&#34;cvLang&#34;&gt;🌐 English&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;cv-avatar&#34;&gt;
+    &lt;img src=&#34;https://bzliustc.github.io/append/about/head.jpg&#34; alt=&#34;Bingzai Li&#34;&gt;
+  &lt;/div&gt;
+
+  
+  &lt;div class=&#34;cv-zh&#34;&gt;
+    &lt;div class=&#34;cv-header&#34;&gt;
+      &lt;h1&gt;李冰宰&lt;/h1&gt;
+      &lt;p&gt;邮箱：bzli@mail.ustc.edu.cn &amp;nbsp;&amp;nbsp; 电话：152-5563-0903&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;教育背景&lt;/div&gt;
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;中国科学技术大学 少年班学院&lt;/span&gt;
+      &lt;span&gt;2023年9月 – 至今&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p&gt;光电信息科学与工程 | 预计2027年6月毕业&lt;/p&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;学业成绩与排名&lt;/div&gt;
+    &lt;div class=&#34;cv-gpa&#34;&gt;
+      &lt;p&gt;平均学分绩点（2023秋–2025秋）：&lt;strong&gt;GPA 3.81&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;2023级光电信息科学与工程专业排名：&lt;strong&gt;10/61&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;光学方向（0380101）排名：&lt;strong&gt;8/47&lt;/strong&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;英语和计算机水平&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;TOEFL：106/120（2024年9月）&lt;/li&gt;
+      &lt;li&gt;GRE：327/340+3.5/6（2025年9月）&lt;/li&gt;
+      &lt;li&gt;计算机二级：合格&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;科创项目&lt;/div&gt;
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;片上CNOT门的标定和优化 | 量子光学芯片课题组&lt;/span&gt;
+      &lt;span&gt;2025年10月 – 至今&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;研究MZI元件级联架构下CNOT门的标定方法与保真度优化技术&lt;/li&gt;
+      &lt;li&gt;采用快速标定法表征级联电控MZI控制特性，搭建CNOT门并完成性能检验&lt;/li&gt;
+      &lt;li&gt;已验证两MZI串联方案使CNOT门保真度由0.99提升至0.999&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;基于机器学习的电路结构推理 | 余庆杯参赛项目&lt;/span&gt;
+      &lt;span&gt;2024年3月 – 2024年12月&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;基于AI模型学习RLC网络交流输入-输出特性，实现电学黑箱内部结构逆向推理&lt;/li&gt;
+      &lt;li&gt;负责电子元件网络的实验设计与数据采集工作&lt;/li&gt;
+      &lt;li&gt;获得「余庆杯」AI for Science赛道优胜奖&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;LLM驱动科技写作智能输入法 | 庆峰杯参赛项目&lt;/span&gt;
+      &lt;span&gt;2023年12月 – 2024年6月&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;开发「切题输入法」，通过AI解析科技写作上下文，提升学术低频词汇推送命中率&lt;/li&gt;
+      &lt;li&gt;基于钩子技术开发多平台编辑器上下文截获与文字识别动态链接库&lt;/li&gt;
+      &lt;li&gt;适配MS Office及Qt框架类软件；项目晋级「庆峰杯」决赛&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;获奖情况&lt;/div&gt;
+    &lt;table class=&#34;cv-table&#34;&gt;
+      &lt;tr&gt;&lt;td&gt;全国大学生数学竞赛&lt;/td&gt;&lt;td&gt;省级二等奖&lt;/td&gt;&lt;td&gt;2024年&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;数学建模美赛 MCM&lt;/td&gt;&lt;td&gt;H奖&lt;/td&gt;&lt;td&gt;2025年&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;陈国良院士奖学金&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2024年&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;张宗植科技奖学金&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2025年&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;CUPT校赛&lt;/td&gt;&lt;td&gt;三等奖&lt;/td&gt;&lt;td&gt;2023年&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;蔷薇奉公德育奖学金&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2024、2025年&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;优秀学生干部、优秀共青团干部&lt;/td&gt;&lt;td&gt;荣誉称号&lt;/td&gt;&lt;td&gt;2023–2025年&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;青马班优秀学员、大骨班结业&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2024年&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;团学和社会工作&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;光学A课程助教 &amp;nbsp;&amp;nbsp; 2025年9月 – 2026年1月&lt;/li&gt;
+      &lt;li&gt;电磁学A课程助教 &amp;nbsp;&amp;nbsp; 2026年3月 – 至今&lt;/li&gt;
+      &lt;li&gt;少年班学院学生会主席团成员 &amp;nbsp;&amp;nbsp; 2025年4月 – 2026年3月&lt;/li&gt;
+      &lt;li&gt;校学生社团管理指导委员会委员 &amp;nbsp;&amp;nbsp; 2024年9月 – 至今&lt;/li&gt;
+      &lt;li&gt;光启-仲英书院院长助理 &amp;nbsp;&amp;nbsp; 2026年3月 – 至今&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;学生干部经历&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;2023学年：班文体委员、少院学生会干事&lt;/li&gt;
+      &lt;li&gt;2024学年：班团支书兼副班长、少院学生会办公室主任、管指委财务部部员&lt;/li&gt;
+      &lt;li&gt;2025学年：班团支书兼副班长、少院学生会主席团成员、管指委财务部部员&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;社会实践&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;2024寒假：组长带队返校招生宣讲；队长带队返家乡社会实践&lt;/li&gt;
+      &lt;li&gt;2025暑假：参与暑招宣讲；带队新疆塔城「三下乡」社会实践&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  
+  &lt;div class=&#34;cv-en&#34;&gt;
+    &lt;div class=&#34;cv-header&#34;&gt;
+      &lt;h1&gt;Bingzai Li&lt;/h1&gt;
+      &lt;p&gt;Email: bzli@mail.ustc.edu.cn &amp;nbsp;&amp;nbsp; Phone: 152-5563-0903&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Education&lt;/div&gt;
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;School of the Gifted Young, USTC&lt;/span&gt;
+      &lt;span&gt;Sep 2023 – Present&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Optoelectronic Information Science and Engineering | Expected Graduation: Jun 2027&lt;/p&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Academic Performance&lt;/div&gt;
+    &lt;div class=&#34;cv-gpa&#34;&gt;
+      &lt;p&gt;GPA (Fall 2023 – Fall 2025): &lt;strong&gt;3.81&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Major Ranking (Grade 2023): &lt;strong&gt;10/61&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;Optics Track Ranking: &lt;strong&gt;8/47&lt;/strong&gt;&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Language &amp; Skills&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;TOEFL: 106/120 (Sep 2024)&lt;/li&gt;
+      &lt;li&gt;GRE: 327/340 + 3.5/6 (Sep 2025)&lt;/li&gt;
+      &lt;li&gt;National Computer Rank Examination: Passed Level 2&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Research &amp; Projects&lt;/div&gt;
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;Calibration &amp; Optimization of On-Chip CNOT Gate | Quantum Photonics Group&lt;/span&gt;
+      &lt;span&gt;Oct 2025 – Present&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Study calibration method and fidelity optimization of CNOT gate based on cascaded MZI architecture&lt;/li&gt;
+      &lt;li&gt;Characterize cascaded electronically controlled MZI via fast calibration, build and test CNOT gate&lt;/li&gt;
+      &lt;li&gt;Two-series MZI structure improves fidelity from 0.99 to 0.999&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;Machine Learning Based Circuit Structure Inference | Yuqing Cup Project&lt;/span&gt;
+      &lt;span&gt;Mar 2024 – Dec 2024&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Adopt AI model to learn AC input-output characteristics of RLC network for black-box reverse reasoning&lt;/li&gt;
+      &lt;li&gt;Responsible for experimental design and data collection of electronic component networks&lt;/li&gt;
+      &lt;li&gt;Won Merit Award, AI for Science Track&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-item-head&#34;&gt;
+      &lt;span&gt;LLM-powered Intelligent Academic Writing Input Method | Qingfeng Cup Project&lt;/span&gt;
+      &lt;span&gt;Dec 2023 – Jun 2024&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Develop context-aware input method to improve academic vocabulary recommendation accuracy&lt;/li&gt;
+      &lt;li&gt;Implement hook-based context capture and recognition DLL for multi-platform editors&lt;/li&gt;
+      &lt;li&gt;Compatible with MS Office &amp; Qt-based software; advanced to final round&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Awards &amp; Scholarships&lt;/div&gt;
+    &lt;table class=&#34;cv-table&#34;&gt;
+      &lt;tr&gt;&lt;td&gt;National College Mathematics Competition&lt;/td&gt;&lt;td&gt;Provincial 2nd Prize&lt;/td&gt;&lt;td&gt;2024&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;MCM Mathematical Contest&lt;/td&gt;&lt;td&gt;Meritorious Award (H)&lt;/td&gt;&lt;td&gt;2025&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Chen Guoliang Academician Scholarship&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2024&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Zhang Zongzhi Science &amp; Technology Scholarship&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2025&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;CUPT&lt;/td&gt;&lt;td&gt;Campus 3rd Prize&lt;/td&gt;&lt;td&gt;2023&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Rose Fund Moral Education Scholarship&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2024,2025&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Outstanding Student Leader &amp; League Cadre&lt;/td&gt;&lt;td&gt;Honor Title&lt;/td&gt;&lt;td&gt;2023–2025&lt;/td&gt;&lt;/tr&gt;
+      &lt;tr&gt;&lt;td&gt;Excellent Student of Youth League Training Program&lt;/td&gt;&lt;td&gt;——&lt;/td&gt;&lt;td&gt;2024&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Teaching &amp; Social Work&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Teaching Assistant, Optics A &amp;nbsp;&amp;nbsp; Sep 2025 – Jan 2026&lt;/li&gt;
+      &lt;li&gt;Teaching Assistant, Electromagnetism A &amp;nbsp;&amp;nbsp; Mar 2026 – Present&lt;/li&gt;
+      &lt;li&gt;Presidium Member, Student Union of SGY &amp;nbsp;&amp;nbsp; Apr 2025 – Mar 2026&lt;/li&gt;
+      &lt;li&gt;Committee Member, Student Association Governance Committee &amp;nbsp;&amp;nbsp; Sep 2024 – Present&lt;/li&gt;
+      &lt;li&gt;Assistant Dean, Guangqi-Zhongying College &amp;nbsp;&amp;nbsp; Mar 2026 – Present&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Student Leadership&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;2023: Class Culture &amp; Sports Commissary, Student Union Staff&lt;/li&gt;
+      &lt;li&gt;2024: Class League Secretary &amp; Vice Monitor, Office Director of SGY Student Union&lt;/li&gt;
+      &lt;li&gt;2025: Class League Secretary &amp; Vice Monitor, Presidium Member of SGY Student Union&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&#34;cv-section-title&#34;&gt;Social Practice&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Winter 2024: Led admission promotion &amp; hometown social practice&lt;/li&gt;
+      &lt;li&gt;Summer 2025: Admission publicity; Team leader of Xinjiang Rural Revitalization Practice&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+
+document.documentElement.classList.add(&#39;cv-dark&#39;);
+
+const modeBtn = document.getElementById(&#39;cvMode&#39;);
+modeBtn.addEventListener(&#39;click&#39;, () =&gt; {
+  document.documentElement.classList.toggle(&#39;cv-dark&#39;);
+  modeBtn.innerText = document.documentElement.classList.contains(&#39;cv-dark&#39;) ? &#39;☀️ Light&#39; : &#39;🌙 Dark&#39;;
+});
+
+const langBtn = document.getElementById(&#39;cvLang&#39;);
+const zh = document.querySelector(&#39;.cv-zh&#39;);
+const en = document.querySelector(&#39;.cv-en&#39;);
+langBtn.addEventListener(&#39;click&#39;, () =&gt; {
+  const isZh = zh.style.display !== &#39;none&#39;;
+  zh.style.display = isZh ? &#39;none&#39; : &#39;block&#39;;
+  en.style.display = isZh ? &#39;block&#39; : &#39;none&#39;;
+  langBtn.innerText = isZh ? &#39;🇨🇳 中文&#39; : &#39;🇬🇧 English&#39;;
+});
+&lt;/script&gt;
+
 </description>
         </item>
         
