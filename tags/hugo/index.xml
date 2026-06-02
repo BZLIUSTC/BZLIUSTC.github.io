@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hugo on CALLUVISSE, Lv4 mailler</title>
-        <link>http://localhost:1313/tags/hugo/</link>
+        <link>https://bzliustc.github.io/tags/hugo/</link>
         <description>Recent content in Hugo on CALLUVISSE, Lv4 mailler</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bzliustc.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MyZeroBlog</title>
-        <link>http://localhost:1313/p/myzeroblog/</link>
+        <link>https://bzliustc.github.io/p/myzeroblog/</link>
         <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/myzeroblog/</guid>
-        <description>&lt;img src="http://localhost:1313/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h2 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
+        <guid>https://bzliustc.github.io/p/myzeroblog/</guid>
+        <description>&lt;img src="https://bzliustc.github.io/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h2 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
 &lt;/h2&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
 a beginner of Hugo &lt;em&gt;static blog&lt;/em&gt; page writer.&lt;/p&gt;
 &lt;p&gt;Thanks to the &lt;strong&gt;hugo-theme-stack&lt;/strong&gt; and manuals written by other bloggers,
@@ -38,7 +38,7 @@ $$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
 &lt;/h2&gt;&lt;p&gt;想要添加任何附件，请放到&lt;code&gt;/static/append/&lt;/code&gt;目录中。
 为了管理方便，最好为每篇文章的附件们创建一个子目录，统一存放。&lt;/p&gt;
 &lt;p&gt;reference:
-&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/MyZeroBlog/002.html&#34; &gt;article&lt;/a&gt;&lt;/p&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/MyZeroBlog/002.html&#34; &gt;article&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;侧栏头像和简介&#34;&gt;侧栏头像和简介
 &lt;/h2&gt;&lt;p&gt;标题（网站标题）和简介在根目录的hugo.yaml文件中编辑；
 头像存储的默认根路径为&lt;code&gt;/themes/assets/&lt;/code&gt;，头像路径也在项目根目录的hugo.yaml中设置。&lt;/p&gt;
