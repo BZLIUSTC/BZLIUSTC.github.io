@@ -104,11 +104,6 @@
     <lastmod>2026-06-01T00:14:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="https://bzliustc.github.io/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
                 href="https://bzliustc.github.io/zh-cn/tags/"
                 />
@@ -116,6 +111,11 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://bzliustc.github.io/zh-tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bzliustc.github.io/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -230,11 +230,6 @@
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ja"
                 href="https://bzliustc.github.io/ja/categories/test/"
                 />
@@ -242,6 +237,11 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://bzliustc.github.io/zh-cn/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://bzliustc.github.io/zh-tw/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -275,6 +275,8 @@
                 hreflang="en"
                 href="https://bzliustc.github.io/about/"
                 />
+  </url><url>
+    <loc>https://bzliustc.github.io/game-center/</loc>
   </url><url>
     <loc>https://bzliustc.github.io/links/</loc>
   </url><url>

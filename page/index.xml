@@ -448,6 +448,1625 @@ langBtn.addEventListener(&#39;click&#39;, () =&gt; {
 </description>
         </item>
         <item>
+        <title>Game Center</title>
+        <link>https://bzliustc.github.io/game-center/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://bzliustc.github.io/game-center/</guid>
+        <description>&lt;h2 id=&#34;2048&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/2048.html&#34; &gt;2048&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;game-2048-card&#34; style=&#34;
+  max-width: 460px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #faf8ef;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+&#34;&gt;
+  
+  &lt;div class=&#34;game-header&#34; style=&#34;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  &#34;&gt;
+    &lt;h2 style=&#34;color: #776e65; margin: 0;&#34;&gt;2048&lt;/h2&gt;
+    &lt;div style=&#34;
+      background: #bbada0;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      color: white;
+    &#34;&gt;
+      Score: &lt;span id=&#34;hugo-2048-score&#34;&gt;0&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;button id=&#34;hugo-2048-newgame&#34; style=&#34;
+      background: #8f7a66;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    &#34;&gt;New Game&lt;/button&gt;
+  &lt;/div&gt;
+
+  
+  &lt;div class=&#34;game-grid&#34; style=&#34;
+    background: #bbada0;
+    padding: 15px;
+    border-radius: 6px;
+  &#34;&gt;
+    
+    &lt;div style=&#34;display: flex; margin-bottom: 15px;&#34;&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-0-0&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-0-1&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-0-2&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-0-3&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div style=&#34;display: flex; margin-bottom: 15px;&#34;&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-1-0&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-1-1&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-1-2&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-1-3&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div style=&#34;display: flex; margin-bottom: 15px;&#34;&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-2-0&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-2-1&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-2-2&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-2-3&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div style=&#34;display: flex; margin-bottom: 15px;&#34;&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-3-0&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-3-1&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-3-2&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+      &lt;div id=&#34;hugo-2048-cell-3-3&#34; class=&#34;game-cell&#34;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+
+  
+  &lt;style&gt;
+    .game-2048-card .game-grid &gt; div:last-child {
+      margin-bottom: 0 !important;
+    }
+    
+    .game-cell {
+      width: 100px !important;
+      height: 100px !important;
+      margin-right: 15px !important;
+      background: rgba(238, 228, 218, 0.35) !important;
+      border-radius: 3px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      font-size: 36px !important;
+      font-weight: bold !important;
+      color: #776e65 !important;
+      transition: all 0.15s ease !important;
+    }
+
+    .game-2048-card .game-cell:last-child {
+      margin-right: 0 !important;
+    }
+
+     
+    .game-cell[data-value=&#34;2&#34;] {
+      background: #eee4da !important;
+      color: #776e65 !important;
+    }
+    .game-cell[data-value=&#34;4&#34;] {
+      background: #ede0c8 !important;
+      color: #776e65 !important;
+    }
+    .game-cell[data-value=&#34;8&#34;] {
+      background: #f2b179 !important;
+      color: white !important;
+    }
+    .game-cell[data-value=&#34;16&#34;] {
+      background: #f59563 !important;
+      color: white !important;
+    }
+    .game-cell[data-value=&#34;32&#34;] {
+      background: #f67c5f !important;
+      color: white !important;
+    }
+    .game-cell[data-value=&#34;64&#34;] {
+      background: #f65e3b !important;
+      color: white !important;
+    }
+    .game-cell[data-value=&#34;128&#34;] {
+      background: #edcf72 !important;
+      color: white !important;
+      font-size: 32px !important;
+    }
+    .game-cell[data-value=&#34;256&#34;] {
+      background: #edcc61 !important;
+      color: white !important;
+      font-size: 28px !important;
+    }
+    .game-cell[data-value=&#34;512&#34;] {
+      background: #edc850 !important;
+      color: white !important;
+      font-size: 28px !important;
+    }
+    .game-cell[data-value=&#34;1024&#34;] {
+      background: #edc53f !important;
+      color: white !important;
+      font-size: 24px !important;
+    }
+    .game-cell[data-value=&#34;2048&#34;] {
+      background: #edc22e !important;
+      color: white !important;
+      font-size: 24px !important;
+    }
+
+    #hugo-2048-newgame:hover {
+      background: #7f6a56 !important;
+      transition: 0.3s;
+    }
+  &lt;/style&gt;
+
+  
+  &lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+      class Hugo2048 {
+        constructor() {
+          this.grid = Array(4).fill().map(() =&gt; Array(4).fill(0));
+          this.score = 0;
+          this.init();
+        }
+
+        init() {
+          this.grid = Array(4).fill().map(() =&gt; Array(4).fill(0));
+          this.score = 0;
+          document.getElementById(&#39;hugo-2048-score&#39;).textContent = this.score;
+          this.addNewNumber();
+          this.addNewNumber();
+          this.updateView();
+        }
+
+        addNewNumber() {
+          const emptyCells = [];
+          for (let i = 0; i &lt; 4; i++) {
+            for (let j = 0; j &lt; 4; j++) {
+              if (this.grid[i][j] === 0) emptyCells.push({x:i, y:j});
+            }
+          }
+          if (emptyCells.length) {
+            const cell = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+            this.grid[cell.x][cell.y] = Math.random() &lt; 0.9 ? 2 : 4;
+          }
+        }
+
+        updateView() {
+          for (let i = 0; i &lt; 4; i++) {
+            for (let j = 0; j &lt; 4; j++) {
+              const el = document.getElementById(`hugo-2048-cell-${i}-${j}`);
+              const val = this.grid[i][j];
+              el.textContent = val || &#39;&#39;;
+              el.setAttribute(&#39;data-value&#39;, val);
+            }
+          }
+          document.getElementById(&#39;hugo-2048-score&#39;).textContent = this.score;
+        }
+
+        move(dir) {
+          let original = JSON.stringify(this.grid);
+          if (dir === &#39;left&#39; || dir === &#39;right&#39;) {
+            for (let i = 0; i &lt; 4; i++) {
+              let row = this.grid[i].slice();
+              if (dir === &#39;right&#39;) row.reverse();
+              row = this.merge(row);
+              if (dir === &#39;right&#39;) row.reverse();
+              this.grid[i] = row;
+            }
+          } else {
+            for (let j = 0; j &lt; 4; j++) {
+              let col = this.grid.map(r =&gt; r[j]);
+              if (dir === &#39;down&#39;) col.reverse();
+              col = this.merge(col);
+              if (dir === &#39;down&#39;) col.reverse();
+              for (let i = 0; i &lt; 4; i++) this.grid[i][j] = col[i];
+            }
+          }
+          if (original !== JSON.stringify(this.grid)) {
+            this.addNewNumber();
+            this.updateView();
+            if (this.gameOver()) setTimeout(() =&gt; alert(&#39;Game Over! Score: &#39; + this.score), 300);
+          }
+        }
+
+        merge(line) {
+          let clean = line.filter(n =&gt; n !== 0);
+          for (let i = 0; i &lt; clean.length-1; i++) {
+            if (clean[i] === clean[i+1]) {
+              clean[i] *= 2;
+              this.score += clean[i];
+              clean.splice(i+1, 1);
+            }
+          }
+          while (clean.length &lt; 4) clean.push(0);
+          return clean;
+        }
+
+        gameOver() {
+          for (let i=0; i&lt;4; i++) for (let j=0; j&lt;4; j++) if (this.grid[i][j] === 0) return false;
+          for (let i=0; i&lt;4; i++) for (let j=0; j&lt;3; j++) {
+            if (this.grid[i][j] === this.grid[i][j+1]) return false;
+            if (this.grid[j][i] === this.grid[j+1][i]) return false;
+          }
+          return true;
+        }
+      }
+
+      const game = new Hugo2048();
+      document.addEventListener(&#39;keydown&#39;, e =&gt; {
+        switch(e.key) {
+          case &#39;ArrowLeft&#39;: game.move(&#39;left&#39;); break;
+          case &#39;ArrowRight&#39;: game.move(&#39;right&#39;); break;
+          case &#39;ArrowUp&#39;: game.move(&#39;up&#39;); break;
+          case &#39;ArrowDown&#39;: game.move(&#39;down&#39;); break;
+        }
+      });
+      document.getElementById(&#39;hugo-2048-newgame&#39;).addEventListener(&#39;click&#39;, () =&gt; game.init());
+    });
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;sudoku&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/sudoku.html&#34; &gt;Sudoku&lt;/a&gt;
+&lt;/h2&gt;&lt;!-- 
+&lt;div class=&#34;sudoku-card&#34; style=&#34;width: 100%; max-width: 1080px; margin: 0 auto; padding: 0;&#34;&gt;
+  
+  &lt;!doctype html&gt;
+  &lt;html lang=&#34;ja&#34;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&#34;utf-8&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
+    &lt;title&gt;数独 (Sudoku)&lt;/title&gt;
+    &lt;style&gt;
+:root {
+  --accent: #0f766e;
+  --accent-light: #14b8a6;
+  --bg: #f8fafc;
+  --line: #cbd5e1;
+  --text: #0f172a;
+  --error: #ef4444;
+  --complete: #dcfce7;
+  --conflict: #fef3c7;
+  --note: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: &#34;Helvetica Neue&#34;, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, #ffffff 0%, #e2e8f0 42%, #f8fafc 100%);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: clamp(12px, 3vw, 24px);
+}
+
+body.help-open {
+  overflow: hidden;
+}
+
+main {
+  width: min(1080px, 100%);
+  padding: clamp(16px, 3vw, 24px);
+  border-radius: 20px;
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, #f8fafc 100%);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  line-height: 1.1;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  grid-template-rows: minmax(22px, auto) auto;
+  gap: 6px;
+  min-width: 0;
+}
+
+.utility-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-height: 52px;
+}
+
+.utility-buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.timer {
+  min-width: 108px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #eef2ff;
+  color: #312e81;
+  font-weight: 700;
+  text-align: center;
+}
+
+label {
+  margin-right: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  min-height: 22px;
+}
+
+input,
+select,
+button {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+input,
+select {
+  background: white;
+}
+
+.field input,
+.field select {
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus-visible {
+  outline: 3px solid rgba(20, 184, 166, 0.35);
+  outline-offset: 2px;
+}
+
+button {
+  min-height: 46px;
+  background: white;
+  cursor: pointer;
+  touch-action: manipulation;
+  white-space: nowrap;
+  transition: transform 0.08s ease, box-shadow 0.12s ease;
+}
+
+button:hover {
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+  transform: translateY(-1px);
+}
+
+button.primary {
+  border: none;
+  background: linear-gradient(120deg, var(--accent), var(--accent-light));
+  color: white;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+}
+
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.primary-actions button {
+  flex: 1 1 180px;
+}
+
+.board-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
+  gap: 20px;
+  align-items: start;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 2px solid #0f172a;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.cell {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--text);
+  cursor: pointer;
+  overflow: hidden;
+  touch-action: manipulation;
+  font-size: clamp(22px, 2.2vw, 28px);
+  transition: background 0.1s ease, color 0.1s ease;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: 2px solid #0f172a;
+}
+
+.cell:nth-child(-n + 9) {
+  border-top: 2px solid #0f172a;
+}
+
+.cell[data-row=&#34;3&#34;],
+.cell[data-row=&#34;6&#34;] {
+  border-top: 2px solid #0f172a;
+}
+
+.cell[data-col=&#34;3&#34;],
+.cell[data-col=&#34;6&#34;] {
+  border-left: 2px solid #0f172a;
+}
+
+.cell.given {
+  background: #f8fafc;
+  font-weight: 700;
+}
+
+.cell.selected {
+  outline: 3px solid rgba(20, 184, 166, 0.45);
+  z-index: 1;
+}
+
+.cell.completed-number {
+  background: var(--complete);
+  color: #166534;
+}
+
+.cell.conflict {
+  background: var(--conflict);
+}
+
+.cell .notes {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  gap: 1px;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: clamp(2px, 0.7vw, 6px);
+  overflow: hidden;
+  color: #475569;
+  font-size: clamp(8px, 0.95vw, 12px);
+  line-height: 1;
+  text-align: center;
+  pointer-events: none;
+}
+
+.cell .notes span {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.cell .notes span.highlighted {
+  color: var(--error);
+  font-weight: 700;
+}
+
+.panel {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.panel h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  min-height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.pad button,
+.pad .pad-action {
+  min-height: 56px;
+  min-width: 0;
+  padding: 12px 8px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pad button.num {
+  font-size: 20px;
+}
+
+.pad .pad-action,
+.pad button.secondary {
+  font-size: 16px;
+}
+
+.pad .pad-action.red-note {
+  padding-inline: 6px;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+}
+
+.pad button.secondary {
+  background: #f1f5f9;
+}
+
+.pad .pad-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+}
+
+.pad .pad-action.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.2);
+  font-weight: 700;
+}
+
+.pad .pad-action.red-note.active {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.18);
+  color: #b91c1c;
+}
+
+.pad .pad-action:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+  box-shadow: none;
+}
+
+.pad .pad-action.disabled {
+  background: #f8fafc;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 0;
+}
+
+.hint-text,
+.stats,
+.status {
+  margin: 0;
+}
+
+.hint-text,
+.stats {
+  color: #475569;
+  font-size: 14px;
+}
+
+.status {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.status.success {
+  color: #15803d;
+}
+
+.status.warning {
+  color: var(--error);
+}
+
+.help-overlay[hidden] {
+  display: none;
+}
+
+.help-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.help-dialog {
+  width: min(720px, 100%);
+  max-height: min(85vh, 900px);
+  overflow: auto;
+  padding: 20px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.25);
+}
+
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.help-header button {
+  flex: 0 0 auto;
+  min-width: 88px;
+}
+
+.help-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.help-content {
+  display: grid;
+  gap: 14px;
+}
+
+.help-section {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.help-section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.help-section h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.help-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.help-list strong {
+  color: var(--text);
+}
+
+.help-list a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-word;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    align-items: stretch;
+  }
+
+  .board-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .utility-actions {
+    justify-content: space-between;
+  }
+
+  .utility-buttons {
+    justify-content: flex-start;
+  }
+
+  .settings-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .primary-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .primary-actions button {
+    flex: auto;
+  }
+
+  .board-wrapper {
+    gap: 16px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .pad {
+    gap: 8px;
+  }
+
+  .pad button,
+  .pad .pad-action {
+    min-height: 54px;
+  }
+
+  .pad button.num {
+    font-size: 18px;
+  }
+
+  .pad .pad-action,
+  .pad button.secondary {
+    font-size: 15px;
+  }
+
+  .pad .pad-action.red-note {
+    font-size: 12px;
+  }
+
+  .cell .notes {
+    font-size: clamp(8px, 2vw, 10px);
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 12px;
+  }
+
+  .hero,
+  .utility-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .utility-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+
+  .utility-buttons button {
+    min-width: 0;
+    min-height: 42px;
+    padding: 8px 6px;
+    font-size: 14px;
+  }
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timer {
+    width: 100%;
+  }
+
+  .help-header {
+    margin-bottom: 10px;
+  }
+
+  .help-dialog {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .utility-buttons button {
+    min-height: 40px;
+    padding: 8px 4px;
+    font-size: 13px;
+  }
+
+  .primary-actions,
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .pad button,
+  .pad .pad-action {
+    min-height: 50px;
+  }
+
+  .pad button.num {
+    font-size: 17px;
+  }
+
+  .pad .pad-action,
+  .pad button.secondary {
+    font-size: 14px;
+  }
+
+  .pad .pad-action.red-note {
+    font-size: 11px;
+  }
+}
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;header class=&#34;hero&#34;&gt;
+        &lt;h1 id=&#34;title&#34;&gt;数独 (Sudoku)&lt;/h1&gt;
+        &lt;div class=&#34;utility-actions&#34;&gt;
+          &lt;div class=&#34;utility-buttons&#34;&gt;
+            &lt;button class=&#34;ghost&#34; id=&#34;saveGame&#34; type=&#34;button&#34;&gt;状態を保存&lt;/button&gt;
+            &lt;button class=&#34;ghost&#34; id=&#34;loadGame&#34; type=&#34;button&#34;&gt;保存を読込&lt;/button&gt;
+            &lt;button class=&#34;ghost&#34; id=&#34;help&#34; type=&#34;button&#34; aria-haspopup=&#34;dialog&#34; aria-controls=&#34;helpOverlay&#34; aria-expanded=&#34;false&#34;&gt;使い方&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;timer&#34; id=&#34;timer&#34; aria-live=&#34;polite&#34;&gt;--:--&lt;/div&gt;
+          &lt;input id=&#34;loadFile&#34; type=&#34;file&#34; accept=&#34;.json,application/json&#34; hidden /&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+
+      &lt;div class=&#34;top-bar&#34;&gt;
+        &lt;div class=&#34;settings-grid&#34;&gt;
+          &lt;div class=&#34;field&#34;&gt;
+            &lt;label id=&#34;clueCountLabel&#34; for=&#34;clueCount&#34;&gt;ヒント数&lt;/label&gt;
+            &lt;select id=&#34;clueCount&#34;&gt;
+              &lt;option value=&#34;17&#34;&gt;17 (最難関)&lt;/option&gt;
+              &lt;option value=&#34;18&#34;&gt;18&lt;/option&gt;
+              &lt;option value=&#34;20&#34;&gt;20&lt;/option&gt;
+              &lt;option value=&#34;22&#34;&gt;22&lt;/option&gt;
+              &lt;option value=&#34;24&#34;&gt;24 (かなり難しい)&lt;/option&gt;
+              &lt;option value=&#34;26&#34;&gt;26&lt;/option&gt;
+              &lt;option value=&#34;28&#34;&gt;28 (難しめ)&lt;/option&gt;
+              &lt;option value=&#34;30&#34;&gt;30&lt;/option&gt;
+              &lt;option value=&#34;32&#34; selected&gt;32 (標準)&lt;/option&gt;
+              &lt;option value=&#34;34&#34;&gt;34&lt;/option&gt;
+              &lt;option value=&#34;36&#34;&gt;36&lt;/option&gt;
+              &lt;option value=&#34;38&#34;&gt;38 (易しめ)&lt;/option&gt;
+              &lt;option value=&#34;40&#34;&gt;40&lt;/option&gt;
+              &lt;option value=&#34;42&#34;&gt;42&lt;/option&gt;
+              &lt;option value=&#34;44&#34;&gt;44 (かなり易しい)&lt;/option&gt;
+              &lt;option value=&#34;46&#34;&gt;46&lt;/option&gt;
+              &lt;option value=&#34;48&#34;&gt;48&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&#34;field&#34;&gt;
+            &lt;label id=&#34;seedLabel&#34; for=&#34;seed&#34;&gt;シード&lt;/label&gt;
+            &lt;input id=&#34;seed&#34; type=&#34;number&#34; placeholder=&#34;任意&#34; /&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&#34;field&#34;&gt;
+            &lt;label id=&#34;langLabel&#34; for=&#34;lang&#34;&gt;Language&lt;/label&gt;
+            &lt;select id=&#34;lang&#34;&gt;
+              &lt;option value=&#34;ja&#34;&gt;Japanese&lt;/option&gt;
+              &lt;option value=&#34;en&#34;&gt;English&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&#34;action-row primary-actions&#34;&gt;
+          &lt;button class=&#34;primary&#34; id=&#34;newGame&#34; type=&#34;button&#34;&gt;新しい盤面を作成&lt;/button&gt;
+          &lt;button class=&#34;ghost&#34; id=&#34;reset&#34; type=&#34;button&#34;&gt;最初の状態に戻す&lt;/button&gt;
+          &lt;button class=&#34;ghost&#34; id=&#34;hint&#34; type=&#34;button&#34;&gt;ヒントを埋める&lt;/button&gt;
+          &lt;button class=&#34;ghost&#34; id=&#34;solve&#34; type=&#34;button&#34;&gt;答えを表示&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#34;board-wrapper&#34;&gt;
+        &lt;div class=&#34;board&#34; id=&#34;board&#34; aria-label=&#34;Sudoku board&#34;&gt;&lt;/div&gt;
+        &lt;div class=&#34;panel&#34;&gt;
+          &lt;h2 id=&#34;padTitle&#34;&gt;数字パッド&lt;/h2&gt;
+          &lt;div class=&#34;pad&#34; id=&#34;pad&#34;&gt;&lt;/div&gt;
+          &lt;div class=&#34;controls&#34;&gt;
+            &lt;button class=&#34;ghost&#34; id=&#34;undo&#34;&gt;↩️ １つ戻す&lt;/button&gt;
+            &lt;button class=&#34;ghost&#34; id=&#34;redo&#34;&gt;↪️ １つ進める&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;p class=&#34;hint-text&#34; id=&#34;hintText&#34;&gt;&lt;/p&gt;
+          &lt;div class=&#34;stats&#34; id=&#34;stats&#34;&gt;&lt;/div&gt;
+          &lt;div class=&#34;status&#34; id=&#34;status&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#34;help-overlay&#34; id=&#34;helpOverlay&#34; hidden&gt;
+        &lt;section class=&#34;help-dialog&#34; id=&#34;helpDialog&#34; role=&#34;dialog&#34; aria-modal=&#34;true&#34; aria-labelledby=&#34;helpTitle&#34;&gt;
+          &lt;div class=&#34;help-header&#34;&gt;
+            &lt;h2 id=&#34;helpTitle&#34;&gt;ゲームの使い方&lt;/h2&gt;
+            &lt;button class=&#34;ghost&#34; id=&#34;helpClose&#34; type=&#34;button&#34;&gt;閉じる&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;help-content&#34; id=&#34;helpContent&#34;&gt;&lt;/div&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;script&gt;
+(() =&gt; {
+&#39;use strict&#39;;
+
+
+function createTimerState() {
+  return {
+    elapsedMs: 0,
+    startedAt: null,
+    running: false
+  };
+}
+function getElapsedMs(timer, now = Date.now()) {
+  if (!timer.running || timer.startedAt === null) {
+    return timer.elapsedMs;
+  }
+  return timer.elapsedMs + (now - timer.startedAt);
+}
+function startTimer(timer, now = Date.now()) {
+  timer.elapsedMs = 0;
+  timer.startedAt = now;
+  timer.running = true;
+}
+function pauseTimer(timer, now = Date.now()) {
+  if (!timer.running || timer.startedAt === null) return;
+  timer.elapsedMs += now - timer.startedAt;
+  timer.startedAt = null;
+  timer.running = false;
+}
+function captureTimerSnapshot(timer, now = Date.now()) {
+  return {
+    elapsedMs: getElapsedMs(timer, now),
+    running: timer.running
+  };
+}
+function restoreTimerFromSnapshot(timer, snapshot, now = Date.now()) {
+  timer.elapsedMs = snapshot.elapsedMs;
+  timer.running = Boolean(snapshot.running);
+  timer.startedAt = timer.running ? now : null;
+}
+
+
+function createNotesBoard() {
+  return Array.from({ length: 9 }, () =&gt; Array.from({ length: 9 }, () =&gt; new Map()));
+}
+function cloneBoard(board) {
+  return board.map((row) =&gt; [...row]);
+}
+function cloneNotes(notesBoard) {
+  return notesBoard.map((row) =&gt; row.map((noteMap) =&gt; new Map(noteMap)));
+}
+function captureSnapshot(state, now = Date.now()) {
+  return {
+    current: cloneBoard(state.current),
+    notes: cloneNotes(state.notes),
+    hintCount: state.hintCount,
+    solutionRevealed: state.solutionRevealed,
+    noteMode: state.noteMode,
+    highlightNoteMode: state.highlightNoteMode,
+    selectedCell: state.selectedCell ? { ...state.selectedCell } : null,
+    timer: captureTimerSnapshot(state.timer, now)
+  };
+}
+function restoreSnapshot(state, snapshot, now = Date.now()) {
+  state.current = cloneBoard(snapshot.current);
+  state.notes = cloneNotes(snapshot.notes);
+  state.hintCount = snapshot.hintCount;
+  state.solutionRevealed = snapshot.solutionRevealed;
+  state.noteMode = snapshot.noteMode;
+  state.highlightNoteMode = snapshot.highlightNoteMode ?? false;
+  state.selectedCell = snapshot.selectedCell ? { ...snapshot.selectedCell } : null;
+  restoreTimerFromSnapshot(state.timer, snapshot.timer, now);
+}
+
+
+const I18N = {
+  ja: {
+    title: &#39;数独 (Sudoku)&#39;,
+    clueLabel: &#39;ヒント数&#39;,
+    seedLabel: &#39;シード&#39;,
+    langLabel: &#39;言語&#39;,
+    seedPlaceholder: &#39;オプション&#39;,
+    newGame: &#39;新しい盤面を作成&#39;,
+    reset: &#39;最初の状態に戻す&#39;,
+    hint: &#39;ヒントを埋める&#39;,
+    solve: &#39;答えを表示&#39;,
+    saveGame: &#39;保存&#39;,
+    loadGame: &#39;読込&#39;,
+    helpButton: &#39;遊び方&#39;,
+    helpClose: &#39;閉じる&#39;,
+    padTitle: &#39;数字パッド&#39;,
+    undo: &#39;↩️ １つ戻す&#39;,
+    redo: &#39;↪️ １つ進める&#39;,
+    noteButton: &#39;✏️ メモ&#39;,
+    redNoteButton: &#39;🔴 赤メモ&#39;,
+    clearButton: &#39;消去&#39;,
+    boardAriaLabel: &#39;数独盤面&#39;,
+    hintText: &#39;キーボードの 1-9 で入力、0 / Delete / Backspace で削除、矢印で移動、Enter でメモモード切替ができます。赤色メモは 🔴 赤メモ ボタン、右クリック、または Shift+1〜9 で入力できます。&#39;,
+    statusLoading: &#39;読み込み中...&#39;,
+    statusGenerating: &#39;生成中...&#39;,
+    statusInputPrompt: &#39;数字を入力してください。&#39;,
+    statusNoHint: &#39;ヒントを出せるマスがありません。&#39;,
+    statusSolved: &#39;おめでとうございます！すべて正解です。（タイム: {time}）&#39;,
+    statusSolutionShown: &#39;解答を表示しました。&#39;,
+    statusSaveSuccess: &#39;現在の状態を保存しました。&#39;,
+    statusSaveError: &#39;状態を保存できませんでした。&#39;,
+    statusSaveUnavailable: &#39;保存できる盤面がありません。&#39;,
+    statusLoadSuccess: &#39;保存した状態を読み込みました。&#39;,
+    statusLoadError: &#39;保存ファイルを読み込めませんでした。&#39;,
+    statsHintUsed: &#39;ヒント使用: {count}回&#39;,
+    statsSolutionShown: &#39;解答表示: {state}&#39;,
+    statsClues: &#39;実ヒント数: {count}&#39;,
+    statsSeed: &#39;シード: {seed}&#39;,
+    yes: &#39;あり&#39;,
+    no: &#39;なし&#39;,
+    randomSeed: &#39;ランダム({seed})&#39;,
+    helpTitle: &#39;遊び方&#39;,
+    helpSections: [
+      {
+        items: [
+          { label: &#39;はじめに&#39;, text: &#39;盤面のマスを選んで、1から9までの数字を入力してください。&#39; },
+          { label: &#39;ゴール&#39;, text: &#39;タテ、ヨコ、太線で囲まれた3x3のブロックのどれにも、1から9までの数字が1つずつ入れば完成です。&#39; },
+          { label: &#39;正解は1つ&#39;, text: &#39;生成される盤面はすべて、正解は1つのみです。&#39; },
+          { label: &#39;ハイライト&#39;, text: &#39;重複する数字と、9個すべて正しく埋まった数字は、ハイライト表示されます。&#39; },
+          { label: &#39;オフライン&#39;, text: &#39;オフラインで遊べます。ゲームプレイ中の操作はインターネット通信を生じさせません。&#39; }
+        ]
+      },
+      {
+        title: &#39;盤面上部にあるコントロールとボタン&#39;,
+        items: [
+          { label: &#39;ヒント数&#39;, text: &#39;新しい盤面を作るときの初期ヒント数を選びます。&#39; },
+          { label: &#39;シード&#39;, text: &#39;同じ値を入れると、同じ盤面を再生成できます。空欄ならランダムです。&#39; },
+          { label: &#39;言語&#39;, text: &#39;画面表示の言語を切り替えます。&#39; },
+          { label: &#39;新しい盤面を作成&#39;, text: &#39;現在の設定で新しい数独を生成します。&#39; },
+          { label: &#39;最初の状態に戻す&#39;, text: &#39;開始時点の盤面に戻します。タイマーも最初からやり直します。&#39; },
+          { label: &#39;ヒントを埋める&#39;, text: &#39;空いているマスを 1 つだけ正解で埋めます。&#39; },
+          { label: &#39;答えを表示&#39;, text: &#39;完成した解答を表示します。&#39; },
+          { label: &#39;遊び方&#39;, text: &#39;ヘルプを開きます。オフラインで読めます。&#39; },
+          { label: &#39;保存&#39;, text: &#39;現在の盤面、メモ、タイマー、Undo/Redo の履歴を JSON ファイルとして保存します。&#39; },
+          { label: &#39;読込&#39;, text: &#39;保存した JSON ファイルを読み込み、同じ状態から再開します。&#39; }
+        ]
+      },
+      {
+        title: &#39;操作方法（マウス/タップ）&#39;,
+        items: [
+          { label: &#39;マスを選ぶ&#39;, text: &#39;盤面のマスを選びます。&#39; },
+          { label: &#39;数字入力&#39;, text: &#39;数字パッドで数字を入力します。&#39; },
+          { label: &#39;消去&#39;, text: &#39;選択中のマスを消去します。&#39; },
+          { label: &#39;✏️ メモ&#39;, text: &#39;メモ入力モードに切り替えます。メモ入力モード中に数字を入力するとメモを入れられます。&#39; },
+          { label: &#39;🔴 赤メモ&#39;, text: &#39;メモ入力を赤色メモに切り替えます。メモ入力モード中に数字をマウスで右クリックしても赤色メモを入れられます。&#39; },
+          { label: &#39;↩️ １つ戻す&#39;, text: &#39;直前の入力やメモを取り消します。&#39; },
+          { label: &#39;↪️ １つ進める&#39;, text: &#39;取り消した入力やメモをやり直します。&#39; }
+        ]
+      },
+      {
+        title: &#39;操作方法（キーボード）&#39;,
+        items: [
+          { label: &#39;矢印キー&#39;, text: &#39;盤面のマスを移動します。&#39; },
+          { label: &#39;1〜9&#39;, text: &#39;数字を入力します。&#39; },
+          { label: &#39;0 / Backspace / Delete&#39;, text: &#39;選択中のマスを消去します。&#39; },
+          { label: &#39;Enter&#39;, text: &#39;メモ入力モードに切り替えます。&#39; },
+          { label: &#39;Shift+1〜9&#39;, text: &#39;赤色メモを入力します。&#39; },
+          { label: &#39;Ctrl+Z&#39;, text: &#39;1つ戻します。&#39; },
+          { label: &#39;Ctrl+Y または Ctrl+Shift+Z&#39;, text: &#39;1つ進めます。&#39; }
+        ]
+      },
+      {
+        title: &#39;詳細情報&#39;,
+        items: [
+          {
+            label: &#39;GitHub レポジトリ&#39;,
+            href: &#39;https://github.com/piccoripico/sudoku-html&#39;,
+            linkText: &#39;https://github.com/piccoripico/sudoku-html&#39;,
+            note: &#39;※インターネット接続が必要です。&#39;
+          }
+        ]
+      }
+    ],
+    clueOptionLabels: {
+      17: &#39;17 (最難関)&#39;,
+      24: &#39;24 (かなり難しい)&#39;,
+      28: &#39;28 (難しめ)&#39;,
+      32: &#39;32 (標準)&#39;,
+      38: &#39;38 (易しめ)&#39;,
+      44: &#39;44 (かなり易しい)&#39;
+    }
+  },
+  en: {
+    title: &#39;Sudoku&#39;,
+    clueLabel: &#39;Clues&#39;,
+    seedLabel: &#39;Seed&#39;,
+    langLabel: &#39;Language&#39;,
+    seedPlaceholder: &#39;Optional&#39;,
+    newGame: &#39;New Puzzle&#39;,
+    reset: &#39;Reset to Start&#39;,
+    hint: &#39;Fill a Hint&#39;,
+    solve: &#39;Show Solution&#39;,
+    saveGame: &#39;Save&#39;,
+    loadGame: &#39;Load&#39;,
+    helpButton: &#39;How to Play&#39;,
+    helpClose: &#39;Close&#39;,
+    padTitle: &#39;Number Pad&#39;,
+    undo: &#39;↩️ Undo&#39;,
+    redo: &#39;↪️ Redo&#39;,
+    noteButton: &#39;✏️ Note&#39;,
+    redNoteButton: &#39;🔴 Red Note&#39;,
+    clearButton: &#39;Clear&#39;,
+    boardAriaLabel: &#39;Sudoku board&#39;,
+    hintText: &#39;Use 1-9 to input, 0 / Delete / Backspace to clear, arrow keys to move, and Enter to toggle note mode. Red notes can be entered with the 🔴 Red Note button, right-click, or Shift+1-9.&#39;,
+    statusLoading: &#39;Loading...&#39;,
+    statusGenerating: &#39;Generating...&#39;,
+    statusInputPrompt: &#39;Enter numbers to solve the puzzle.&#39;,
+    statusNoHint: &#39;No empty cell is available for a hint.&#39;,
+    statusSolved: &#39;Congratulations! Puzzle solved. (Time: {time})&#39;,
+    statusSolutionShown: &#39;Solution displayed.&#39;,
+    statusSaveSuccess: &#39;The current state has been saved.&#39;,
+    statusSaveError: &#39;The current state could not be saved.&#39;,
+    statusSaveUnavailable: &#39;There is no puzzle state to save.&#39;,
+    statusLoadSuccess: &#39;The saved state has been loaded.&#39;,
+    statusLoadError: &#39;The save file could not be loaded.&#39;,
+    statsHintUsed: &#39;Hints used: {count}&#39;,
+    statsSolutionShown: &#39;Solution shown: {state}&#39;,
+    statsClues: &#39;Actual clues: {count}&#39;,
+    statsSeed: &#39;Seed: {seed}&#39;,
+    yes: &#39;yes&#39;,
+    no: &#39;no&#39;,
+    randomSeed: &#39;random({seed})&#39;,
+    helpTitle: &#39;How to Play&#39;,
+    helpSections: [
+      {
+        items: [
+          { label: &#39;Getting started&#39;, text: &#39;Select a cell and enter a number from 1 to 9.&#39; },
+          { label: &#39;Goal&#39;, text: &#39;The puzzle is complete when every row, column, and 3x3 block outlined by the thick lines contains each number from 1 to 9 exactly once.&#39; },
+          { label: &#39;Unique solution&#39;, text: &#39;Every generated puzzle has exactly one solution.&#39; },
+          { label: &#39;Highlighting&#39;, text: &#39;Duplicate numbers and numbers that have been correctly completed in all nine positions are highlighted.&#39; },
+          { label: &#39;Offline&#39;, text: &#39;You can play offline. Gameplay itself does not require any internet connection.&#39; }
+        ]
+      },
+      {
+        title: &#39;Controls and Buttons Above the Board&#39;,
+        items: [
+          { label: &#39;Clues&#39;, text: &#39;Sets the number of starting clues for the next puzzle.&#39; },
+          { label: &#39;Seed&#39;, text: &#39;Enter the same seed to recreate the same puzzle. Leave it blank for a random puzzle.&#39; },
+          { label: &#39;Language&#39;, text: &#39;Switches the interface language.&#39; },
+          { label: &#39;New Puzzle&#39;, text: &#39;Generates a fresh puzzle with the current settings.&#39; },
+          { label: &#39;Reset to Start&#39;, text: &#39;Returns the board to its initial state. The timer also starts over.&#39; },
+          { label: &#39;Fill a Hint&#39;, text: &#39;Reveals one correct value in an empty cell.&#39; },
+          { label: &#39;Show Solution&#39;, text: &#39;Displays the completed solution.&#39; },
+          { label: &#39;How to Play&#39;, text: &#39;Opens the help dialog. It is available offline.&#39; },
+          { label: &#39;Save&#39;, text: &#39;Saves the current board, notes, timer, and Undo/Redo history as a JSON file.&#39; },
+          { label: &#39;Load&#39;, text: &#39;Loads a saved JSON file and resumes from the same state.&#39; }
+        ]
+      },
+      {
+        title: &#39;Controls (Mouse / Tap)&#39;,
+        items: [
+          { label: &#39;Select a cell&#39;, text: &#39;Select a cell on the board.&#39; },
+          { label: &#39;Enter a number&#39;, text: &#39;Use the number pad to enter a number.&#39; },
+          { label: &#39;Clear&#39;, text: &#39;Clears the selected cell.&#39; },
+          { label: &#39;✏️ Note&#39;, text: &#39;Switches to note input mode. When note input mode is on, entering a number adds a note.&#39; },
+          { label: &#39;🔴 Red Note&#39;, text: &#39;Switches note input to red notes. While note input mode is on, you can also right-click a number with the mouse to enter a red note.&#39; },
+          { label: &#39;↩️ Undo&#39;, text: &#39;Undoes the most recent input or note.&#39; },
+          { label: &#39;↪️ Redo&#39;, text: &#39;Reapplies an undone input or note.&#39; }
+        ]
+      },
+      {
+        title: &#39;Controls (Keyboard)&#39;,
+        items: [
+          { label: &#39;Arrow keys&#39;, text: &#39;Move between cells.&#39; },
+          { label: &#39;1-9&#39;, text: &#39;Enter a number.&#39; },
+          { label: &#39;0 / Backspace / Delete&#39;, text: &#39;Clear the selected cell.&#39; },
+          { label: &#39;Enter&#39;, text: &#39;Switch to note input mode.&#39; },
+          { label: &#39;Shift+1-9&#39;, text: &#39;Enter a red note.&#39; },
+          { label: &#39;Ctrl+Z&#39;, text: &#39;Undo.&#39; },
+          { label: &#39;Ctrl+Y or Ctrl+Shift+Z&#39;, text: &#39;Redo.&#39; }
+        ]
+      },
+      {
+        title: &#39;More Information&#39;,
+        items: [
+          {
+            label: &#39;GitHub Repository&#39;,
+            href: &#39;https://github.com/piccoripico/sudoku-html&#39;,
+            linkText: &#39;https://github.com/piccoripico/sudoku-html&#39;,
+            note: &#39;*Internet connection required.&#39;
+          }
+        ]
+      }
+    ],
+    clueOptionLabels: {
+      17: &#39;17 (hardest)&#39;,
+      24: &#39;24 (very hard)&#39;,
+      28: &#39;28 (hard)&#39;,
+      32: &#39;32 (normal)&#39;,
+      38: &#39;38 (easy)&#39;,
+      44: &#39;44 (very easy)&#39;
+    }
+  }
+};
+function translate(lang, key, vars = {}) {
+  const dict = I18N[lang] || I18N.ja;
+  const template = dict[key] ?? I18N.ja[key] ?? &#39;&#39;;
+  return String(template).replace(/\{(\w+)\}/g, (_, name) =&gt; vars[name] ?? &#39;&#39;);
+}
+
+
+function isTypingTarget(target) {
+  if (!target || typeof target !== &#39;object&#39;) return false;
+  if (target.isContentEditable) return true;
+
+  const tagName = typeof target.tagName === &#39;string&#39;
+    ? target.tagName.toUpperCase()
+    : &#39;&#39;;
+
+  return tagName === &#39;INPUT&#39;
+    || tagName === &#39;TEXTAREA&#39;
+    || tagName === &#39;SELECT&#39;
+    || tagName === &#39;BUTTON&#39;;
+}
+
+
+const SAVE_FILE_FORMAT = &#39;sudoku-html-save&#39;;
+const SAVE_FILE_VERSION = 1;
+
+function assertValid(condition, message) {
+  if (!condition) {
+    throw new Error(message);
+  }
+}
+
+function isIntegerInRange(value, min, max) {
+  return Number.isInteger(value) &amp;&amp; value &gt;= min &amp;&amp; value &lt;= max;
+}
+
+function normalizeBoard(board, name, minValue, maxValue) {
+  assertValid(Array.isArray(board) &amp;&amp; board.length === 9, `${name} must contain 9 rows.`);
+
+  return board.map((row, rowIndex) =&gt; {
+    assertValid(Array.isArray(row) &amp;&amp; row.length === 9, `${name}[${rowIndex}] must contain 9 cells.`);
+
+    return row.map((value, colIndex) =&gt; {
+      const numericValue = Number(value);
+      assertValid(
+        isIntegerInRange(numericValue, minValue, maxValue),
+        `${name}[${rowIndex}][${colIndex}] must be an integer between ${minValue} and ${maxValue}.`
+      );
+      return numericValue;
+    });
+  });
+}
+
+function serializeNotes(notesBoard) {
+  return notesBoard.map((row) =&gt; row.map((noteMap) =&gt; (
+    Array.from(noteMap.entries())
+      .sort((a, b) =&gt; Number(a[0]) - Number(b[0]))
+      .map(([value, entry]) =&gt; ({
+        value: Number(value),
+        highlighted: Boolean(entry?.highlighted)
+      }))
+  )));
+}
+
+function deserializeNotes(notesBoard, name) {
+  assertValid(Array.isArray(notesBoard) &amp;&amp; notesBoard.length === 9, `${name} must contain 9 rows.`);
+
+  const restored = createNotesBoard();
+
+  for (let row = 0; row &lt; 9; row += 1) {
+    const rowData = notesBoard[row];
+    assertValid(Array.isArray(rowData) &amp;&amp; rowData.length === 9, `${name}[${row}] must contain 9 cells.`);
+
+    for (let col = 0; col &lt; 9; col += 1) {
+      const cellData = rowData[col];
+      assertValid(Array.isArray(cellData), `${name}[${row}][${col}] must be an array.`);
+
+      const noteMap = new Map();
+      for (const [index, entry] of cellData.entries()) {
+        assertValid(entry &amp;&amp; typeof entry === &#39;object&#39;, `${name}[${row}][${col}][${index}] must be an object.`);
+        const value = Number(entry.value);
+        assertValid(
+          isIntegerInRange(value, 1, 9),
+          `${name}[${row}][${col}][${index}].value must be an integer between 1 and 9.`
+        );
+        assertValid(!noteMap.has(value), `${name}[${row}][${col}] contains duplicate note values.`);
+        noteMap.set(value, { highlighted: Boolean(entry.highlighted) });
+      }
+
+      restored[row][col] = noteMap;
+    }
+  }
+
+  return restored;
+}
+
+function normalizeSelectedCell(selectedCell, name) {
+  if (selectedCell == null) {
+    return null;
+  }
+
+  assertValid(selectedCell &amp;&amp; typeof selectedCell === &#39;object&#39;, `${name} must be null or an object.`);
+
+  const row = Number(selectedCell.row);
+  const col = Number(selectedCell.col);
+  assertValid(isIntegerInRange(row, 0, 8), `${name}.row must be an integer between 0 and 8.`);
+  assertValid(isIntegerInRange(col, 0, 8), `${name}.col must be an integer between 0 and 8.`);
+
+  return { row, col };
+}
+
+function normalizeTimer(timerSnapshot, name) {
+  assertValid(timerSnapshot &amp;&amp; typeof timerSnapshot === &#39;object&#39;, `${name} must be an object.`);
+
+  const elapsedMs = Number(timerSnapshot.elapsedMs);
+  assertValid(Number.isFinite(elapsedMs) &amp;&amp; elapsedMs &gt;= 0, `${name}.elapsedMs must be a non-negative number.`);
+
+  return {
+    elapsedMs,
+    running: Boolean(timerSnapshot.running)
+  };
+}
+
+function normalizeNonNegativeInteger(value, name) {
+  const numericValue = Number(value);
+  assertValid(Number.isInteger(numericValue) &amp;&amp; numericValue &gt;= 0, `${name} must be a non-negative integer.`);
+  return numericValue;
+}
+
+function normalizeSnapshot(snapshot, name) {
+  assertValid(snapshot &amp;&amp; typeof snapshot === &#39;object&#39;, `${name} must be an object.`);
+
+  return {
+    current: normalizeBoard(snapshot.current, `${name}.current`, 0, 9),
+    notes: deserializeNotes(snapshot.notes, `${name}.notes`),
+    hintCount: normalizeNonNegativeInteger(snapshot.hintCount, `${name}.hintCount`),
+    solutionRevealed: Boolean(snapshot.solutionRevealed),
+    noteMode: Boolean(snapshot.noteMode),
+    highlightNoteMode: Boolean(snapshot.highlightNoteMode),
+    selectedCell: normalizeSelectedCell(snapshot.selectedCell, `${name}.selectedCell`),
+    timer: normalizeTimer(snapshot.timer, `${name}.timer`)
+  };
+}
+
+function serializeSnapshot(snapshot) {
+  return {
+    current: cloneBoard(snapshot.current),
+    notes: serializeNotes(snapshot.notes),
+    hintCount: snapshot.hintCount,
+    solutionRevealed: Boolean(snapshot.solutionRevealed),
+    noteMode: Boolean(snapshot.noteMode),
+    highlightNoteMode: Boolean(snapshot.highlightNoteMode),
+    selectedCell: snapshot.selectedCell ? { ...snapshot.selectedCell } : null,
+    timer: {
+      elapsedMs: Number(snapshot.timer.elapsedMs),
+      running: Boolean(snapshot.timer.running)
+    }
+  };
+}
+
+function validatePuzzleAgainstSolution(puzzle, solution, name) {
+  for (let row = 0; row &lt; 9; row += 1) {
+    for (let col = 0; col &lt; 9; col += 1) {
+      const puzzleValue = puzzle[row][col];
+      if (puzzleValue !== 0) {
+        assertValid(
+          puzzleValue === solution[row][col],
+          `${name}.puzzle[${row}][${col}] must match the solution when it is not empty.`
+        );
+      }
+    }
+  }
+}
+
+function validateCurrentAgainstPuzzle(current, puzzle, name) {
+  for (let row = 0; row &lt; 9; row += 1) {
+    for (let col = 0; col &lt; 9; col += 1) {
+      const puzzleValue = puzzle[row][col];
+      if (puzzleValue !== 0) {
+        assertValid(
+          current[row][col] === puzzleValue,
+          `${name}.current[${row}][${col}] must match the fixed clue value.`
+        );
+      }
+    }
+  }
+}
+function createSaveData(state, now = Date.now()) {
+  return {
+    format: SAVE_FILE_FORMAT,
+    version: SAVE_FILE_VERSION,
+    savedAt: new Date(now).toISOString(),
+    game: {
+      puzzle: cloneBoard(state.puzzle),
+      solution: cloneBoard(state.solution),
+      current: cloneBoard(state.current),
+      notes: serializeNotes(state.notes),
+      hintCount: state.hintCount,
+      solutionRevealed: Boolean(state.solutionRevealed),
+      noteMode: Boolean(state.noteMode),
+      highlightNoteMode: Boolean(state.highlightNoteMode),
+      selectedCell: state.selectedCell ? { ...state.selectedCell } : null,
+      timer: captureTimerSnapshot(state.timer, now),
+      selectedClueCount: state.selectedClueCount,
+      selectedSeedRaw: String(state.selectedSeedRaw ?? &#39;&#39;),
+      selectedSeedWasRandom: Boolean(state.selectedSeedWasRandom),
+      history: state.history.map(serializeSnapshot),
+      future: state.future.map(serializeSnapshot)
+    }
+  };
+}
+function parseSaveText(text) {
+  let parsed;
+
+  try {
+    parsed = JSON.parse(text);
+  } catch (error) {
+    throw new Error(&#39;The save file is not valid JSON.&#39;, { cause: error });
+  }
+
+  assertValid(parsed &amp;&amp; typeof parsed === &#39;object&#39;, &#39;The save file must contain an object.&#39;);
+  assertValid(parsed.format === SAVE_FILE_FORMAT, &#39;The save file format is not supported.&#39;);
+  assertValid(parsed.version === SAVE_FILE_VERSION, &#39;The save file version is not supported.&#39;);
+
+  const game = parsed.game;
+  assertValid(game &amp;&amp; typeof game === &#39;object&#39;, &#39;The save file must contain a game object.&#39;);
+
+  const puzzle = normalizeBoard(game.puzzle, &#39;game.puzzle&#39;, 0, 9);
+  const solution = normalizeBoard(game.solution, &#39;game.solution&#39;, 1, 9);
+  validatePuzzleAgainstSolution(puzzle, solution, &#39;game&#39;);
+  const current = normalizeBoard(game.current, &#39;game.current&#39;, 0, 9);
+  validateCurrentAgainstPuzzle(current, puzzle, &#39;game&#39;);
+
+  return {
+    format: parsed.format,
+    version: parsed.version,
+    savedAt: typeof parsed.savedAt === &#39;string&#39; ? parsed.savedAt : &#39;&#39;,
+    game: {
+      puzzle,
+      solution,
+      current,
+      notes: deserializeNotes(game.notes, &#39;game.notes&#39;),
+      hintCount: normalizeNonNegativeInteger(game.hintCount, &#39;game.hintCount&#39;),
+      solutionRevealed: Boolean(game.solutionRevealed),
+      noteMode: Boolean(game.noteMode),
+      highlightNoteMode: Boolean(game.highlightNoteMode),
+      selectedCell: normalizeSelectedCell(game.selectedCell, &#39;game.selectedCell&#39;),
+      timer: normalizeTimer(game.timer, &#39;game.timer&#39;),
+      selectedClueCount: normalizeNonNegativeInteger(game.selectedClueCount, &#39;game.selectedClueCount&#39;),
+      selectedSeedRaw: String(game.selectedSeedRaw ?? &#39;&#39;),
+      selectedSeedWasRandom: Boolean(game.selectedSeedWasRandom),
+      history: Array.isArray(game.history)
+        ? game.history.map((snapshot, index) =&gt; normalizeSnapshot(snapshot, `game.history[${index}]`))
+        : [],
+      future: Array.isArray(game.future)
+        ? game.future.map((snapshot, index) =&gt; normalizeSnapshot(snapshot, `game.future[${index}]`))
+        : []
+    }
+  };
+}
+function createSaveFilename(now = new Date()) {
+  const pad = (value) =&gt; String(value).padStart(2, &#39;0&#39;);
+  const timestamp = [
+    now.getFullYear(),
+    pad(now.getMonth() + 1),
+    pad(now.getDate())
+  ].join(&#39;&#39;) + &#39;-&#39; + [
+    pad(now.getHours()),
+    pad(now.getMinutes()),
+    pad(now.getSeconds())
+  ].join(&#39;&#39;);
+
+  return `sudoku-save-${timestamp}.json`;
+}
+
+
+
+
+
+
+
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+  
+  const langSelect = document.getElementById(&#39;lang&#39;);
+  langSelect.addEventListener(&#39;change&#39;, () =&gt; {
+    
+    alert(&#39;Language switch implemented in full game logic&#39;);
+  });
+
+  
+  document.getElementById(&#39;newGame&#39;).addEventListener(&#39;click&#39;, () =&gt; {
+    alert(&#39;New game generation logic implemented in full game code&#39;);
+  });
+});
+
+})();
+    &lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+&lt;/div&gt;
+ --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;thanks to:
+&lt;code&gt;https://github.com/piccoripico/sudoku-html&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>Links</title>
         <link>https://bzliustc.github.io/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
