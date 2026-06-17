@@ -318,7 +318,7 @@ Dept. of Optics &amp; Optical Engineering, USTC, Major in Optoelectronic Informa
 
 
                 <time class="article-time--reading">
-                    1 minute read
+                    0 minute read
                 </time>
             </div>
         
@@ -730,251 +730,179 @@ langBtn.addEventListener('click', () => {
 
 
 
-
-
-
-<div class="iframecard-container" id="iframecard-%!d(string=781296435)" style="
-  width: 85%; 
-  margin: 2rem auto; 
-  border-radius: 6px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: all 0.3s ease;
-  background: #ffffff;
-  border: none;
-  position: relative;
-">
+<div class="iframe-card-wrap" style="width: 80%; margin: 1.5rem auto;">
   
-  <div class="iframecard-toolbar" style="
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 8px 12px; 
-    background: #2d3748; 
-    color: white; 
-    min-height: 40px;
-    position: relative;
-    z-index: 10;
-  ">
-    
-    <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-      <button class="toggle-btn" style="
-        background: none; 
-        border: none; 
-        color: white; 
-        cursor: pointer; 
-        font-size: 16px; 
-        padding: 4px 8px;
-        border-radius: 4px;
-        transition: background 0.2s;
-      " title="折叠/展开">
-        ▼
-      </button>
-      <span style="font-size: 14px; white-space: nowrap;">嵌入文档</span>
-    </div>
-
-    
-    <div class="width-slider-wrapper" style="display: flex; align-items: center; gap: 6px; justify-content: center;">
-      <input type="range" min="50" max="100" value="85" class="width-slider" style="
-        width: 120px; 
-        cursor: pointer; 
-        accent-color: #60a5fa;
-      ">
-    </div>
-
-    
-    <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0; justify-content: flex-end;">
-      <button class="fullscreen-btn" style="
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      " title="全屏显示">⛶</button>
-      
-      <button class="newwindow-btn" style="
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      " title="新窗口打开">🗔</button>
-    </div>
+  <div class="iframe-card-controls">
+    <span class="dot dot-red" title="关闭"></span>
+    <span class="dot dot-yellow" title="新弹窗打开"></span>
+    <span class="dot dot-green" title="全屏/还原"></span>
   </div>
 
   
-  <button class="exit-fullscreen-fixed" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #2d3748;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    z-index: 99999;
-    display: none;
-  " title="退出全屏">✕</button>
-
-  
-  <div class="iframecard-content" style="transition: height 0.3s ease;">
+  <div class="iframe-card-container">
     <iframe 
-      src="/append/about/cv.html" 
-      style="width: 100%; border: none; display: block;"
-      scrolling="no"
+      src="/append/about/cv_v2.html" 
       frameborder="0"
       seamless
+      class="embed-iframe"
     ></iframe>
   </div>
 </div>
 
+<style>
+.iframe-card-wrap {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #fff;
+}
+ 
+.iframe-card-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a2e;
+  align-items: center;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+ 
+.iframe-card-wrap.state-close .iframe-card-container {
+  display: none;
+}
+
+ 
+.iframe-card-wrap.state-full {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0 !important;
+}
+ 
+.iframe-card-container {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;  
+}
+.embed-iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100%;
+}
+ 
+.iframe-card-wrap.state-full .iframe-card-container {
+  height: calc(100vh - 44px);
+}
+</style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const card = document.getElementById('iframecard-%!d(string=781296435)');
-  const toolbar = card.querySelector('.iframecard-toolbar');
-  const content = card.querySelector('.iframecard-content');
-  const iframe = card.querySelector('iframe');
-  const toggleBtn = card.querySelector('.toggle-btn');
-  const fullscreenBtn = card.querySelector('.fullscreen-btn');
-  const newWindowBtn = card.querySelector('.newwindow-btn');
-  const widthSlider = card.querySelector('.width-slider');
-  const sliderWrapper = card.querySelector('.width-slider-wrapper');
-  const exitFixedBtn = card.querySelector('.exit-fullscreen-fixed');
+document.addEventListener('DOMContentLoaded', () => {
+  const card = document.querySelector('.iframe-card-wrap');
+  const container = card.querySelector('.iframe-card-container');
+  const iframe = card.querySelector('.embed-iframe');
+  const dotRed = card.querySelector('.dot-red');
+  const dotYellow = card.querySelector('.dot-yellow');
+  const dotGreen = card.querySelector('.dot-green');
+  const srcUrl = iframe.src;
+
   
-  let isCollapsed = false;
-  let isFullscreen = false;
-  const src = '\/append\/about\/cv.html';
-  let heightObserver;
+  let state = 'show';
+  
+  let lastActiveState = 'show';
 
-   
-  function updateIframeHeight() {
-    try {
-      if (!iframe.contentWindow || !iframe.contentWindow.document) return;
-      const doc = iframe.contentWindow.document;
-      
-      const scrollHeight = Math.max(
-        doc.documentElement.scrollHeight,
-        doc.body.scrollHeight
-      );
-      if (scrollHeight > 0) {
-        iframe.style.height = scrollHeight + 'px';
-      }
-    } catch (e) {
-      console.warn('iframe高度计算失败（跨域限制）', e);
-    }
-  }
-
-   
-  function initAutoHeight() {
-    iframe.addEventListener('load', () => {
-      updateIframeHeight();
-
-      try {
-        
-        if (heightObserver) heightObserver.disconnect();
-        heightObserver = new MutationObserver(updateIframeHeight);
-        heightObserver.observe(iframe.contentWindow.document.body, {
-          childList: true, subtree: true, attributes: true, characterData: true
-        });
-
-        
-        window.addEventListener('resize', updateIframeHeight);
-        iframe.contentWindow.addEventListener('resize', updateIframeHeight);
-
-        
-        iframe.contentWindow.document.addEventListener('click', updateIframeHeight);
-        iframe.contentWindow.document.addEventListener('keydown', updateIframeHeight);
-
-        
-        setInterval(updateIframeHeight, 800);
-      } catch (e) {}
-    });
-  }
-
-   
-  toggleBtn.addEventListener('click', () => {
-    isCollapsed = !isCollapsed;
-    if (isCollapsed) {
-      content.style.display = 'none';
-      toggleBtn.textContent = '▲';
+  
+  function updateUI() {
+    card.classList.remove('state-close', 'state-full');
+    
+    if(state === 'close') {
+      dotRed.setAttribute('title', '显示');
     } else {
-      content.style.display = 'block';
-      toggleBtn.textContent = '▼';
-      updateIframeHeight();
+      dotRed.setAttribute('title', '关闭');
+    }
+    switch(state) {
+      case 'close':
+        card.classList.add('state-close');
+        break;
+      case 'full':
+        card.classList.add('state-full');
+        break;
+      case 'show':
+      default:
+        break;
+    }
+  }
+
+  
+  dotRed.addEventListener('click', () => {
+    if(state === 'close') {
+      
+      state = lastActiveState;
+    } else {
+      
+      lastActiveState = state;
+      state = 'close';
+    }
+    updateUI();
+  });
+
+  
+  dotYellow.addEventListener('click', () => {
+    window.open(srcUrl, '_blank', 'width=1000,height=700,scrollbars=yes,resizable=yes');
+    lastActiveState = state;
+    state = 'close';
+    updateUI();
+  });
+
+  
+  dotGreen.addEventListener('click', () => {
+    if(state === 'full') {
+      state = 'show';
+    } else if(state === 'show') {
+      state = 'full';
+    } else if(state === 'close') {
+      
+      lastActiveState = 'full';
+      state = 'full';
+    }
+    updateUI();
+  });
+
+  
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && state === 'full') {
+      lastActiveState = 'show';
+      state = 'show';
+      updateUI();
     }
   });
 
-   
-  widthSlider.addEventListener('input', (e) => {
-    if (isFullscreen) return;
-    card.style.width = e.target.value + '%';
-  });
-
-   
-  newWindowBtn.addEventListener('click', () => {
-    window.open(src, '_blank');
-  });
-
-   
-  function exitFullscreenMode() {
-    isFullscreen = false;
-    
-    card.style.position = '';
-    card.style.inset = '';
-    card.style.width = widthSlider.value + '%';
-    card.style.height = '';
-    card.style.margin = '2rem auto';
-    card.style.borderRadius = '6px';
-    card.style.zIndex = '';
-    
-    
-    updateIframeHeight();
-    
-    
-    fullscreenBtn.textContent = '⛶';
-    fullscreenBtn.title = '全屏显示';
-    sliderWrapper.style.display = 'flex';
-    toolbar.style = '';
-    exitFixedBtn.style.display = 'none';
-  }
-
-   
-  function enterFullscreenMode() {
-    isFullscreen = true;
-    
-    card.style.position = 'fixed';
-    card.style.inset = '0';
-    card.style.width = '100vw';
-    card.style.height = '100vh';
-    card.style.margin = '0';
-    card.style.borderRadius = '0';
-    card.style.zIndex = '9999';
-    
-    
-    iframe.style.height = 'calc(100vh - 40px)';
-    
-    
-    fullscreenBtn.textContent = '✕';
-    sliderWrapper.style.display = 'none';
-    
-    
-    exitFixedBtn.style.display = 'block';
-
-    
-    alert('已进入全屏模式！\n请点击右下角圆形按钮退出全屏');
-  }
+  
+  updateUI();
 
   
-  fullscreenBtn.addEventListener('click', () => {
-    isFullscreen ? exitFullscreenMode() : enterFullscreenMode();
+  iframe.addEventListener('load', () => {
+    const iframeWin = iframe.contentWindow;
+    iframeWin.addEventListener('wheel', (e) => {
+      e.stopPropagation();
+    }, { passive: true });
+    iframeWin.addEventListener('touchmove', (e) => {
+      e.stopPropagation();
+    }, { passive: true });
   });
-  exitFixedBtn.addEventListener('click', exitFullscreenMode);
-
-   
-  card.querySelectorAll('button').forEach(btn => {
-    btn.addEventListener('mouseenter', () => btn.style.background = '#4b5563');
-    btn.addEventListener('mouseleave', () => btn.style.background = 'none');
-  });
-
-  
-  initAutoHeight();
 });
 </script>
 

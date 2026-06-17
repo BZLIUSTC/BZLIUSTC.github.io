@@ -11,11 +11,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="https://bzliustc.github.io/ja/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
                 href="https://bzliustc.github.io/zh-cn/categories/"
                 />
@@ -23,6 +18,11 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://bzliustc.github.io/zh-tw/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bzliustc.github.io/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"

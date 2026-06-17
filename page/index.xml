@@ -399,251 +399,179 @@ langBtn.addEventListener(&#39;click&#39;, () =&gt; {
 
 
 
-
-
-
-&lt;div class=&#34;iframecard-container&#34; id=&#34;iframecard-%!d(string=781296435)&#34; style=&#34;
-  width: 85%; 
-  margin: 2rem auto; 
-  border-radius: 6px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: all 0.3s ease;
-  background: #ffffff;
-  border: none;
-  position: relative;
-&#34;&gt;
+&lt;div class=&#34;iframe-card-wrap&#34; style=&#34;width: 80%; margin: 1.5rem auto;&#34;&gt;
   
-  &lt;div class=&#34;iframecard-toolbar&#34; style=&#34;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 8px 12px; 
-    background: #2d3748; 
-    color: white; 
-    min-height: 40px;
-    position: relative;
-    z-index: 10;
-  &#34;&gt;
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 8px; flex-shrink: 0;&#34;&gt;
-      &lt;button class=&#34;toggle-btn&#34; style=&#34;
-        background: none; 
-        border: none; 
-        color: white; 
-        cursor: pointer; 
-        font-size: 16px; 
-        padding: 4px 8px;
-        border-radius: 4px;
-        transition: background 0.2s;
-      &#34; title=&#34;折叠/展开&#34;&gt;
-        ▼
-      &lt;/button&gt;
-      &lt;span style=&#34;font-size: 14px; white-space: nowrap;&#34;&gt;嵌入文档&lt;/span&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div class=&#34;width-slider-wrapper&#34; style=&#34;display: flex; align-items: center; gap: 6px; justify-content: center;&#34;&gt;
-      &lt;input type=&#34;range&#34; min=&#34;50&#34; max=&#34;100&#34; value=&#34;85&#34; class=&#34;width-slider&#34; style=&#34;
-        width: 120px; 
-        cursor: pointer; 
-        accent-color: #60a5fa;
-      &#34;&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 12px; flex-shrink: 0; justify-content: flex-end;&#34;&gt;
-      &lt;button class=&#34;fullscreen-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;全屏显示&#34;&gt;⛶&lt;/button&gt;
-      
-      &lt;button class=&#34;newwindow-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;新窗口打开&#34;&gt;🗔&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;div class=&#34;iframe-card-controls&#34;&gt;
+    &lt;span class=&#34;dot dot-red&#34; title=&#34;关闭&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-yellow&#34; title=&#34;新弹窗打开&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-green&#34; title=&#34;全屏/还原&#34;&gt;&lt;/span&gt;
   &lt;/div&gt;
 
   
-  &lt;button class=&#34;exit-fullscreen-fixed&#34; style=&#34;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #2d3748;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    z-index: 99999;
-    display: none;
-  &#34; title=&#34;退出全屏&#34;&gt;✕&lt;/button&gt;
-
-  
-  &lt;div class=&#34;iframecard-content&#34; style=&#34;transition: height 0.3s ease;&#34;&gt;
+  &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
-      src=&#34;https://bzliustc.github.io/append/about/cv.html&#34; 
-      style=&#34;width: 100%; border: none; display: block;&#34;
-      scrolling=&#34;no&#34;
+      src=&#34;https://bzliustc.github.io/append/about/cv_v2.html&#34; 
       frameborder=&#34;0&#34;
       seamless
+      class=&#34;embed-iframe&#34;
     &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;style&gt;
+.iframe-card-wrap {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #fff;
+}
+ 
+.iframe-card-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a2e;
+  align-items: center;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+ 
+.iframe-card-wrap.state-close .iframe-card-container {
+  display: none;
+}
+
+ 
+.iframe-card-wrap.state-full {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0 !important;
+}
+ 
+.iframe-card-container {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;  
+}
+.embed-iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100%;
+}
+ 
+.iframe-card-wrap.state-full .iframe-card-container {
+  height: calc(100vh - 44px);
+}
+&lt;/style&gt;
 
 &lt;script&gt;
-document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const card = document.getElementById(&#39;iframecard-%!d(string=781296435)&#39;);
-  const toolbar = card.querySelector(&#39;.iframecard-toolbar&#39;);
-  const content = card.querySelector(&#39;.iframecard-content&#39;);
-  const iframe = card.querySelector(&#39;iframe&#39;);
-  const toggleBtn = card.querySelector(&#39;.toggle-btn&#39;);
-  const fullscreenBtn = card.querySelector(&#39;.fullscreen-btn&#39;);
-  const newWindowBtn = card.querySelector(&#39;.newwindow-btn&#39;);
-  const widthSlider = card.querySelector(&#39;.width-slider&#39;);
-  const sliderWrapper = card.querySelector(&#39;.width-slider-wrapper&#39;);
-  const exitFixedBtn = card.querySelector(&#39;.exit-fullscreen-fixed&#39;);
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+  const card = document.querySelector(&#39;.iframe-card-wrap&#39;);
+  const container = card.querySelector(&#39;.iframe-card-container&#39;);
+  const iframe = card.querySelector(&#39;.embed-iframe&#39;);
+  const dotRed = card.querySelector(&#39;.dot-red&#39;);
+  const dotYellow = card.querySelector(&#39;.dot-yellow&#39;);
+  const dotGreen = card.querySelector(&#39;.dot-green&#39;);
+  const srcUrl = iframe.src;
+
   
-  let isCollapsed = false;
-  let isFullscreen = false;
-  const src = &#39;\/append\/about\/cv.html&#39;;
-  let heightObserver;
+  let state = &#39;show&#39;;
+  
+  let lastActiveState = &#39;show&#39;;
 
-   
-  function updateIframeHeight() {
-    try {
-      if (!iframe.contentWindow || !iframe.contentWindow.document) return;
-      const doc = iframe.contentWindow.document;
-      
-      const scrollHeight = Math.max(
-        doc.documentElement.scrollHeight,
-        doc.body.scrollHeight
-      );
-      if (scrollHeight &gt; 0) {
-        iframe.style.height = scrollHeight + &#39;px&#39;;
-      }
-    } catch (e) {
-      console.warn(&#39;iframe高度计算失败（跨域限制）&#39;, e);
-    }
-  }
-
-   
-  function initAutoHeight() {
-    iframe.addEventListener(&#39;load&#39;, () =&gt; {
-      updateIframeHeight();
-
-      try {
-        
-        if (heightObserver) heightObserver.disconnect();
-        heightObserver = new MutationObserver(updateIframeHeight);
-        heightObserver.observe(iframe.contentWindow.document.body, {
-          childList: true, subtree: true, attributes: true, characterData: true
-        });
-
-        
-        window.addEventListener(&#39;resize&#39;, updateIframeHeight);
-        iframe.contentWindow.addEventListener(&#39;resize&#39;, updateIframeHeight);
-
-        
-        iframe.contentWindow.document.addEventListener(&#39;click&#39;, updateIframeHeight);
-        iframe.contentWindow.document.addEventListener(&#39;keydown&#39;, updateIframeHeight);
-
-        
-        setInterval(updateIframeHeight, 800);
-      } catch (e) {}
-    });
-  }
-
-   
-  toggleBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isCollapsed = !isCollapsed;
-    if (isCollapsed) {
-      content.style.display = &#39;none&#39;;
-      toggleBtn.textContent = &#39;▲&#39;;
+  
+  function updateUI() {
+    card.classList.remove(&#39;state-close&#39;, &#39;state-full&#39;);
+    
+    if(state === &#39;close&#39;) {
+      dotRed.setAttribute(&#39;title&#39;, &#39;显示&#39;);
     } else {
-      content.style.display = &#39;block&#39;;
-      toggleBtn.textContent = &#39;▼&#39;;
-      updateIframeHeight();
+      dotRed.setAttribute(&#39;title&#39;, &#39;关闭&#39;);
+    }
+    switch(state) {
+      case &#39;close&#39;:
+        card.classList.add(&#39;state-close&#39;);
+        break;
+      case &#39;full&#39;:
+        card.classList.add(&#39;state-full&#39;);
+        break;
+      case &#39;show&#39;:
+      default:
+        break;
+    }
+  }
+
+  
+  dotRed.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;close&#39;) {
+      
+      state = lastActiveState;
+    } else {
+      
+      lastActiveState = state;
+      state = &#39;close&#39;;
+    }
+    updateUI();
+  });
+
+  
+  dotYellow.addEventListener(&#39;click&#39;, () =&gt; {
+    window.open(srcUrl, &#39;_blank&#39;, &#39;width=1000,height=700,scrollbars=yes,resizable=yes&#39;);
+    lastActiveState = state;
+    state = &#39;close&#39;;
+    updateUI();
+  });
+
+  
+  dotGreen.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;full&#39;) {
+      state = &#39;show&#39;;
+    } else if(state === &#39;show&#39;) {
+      state = &#39;full&#39;;
+    } else if(state === &#39;close&#39;) {
+      
+      lastActiveState = &#39;full&#39;;
+      state = &#39;full&#39;;
+    }
+    updateUI();
+  });
+
+  
+  document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
+    if(e.key === &#39;Escape&#39; &amp;&amp; state === &#39;full&#39;) {
+      lastActiveState = &#39;show&#39;;
+      state = &#39;show&#39;;
+      updateUI();
     }
   });
 
-   
-  widthSlider.addEventListener(&#39;input&#39;, (e) =&gt; {
-    if (isFullscreen) return;
-    card.style.width = e.target.value + &#39;%&#39;;
-  });
-
-   
-  newWindowBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    window.open(src, &#39;_blank&#39;);
-  });
-
-   
-  function exitFullscreenMode() {
-    isFullscreen = false;
-    
-    card.style.position = &#39;&#39;;
-    card.style.inset = &#39;&#39;;
-    card.style.width = widthSlider.value + &#39;%&#39;;
-    card.style.height = &#39;&#39;;
-    card.style.margin = &#39;2rem auto&#39;;
-    card.style.borderRadius = &#39;6px&#39;;
-    card.style.zIndex = &#39;&#39;;
-    
-    
-    updateIframeHeight();
-    
-    
-    fullscreenBtn.textContent = &#39;⛶&#39;;
-    fullscreenBtn.title = &#39;全屏显示&#39;;
-    sliderWrapper.style.display = &#39;flex&#39;;
-    toolbar.style = &#39;&#39;;
-    exitFixedBtn.style.display = &#39;none&#39;;
-  }
-
-   
-  function enterFullscreenMode() {
-    isFullscreen = true;
-    
-    card.style.position = &#39;fixed&#39;;
-    card.style.inset = &#39;0&#39;;
-    card.style.width = &#39;100vw&#39;;
-    card.style.height = &#39;100vh&#39;;
-    card.style.margin = &#39;0&#39;;
-    card.style.borderRadius = &#39;0&#39;;
-    card.style.zIndex = &#39;9999&#39;;
-    
-    
-    iframe.style.height = &#39;calc(100vh - 40px)&#39;;
-    
-    
-    fullscreenBtn.textContent = &#39;✕&#39;;
-    sliderWrapper.style.display = &#39;none&#39;;
-    
-    
-    exitFixedBtn.style.display = &#39;block&#39;;
-
-    
-    alert(&#39;已进入全屏模式！\n请点击右下角圆形按钮退出全屏&#39;);
-  }
+  
+  updateUI();
 
   
-  fullscreenBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isFullscreen ? exitFullscreenMode() : enterFullscreenMode();
+  iframe.addEventListener(&#39;load&#39;, () =&gt; {
+    const iframeWin = iframe.contentWindow;
+    iframeWin.addEventListener(&#39;wheel&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
+    iframeWin.addEventListener(&#39;touchmove&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
   });
-  exitFixedBtn.addEventListener(&#39;click&#39;, exitFullscreenMode);
-
-   
-  card.querySelectorAll(&#39;button&#39;).forEach(btn =&gt; {
-    btn.addEventListener(&#39;mouseenter&#39;, () =&gt; btn.style.background = &#39;#4b5563&#39;);
-    btn.addEventListener(&#39;mouseleave&#39;, () =&gt; btn.style.background = &#39;none&#39;);
-  });
-
-  
-  initAutoHeight();
 });
 &lt;/script&gt;
 
@@ -1004,251 +932,179 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-
-
-
-&lt;div class=&#34;iframecard-container&#34; id=&#34;iframecard-%!d(string=391278465)&#34; style=&#34;
-  width: 50%; 
-  margin: 2rem auto; 
-  border-radius: 6px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: all 0.3s ease;
-  background: #ffffff;
-  border: none;
-  position: relative;
-&#34;&gt;
+&lt;div class=&#34;iframe-card-wrap&#34; style=&#34;width: 50%; margin: 1.5rem auto;&#34;&gt;
   
-  &lt;div class=&#34;iframecard-toolbar&#34; style=&#34;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 8px 12px; 
-    background: #2d3748; 
-    color: white; 
-    min-height: 40px;
-    position: relative;
-    z-index: 10;
-  &#34;&gt;
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 8px; flex-shrink: 0;&#34;&gt;
-      &lt;button class=&#34;toggle-btn&#34; style=&#34;
-        background: none; 
-        border: none; 
-        color: white; 
-        cursor: pointer; 
-        font-size: 16px; 
-        padding: 4px 8px;
-        border-radius: 4px;
-        transition: background 0.2s;
-      &#34; title=&#34;折叠/展开&#34;&gt;
-        ▼
-      &lt;/button&gt;
-      &lt;span style=&#34;font-size: 14px; white-space: nowrap;&#34;&gt;嵌入文档&lt;/span&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div class=&#34;width-slider-wrapper&#34; style=&#34;display: flex; align-items: center; gap: 6px; justify-content: center;&#34;&gt;
-      &lt;input type=&#34;range&#34; min=&#34;50&#34; max=&#34;100&#34; value=&#34;50&#34; class=&#34;width-slider&#34; style=&#34;
-        width: 120px; 
-        cursor: pointer; 
-        accent-color: #60a5fa;
-      &#34;&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 12px; flex-shrink: 0; justify-content: flex-end;&#34;&gt;
-      &lt;button class=&#34;fullscreen-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;全屏显示&#34;&gt;⛶&lt;/button&gt;
-      
-      &lt;button class=&#34;newwindow-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;新窗口打开&#34;&gt;🗔&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;div class=&#34;iframe-card-controls&#34;&gt;
+    &lt;span class=&#34;dot dot-red&#34; title=&#34;关闭&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-yellow&#34; title=&#34;新弹窗打开&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-green&#34; title=&#34;全屏/还原&#34;&gt;&lt;/span&gt;
   &lt;/div&gt;
 
   
-  &lt;button class=&#34;exit-fullscreen-fixed&#34; style=&#34;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #2d3748;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    z-index: 99999;
-    display: none;
-  &#34; title=&#34;退出全屏&#34;&gt;✕&lt;/button&gt;
-
-  
-  &lt;div class=&#34;iframecard-content&#34; style=&#34;transition: height 0.3s ease;&#34;&gt;
+  &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
       src=&#34;https://bzliustc.github.io/append/gadgets/2048.html&#34; 
-      style=&#34;width: 100%; border: none; display: block;&#34;
-      scrolling=&#34;no&#34;
       frameborder=&#34;0&#34;
       seamless
+      class=&#34;embed-iframe&#34;
     &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;style&gt;
+.iframe-card-wrap {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #fff;
+}
+ 
+.iframe-card-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a2e;
+  align-items: center;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+ 
+.iframe-card-wrap.state-close .iframe-card-container {
+  display: none;
+}
+
+ 
+.iframe-card-wrap.state-full {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0 !important;
+}
+ 
+.iframe-card-container {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;  
+}
+.embed-iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100%;
+}
+ 
+.iframe-card-wrap.state-full .iframe-card-container {
+  height: calc(100vh - 44px);
+}
+&lt;/style&gt;
 
 &lt;script&gt;
-document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const card = document.getElementById(&#39;iframecard-%!d(string=391278465)&#39;);
-  const toolbar = card.querySelector(&#39;.iframecard-toolbar&#39;);
-  const content = card.querySelector(&#39;.iframecard-content&#39;);
-  const iframe = card.querySelector(&#39;iframe&#39;);
-  const toggleBtn = card.querySelector(&#39;.toggle-btn&#39;);
-  const fullscreenBtn = card.querySelector(&#39;.fullscreen-btn&#39;);
-  const newWindowBtn = card.querySelector(&#39;.newwindow-btn&#39;);
-  const widthSlider = card.querySelector(&#39;.width-slider&#39;);
-  const sliderWrapper = card.querySelector(&#39;.width-slider-wrapper&#39;);
-  const exitFixedBtn = card.querySelector(&#39;.exit-fullscreen-fixed&#39;);
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+  const card = document.querySelector(&#39;.iframe-card-wrap&#39;);
+  const container = card.querySelector(&#39;.iframe-card-container&#39;);
+  const iframe = card.querySelector(&#39;.embed-iframe&#39;);
+  const dotRed = card.querySelector(&#39;.dot-red&#39;);
+  const dotYellow = card.querySelector(&#39;.dot-yellow&#39;);
+  const dotGreen = card.querySelector(&#39;.dot-green&#39;);
+  const srcUrl = iframe.src;
+
   
-  let isCollapsed = false;
-  let isFullscreen = false;
-  const src = &#39;\/append\/gadgets\/2048.html&#39;;
-  let heightObserver;
+  let state = &#39;show&#39;;
+  
+  let lastActiveState = &#39;show&#39;;
 
-   
-  function updateIframeHeight() {
-    try {
-      if (!iframe.contentWindow || !iframe.contentWindow.document) return;
-      const doc = iframe.contentWindow.document;
-      
-      const scrollHeight = Math.max(
-        doc.documentElement.scrollHeight,
-        doc.body.scrollHeight
-      );
-      if (scrollHeight &gt; 0) {
-        iframe.style.height = scrollHeight + &#39;px&#39;;
-      }
-    } catch (e) {
-      console.warn(&#39;iframe高度计算失败（跨域限制）&#39;, e);
-    }
-  }
-
-   
-  function initAutoHeight() {
-    iframe.addEventListener(&#39;load&#39;, () =&gt; {
-      updateIframeHeight();
-
-      try {
-        
-        if (heightObserver) heightObserver.disconnect();
-        heightObserver = new MutationObserver(updateIframeHeight);
-        heightObserver.observe(iframe.contentWindow.document.body, {
-          childList: true, subtree: true, attributes: true, characterData: true
-        });
-
-        
-        window.addEventListener(&#39;resize&#39;, updateIframeHeight);
-        iframe.contentWindow.addEventListener(&#39;resize&#39;, updateIframeHeight);
-
-        
-        iframe.contentWindow.document.addEventListener(&#39;click&#39;, updateIframeHeight);
-        iframe.contentWindow.document.addEventListener(&#39;keydown&#39;, updateIframeHeight);
-
-        
-        setInterval(updateIframeHeight, 800);
-      } catch (e) {}
-    });
-  }
-
-   
-  toggleBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isCollapsed = !isCollapsed;
-    if (isCollapsed) {
-      content.style.display = &#39;none&#39;;
-      toggleBtn.textContent = &#39;▲&#39;;
+  
+  function updateUI() {
+    card.classList.remove(&#39;state-close&#39;, &#39;state-full&#39;);
+    
+    if(state === &#39;close&#39;) {
+      dotRed.setAttribute(&#39;title&#39;, &#39;显示&#39;);
     } else {
-      content.style.display = &#39;block&#39;;
-      toggleBtn.textContent = &#39;▼&#39;;
-      updateIframeHeight();
+      dotRed.setAttribute(&#39;title&#39;, &#39;关闭&#39;);
+    }
+    switch(state) {
+      case &#39;close&#39;:
+        card.classList.add(&#39;state-close&#39;);
+        break;
+      case &#39;full&#39;:
+        card.classList.add(&#39;state-full&#39;);
+        break;
+      case &#39;show&#39;:
+      default:
+        break;
+    }
+  }
+
+  
+  dotRed.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;close&#39;) {
+      
+      state = lastActiveState;
+    } else {
+      
+      lastActiveState = state;
+      state = &#39;close&#39;;
+    }
+    updateUI();
+  });
+
+  
+  dotYellow.addEventListener(&#39;click&#39;, () =&gt; {
+    window.open(srcUrl, &#39;_blank&#39;, &#39;width=1000,height=700,scrollbars=yes,resizable=yes&#39;);
+    lastActiveState = state;
+    state = &#39;close&#39;;
+    updateUI();
+  });
+
+  
+  dotGreen.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;full&#39;) {
+      state = &#39;show&#39;;
+    } else if(state === &#39;show&#39;) {
+      state = &#39;full&#39;;
+    } else if(state === &#39;close&#39;) {
+      
+      lastActiveState = &#39;full&#39;;
+      state = &#39;full&#39;;
+    }
+    updateUI();
+  });
+
+  
+  document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
+    if(e.key === &#39;Escape&#39; &amp;&amp; state === &#39;full&#39;) {
+      lastActiveState = &#39;show&#39;;
+      state = &#39;show&#39;;
+      updateUI();
     }
   });
 
-   
-  widthSlider.addEventListener(&#39;input&#39;, (e) =&gt; {
-    if (isFullscreen) return;
-    card.style.width = e.target.value + &#39;%&#39;;
-  });
-
-   
-  newWindowBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    window.open(src, &#39;_blank&#39;);
-  });
-
-   
-  function exitFullscreenMode() {
-    isFullscreen = false;
-    
-    card.style.position = &#39;&#39;;
-    card.style.inset = &#39;&#39;;
-    card.style.width = widthSlider.value + &#39;%&#39;;
-    card.style.height = &#39;&#39;;
-    card.style.margin = &#39;2rem auto&#39;;
-    card.style.borderRadius = &#39;6px&#39;;
-    card.style.zIndex = &#39;&#39;;
-    
-    
-    updateIframeHeight();
-    
-    
-    fullscreenBtn.textContent = &#39;⛶&#39;;
-    fullscreenBtn.title = &#39;全屏显示&#39;;
-    sliderWrapper.style.display = &#39;flex&#39;;
-    toolbar.style = &#39;&#39;;
-    exitFixedBtn.style.display = &#39;none&#39;;
-  }
-
-   
-  function enterFullscreenMode() {
-    isFullscreen = true;
-    
-    card.style.position = &#39;fixed&#39;;
-    card.style.inset = &#39;0&#39;;
-    card.style.width = &#39;100vw&#39;;
-    card.style.height = &#39;100vh&#39;;
-    card.style.margin = &#39;0&#39;;
-    card.style.borderRadius = &#39;0&#39;;
-    card.style.zIndex = &#39;9999&#39;;
-    
-    
-    iframe.style.height = &#39;calc(100vh - 40px)&#39;;
-    
-    
-    fullscreenBtn.textContent = &#39;✕&#39;;
-    sliderWrapper.style.display = &#39;none&#39;;
-    
-    
-    exitFixedBtn.style.display = &#39;block&#39;;
-
-    
-    alert(&#39;已进入全屏模式！\n请点击右下角圆形按钮退出全屏&#39;);
-  }
+  
+  updateUI();
 
   
-  fullscreenBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isFullscreen ? exitFullscreenMode() : enterFullscreenMode();
+  iframe.addEventListener(&#39;load&#39;, () =&gt; {
+    const iframeWin = iframe.contentWindow;
+    iframeWin.addEventListener(&#39;wheel&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
+    iframeWin.addEventListener(&#39;touchmove&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
   });
-  exitFixedBtn.addEventListener(&#39;click&#39;, exitFullscreenMode);
-
-   
-  card.querySelectorAll(&#39;button&#39;).forEach(btn =&gt; {
-    btn.addEventListener(&#39;mouseenter&#39;, () =&gt; btn.style.background = &#39;#4b5563&#39;);
-    btn.addEventListener(&#39;mouseleave&#39;, () =&gt; btn.style.background = &#39;none&#39;);
-  });
-
-  
-  initAutoHeight();
 });
 &lt;/script&gt;
 
@@ -2580,6 +2436,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
 &lt;p&gt;thanks to:
 &lt;code&gt;https://github.com/piccoripico/sudoku-html&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;!-- 
 
 
 
@@ -2589,259 +2446,184 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
 
 
 
-
-
-
-
-&lt;div class=&#34;iframecard-container&#34; id=&#34;iframecard-%!d(string=659134782)&#34; style=&#34;
-  width: 80%; 
-  margin: 2rem auto; 
-  border-radius: 6px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: all 0.3s ease;
-  background: #ffffff;
-  border: none;
-  position: relative;
-&#34;&gt;
+&lt;div class=&#34;iframe-card-wrap&#34; style=&#34;width: 80%; margin: 1.5rem auto;&#34;&gt;
   
-  &lt;div class=&#34;iframecard-toolbar&#34; style=&#34;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 8px 12px; 
-    background: #2d3748; 
-    color: white; 
-    min-height: 40px;
-    position: relative;
-    z-index: 10;
-  &#34;&gt;
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 8px; flex-shrink: 0;&#34;&gt;
-      &lt;button class=&#34;toggle-btn&#34; style=&#34;
-        background: none; 
-        border: none; 
-        color: white; 
-        cursor: pointer; 
-        font-size: 16px; 
-        padding: 4px 8px;
-        border-radius: 4px;
-        transition: background 0.2s;
-      &#34; title=&#34;折叠/展开&#34;&gt;
-        ▼
-      &lt;/button&gt;
-      &lt;span style=&#34;font-size: 14px; white-space: nowrap;&#34;&gt;嵌入文档&lt;/span&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div class=&#34;width-slider-wrapper&#34; style=&#34;display: flex; align-items: center; gap: 6px; justify-content: center;&#34;&gt;
-      &lt;input type=&#34;range&#34; min=&#34;50&#34; max=&#34;100&#34; value=&#34;80&#34; class=&#34;width-slider&#34; style=&#34;
-        width: 120px; 
-        cursor: pointer; 
-        accent-color: #60a5fa;
-      &#34;&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 12px; flex-shrink: 0; justify-content: flex-end;&#34;&gt;
-      &lt;button class=&#34;fullscreen-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;全屏显示&#34;&gt;⛶&lt;/button&gt;
-      
-      &lt;button class=&#34;newwindow-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;新窗口打开&#34;&gt;🗔&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;div class=&#34;iframe-card-controls&#34;&gt;
+    &lt;span class=&#34;dot dot-red&#34; title=&#34;关闭&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-yellow&#34; title=&#34;新弹窗打开&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-green&#34; title=&#34;全屏/还原&#34;&gt;&lt;/span&gt;
   &lt;/div&gt;
 
   
-  &lt;button class=&#34;exit-fullscreen-fixed&#34; style=&#34;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #2d3748;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    z-index: 99999;
-    display: none;
-  &#34; title=&#34;退出全屏&#34;&gt;✕&lt;/button&gt;
-
-  
-  &lt;div class=&#34;iframecard-content&#34; style=&#34;transition: height 0.3s ease;&#34;&gt;
+  &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
       src=&#34;https://bzliustc.github.io/append/gadgets/sudoku.html&#34; 
-      style=&#34;width: 100%; border: none; display: block;&#34;
-      scrolling=&#34;no&#34;
       frameborder=&#34;0&#34;
       seamless
+      class=&#34;embed-iframe&#34;
     &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;style&gt;
+.iframe-card-wrap {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #fff;
+}
+ 
+.iframe-card-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a2e;
+  align-items: center;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+ 
+.iframe-card-wrap.state-close .iframe-card-container {
+  display: none;
+}
+
+ 
+.iframe-card-wrap.state-full {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0 !important;
+}
+ 
+.iframe-card-container {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;  
+}
+.embed-iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100%;
+}
+ 
+.iframe-card-wrap.state-full .iframe-card-container {
+  height: calc(100vh - 44px);
+}
+&lt;/style&gt;
 
 &lt;script&gt;
-document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const card = document.getElementById(&#39;iframecard-%!d(string=659134782)&#39;);
-  const toolbar = card.querySelector(&#39;.iframecard-toolbar&#39;);
-  const content = card.querySelector(&#39;.iframecard-content&#39;);
-  const iframe = card.querySelector(&#39;iframe&#39;);
-  const toggleBtn = card.querySelector(&#39;.toggle-btn&#39;);
-  const fullscreenBtn = card.querySelector(&#39;.fullscreen-btn&#39;);
-  const newWindowBtn = card.querySelector(&#39;.newwindow-btn&#39;);
-  const widthSlider = card.querySelector(&#39;.width-slider&#39;);
-  const sliderWrapper = card.querySelector(&#39;.width-slider-wrapper&#39;);
-  const exitFixedBtn = card.querySelector(&#39;.exit-fullscreen-fixed&#39;);
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+  const card = document.querySelector(&#39;.iframe-card-wrap&#39;);
+  const container = card.querySelector(&#39;.iframe-card-container&#39;);
+  const iframe = card.querySelector(&#39;.embed-iframe&#39;);
+  const dotRed = card.querySelector(&#39;.dot-red&#39;);
+  const dotYellow = card.querySelector(&#39;.dot-yellow&#39;);
+  const dotGreen = card.querySelector(&#39;.dot-green&#39;);
+  const srcUrl = iframe.src;
+
   
-  let isCollapsed = false;
-  let isFullscreen = false;
-  const src = &#39;\/append\/gadgets\/sudoku.html&#39;;
-  let heightObserver;
+  let state = &#39;show&#39;;
+  
+  let lastActiveState = &#39;show&#39;;
 
-   
-  function updateIframeHeight() {
-    try {
-      if (!iframe.contentWindow || !iframe.contentWindow.document) return;
-      const doc = iframe.contentWindow.document;
-      
-      const scrollHeight = Math.max(
-        doc.documentElement.scrollHeight,
-        doc.body.scrollHeight
-      );
-      if (scrollHeight &gt; 0) {
-        iframe.style.height = scrollHeight + &#39;px&#39;;
-      }
-    } catch (e) {
-      console.warn(&#39;iframe高度计算失败（跨域限制）&#39;, e);
-    }
-  }
-
-   
-  function initAutoHeight() {
-    iframe.addEventListener(&#39;load&#39;, () =&gt; {
-      updateIframeHeight();
-
-      try {
-        
-        if (heightObserver) heightObserver.disconnect();
-        heightObserver = new MutationObserver(updateIframeHeight);
-        heightObserver.observe(iframe.contentWindow.document.body, {
-          childList: true, subtree: true, attributes: true, characterData: true
-        });
-
-        
-        window.addEventListener(&#39;resize&#39;, updateIframeHeight);
-        iframe.contentWindow.addEventListener(&#39;resize&#39;, updateIframeHeight);
-
-        
-        iframe.contentWindow.document.addEventListener(&#39;click&#39;, updateIframeHeight);
-        iframe.contentWindow.document.addEventListener(&#39;keydown&#39;, updateIframeHeight);
-
-        
-        setInterval(updateIframeHeight, 800);
-      } catch (e) {}
-    });
-  }
-
-   
-  toggleBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isCollapsed = !isCollapsed;
-    if (isCollapsed) {
-      content.style.display = &#39;none&#39;;
-      toggleBtn.textContent = &#39;▲&#39;;
+  
+  function updateUI() {
+    card.classList.remove(&#39;state-close&#39;, &#39;state-full&#39;);
+    
+    if(state === &#39;close&#39;) {
+      dotRed.setAttribute(&#39;title&#39;, &#39;显示&#39;);
     } else {
-      content.style.display = &#39;block&#39;;
-      toggleBtn.textContent = &#39;▼&#39;;
-      updateIframeHeight();
+      dotRed.setAttribute(&#39;title&#39;, &#39;关闭&#39;);
+    }
+    switch(state) {
+      case &#39;close&#39;:
+        card.classList.add(&#39;state-close&#39;);
+        break;
+      case &#39;full&#39;:
+        card.classList.add(&#39;state-full&#39;);
+        break;
+      case &#39;show&#39;:
+      default:
+        break;
+    }
+  }
+
+  
+  dotRed.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;close&#39;) {
+      
+      state = lastActiveState;
+    } else {
+      
+      lastActiveState = state;
+      state = &#39;close&#39;;
+    }
+    updateUI();
+  });
+
+  
+  dotYellow.addEventListener(&#39;click&#39;, () =&gt; {
+    window.open(srcUrl, &#39;_blank&#39;, &#39;width=1000,height=700,scrollbars=yes,resizable=yes&#39;);
+    lastActiveState = state;
+    state = &#39;close&#39;;
+    updateUI();
+  });
+
+  
+  dotGreen.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;full&#39;) {
+      state = &#39;show&#39;;
+    } else if(state === &#39;show&#39;) {
+      state = &#39;full&#39;;
+    } else if(state === &#39;close&#39;) {
+      
+      lastActiveState = &#39;full&#39;;
+      state = &#39;full&#39;;
+    }
+    updateUI();
+  });
+
+  
+  document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
+    if(e.key === &#39;Escape&#39; &amp;&amp; state === &#39;full&#39;) {
+      lastActiveState = &#39;show&#39;;
+      state = &#39;show&#39;;
+      updateUI();
     }
   });
 
-   
-  widthSlider.addEventListener(&#39;input&#39;, (e) =&gt; {
-    if (isFullscreen) return;
-    card.style.width = e.target.value + &#39;%&#39;;
-  });
-
-   
-  newWindowBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    window.open(src, &#39;_blank&#39;);
-  });
-
-   
-  function exitFullscreenMode() {
-    isFullscreen = false;
-    
-    card.style.position = &#39;&#39;;
-    card.style.inset = &#39;&#39;;
-    card.style.width = widthSlider.value + &#39;%&#39;;
-    card.style.height = &#39;&#39;;
-    card.style.margin = &#39;2rem auto&#39;;
-    card.style.borderRadius = &#39;6px&#39;;
-    card.style.zIndex = &#39;&#39;;
-    
-    
-    updateIframeHeight();
-    
-    
-    fullscreenBtn.textContent = &#39;⛶&#39;;
-    fullscreenBtn.title = &#39;全屏显示&#39;;
-    sliderWrapper.style.display = &#39;flex&#39;;
-    toolbar.style = &#39;&#39;;
-    exitFixedBtn.style.display = &#39;none&#39;;
-  }
-
-   
-  function enterFullscreenMode() {
-    isFullscreen = true;
-    
-    card.style.position = &#39;fixed&#39;;
-    card.style.inset = &#39;0&#39;;
-    card.style.width = &#39;100vw&#39;;
-    card.style.height = &#39;100vh&#39;;
-    card.style.margin = &#39;0&#39;;
-    card.style.borderRadius = &#39;0&#39;;
-    card.style.zIndex = &#39;9999&#39;;
-    
-    
-    iframe.style.height = &#39;calc(100vh - 40px)&#39;;
-    
-    
-    fullscreenBtn.textContent = &#39;✕&#39;;
-    sliderWrapper.style.display = &#39;none&#39;;
-    
-    
-    exitFixedBtn.style.display = &#39;block&#39;;
-
-    
-    alert(&#39;已进入全屏模式！\n请点击右下角圆形按钮退出全屏&#39;);
-  }
+  
+  updateUI();
 
   
-  fullscreenBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isFullscreen ? exitFullscreenMode() : enterFullscreenMode();
+  iframe.addEventListener(&#39;load&#39;, () =&gt; {
+    const iframeWin = iframe.contentWindow;
+    iframeWin.addEventListener(&#39;wheel&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
+    iframeWin.addEventListener(&#39;touchmove&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
   });
-  exitFixedBtn.addEventListener(&#39;click&#39;, exitFullscreenMode);
-
-   
-  card.querySelectorAll(&#39;button&#39;).forEach(btn =&gt; {
-    btn.addEventListener(&#39;mouseenter&#39;, () =&gt; btn.style.background = &#39;#4b5563&#39;);
-    btn.addEventListener(&#39;mouseleave&#39;, () =&gt; btn.style.background = &#39;none&#39;);
-  });
-
-  
-  initAutoHeight();
 });
 &lt;/script&gt;
-
-&lt;h2 id=&#34;snaky&#34;&gt;snaky
-&lt;/h2&gt;
-
-
+ --&gt;
+&lt;!-- ## snaky --&gt;
+&lt;!-- 
 
 
 
@@ -2851,256 +2633,184 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-
-&lt;div class=&#34;iframecard-container&#34; id=&#34;iframecard-%!d(string=486532917)&#34; style=&#34;
-  width: 80%; 
-  margin: 2rem auto; 
-  border-radius: 6px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: all 0.3s ease;
-  background: #ffffff;
-  border: none;
-  position: relative;
-&#34;&gt;
+&lt;div class=&#34;iframe-card-wrap&#34; style=&#34;width: 80%; margin: 1.5rem auto;&#34;&gt;
   
-  &lt;div class=&#34;iframecard-toolbar&#34; style=&#34;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 8px 12px; 
-    background: #2d3748; 
-    color: white; 
-    min-height: 40px;
-    position: relative;
-    z-index: 10;
-  &#34;&gt;
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 8px; flex-shrink: 0;&#34;&gt;
-      &lt;button class=&#34;toggle-btn&#34; style=&#34;
-        background: none; 
-        border: none; 
-        color: white; 
-        cursor: pointer; 
-        font-size: 16px; 
-        padding: 4px 8px;
-        border-radius: 4px;
-        transition: background 0.2s;
-      &#34; title=&#34;折叠/展开&#34;&gt;
-        ▼
-      &lt;/button&gt;
-      &lt;span style=&#34;font-size: 14px; white-space: nowrap;&#34;&gt;嵌入文档&lt;/span&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div class=&#34;width-slider-wrapper&#34; style=&#34;display: flex; align-items: center; gap: 6px; justify-content: center;&#34;&gt;
-      &lt;input type=&#34;range&#34; min=&#34;50&#34; max=&#34;100&#34; value=&#34;80&#34; class=&#34;width-slider&#34; style=&#34;
-        width: 120px; 
-        cursor: pointer; 
-        accent-color: #60a5fa;
-      &#34;&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 12px; flex-shrink: 0; justify-content: flex-end;&#34;&gt;
-      &lt;button class=&#34;fullscreen-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;全屏显示&#34;&gt;⛶&lt;/button&gt;
-      
-      &lt;button class=&#34;newwindow-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;新窗口打开&#34;&gt;🗔&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;div class=&#34;iframe-card-controls&#34;&gt;
+    &lt;span class=&#34;dot dot-red&#34; title=&#34;关闭&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-yellow&#34; title=&#34;新弹窗打开&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-green&#34; title=&#34;全屏/还原&#34;&gt;&lt;/span&gt;
   &lt;/div&gt;
 
   
-  &lt;button class=&#34;exit-fullscreen-fixed&#34; style=&#34;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #2d3748;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    z-index: 99999;
-    display: none;
-  &#34; title=&#34;退出全屏&#34;&gt;✕&lt;/button&gt;
-
-  
-  &lt;div class=&#34;iframecard-content&#34; style=&#34;transition: height 0.3s ease;&#34;&gt;
+  &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
       src=&#34;https://bzliustc.github.io/append/gadgets/snaky.html&#34; 
-      style=&#34;width: 100%; border: none; display: block;&#34;
-      scrolling=&#34;no&#34;
       frameborder=&#34;0&#34;
       seamless
+      class=&#34;embed-iframe&#34;
     &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;style&gt;
+.iframe-card-wrap {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #fff;
+}
+ 
+.iframe-card-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a2e;
+  align-items: center;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+ 
+.iframe-card-wrap.state-close .iframe-card-container {
+  display: none;
+}
+
+ 
+.iframe-card-wrap.state-full {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0 !important;
+}
+ 
+.iframe-card-container {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;  
+}
+.embed-iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100%;
+}
+ 
+.iframe-card-wrap.state-full .iframe-card-container {
+  height: calc(100vh - 44px);
+}
+&lt;/style&gt;
 
 &lt;script&gt;
-document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const card = document.getElementById(&#39;iframecard-%!d(string=486532917)&#39;);
-  const toolbar = card.querySelector(&#39;.iframecard-toolbar&#39;);
-  const content = card.querySelector(&#39;.iframecard-content&#39;);
-  const iframe = card.querySelector(&#39;iframe&#39;);
-  const toggleBtn = card.querySelector(&#39;.toggle-btn&#39;);
-  const fullscreenBtn = card.querySelector(&#39;.fullscreen-btn&#39;);
-  const newWindowBtn = card.querySelector(&#39;.newwindow-btn&#39;);
-  const widthSlider = card.querySelector(&#39;.width-slider&#39;);
-  const sliderWrapper = card.querySelector(&#39;.width-slider-wrapper&#39;);
-  const exitFixedBtn = card.querySelector(&#39;.exit-fullscreen-fixed&#39;);
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+  const card = document.querySelector(&#39;.iframe-card-wrap&#39;);
+  const container = card.querySelector(&#39;.iframe-card-container&#39;);
+  const iframe = card.querySelector(&#39;.embed-iframe&#39;);
+  const dotRed = card.querySelector(&#39;.dot-red&#39;);
+  const dotYellow = card.querySelector(&#39;.dot-yellow&#39;);
+  const dotGreen = card.querySelector(&#39;.dot-green&#39;);
+  const srcUrl = iframe.src;
+
   
-  let isCollapsed = false;
-  let isFullscreen = false;
-  const src = &#39;\/append\/gadgets\/snaky.html&#39;;
-  let heightObserver;
+  let state = &#39;show&#39;;
+  
+  let lastActiveState = &#39;show&#39;;
 
-   
-  function updateIframeHeight() {
-    try {
-      if (!iframe.contentWindow || !iframe.contentWindow.document) return;
-      const doc = iframe.contentWindow.document;
-      
-      const scrollHeight = Math.max(
-        doc.documentElement.scrollHeight,
-        doc.body.scrollHeight
-      );
-      if (scrollHeight &gt; 0) {
-        iframe.style.height = scrollHeight + &#39;px&#39;;
-      }
-    } catch (e) {
-      console.warn(&#39;iframe高度计算失败（跨域限制）&#39;, e);
-    }
-  }
-
-   
-  function initAutoHeight() {
-    iframe.addEventListener(&#39;load&#39;, () =&gt; {
-      updateIframeHeight();
-
-      try {
-        
-        if (heightObserver) heightObserver.disconnect();
-        heightObserver = new MutationObserver(updateIframeHeight);
-        heightObserver.observe(iframe.contentWindow.document.body, {
-          childList: true, subtree: true, attributes: true, characterData: true
-        });
-
-        
-        window.addEventListener(&#39;resize&#39;, updateIframeHeight);
-        iframe.contentWindow.addEventListener(&#39;resize&#39;, updateIframeHeight);
-
-        
-        iframe.contentWindow.document.addEventListener(&#39;click&#39;, updateIframeHeight);
-        iframe.contentWindow.document.addEventListener(&#39;keydown&#39;, updateIframeHeight);
-
-        
-        setInterval(updateIframeHeight, 800);
-      } catch (e) {}
-    });
-  }
-
-   
-  toggleBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isCollapsed = !isCollapsed;
-    if (isCollapsed) {
-      content.style.display = &#39;none&#39;;
-      toggleBtn.textContent = &#39;▲&#39;;
+  
+  function updateUI() {
+    card.classList.remove(&#39;state-close&#39;, &#39;state-full&#39;);
+    
+    if(state === &#39;close&#39;) {
+      dotRed.setAttribute(&#39;title&#39;, &#39;显示&#39;);
     } else {
-      content.style.display = &#39;block&#39;;
-      toggleBtn.textContent = &#39;▼&#39;;
-      updateIframeHeight();
+      dotRed.setAttribute(&#39;title&#39;, &#39;关闭&#39;);
+    }
+    switch(state) {
+      case &#39;close&#39;:
+        card.classList.add(&#39;state-close&#39;);
+        break;
+      case &#39;full&#39;:
+        card.classList.add(&#39;state-full&#39;);
+        break;
+      case &#39;show&#39;:
+      default:
+        break;
+    }
+  }
+
+  
+  dotRed.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;close&#39;) {
+      
+      state = lastActiveState;
+    } else {
+      
+      lastActiveState = state;
+      state = &#39;close&#39;;
+    }
+    updateUI();
+  });
+
+  
+  dotYellow.addEventListener(&#39;click&#39;, () =&gt; {
+    window.open(srcUrl, &#39;_blank&#39;, &#39;width=1000,height=700,scrollbars=yes,resizable=yes&#39;);
+    lastActiveState = state;
+    state = &#39;close&#39;;
+    updateUI();
+  });
+
+  
+  dotGreen.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;full&#39;) {
+      state = &#39;show&#39;;
+    } else if(state === &#39;show&#39;) {
+      state = &#39;full&#39;;
+    } else if(state === &#39;close&#39;) {
+      
+      lastActiveState = &#39;full&#39;;
+      state = &#39;full&#39;;
+    }
+    updateUI();
+  });
+
+  
+  document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
+    if(e.key === &#39;Escape&#39; &amp;&amp; state === &#39;full&#39;) {
+      lastActiveState = &#39;show&#39;;
+      state = &#39;show&#39;;
+      updateUI();
     }
   });
 
-   
-  widthSlider.addEventListener(&#39;input&#39;, (e) =&gt; {
-    if (isFullscreen) return;
-    card.style.width = e.target.value + &#39;%&#39;;
-  });
-
-   
-  newWindowBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    window.open(src, &#39;_blank&#39;);
-  });
-
-   
-  function exitFullscreenMode() {
-    isFullscreen = false;
-    
-    card.style.position = &#39;&#39;;
-    card.style.inset = &#39;&#39;;
-    card.style.width = widthSlider.value + &#39;%&#39;;
-    card.style.height = &#39;&#39;;
-    card.style.margin = &#39;2rem auto&#39;;
-    card.style.borderRadius = &#39;6px&#39;;
-    card.style.zIndex = &#39;&#39;;
-    
-    
-    updateIframeHeight();
-    
-    
-    fullscreenBtn.textContent = &#39;⛶&#39;;
-    fullscreenBtn.title = &#39;全屏显示&#39;;
-    sliderWrapper.style.display = &#39;flex&#39;;
-    toolbar.style = &#39;&#39;;
-    exitFixedBtn.style.display = &#39;none&#39;;
-  }
-
-   
-  function enterFullscreenMode() {
-    isFullscreen = true;
-    
-    card.style.position = &#39;fixed&#39;;
-    card.style.inset = &#39;0&#39;;
-    card.style.width = &#39;100vw&#39;;
-    card.style.height = &#39;100vh&#39;;
-    card.style.margin = &#39;0&#39;;
-    card.style.borderRadius = &#39;0&#39;;
-    card.style.zIndex = &#39;9999&#39;;
-    
-    
-    iframe.style.height = &#39;calc(100vh - 40px)&#39;;
-    
-    
-    fullscreenBtn.textContent = &#39;✕&#39;;
-    sliderWrapper.style.display = &#39;none&#39;;
-    
-    
-    exitFixedBtn.style.display = &#39;block&#39;;
-
-    
-    alert(&#39;已进入全屏模式！\n请点击右下角圆形按钮退出全屏&#39;);
-  }
+  
+  updateUI();
 
   
-  fullscreenBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isFullscreen ? exitFullscreenMode() : enterFullscreenMode();
+  iframe.addEventListener(&#39;load&#39;, () =&gt; {
+    const iframeWin = iframe.contentWindow;
+    iframeWin.addEventListener(&#39;wheel&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
+    iframeWin.addEventListener(&#39;touchmove&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
   });
-  exitFixedBtn.addEventListener(&#39;click&#39;, exitFullscreenMode);
-
-   
-  card.querySelectorAll(&#39;button&#39;).forEach(btn =&gt; {
-    btn.addEventListener(&#39;mouseenter&#39;, () =&gt; btn.style.background = &#39;#4b5563&#39;);
-    btn.addEventListener(&#39;mouseleave&#39;, () =&gt; btn.style.background = &#39;none&#39;);
-  });
-
-  
-  initAutoHeight();
 });
 &lt;/script&gt;
-
-&lt;h1 id=&#34;teris&#34;&gt;teris
-&lt;/h1&gt;
-
-
+ --&gt;
+&lt;h1 id=&#34;teris&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/teris.html&#34; &gt;teris&lt;/a&gt;
+&lt;/h1&gt;&lt;!-- 
 
 
 
@@ -3110,257 +2820,185 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-
-&lt;div class=&#34;iframecard-container&#34; id=&#34;iframecard-%!d(string=984713562)&#34; style=&#34;
-  width: 80%; 
-  margin: 2rem auto; 
-  border-radius: 6px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: all 0.3s ease;
-  background: #ffffff;
-  border: none;
-  position: relative;
-&#34;&gt;
+&lt;div class=&#34;iframe-card-wrap&#34; style=&#34;width: 80%; margin: 1.5rem auto;&#34;&gt;
   
-  &lt;div class=&#34;iframecard-toolbar&#34; style=&#34;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 8px 12px; 
-    background: #2d3748; 
-    color: white; 
-    min-height: 40px;
-    position: relative;
-    z-index: 10;
-  &#34;&gt;
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 8px; flex-shrink: 0;&#34;&gt;
-      &lt;button class=&#34;toggle-btn&#34; style=&#34;
-        background: none; 
-        border: none; 
-        color: white; 
-        cursor: pointer; 
-        font-size: 16px; 
-        padding: 4px 8px;
-        border-radius: 4px;
-        transition: background 0.2s;
-      &#34; title=&#34;折叠/展开&#34;&gt;
-        ▼
-      &lt;/button&gt;
-      &lt;span style=&#34;font-size: 14px; white-space: nowrap;&#34;&gt;嵌入文档&lt;/span&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div class=&#34;width-slider-wrapper&#34; style=&#34;display: flex; align-items: center; gap: 6px; justify-content: center;&#34;&gt;
-      &lt;input type=&#34;range&#34; min=&#34;50&#34; max=&#34;100&#34; value=&#34;80&#34; class=&#34;width-slider&#34; style=&#34;
-        width: 120px; 
-        cursor: pointer; 
-        accent-color: #60a5fa;
-      &#34;&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div style=&#34;display: flex; align-items: center; gap: 12px; flex-shrink: 0; justify-content: flex-end;&#34;&gt;
-      &lt;button class=&#34;fullscreen-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;全屏显示&#34;&gt;⛶&lt;/button&gt;
-      
-      &lt;button class=&#34;newwindow-btn&#34; style=&#34;
-        background: none; border: none; color: white; cursor: pointer; font-size: 16px; padding: 4px; border-radius: 4px; transition: background 0.2s;
-      &#34; title=&#34;新窗口打开&#34;&gt;🗔&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;div class=&#34;iframe-card-controls&#34;&gt;
+    &lt;span class=&#34;dot dot-red&#34; title=&#34;关闭&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-yellow&#34; title=&#34;新弹窗打开&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-green&#34; title=&#34;全屏/还原&#34;&gt;&lt;/span&gt;
   &lt;/div&gt;
 
   
-  &lt;button class=&#34;exit-fullscreen-fixed&#34; style=&#34;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #2d3748;
-    color: white;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    z-index: 99999;
-    display: none;
-  &#34; title=&#34;退出全屏&#34;&gt;✕&lt;/button&gt;
-
-  
-  &lt;div class=&#34;iframecard-content&#34; style=&#34;transition: height 0.3s ease;&#34;&gt;
+  &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
       src=&#34;https://bzliustc.github.io/append/gadgets/teris.html&#34; 
-      style=&#34;width: 100%; border: none; display: block;&#34;
-      scrolling=&#34;no&#34;
       frameborder=&#34;0&#34;
       seamless
+      class=&#34;embed-iframe&#34;
     &gt;&lt;/iframe&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;style&gt;
+.iframe-card-wrap {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #fff;
+}
+ 
+.iframe-card-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a2e;
+  align-items: center;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+ 
+.iframe-card-wrap.state-close .iframe-card-container {
+  display: none;
+}
+
+ 
+.iframe-card-wrap.state-full {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0 !important;
+}
+ 
+.iframe-card-container {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;  
+}
+.embed-iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100%;
+}
+ 
+.iframe-card-wrap.state-full .iframe-card-container {
+  height: calc(100vh - 44px);
+}
+&lt;/style&gt;
 
 &lt;script&gt;
-document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-  const card = document.getElementById(&#39;iframecard-%!d(string=984713562)&#39;);
-  const toolbar = card.querySelector(&#39;.iframecard-toolbar&#39;);
-  const content = card.querySelector(&#39;.iframecard-content&#39;);
-  const iframe = card.querySelector(&#39;iframe&#39;);
-  const toggleBtn = card.querySelector(&#39;.toggle-btn&#39;);
-  const fullscreenBtn = card.querySelector(&#39;.fullscreen-btn&#39;);
-  const newWindowBtn = card.querySelector(&#39;.newwindow-btn&#39;);
-  const widthSlider = card.querySelector(&#39;.width-slider&#39;);
-  const sliderWrapper = card.querySelector(&#39;.width-slider-wrapper&#39;);
-  const exitFixedBtn = card.querySelector(&#39;.exit-fullscreen-fixed&#39;);
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+  const card = document.querySelector(&#39;.iframe-card-wrap&#39;);
+  const container = card.querySelector(&#39;.iframe-card-container&#39;);
+  const iframe = card.querySelector(&#39;.embed-iframe&#39;);
+  const dotRed = card.querySelector(&#39;.dot-red&#39;);
+  const dotYellow = card.querySelector(&#39;.dot-yellow&#39;);
+  const dotGreen = card.querySelector(&#39;.dot-green&#39;);
+  const srcUrl = iframe.src;
+
   
-  let isCollapsed = false;
-  let isFullscreen = false;
-  const src = &#39;\/append\/gadgets\/teris.html&#39;;
-  let heightObserver;
+  let state = &#39;show&#39;;
+  
+  let lastActiveState = &#39;show&#39;;
 
-   
-  function updateIframeHeight() {
-    try {
-      if (!iframe.contentWindow || !iframe.contentWindow.document) return;
-      const doc = iframe.contentWindow.document;
-      
-      const scrollHeight = Math.max(
-        doc.documentElement.scrollHeight,
-        doc.body.scrollHeight
-      );
-      if (scrollHeight &gt; 0) {
-        iframe.style.height = scrollHeight + &#39;px&#39;;
-      }
-    } catch (e) {
-      console.warn(&#39;iframe高度计算失败（跨域限制）&#39;, e);
-    }
-  }
-
-   
-  function initAutoHeight() {
-    iframe.addEventListener(&#39;load&#39;, () =&gt; {
-      updateIframeHeight();
-
-      try {
-        
-        if (heightObserver) heightObserver.disconnect();
-        heightObserver = new MutationObserver(updateIframeHeight);
-        heightObserver.observe(iframe.contentWindow.document.body, {
-          childList: true, subtree: true, attributes: true, characterData: true
-        });
-
-        
-        window.addEventListener(&#39;resize&#39;, updateIframeHeight);
-        iframe.contentWindow.addEventListener(&#39;resize&#39;, updateIframeHeight);
-
-        
-        iframe.contentWindow.document.addEventListener(&#39;click&#39;, updateIframeHeight);
-        iframe.contentWindow.document.addEventListener(&#39;keydown&#39;, updateIframeHeight);
-
-        
-        setInterval(updateIframeHeight, 800);
-      } catch (e) {}
-    });
-  }
-
-   
-  toggleBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isCollapsed = !isCollapsed;
-    if (isCollapsed) {
-      content.style.display = &#39;none&#39;;
-      toggleBtn.textContent = &#39;▲&#39;;
+  
+  function updateUI() {
+    card.classList.remove(&#39;state-close&#39;, &#39;state-full&#39;);
+    
+    if(state === &#39;close&#39;) {
+      dotRed.setAttribute(&#39;title&#39;, &#39;显示&#39;);
     } else {
-      content.style.display = &#39;block&#39;;
-      toggleBtn.textContent = &#39;▼&#39;;
-      updateIframeHeight();
+      dotRed.setAttribute(&#39;title&#39;, &#39;关闭&#39;);
+    }
+    switch(state) {
+      case &#39;close&#39;:
+        card.classList.add(&#39;state-close&#39;);
+        break;
+      case &#39;full&#39;:
+        card.classList.add(&#39;state-full&#39;);
+        break;
+      case &#39;show&#39;:
+      default:
+        break;
+    }
+  }
+
+  
+  dotRed.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;close&#39;) {
+      
+      state = lastActiveState;
+    } else {
+      
+      lastActiveState = state;
+      state = &#39;close&#39;;
+    }
+    updateUI();
+  });
+
+  
+  dotYellow.addEventListener(&#39;click&#39;, () =&gt; {
+    window.open(srcUrl, &#39;_blank&#39;, &#39;width=1000,height=700,scrollbars=yes,resizable=yes&#39;);
+    lastActiveState = state;
+    state = &#39;close&#39;;
+    updateUI();
+  });
+
+  
+  dotGreen.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;full&#39;) {
+      state = &#39;show&#39;;
+    } else if(state === &#39;show&#39;) {
+      state = &#39;full&#39;;
+    } else if(state === &#39;close&#39;) {
+      
+      lastActiveState = &#39;full&#39;;
+      state = &#39;full&#39;;
+    }
+    updateUI();
+  });
+
+  
+  document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
+    if(e.key === &#39;Escape&#39; &amp;&amp; state === &#39;full&#39;) {
+      lastActiveState = &#39;show&#39;;
+      state = &#39;show&#39;;
+      updateUI();
     }
   });
 
-   
-  widthSlider.addEventListener(&#39;input&#39;, (e) =&gt; {
-    if (isFullscreen) return;
-    card.style.width = e.target.value + &#39;%&#39;;
-  });
-
-   
-  newWindowBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    window.open(src, &#39;_blank&#39;);
-  });
-
-   
-  function exitFullscreenMode() {
-    isFullscreen = false;
-    
-    card.style.position = &#39;&#39;;
-    card.style.inset = &#39;&#39;;
-    card.style.width = widthSlider.value + &#39;%&#39;;
-    card.style.height = &#39;&#39;;
-    card.style.margin = &#39;2rem auto&#39;;
-    card.style.borderRadius = &#39;6px&#39;;
-    card.style.zIndex = &#39;&#39;;
-    
-    
-    updateIframeHeight();
-    
-    
-    fullscreenBtn.textContent = &#39;⛶&#39;;
-    fullscreenBtn.title = &#39;全屏显示&#39;;
-    sliderWrapper.style.display = &#39;flex&#39;;
-    toolbar.style = &#39;&#39;;
-    exitFixedBtn.style.display = &#39;none&#39;;
-  }
-
-   
-  function enterFullscreenMode() {
-    isFullscreen = true;
-    
-    card.style.position = &#39;fixed&#39;;
-    card.style.inset = &#39;0&#39;;
-    card.style.width = &#39;100vw&#39;;
-    card.style.height = &#39;100vh&#39;;
-    card.style.margin = &#39;0&#39;;
-    card.style.borderRadius = &#39;0&#39;;
-    card.style.zIndex = &#39;9999&#39;;
-    
-    
-    iframe.style.height = &#39;calc(100vh - 40px)&#39;;
-    
-    
-    fullscreenBtn.textContent = &#39;✕&#39;;
-    sliderWrapper.style.display = &#39;none&#39;;
-    
-    
-    exitFixedBtn.style.display = &#39;block&#39;;
-
-    
-    alert(&#39;已进入全屏模式！\n请点击右下角圆形按钮退出全屏&#39;);
-  }
+  
+  updateUI();
 
   
-  fullscreenBtn.addEventListener(&#39;click&#39;, () =&gt; {
-    isFullscreen ? exitFullscreenMode() : enterFullscreenMode();
+  iframe.addEventListener(&#39;load&#39;, () =&gt; {
+    const iframeWin = iframe.contentWindow;
+    iframeWin.addEventListener(&#39;wheel&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
+    iframeWin.addEventListener(&#39;touchmove&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
   });
-  exitFixedBtn.addEventListener(&#39;click&#39;, exitFullscreenMode);
-
-   
-  card.querySelectorAll(&#39;button&#39;).forEach(btn =&gt; {
-    btn.addEventListener(&#39;mouseenter&#39;, () =&gt; btn.style.background = &#39;#4b5563&#39;);
-    btn.addEventListener(&#39;mouseleave&#39;, () =&gt; btn.style.background = &#39;none&#39;);
-  });
-
-  
-  initAutoHeight();
 });
 &lt;/script&gt;
-
-&lt;h2 id=&#34;snake&#34;&gt;snake
-&lt;/h2&gt;
-
-
-
+ --&gt;
+&lt;h2 id=&#34;snake&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.wan1234.com/game/tanchishedazuozhan/play/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;snake&lt;/a&gt;
+&lt;/h2&gt;&lt;!-- 
 
 
 
@@ -3370,18 +3008,182 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
 
 
 
-&lt;div style=&#34;width: 70%; margin: 1.5rem auto; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);&#34;&gt;
-  &lt;iframe 
-    src=&#34;https://bzliustc.github.io/append/gadgets/snake.html&#34; 
-    style=&#34;width: 100%; border: none; display: block;&#34;
-    onload=&#34;this.style.height = (this.contentWindow.document.documentElement.scrollHeight + 20) + &#39;px&#39;;&#34;
-    scrolling=&#34;no&#34;
-    frameborder=&#34;0&#34;
-    seamless
-  &gt;&lt;/iframe&gt;
+&lt;div class=&#34;iframe-card-wrap&#34; style=&#34;width: 85%; margin: 1.5rem auto;&#34;&gt;
+  
+  &lt;div class=&#34;iframe-card-controls&#34;&gt;
+    &lt;span class=&#34;dot dot-red&#34; title=&#34;关闭&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-yellow&#34; title=&#34;新弹窗打开&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;dot dot-green&#34; title=&#34;全屏/还原&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+
+  
+  &lt;div class=&#34;iframe-card-container&#34;&gt;
+    &lt;iframe 
+      src=&#34;https://www.wan1234.com/game/tanchishedazuozhan/play/&#34; 
+      frameborder=&#34;0&#34;
+      seamless
+      class=&#34;embed-iframe&#34;
+    &gt;&lt;/iframe&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-</description>
+&lt;style&gt;
+.iframe-card-wrap {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  background: #fff;
+}
+ 
+.iframe-card-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #1a1a2e;
+  align-items: center;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+ 
+.iframe-card-wrap.state-close .iframe-card-container {
+  display: none;
+}
+
+ 
+.iframe-card-wrap.state-full {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999;
+  border-radius: 0;
+  margin: 0 !important;
+}
+ 
+.iframe-card-container {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;  
+}
+.embed-iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 100%;
+}
+ 
+.iframe-card-wrap.state-full .iframe-card-container {
+  height: calc(100vh - 44px);
+}
+&lt;/style&gt;
+
+&lt;script&gt;
+document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
+  const card = document.querySelector(&#39;.iframe-card-wrap&#39;);
+  const container = card.querySelector(&#39;.iframe-card-container&#39;);
+  const iframe = card.querySelector(&#39;.embed-iframe&#39;);
+  const dotRed = card.querySelector(&#39;.dot-red&#39;);
+  const dotYellow = card.querySelector(&#39;.dot-yellow&#39;);
+  const dotGreen = card.querySelector(&#39;.dot-green&#39;);
+  const srcUrl = iframe.src;
+
+  
+  let state = &#39;show&#39;;
+  
+  let lastActiveState = &#39;show&#39;;
+
+  
+  function updateUI() {
+    card.classList.remove(&#39;state-close&#39;, &#39;state-full&#39;);
+    
+    if(state === &#39;close&#39;) {
+      dotRed.setAttribute(&#39;title&#39;, &#39;显示&#39;);
+    } else {
+      dotRed.setAttribute(&#39;title&#39;, &#39;关闭&#39;);
+    }
+    switch(state) {
+      case &#39;close&#39;:
+        card.classList.add(&#39;state-close&#39;);
+        break;
+      case &#39;full&#39;:
+        card.classList.add(&#39;state-full&#39;);
+        break;
+      case &#39;show&#39;:
+      default:
+        break;
+    }
+  }
+
+  
+  dotRed.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;close&#39;) {
+      
+      state = lastActiveState;
+    } else {
+      
+      lastActiveState = state;
+      state = &#39;close&#39;;
+    }
+    updateUI();
+  });
+
+  
+  dotYellow.addEventListener(&#39;click&#39;, () =&gt; {
+    window.open(srcUrl, &#39;_blank&#39;, &#39;width=1000,height=700,scrollbars=yes,resizable=yes&#39;);
+    lastActiveState = state;
+    state = &#39;close&#39;;
+    updateUI();
+  });
+
+  
+  dotGreen.addEventListener(&#39;click&#39;, () =&gt; {
+    if(state === &#39;full&#39;) {
+      state = &#39;show&#39;;
+    } else if(state === &#39;show&#39;) {
+      state = &#39;full&#39;;
+    } else if(state === &#39;close&#39;) {
+      
+      lastActiveState = &#39;full&#39;;
+      state = &#39;full&#39;;
+    }
+    updateUI();
+  });
+
+  
+  document.addEventListener(&#39;keydown&#39;, (e) =&gt; {
+    if(e.key === &#39;Escape&#39; &amp;&amp; state === &#39;full&#39;) {
+      lastActiveState = &#39;show&#39;;
+      state = &#39;show&#39;;
+      updateUI();
+    }
+  });
+
+  
+  updateUI();
+
+  
+  iframe.addEventListener(&#39;load&#39;, () =&gt; {
+    const iframeWin = iframe.contentWindow;
+    iframeWin.addEventListener(&#39;wheel&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
+    iframeWin.addEventListener(&#39;touchmove&#39;, (e) =&gt; {
+      e.stopPropagation();
+    }, { passive: true });
+  });
+});
+&lt;/script&gt;
+ --&gt;</description>
         </item>
         <item>
         <title>Links</title>
