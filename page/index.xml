@@ -2809,8 +2809,8 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
 });
 &lt;/script&gt;
  --&gt;
-&lt;h1 id=&#34;teris&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/teris.html&#34; &gt;teris&lt;/a&gt;
-&lt;/h1&gt;&lt;!-- 
+&lt;h2 id=&#34;tetris&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/teris.html&#34; &gt;Tetris&lt;/a&gt;
+&lt;/h2&gt;&lt;!-- 
 
 
 
@@ -2996,8 +2996,8 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
 });
 &lt;/script&gt;
  --&gt;
-&lt;h2 id=&#34;snake&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.wan1234.com/game/tanchishedazuozhan/play/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;snake&lt;/a&gt;
+&lt;h2 id=&#34;snaky&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.wan1234.com/game/tanchishedazuozhan/play/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Snaky&lt;/a&gt;
 &lt;/h2&gt;&lt;!-- 
 
 

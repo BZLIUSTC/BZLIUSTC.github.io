@@ -3084,57 +3084,6 @@ D. 重置按钮的作用是将表单恢复为默认状态
 &lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
-        <item>
-        <title>MyZeroBlog</title>
-        <link>https://bzliustc.github.io/p/myzeroblog/</link>
-        <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://bzliustc.github.io/p/myzeroblog/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h2 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
-&lt;/h2&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
-a beginner of Hugo &lt;em&gt;static blog&lt;/em&gt; page writer.&lt;/p&gt;
-&lt;p&gt;Thanks to the &lt;strong&gt;hugo-theme-stack&lt;/strong&gt; and manuals written by other bloggers,
-we are able to set up this page so fast. Thank you for all contributors !
-I would by a coffee for you if possible. &lt;del&gt;Nope, noway&lt;/del&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This page, as the title said, is a rough work page for any try-outs.
-So do not hesitate if any great idea comes.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Have fun with Hugo.&lt;/p&gt;
-&lt;h2 id=&#34;math-settings&#34;&gt;Math Settings
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;参考文献：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhouxin.space/notes/using-katex-to-render-math-in-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;某博主的优秀教程&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;试着写一个数学公式：记得一定要用一对&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;/div&amp;gt;&lt;/code&gt;包起来！
-如果还无法启用的话，检查根目录config文件里面是不是有&lt;code&gt;math: false&lt;/code&gt;。如果是，改成true就好啦。&lt;/p&gt;
-$$
-\theta :=\theta _0-\alpha \nabla f\left( \theta _0 \right)
-$$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
-&lt;/h2&gt;&lt;p&gt;想要添加任何附件，请放到&lt;code&gt;/static/append/&lt;/code&gt;目录中。
-为了管理方便，最好为每篇文章的附件们创建一个子目录，统一存放。&lt;/p&gt;
-&lt;p&gt;reference:
-&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/MyZeroBlog/002.html&#34; &gt;article&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;侧栏头像和简介&#34;&gt;侧栏头像和简介
-&lt;/h2&gt;&lt;p&gt;标题（网站标题）和简介在根目录的hugo.yaml文件中编辑；
-头像存储的默认根路径为&lt;code&gt;/themes/assets/&lt;/code&gt;，头像路径也在项目根目录的hugo.yaml中设置。&lt;/p&gt;
-&lt;h2 id=&#34;change-the-page-size-here&#34;&gt;Change the page size here
-&lt;/h2&gt;&lt;p&gt;in the hugo.yaml in root directory:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;pagination&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pagerSize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;在hugo中添加html内容&#34;&gt;在Hugo中添加HTML内容
-&lt;/h2&gt;&lt;p&gt;(参考)[https://www.ququ123.top/2025/10/hugo-custom-html-guide/]&lt;/p&gt;
-</description>
-        </item>
         
     </channel>
 </rss>
