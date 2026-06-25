@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bzliustc.github.io/ja/</loc>
+    <loc>http://localhost:1313/ja/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bzliustc.github.io/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/"
+                href="http://localhost:1313/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/"
+                href="http://localhost:1313/zh-tw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://bzliustc.github.io/ar/"
+                href="http://localhost:1313/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bzliustc.github.io/ja/"
+                href="http://localhost:1313/ja/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/ja/categories/</loc>
+    <loc>http://localhost:1313/ja/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bzliustc.github.io/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/categories/"
+                href="http://localhost:1313/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/categories/"
+                href="http://localhost:1313/zh-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://bzliustc.github.io/ar/categories/"
+                href="http://localhost:1313/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bzliustc.github.io/ja/categories/"
+                href="http://localhost:1313/ja/categories/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/ja/post/</loc>
+    <loc>http://localhost:1313/ja/post/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/post/"
+                href="http://localhost:1313/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/post/"
+                href="http://localhost:1313/zh-tw/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bzliustc.github.io/ja/post/"
+                href="http://localhost:1313/ja/post/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/ja/tags/</loc>
+    <loc>http://localhost:1313/ja/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bzliustc.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/tags/"
+                href="http://localhost:1313/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://bzliustc.github.io/ar/tags/"
+                href="http://localhost:1313/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bzliustc.github.io/ja/tags/"
+                href="http://localhost:1313/ja/tags/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/ja/categories/test/</loc>
+    <loc>http://localhost:1313/ja/categories/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bzliustc.github.io/categories/test/"
+                href="http://localhost:1313/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/categories/test/"
+                href="http://localhost:1313/zh-cn/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/categories/test/"
+                href="http://localhost:1313/zh-tw/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bzliustc.github.io/ja/categories/test/"
+                href="http://localhost:1313/ja/categories/test/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/ja/categories/%E3%83%86%E3%82%B9%E3%83%88/</loc>
+    <loc>http://localhost:1313/ja/categories/%E3%83%86%E3%82%B9%E3%83%88/</loc>
   </url>
 </urlset>

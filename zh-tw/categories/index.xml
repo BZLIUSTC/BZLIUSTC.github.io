@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 演示站點</title>
-        <link>https://bzliustc.github.io/zh-tw/categories/</link>
+        <link>http://localhost:1313/zh-tw/categories/</link>
         <description>Recent content in Categories on 演示站點</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <copyright>春节序曲</copyright><atom:link href="https://bzliustc.github.io/zh-tw/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>春节序曲</copyright><atom:link href="http://localhost:1313/zh-tw/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Test</title>
-        <link>https://bzliustc.github.io/zh-tw/categories/test/</link>
+        <link>http://localhost:1313/zh-tw/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://bzliustc.github.io/zh-tw/categories/test/</guid>
+        <guid>http://localhost:1313/zh-tw/categories/test/</guid>
         <description></description>
         </item>
         <item>
         <title>測試</title>
-        <link>https://bzliustc.github.io/zh-tw/categories/%E6%B8%AC%E8%A9%A6/</link>
+        <link>http://localhost:1313/zh-tw/categories/%E6%B8%AC%E8%A9%A6/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://bzliustc.github.io/zh-tw/categories/%E6%B8%AC%E8%A9%A6/</guid>
+        <guid>http://localhost:1313/zh-tw/categories/%E6%B8%AC%E8%A9%A6/</guid>
         <description></description>
         </item>
         

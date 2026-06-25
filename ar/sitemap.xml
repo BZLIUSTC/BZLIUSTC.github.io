@@ -2,95 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bzliustc.github.io/ar/categories/</loc>
+    <loc>http://localhost:1313/ar/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bzliustc.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bzliustc.github.io/ja/categories/"
+                href="http://localhost:1313/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://bzliustc.github.io/ar/categories/"
-                />
-  </url><url>
-    <loc>https://bzliustc.github.io/ar/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://bzliustc.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bzliustc.github.io/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/tags/"
+                href="http://localhost:1313/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/tags/"
+                href="http://localhost:1313/zh-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://bzliustc.github.io/ar/tags/"
+                href="http://localhost:1313/ar/categories/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/ar/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9/</loc>
-  </url><url>
-    <loc>https://bzliustc.github.io/ar/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
-  </url><url>
-    <loc>https://bzliustc.github.io/ar/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/</loc>
-  </url><url>
-    <loc>https://bzliustc.github.io/ar/</loc>
+    <loc>http://localhost:1313/ar/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bzliustc.github.io/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bzliustc.github.io/ja/"
+                href="http://localhost:1313/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://bzliustc.github.io/zh-cn/"
+                href="http://localhost:1313/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://bzliustc.github.io/zh-tw/"
+                href="http://localhost:1313/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://bzliustc.github.io/ar/"
+                href="http://localhost:1313/ar/tags/"
                 />
   </url><url>
-    <loc>https://bzliustc.github.io/ar/tags/%D9%86%D8%B5/</loc>
+    <loc>http://localhost:1313/ar/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9/</loc>
   </url><url>
-    <loc>https://bzliustc.github.io/ar/tags/%D9%88%D8%B3%D9%85-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
+    <loc>http://localhost:1313/ar/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ar/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ar/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="http://localhost:1313/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="http://localhost:1313/ar/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ar/tags/%D9%86%D8%B5/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ar/tags/%D9%88%D8%B3%D9%85-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
   </url>
 </urlset>

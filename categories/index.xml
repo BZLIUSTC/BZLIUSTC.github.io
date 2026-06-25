@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on CALLUVISSE, Lv4 mailler</title>
-        <link>https://bzliustc.github.io/categories/</link>
+        <link>http://localhost:1313/categories/</link>
         <description>Recent content in Categories on CALLUVISSE, Lv4 mailler</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Mon, 01 Jun 2026 00:14:09 +0800</lastBuildDate><atom:link href="https://bzliustc.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 01 Jun 2026 00:14:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Teacher Assistance</title>
-        <link>https://bzliustc.github.io/categories/teacher-assistance/</link>
+        <link>http://localhost:1313/categories/teacher-assistance/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/categories/teacher-assistance/</guid>
+        <guid>http://localhost:1313/categories/teacher-assistance/</guid>
         <description></description>
         </item>
         <item>
         <title>Javaweb</title>
-        <link>https://bzliustc.github.io/categories/javaweb/</link>
+        <link>http://localhost:1313/categories/javaweb/</link>
         <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://bzliustc.github.io/categories/javaweb/</guid>
+        <guid>http://localhost:1313/categories/javaweb/</guid>
         <description></description>
         </item>
         <item>
         <title>Website</title>
-        <link>https://bzliustc.github.io/categories/website/</link>
+        <link>http://localhost:1313/categories/website/</link>
         <pubDate>Mon, 16 Feb 2026 17:47:16 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/categories/website/</guid>
+        <guid>http://localhost:1313/categories/website/</guid>
         <description></description>
         </item>
         <item>
         <title>Test</title>
-        <link>https://bzliustc.github.io/categories/test/</link>
+        <link>http://localhost:1313/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://bzliustc.github.io/categories/test/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>http://localhost:1313/categories/test/</guid>
+        <description>&lt;img src="http://localhost:1313/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         <item>
         <title>Test With Whitespaces</title>
-        <link>https://bzliustc.github.io/categories/test-with-whitespaces/</link>
+        <link>http://localhost:1313/categories/test-with-whitespaces/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://bzliustc.github.io/categories/test-with-whitespaces/</guid>
+        <guid>http://localhost:1313/categories/test-with-whitespaces/</guid>
         <description></description>
         </item>
         

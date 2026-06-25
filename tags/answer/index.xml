@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Answer on CALLUVISSE, Lv4 mailler</title>
-        <link>https://bzliustc.github.io/tags/answer/</link>
+        <link>http://localhost:1313/tags/answer/</link>
         <description>Recent content in Answer on CALLUVISSE, Lv4 mailler</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Mon, 01 Jun 2026 00:14:09 +0800</lastBuildDate><atom:link href="https://bzliustc.github.io/tags/answer/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 01 Jun 2026 00:14:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/answer/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Answer to Homework-01 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-01-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-01-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-01-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-01-of-electromagnetics.a/front-page.jpg" alt="Featured image of post Answer to Homework-01 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 1 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-01-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-01-of-electromagnetics.a/front-page.jpg" alt="Featured image of post Answer to Homework-01 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 1 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/5/31;
 Status: editing, @ updating, final&lt;/p&gt;
@@ -93,11 +93,11 @@ $$&lt;p&gt;
         </item>
         <item>
         <title>Answer to Homework-02 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-02-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-02-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-02-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-02-of-electromagnetics.a/front-page.png" alt="Featured image of post Answer to Homework-02 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 2 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-02-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-02-of-electromagnetics.a/front-page.png" alt="Featured image of post Answer to Homework-02 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 2 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/5/31;
 Status: editing, @ updating, final&lt;/p&gt;
@@ -356,16 +356,23 @@ $$&lt;p&gt;（勘误建议：《习题解答》1.14中第一行算式第二项�
         </item>
         <item>
         <title>Answer to Homework-03 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-03-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-03-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-03-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-03-of-electromagnetics.a/front-page.png" alt="Featured image of post Answer to Homework-03 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 3 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-03-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-03-of-electromagnetics.a/front-page.png" alt="Featured image of post Answer to Homework-03 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 3 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/5/31;
 Status: editing, @ updating, final&lt;/p&gt;
 &lt;h2 id=&#34;题目&#34;&gt;题目
-&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 1.15 - 1.23, 2.1 - 2.3, 2.5 以及补充作业&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;《电磁学》习题 2.6、2.7 - 2.11&lt;/p&gt;
+&lt;p&gt;补充作业：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;【1】两个电容器的标称电容值分别是 300皮法 / 50伏特 和 200皮法 / 100伏特，求串联总电容和总耐压值.&lt;/li&gt;
+&lt;li&gt;【2】求【例2.5】中电介质球内外任一点的电场强度.&lt;/li&gt;
+&lt;li&gt;【3】半径为 10厘米 的铜球，表面每个原子失去一个电子，已知铜的摩尔质量为 64克，铜的密度为 8.9克/立方厘米，估算表面的电场和电势.&lt;/li&gt;
+&lt;li&gt;【4】半径为 0.1米 的中性金属球壳内有两个点电荷，电量分别是 -3×10^(-9)库仑 和 9×10^(-9)库仑，分别位于球心 O点 左侧 2厘米 和右侧 5厘米。求 O点 左侧 0.2米 处的电场强度。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;115&#34;&gt;1.15
 &lt;/h2&gt;&lt;p&gt;(1)把正电荷$Q$从O点沿弧$OCD$移到D，电荷$-q$对正电荷$Q$不做功，又因为做功与路径无关，电荷$+q$对$Q$做的功为
 &lt;/p&gt;
@@ -657,11 +664,11 @@ $$&lt;h2 id=&#34;批改反馈&#34;&gt;批改反馈
         </item>
         <item>
         <title>Answer to Homework-04 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-04-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-04-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-04-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-04-of-electromagnetics.a/front-page.png" alt="Featured image of post Answer to Homework-04 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 4 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-04-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-04-of-electromagnetics.a/front-page.png" alt="Featured image of post Answer to Homework-04 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 4 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
@@ -776,16 +783,16 @@ $$</description>
         </item>
         <item>
         <title>Answer to Homework-05 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-05-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-05-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-05-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-05-of-electromagnetics.a/front-page%20%282%29.png" alt="Featured image of post Answer to Homework-05 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 5 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-05-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-05-of-electromagnetics.a/front-page%20%282%29.png" alt="Featured image of post Answer to Homework-05 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 5 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
 &lt;h2 id=&#34;题目&#34;&gt;题目
-&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 2.12 - 2.21&lt;/p&gt;
 &lt;h2 id=&#34;212&#34;&gt;2.12
 &lt;/h2&gt;&lt;p&gt;解：填入介质前，电容器带电量
 &lt;/p&gt;
@@ -1010,16 +1017,16 @@ $$</description>
         </item>
         <item>
         <title>Answer to Homework-06 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-06-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/front-page%20%283%29.png" alt="Featured image of post Answer to Homework-06 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 6 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-06-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-06-of-electromagnetics.a/front-page%20%283%29.png" alt="Featured image of post Answer to Homework-06 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 6 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
 &lt;h2 id=&#34;题目&#34;&gt;题目
-&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 2.12-2.21&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 2.22 - 2.27、3.1 - 3.3&lt;/p&gt;
 &lt;h2 id=&#34;习题222&#34;&gt;习题2.22
 &lt;/h2&gt;&lt;p&gt;采用电像法求解。原电荷$+q(a, b)$共有三个像电荷：
 &lt;/p&gt;
@@ -1208,11 +1215,11 @@ $$&lt;h2 id=&#34;反馈意见&#34;&gt;反馈意见
         </item>
         <item>
         <title>Answer to Homework-07 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-07-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-07-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-07-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-07-of-electromagnetics.a/front-page%20%284%29.png" alt="Featured image of post Answer to Homework-07 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 7 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-07-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-07-of-electromagnetics.a/front-page%20%284%29.png" alt="Featured image of post Answer to Homework-07 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 7 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
@@ -1610,11 +1617,11 @@ $$&lt;h2 id=&#34;反馈意见&#34;&gt;反馈意见
         </item>
         <item>
         <title>Answer to Homework-08 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-08-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-08-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-08-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-08-of-electromagnetics.a/front-page%20%285%29.png" alt="Featured image of post Answer to Homework-08 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 8 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-08-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-08-of-electromagnetics.a/front-page%20%285%29.png" alt="Featured image of post Answer to Homework-08 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 8 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
@@ -1934,11 +1941,11 @@ $$</description>
         </item>
         <item>
         <title>Answer to Homework-09 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-09-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-09-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-09-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-09-of-electromagnetics.a/front%20page%20%281%29.png" alt="Featured image of post Answer to Homework-09 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 9 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-09-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-09-of-electromagnetics.a/front%20page%20%281%29.png" alt="Featured image of post Answer to Homework-09 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 9 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
@@ -2059,11 +2066,11 @@ $$&lt;h2 id=&#34;反馈意见&#34;&gt;反馈意见
         </item>
         <item>
         <title>Answer to Homework-11 of Electromagnetics.A</title>
-        <link>https://bzliustc.github.io/p/answer-to-homework-11-of-electromagnetics.a/</link>
+        <link>http://localhost:1313/p/answer-to-homework-11-of-electromagnetics.a/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>https://bzliustc.github.io/p/answer-to-homework-11-of-electromagnetics.a/</guid>
-        <description>&lt;img src="https://bzliustc.github.io/p/answer-to-homework-11-of-electromagnetics.a/front%20page.png" alt="Featured image of post Answer to Homework-11 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 11 of the course Electromagnetics.A,
+        <guid>http://localhost:1313/p/answer-to-homework-11-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-11-of-electromagnetics.a/front%20page.png" alt="Featured image of post Answer to Homework-11 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 11 of the course Electromagnetics.A,
 CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;

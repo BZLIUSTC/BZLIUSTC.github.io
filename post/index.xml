@@ -365,7 +365,14 @@ CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/5/31;
 Status: editing, @ updating, final&lt;/p&gt;
 &lt;h2 id=&#34;题目&#34;&gt;题目
-&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 1.15 - 1.23, 2.1 - 2.3, 2.5 以及补充作业&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;《电磁学》习题 2.6、2.7 - 2.11&lt;/p&gt;
+&lt;p&gt;补充作业：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;【1】两个电容器的标称电容值分别是 300皮法 / 50伏特 和 200皮法 / 100伏特，求串联总电容和总耐压值.&lt;/li&gt;
+&lt;li&gt;【2】求【例2.5】中电介质球内外任一点的电场强度.&lt;/li&gt;
+&lt;li&gt;【3】半径为 10厘米 的铜球，表面每个原子失去一个电子，已知铜的摩尔质量为 64克，铜的密度为 8.9克/立方厘米，估算表面的电场和电势.&lt;/li&gt;
+&lt;li&gt;【4】半径为 0.1米 的中性金属球壳内有两个点电荷，电量分别是 -3×10^(-9)库仑 和 9×10^(-9)库仑，分别位于球心 O点 左侧 2厘米 和右侧 5厘米。求 O点 左侧 0.2米 处的电场强度。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;115&#34;&gt;1.15
 &lt;/h2&gt;&lt;p&gt;(1)把正电荷$Q$从O点沿弧$OCD$移到D，电荷$-q$对正电荷$Q$不做功，又因为做功与路径无关，电荷$+q$对$Q$做的功为
 &lt;/p&gt;
@@ -785,7 +792,7 @@ CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
 &lt;h2 id=&#34;题目&#34;&gt;题目
-&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 2.12 - 2.21&lt;/p&gt;
 &lt;h2 id=&#34;212&#34;&gt;2.12
 &lt;/h2&gt;&lt;p&gt;解：填入介质前，电容器带电量
 &lt;/p&gt;
@@ -1019,7 +1026,7 @@ CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
 Last update : 2026/6/1;
 Status: @ editing, updating, final&lt;/p&gt;
 &lt;h2 id=&#34;题目&#34;&gt;题目
-&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 2.12-2.21&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题 2.22 - 2.27、3.1 - 3.3&lt;/p&gt;
 &lt;h2 id=&#34;习题222&#34;&gt;习题2.22
 &lt;/h2&gt;&lt;p&gt;采用电像法求解。原电荷$+q(a, b)$共有三个像电荷：
 &lt;/p&gt;
@@ -2237,6 +2244,1656 @@ $$
 m = \int_0^\pi \frac{q\omega}{4\pi}\sin\theta\mathrm{d}\theta \cdot \pi R^2\sin^2\theta
 = \frac{1}{3}q\omega R^2
 $$</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;
+&lt;h2 id=&#34;510&#34;&gt;5.10
+&lt;/h2&gt;&lt;p&gt;解 取圆柱坐标$(r,\phi,z)$，$z$轴与导体柱轴重合，方向沿$I$的方向。由对称性分析知$\boldsymbol{B}$沿$\boldsymbol{e}_\phi$方向，其大小仅与$r$有关。选择与圆柱轴线垂直、半径为$r$、圆心位于圆柱轴线的圆环回路，运用安培环路定理计算各区磁场。&lt;/p&gt;
+&lt;p&gt;(1) 导体圆柱内$(r&amp;lt;a)$：穿越回路的电流等于$Ir^2/a^2$，由安培环路定理得
+&lt;/p&gt;
+\[
+2\pi r B = \frac{\mu_0 r^2 I}{a^2} \Rightarrow B = \frac{\mu_0 I r}{2\pi a^2}
+\]&lt;p&gt;(2) 两导体之间$(a&amp;lt;r&amp;lt;b)$：穿越回路的电流等于$I$，由安培环路定理得
+&lt;/p&gt;
+\[
+2\pi r B = \mu_0 I \Rightarrow B = \frac{\mu_0 I}{2\pi r}
+\]&lt;p&gt;(3) 导体圆管内$(b&amp;lt;r&amp;lt;c)$：穿越回路的电流等于$I - \dfrac{r^2 - b^2}{c^2 - b^2}I$，由安培环路定理得
+&lt;/p&gt;
+\[
+2\pi r B = \mu_0 I \left(1 - \frac{r^2 - b^2}{c^2 - b^2}\right) \Rightarrow B = \frac{\mu_0 I(c^2 - r^2)}{2\pi r(c^2 - b^2)}
+\]&lt;p&gt;(4) 电缆外$(r&amp;gt;c)$：穿越回路的电流等于零，由安培环路定理得$B=0$。&lt;/p&gt;
+&lt;h2 id=&#34;511&#34;&gt;5.11
+&lt;/h2&gt;&lt;p&gt;解 按题意：电流$I$均匀分布于导体管截面，导体管截面的面积等于$\pi(R_1^2 - R_2^2)$，电流密度等于$j = I/[\pi(R_1^2 - R_2^2)]$。为便于数学处理，在导体管内的空心区引入两个虚拟电流：电流密度同为$j$，但一个与电流$I$同向，另一个方向相反。这两部分虚拟电流的磁效应互抵，不会影响磁场的计算结果。接着，将流经导体管的实际电流与新引入的同向虚拟电流合并，构成一个分布于半径为$R_1$的实心圆柱中的均匀电流；余下的反向虚拟电流，则对应分布于半径为$R_2$的实心圆柱中的均匀电流。为叙述方便起见，分别将这两个电流称为大圆柱电流和小圆柱电流（注意它们的流向相反）。最后，分别计算两个圆柱状均匀电流的磁场，然后叠加求得实际磁场分布。&lt;/p&gt;
+&lt;p&gt;(1) 圆柱轴线上的磁感应强度
+由对称性，大圆柱电流在圆柱轴线上产生的磁场等于零。圆柱轴线位于小圆柱电流外部，后者产生的磁场为
+&lt;/p&gt;
+\[
+B(O) = \frac{\mu_0 j\pi R_2^2}{2\pi a} = \frac{\mu_0 I R_2^2}{2\pi a(R_1^2 - R_2^2)}
+\]&lt;p&gt;
+方向垂直于$OO&amp;rsquo;$，朝向下方。&lt;/p&gt;
+&lt;p&gt;(2) 空心部分轴线上的磁感应强度
+这时，$O&amp;rsquo;$为场点，小圆柱电流对磁场的贡献为零，只需计算大圆柱电流的贡献。场点位于大圆柱内部，离大圆柱轴线的距离为$a$，可由安培环路定理计算磁场：
+&lt;/p&gt;
+\[
+2\pi a B(O&#39;) = \mu_0 j\pi a^2 \Rightarrow B(O&#39;) = \frac{\mu_0 j a}{2} = \frac{\mu_0 I a}{2\pi(R_1^2 - R_2^2)}
+\]&lt;p&gt;
+方向垂直于$OO&amp;rsquo;$，朝向下方。&lt;/p&gt;
+&lt;p&gt;(3) 由题给出的数据，可算得$O$和$O&amp;rsquo;$点的磁感应强度的值为
+&lt;/p&gt;
+\[
+B(O) = 2.0\times10^{-6}\,\mathrm{T} = 2\times10^{-2}\,\mathrm{G},\qquad 
+B(O&#39;) = 2.0\times10^{-4}\,\mathrm{T} = 2\,\mathrm{G}
+\]&lt;h2 id=&#34;512&#34;&gt;5.12
+&lt;/h2&gt;&lt;p&gt;解 视导体板为无限大（即边缘效应不计）。由安培环路定理，可计算$xz$面内的面电流对左右两侧磁场的贡献为$B = \mu_0 i/2$，左侧空间的磁场沿$\boldsymbol{e}_x$方向，右侧空间的磁场沿负$\boldsymbol{e}_x$方向。同样，$xy$面内的面电流对上下侧磁场的贡献也为$B = \mu_0 i/2$，上侧空间的磁场沿$\boldsymbol{e}_x$方向，下侧空间的磁场沿负$\boldsymbol{e}_x$方向。将两部分贡献叠加，求得各象限的磁感应强度$\boldsymbol{B}_i\ (i=1,2,3,4)$为
+&lt;/p&gt;
+\[
+\boldsymbol{B}_1 = 0,\quad 
+\boldsymbol{B}_2 = \mu_0 i \boldsymbol{e}_x,\quad 
+\boldsymbol{B}_3 = 0,\quad
+\boldsymbol{B}_4 = -\mu_0 i \boldsymbol{e}_x 
+\]&lt;p&gt;
+磁场强度$\boldsymbol{H}_i\ (i=1,2,3,4)$为
+&lt;/p&gt;
+\[
+\boldsymbol{H}_1 = 0,\quad 
+\boldsymbol{H}_2 =  i \boldsymbol{e}_x,\quad 
+\boldsymbol{H}_3 = 0,\quad 
+\boldsymbol{H}_4 = - i \boldsymbol{e}_x
+\]&lt;h2 id=&#34;513&#34;&gt;5.13
+&lt;/h2&gt;&lt;p&gt;解 (1) 取圆柱坐标$(r,\phi,z)$，螺绕环的中心轴为$z$轴。由对称性，螺绕环内的磁场沿$\boldsymbol{e}_\phi$方向（逆时针方向），大小仅与$r$有关。由安培环路定理可求得螺绕环内的磁场为
+&lt;/p&gt;
+\[
+2\pi r B = \mu_0 N I,\quad B = \frac{\mu_0 N I}{2\pi r}
+\]&lt;p&gt;(2) 通过螺绕环截面的磁通为
+&lt;/p&gt;
+\[
+\Phi_B = \iint B\,\mathrm{d}S = \int_{d_1/2}^{d_2/2}\frac{\mu_0 N I}{2\pi r}\,h\,\mathrm{d}r = \frac{\mu_0 N I h}{2\pi}\ln\frac{d_2}{d_1}
+\]&lt;p&gt;
+证毕。&lt;/p&gt;
+&lt;h2 id=&#34;514&#34;&gt;5.14
+&lt;/h2&gt;&lt;p&gt;解 由库仑定律计算电力，由洛伦兹公式计算磁力，结果如下：
+&lt;/p&gt;
+\[
+F_\mathrm{e} = \frac{e^2}{4\pi\epsilon_0 r^2} = \frac{(1.6\times10^{-19})^2}{4\pi\times8.85\times10^{-12}\times(0.53\times10^{-10})^2} = 8.2\times10^{-8}\,\mathrm{N}
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+F_\mathrm{m} = qvB = 1.6\times10^{-19}\times2.2\times10^6\times10^8 = 3.5\times10^{-5}\,\mathrm{N} \approx 430 F_\mathrm{e}
+\]&lt;h2 id=&#34;515&#34;&gt;5.15
+&lt;/h2&gt;&lt;p&gt;解 设电子速度相对磁场的垂直分量和平行分量分别为$v_\perp$和$v_{//}$，则电子在磁场中做回旋运动的半径和周期分别为
+&lt;/p&gt;
+\[
+R = \frac{m v_\perp}{qB},\qquad T = \frac{2\pi m}{qB}
+\]&lt;p&gt;
+据此求得
+&lt;/p&gt;
+\[
+v_\perp = \frac{qBR}{m},\qquad v_{//} = \frac{h}{T} = \frac{hqB}{2\pi m}
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+v = \sqrt{v_{//}^2 + v_\perp^2} = \frac{qB[(2\pi R)^2 + h^2]^{1/2}}{2\pi m}
+= \frac{1.6\times10^{-19}\times2\times10^{-3}[(2\pi\times0.02)^2 + 0.05^2]^{1/2}}{2\pi\times9.1\times10^{-31}} = 7.6\times10^6\,\mathrm{m\cdot s^{-1}}
+\]&lt;p&gt;
+根据电子的旋转方向，可判断$\boldsymbol{B}$沿$y$轴正向。&lt;/p&gt;
+&lt;h2 id=&#34;516&#34;&gt;5.16
+&lt;/h2&gt;&lt;p&gt;解 (1) n型。
+&lt;/p&gt;
+\[
+n = \frac{IB}{q d U_{AA&#39;}} = \frac{IB}{q a U_{AA&#39;}} = \frac{10^{-3}\times0.3}{1.6\times10^{-19}\times10^{-3}\times6.5\times10^{-3}} = 2.9\times10^{20}\,\mathrm{m^{-3}}
+\]&lt;h2 id=&#34;517&#34;&gt;5.17
+&lt;/h2&gt;&lt;p&gt;解 在随时间缓慢变化的磁场中，粒子磁矩$\mu = m v_\perp^2/(2B)$近似维持不变，据此推得（注意粒子运动速度始终与磁场垂直，成立$v = v_\perp$）
+&lt;/p&gt;
+\[
+v = \sqrt{\frac{B}{B_0}} v_0,\qquad r = \frac{mv}{eB} = \frac{mv_0}{e\sqrt{BB_0}}
+\]&lt;h2 id=&#34;518&#34;&gt;5.18
+&lt;/h2&gt;&lt;p&gt;解 在磁镜装置中，凡投掷角小于临界值$\theta_\mathrm{c} = \arcsin(\sqrt{1/R_\mathrm{m}})$的粒子将会逃逸。由题设，粒子源各向同性，即粒子关于投掷角$\theta \in (0,\pi/2]$等概率分布，以至逃逸粒子所占的比例为
+&lt;/p&gt;
+\[
+\frac{2\pi\int_0^{\theta_\mathrm{c}}\sin\theta\,\mathrm{d}\theta}{2\pi\int_0^{\pi/2}\sin\theta\,\mathrm{d}\theta} = \int_0^{\theta_\mathrm{c}}\sin\theta\,\mathrm{d}\theta = 1 - \cos\theta_\mathrm{c} = 1 - \frac{\sqrt{3}}{2}
+\]&lt;p&gt;
+推导中用到
+&lt;/p&gt;
+\[
+\cos\theta_\mathrm{c} = (1 - \sin^2\theta_\mathrm{c})^{1/2} = (1 - R_\mathrm{m}^{-1})^{1/2} = (1 - 1/4)^{1/2} = \sqrt{3}/2
+\]&lt;h2 id=&#34;520&#34;&gt;5.20
+&lt;/h2&gt;&lt;p&gt;在z轴上取一点为圆心，以r为半径做一圆，由对称性可知
+&lt;/p&gt;
+\[
+2\pi RB_{\phi}=\mu_0I,
+\]&lt;p&gt;
+得到
+&lt;/p&gt;
+\[
+B_\phi=\frac{\mu_0I}{2\pi r}
+\]&lt;p&gt;
+我们计算导体平面上电流产生的磁场
+&lt;/p&gt;
+\[
+\boldsymbol{B}&#39;=\frac{\mu_0}{4\pi}\int_S \frac{\boldsymbol{i}\times (\boldsymbol{r}-\boldsymbol{R})}{|\boldsymbol{r}-\boldsymbol{R}|^3}\mathrm{d}S
+=\frac{\mu_0I}{8\pi^2}\int_S\frac{\boldsymbol{R}}{R}\times\frac{\boldsymbol{r}}{|\boldsymbol{r}-\boldsymbol{R}|^3}\mathrm{d}R\mathrm{d} \theta
+=\frac{\mu_0I}{8\pi^2}\int_0^\infty\int_0^{2\pi}\frac{(\cos\theta,\sin\theta ,0)\times(r\cos\psi,r\sin\psi,z)}{((R\cos\theta-r\cos\psi)^2+(R\sin\theta-r\sin\psi)^2+z^2)^{\frac{3}{2}}}\mathrm{d}R\mathrm{d} \theta
+=\frac{\mu_0I}{8\pi^2}\int_0^\infty\int_0^{2\pi}\frac{z(\sin\theta \boldsymbol{i}-\cos\theta \boldsymbol{j})-r\sin(\theta-\psi)\boldsymbol{k}}{(R^2+r^2-2Rr\cos(\theta-\psi)+z^2)^{\frac{3}{2}}}\mathrm{d}R\mathrm{d} \theta
+\]&lt;p&gt;从积分中可以看出，B&amp;rsquo;没有r分量。z方向分量积分为0，而直线部分的电流也无法产生磁场的径向分量，故总磁场也只有径向分量。&lt;/p&gt;
+&lt;h2 id=&#34;61&#34;&gt;6.1
+&lt;/h2&gt;&lt;p&gt;解 设沿电流方向的单位矢量为 $\boldsymbol{e}_i$，则载流导线所受的磁力为
+&lt;/p&gt;
+\[
+\boldsymbol{F} = I l \boldsymbol{e}_i \times \boldsymbol{B} = 3 \times 0.1 \times \frac{-\boldsymbol{e}_x + 4\boldsymbol{e}_y + 3\boldsymbol{e}_z}{|-\boldsymbol{e}_x + 4\boldsymbol{e}_y + 3\boldsymbol{e}_z|} \times (2\boldsymbol{e}_x - 3\boldsymbol{e}_y + 5\boldsymbol{e}_z)
+\]&lt;p&gt;
+计算得
+&lt;/p&gt;
+\[
+\boldsymbol{F} = (1.706\boldsymbol{e}_x + 0.647\boldsymbol{e}_y - 0.294\boldsymbol{e}_z)\,\mathrm{N}
+\]&lt;h2 id=&#34;62&#34;&gt;6.2
+&lt;/h2&gt;&lt;p&gt;解 (1) 输入电桥的电流 $I$ 分为两支，电流分别设为 $I_1$ 和 $I_2$，满足 $I = I_1 + I_2$；流出电桥的电流 $I$ 来自电桥的两个支路，电流分别设为 $I_3$ 和 $I_4$，满足 $I = I_3 + I_4$。这四个电流所受的力大小分别为
+&lt;/p&gt;
+\[
+F_1 = \frac{\sqrt{2}}{2} I_1 a B,\quad F_2 = \frac{\sqrt{2}}{2} I_2 a B,\quad 
+F_3 = \frac{\sqrt{2}}{2} I_3 a B,\quad F_4 = \frac{\sqrt{2}}{2} I_4 a B
+\]&lt;p&gt;
+方向均垂直纸面向外；含检流计的支路与 $\boldsymbol{B}$ 平行，其电流受力为 $0$。于是作用在电桥上的净力为
+&lt;/p&gt;
+\[
+F = \frac{\sqrt{2}}{2} (I_1 + I_2 + I_3 + I_4) a B = \sqrt{2} I a B
+\]&lt;p&gt;
+方向垂直纸面向外。&lt;/p&gt;
+&lt;p&gt;(2) 与电桥是否平衡无关。&lt;/p&gt;
+&lt;h2 id=&#34;63&#34;&gt;6.3
+&lt;/h2&gt;&lt;p&gt;解 (1) 在圆形回路上取弧元 $\mathrm{d}l = R\mathrm{d}\theta$，其所受磁力为 $\mathrm{d}F = I\mathrm{d}l B = I B R\mathrm{d}\theta$，方向垂直于弧元并背离圆心。设导线内部张力为 $T$，则作用于弧元两端张力之合力指向圆心，与上述磁力平衡：
+&lt;/p&gt;
+\[
+\mathrm{d}F = 2T\sin\frac{\mathrm{d}\theta}{2} \approx T\mathrm{d}\theta \quad\Rightarrow\quad I B R\mathrm{d}\theta = T\mathrm{d}\theta \quad\Rightarrow\quad T = I R B
+\]&lt;p&gt;(2) $T = I R B = 7.0 \times 5.0 \times 10^{-2} \times 1.0 = 0.35,\mathrm{N}$&lt;/p&gt;
+&lt;h2 id=&#34;反馈意见&#34;&gt;反馈意见
+&lt;/h2&gt;&lt;p&gt;5.20需要对对称性加以更详细的说明，不能只写环路定理（虽然结果是对的）；
+5.12问的是磁场不是磁感应强度，这一点在引入磁场强度之后要注意，勿答非所问；&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-12 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-12-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-12 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 12 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-13 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-13-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-13-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-13-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-13 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 13 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;
+&lt;h2 id=&#34;64&#34;&gt;6.4
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; (1) 导线所受安培力为 $\boldsymbol{F} = Il\boldsymbol{B}$. 在导线离开水银槽前 $F\mathrm{d}t = m\mathrm{d}v$, 积分得
+&lt;/p&gt;
+\[
+\int IlB\mathrm{d}t = \int m\mathrm{d}v
+\Rightarrow qlB = mv
+\Rightarrow q = \frac{mv}{lB}.
+\]&lt;p&gt;
+导线离开水银槽后, 由机械能守恒 $mgh = \frac{1}{2}mv^2$, 得 $v = \sqrt{2gh}$. 因此
+&lt;/p&gt;
+\[
+q = \frac{m\sqrt{2gh}}{lB}.
+\]&lt;p&gt;(2) 代入数据计算得
+&lt;/p&gt;
+\[
+q = \frac{0.01}{0.2\times0.1}\sqrt{2\times9.8\times2} \approx 3.1\ \text{C}.
+\]&lt;h2 id=&#34;65&#34;&gt;6.5
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 木制圆柱受重力、摩擦力、支持力与载流线圈磁力矩. 以接触线为转轴, 重力矩为 $mgR\sin\theta$; 线圈磁矩大小 $m = NIS = 2NIRl$, 磁力矩为 $2NIRlB\sin\theta$. 平衡条件为
+&lt;/p&gt;
+\[
+2NIRlB\sin\theta \geq mgR\sin\theta
+\Rightarrow I \geq \frac{mg}{2NlB}.
+\]&lt;p&gt;
+最小电流
+&lt;/p&gt;
+\[
+I_{\text{min}} = \frac{0.25\times9.8}{2\times10\times0.1\times0.5} = 2.5\ \text{A}.
+\]&lt;h2 id=&#34;66&#34;&gt;6.6
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;证&lt;/strong&gt; 先求圆盘磁矩
+&lt;/p&gt;
+\[
+m = \int_0^R \pi r^2 \mathrm{d}I
+= \int_0^R \pi r^2 \cdot \sigma\omega r \mathrm{d}r
+= \pi\sigma\omega \int_0^R r^3 \mathrm{d}r
+= \frac{\pi\sigma\omega R^4}{4}.
+\]&lt;p&gt;
+因 $\boldsymbol{B}\perp$ 轴线, 力矩大小
+&lt;/p&gt;
+\[
+L = mB = \frac{\pi\sigma\omega R^4 B}{4},
+\]&lt;p&gt;
+证毕.&lt;/p&gt;
+&lt;h2 id=&#34;67&#34;&gt;6.7
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 圆柱壳内 ($r&amp;lt;a$) $B_t=0$; 壳外 ($r&amp;gt;a$) 由安培环路定理 $B_t = \frac{\mu_0 I}{2\pi r}$. 壳表面 $B_t = \mu_0 i$, $i$ 为面电流密度. 电流元所在处有效磁场 $B = \frac{\mu_0 i}{2}$. 单位长度吸力
+&lt;/p&gt;
+\[
+F = \int_0^1\mathrm{d}z \int_0^\pi iB a\sin\phi\mathrm{d}\phi
+= \mu_0 i^2 a
+= \frac{\mu_0 I^2}{4\pi^2 a}.
+\]&lt;h2 id=&#34;68&#34;&gt;6.8
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 代入数据得比值
+&lt;/p&gt;
+\[
+\frac{kT}{m_B B} = \frac{4\pi\times9.11\times10^{-31}\times1.38\times10^{-23}\times300}{1.602\times10^{-19}\times6.626\times10^{-34}\times1} = 446.
+\]&lt;h2 id=&#34;610&#34;&gt;6.10
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 线圈轴线上磁场 $B(z) = \frac{\mu_0 I R^2}{2(R^2+z^2)^{3/2}}$.
+在小球的磁化率远小于1的情况下，可略去小球磁化电流对球内磁场的影响，即小球内的磁场近似等于外场$B(l)$，据此求得小球内的磁化强度为
+&lt;/p&gt;
+\[
+M=\chi_m H(l)\approx \chi_m B(l)/\mu\approx \chi_m B(l)/\mu_0
+\]&lt;p&gt;
+设$m_0$为小球质量，$\rho$为小球密度，小球磁矩
+&lt;/p&gt;
+\[m = \frac{\chi_m B(l) m_0}{\mu_0\rho}\]&lt;p&gt;
+受力
+&lt;/p&gt;
+\[
+F = m\left.\frac{\mathrm{d}B}{\mathrm{d}z}\right|_{z=l}
+= -\frac{3\chi_m m_0 \mu_0 I^2 R^4 l}{4\rho(R^2+l^2)^4}.
+\]&lt;p&gt;
+代入数据得 $F\approx1.1\times10^{-12}\ \text{N}$, 沿 $z$ 轴正向, 为排斥力.&lt;/p&gt;
+&lt;h2 id=&#34;611&#34;&gt;6.11
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; (1) $H = nI = \frac{N}{l}I = \frac{400}{0.4}\times20 = 2\times10^4\ \text{A/m}$.&lt;/p&gt;
+&lt;p&gt;(2) $M = \frac{B}{\mu_0} - H \approx7.76\times10^5\ \text{A/m}$.&lt;/p&gt;
+&lt;p&gt;(3) $\chi_m = \frac{M}{H} = 38.8$.&lt;/p&gt;
+&lt;p&gt;(4) 磁化面电流密度 $i=M=7.76\times10^5\ \text{A/m}$, 相对磁导率 $\mu_r=1+\chi_m=39.8$.&lt;/p&gt;
+&lt;h2 id=&#34;69&#34;&gt;6.9
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; (1) 由安培环路定理
+&lt;/p&gt;
+\[
+\begin{aligned}
+&amp;r&lt;R_1: &amp; 2\pi r H &amp;= \frac{I}{\pi R_1^2}\cdot\pi r^2 \Rightarrow H = \frac{Ir}{2\pi R_1^2},\quad B = \frac{\mu_0 Ir}{2\pi R_1^2}, \\
+&amp;R_1&lt;r&lt;R_2: &amp; 2\pi r H &amp;= I \Rightarrow H = \frac{I}{2\pi r},\quad B = \frac{\mu I}{2\pi r}, \\
+&amp;r&gt;R_2: &amp; 2\pi r H &amp;= I \Rightarrow H = \frac{I}{2\pi r},\quad B = \frac{\mu_0 I}{2\pi r}.
+\end{aligned}
+\]&lt;p&gt;(2) 磁化强度 $M = \frac{\mu-\mu_0}{\mu_0}H$, 磁化面电流密度
+&lt;/p&gt;
+\[
+i_{\text{内}} = M(R_1) = \frac{(\mu-\mu_0)I}{2\pi\mu_0 R_1},\quad
+i_{\text{外}} = -M(R_2) = -\frac{(\mu-\mu_0)I}{2\pi\mu_0 R_2}.
+\]&lt;h2 id=&#34;612&#34;&gt;6.12
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 由安培环路定理
+&lt;/p&gt;
+\[
+2\pi r H = I \Rightarrow H = \frac{I}{2\pi r},\quad B = \frac{\mu I}{2\pi r}.
+\]&lt;p&gt;
+表面束缚电流面密度（正方向同电流$I$方向）
+&lt;/p&gt;
+\[
+i&#39; = -M\big|_{r=a} = -\frac{(\mu-\mu_0)I}{2\pi\mu_0 a}.
+\]&lt;h2 id=&#34;613&#34;&gt;6.13
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 用下标1表示空气一侧，$\theta_1$表示1侧磁感应线与界面法线的夹角；用下标2表示软铁一侧，$\theta_2$表示2侧磁感应线与界面法线的夹角，$\theta_2=85^\circ$，由边界条件 $B_{1n}=B_{2n}$, $H_{1t}=H_{2t}$, 得
+&lt;/p&gt;
+\[
+\tan\theta_1 = \frac{\mu_{r1}}{\mu_{r2}}\tan\theta_2
+= \frac{\tan85^\circ}{7000} \approx1.633\times10^{-3},
+\]&lt;p&gt;
+故 $\theta_1\approx0.09356^\circ=5.6&amp;rsquo;$.&lt;/p&gt;
+&lt;h2 id=&#34;614&#34;&gt;6.14
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 不难看出，本题属于介质界面与磁感应线垂直的情况。对于这种情况，先去掉介质，计算位于 $A$、$B$ 两处的反向直线电流在真空中的磁场，其结果为
+&lt;/p&gt;
+\[
+B_{0 x}=\frac{\mu_{0} I}{2 \pi}\left(\frac{-y}{(x+a)^{2}+y^{2}}+\frac{y}{(x-a)^{2}+y^{2}}\right)
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+B_{0 y}=\frac{\mu_{0} I}{2 \pi}\left(-\frac{x-a}{(x-a)^{2}+y^{2}}+\frac{x+a}{(x+a)^{2}+y^{2}}\right)
+\]&lt;p&gt;实际磁感应强度为 $B=\alpha B_{0}$，乘子 $\alpha$ 由下式决定
+&lt;/p&gt;
+\[
+\alpha=I\left(\oint_{L} \frac{1}{\mu} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}\right)^{-1}
+\]&lt;p&gt;
+式中，$L$ 为围绕直线电流 $I$ 的某个闭合回路。回路相继穿越介质1、介质2 和真空，相应回路分为3 段：$L_{1}$、$L_{2}$ 和 $L_{3}$，分别位于介质1、介质2 和真空中。于是，上式中的积分化为
+&lt;/p&gt;
+\[
+\oint_{L} \frac{1}{\mu} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}=\frac{1}{\mu_{1}} \int_{L_{1}} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}+\frac{1}{\mu_{2}} \int_{L_{2}} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}+\frac{1}{\mu_{0}} \int_{L_{3}} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}
+\]&lt;p&gt;
+可以证明(证明提示：首先利用介质界面与磁感应线垂直的性质，证明沿 $L_{i}(i=1,2,3)$ 的积分与 $L_{i}$ 的选择无关；然后选择一个十分靠近直线电流 $I$ 的回路，并利用 $I$ 邻域内磁场的对称性，去完成下述结论的证明)
+&lt;/p&gt;
+\[
+\oint_{L} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}=2 \int_{L_{1}} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}=4 \int_{L_{2}} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}=4 \int_{L_{3}} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}=\mu_{0} I
+\]&lt;p&gt;
+于是有
+&lt;/p&gt;
+\[
+\oint_{L} \frac{1}{\mu} \boldsymbol{B}_{0} \cdot \mathrm{d}\boldsymbol{l}=\frac{\mu_{0} I}{2 \mu_{1}}+\frac{I}{4}+\frac{\mu_{0} I}{4 \mu_{2}}=\frac{\left(2 \mu_{2} \mu_{0}+\mu_{1} \mu_{0}+\mu_{1} \mu_{2}\right) I}{4 \mu_{1} \mu_{2}}
+\]&lt;p&gt;从而最终求得乘子 $\alpha$ 和磁感应强度分布如下
+&lt;/p&gt;
+\[
+\alpha=\frac{4 \mu_{1} \mu_{2}}{2 \mu_{2} \mu_{0}+\mu_{1} \mu_{0}+\mu_{1} \mu_{2}}
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+B_{x}=\frac{2 \mu_{1} \mu_{2} \mu_{0} I y}{\pi\left(2 \mu_{2} \mu_{0}+\mu_{1} \mu_{0}+\mu_{1} \mu_{2}\right)}\left(\frac{1}{(x-a)^{2}+y^{2}}-\frac{1}{(x+a)^{2}+y^{2}}\right)
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+B_{y}=\frac{2 \mu_{1} \mu_{2} \mu_{0} I}{\pi\left(2 \mu_{2} \mu_{0}+\mu_{1} \mu_{0}+\mu_{1} \mu_{2}\right)}\left(\frac{x+a}{(x+a)^{2}+y^{2}}-\frac{x-a}{(x-a)^{2}+y^{2}}\right)
+\]&lt;h2 id=&#34;617&#34;&gt;6.17
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 磁路方程如下:
+&lt;/p&gt;
+\[
+N I=\Phi_{B}\left(R_{m 1}+R_{m 2}\right),\quad R_{m 1}=\frac{4 l-d}{\mu A},\quad R_{m 2}=\frac{d}{\mu_{0} A},\quad \Phi_{B}=B \cdot A
+\]&lt;p&gt;
+解得空隙中的磁感应强度
+&lt;/p&gt;
+\[
+B=\frac{\mu \mu_{0} N I}{\left(\mu-\mu_{0}\right) d+4 \mu_{0} l}
+\]&lt;h2 id=&#34;618&#34;&gt;6.18
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 由题设，铁芯的磁导率很高，其磁阻可以忽略，只需考虑气隙磁阻，磁路方程简化为
+&lt;/p&gt;
+\[
+N I=\Phi_{B} R_{m} \approx \frac{B d}{\mu_{0}}
+\]&lt;p&gt;
+式中，$d$ 为气隙长度。绕铁心横截面一周的长度为 $l=2 \cdot(1+2)=6 ,\text{m}$，则 $N$ 匝线圈需要用去的铜线的总长度为 $L=N l$。又设铜线的截面积为 $S$，则允许通过的最大电流强度为 $I=j_{m} S$，其中 $j_{m}$ 为铜线允许通过的最大电流密度。将 $N=L / l$ 和 $I=j_{m} S$ 代入磁路方程得
+&lt;/p&gt;
+\[
+\frac{L}{l} \cdot j_{m} S=\frac{B d}{\mu_{0}} \Rightarrow V=\frac{l B d}{\mu_{0} j_{m}}
+\]&lt;p&gt;
+式中，$V$ 为线圈用铜的体积，由题给数据，可算出所需铜的总质量为($\rho_{0}$ 为铜的密度)
+&lt;/p&gt;
+\[
+M=\rho_{0} V=\frac{\rho_{0} l B d}{\mu_{0} j_{m}}=\frac{8 × 10^{3} × 6 × 1 × 0.1}{4 \pi × 10^{-7} × 10^{7}}=3.8 × 10^{2}\,\text{kg}
+\]&lt;p&gt;铜线所消耗的功率为
+&lt;/p&gt;
+\[
+\begin{aligned}
+P &amp;=I^{2} R=\left(j_{m} \cdot S\right)^{2} \rho \frac{L}{S}=j_{m}^{2} \rho V=\frac{j_{m}^{2} \rho M}{\rho_{0}} \\
+&amp;=\frac{\left(10^{7}\right)^{2} × 2 × 10^{-8} × 3.8 × 10^{2}}{8 × 10^{3}}=9.5 × 10^{4}\,\text{W}
+\end{aligned}
+\]&lt;p&gt;磁芯的磁导率很高，有 $B ≈\mu_{0} M$，于是磁极之间的吸引力为($A=1 ,\text{m}×2 ,\text{m}$ 为气隙截面面积)
+&lt;/p&gt;
+\[
+F=\frac{\mu_{0} M^{2} A}{2}=\frac{B^{2} A}{2 \mu_{0}}=\frac{1^{2} × 1 × 2}{2 × 4 \pi × 10^{-7}}=8.0 × 10^{5}\,\text{N}
+\]&lt;h2 id=&#34;619&#34;&gt;6.19
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;解&lt;/strong&gt; 其等效磁路如图，
+&lt;/p&gt;
+\[
+R_{m 1}=\frac{L}{\mu_{r} \mu_{0} S},\quad R_{m 2}=\frac{3 L}{\mu_{r} \mu_{0} S},\quad R_{m 3}=\frac{3 L-L_{g}}{\mu_{r} \mu_{0} S}+\frac{L_{g}}{\mu_{0} S}=\frac{3 L-L_{g}+\mu_{r} L_{g}}{\mu_{r} \mu_{0} S}
+\]&lt;p&gt;
+由 $R_{m 2}$ 和 $R_{m 3}$ 并联得到的磁阻等于
+&lt;/p&gt;
+\[
+R_{m}=\frac{R_{m 2} \cdot R_{m 3}}{R_{m 2}+R_{m 3}}=\frac{3 L\left[3 L+\left(\mu_{r}-1\right) L_{g}\right]}{\mu_{r} \mu_{0} S\left[6 L+\left(\mu_{r}-1\right) L_{g}\right]}
+\]&lt;p&gt;
+由此可求得加在气隙支路的磁势降为
+&lt;/p&gt;
+\[
+U_{m}=\frac{\mathcal{E}_{m} R_{m}}{R_{m}+R_{m 1}}=\frac{3 \mathcal{E}_{m}\left[3 L+\left(\mu_{r}-1\right) L_{g}\right]}{15 L+4\left(\mu_{r}-1\right) L_{g}}
+\]&lt;p&gt;
+故通过气隙支路的磁通为
+&lt;/p&gt;
+\[
+\Phi_{B}=\frac{U_{m}}{R_{m 3}}=\frac{3 \mu_{r} \mu_{0} S \mathcal{E}_{m}}{15 L+4\left(\mu_{r}-1\right) L_{g}}
+\]&lt;p&gt;
+相应通过气隙的磁感应强度等于
+&lt;/p&gt;
+\[
+B=\frac{\Phi_{B}}{S}=\frac{3 \mu_{r} \mu_{0} \mathcal{E}_{m}}{15 L+4\left(\mu_{r}-1\right) L_{g}}=\frac{3 × 1200 × 4 \pi × 10^{-7} × 597}{15 × 0.2+4 \times(1200-1) × 0.005}=0.1\,\text{T}
+\]</description>
+        </item>
+        <item>
+        <title>Answer to Homework-14 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-14-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-14-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-14-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-14 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 14 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;
+&lt;h2 id=&#34;620&#34;&gt;6.20
+&lt;/h2&gt;&lt;p&gt;解 两节铁芯界面上磁荷面密度的大小为
+&lt;/p&gt;
+\[
+\sigma_{\mathrm{m}} = \mu_0 M = (\mu - \mu_0)H = (\mu - \mu_0)nI
+\]&lt;p&gt;
+据此求得两节铁芯之间的吸力为
+&lt;/p&gt;
+\[
+F = \frac{\sigma_{\mathrm{m}}^2 S}{2\mu_0} = \frac{n^2 I^2 (\mu - \mu_0)^2 S}{2\mu_0}
+\]&lt;h2 id=&#34;621&#34;&gt;6.21
+&lt;/h2&gt;&lt;p&gt;解 (1) 磁极强度（总磁荷量）：
+&lt;/p&gt;
+\[
+q_{\mathrm{m}} = \pi r^2 J = 3.142 \times 0.005^2 \times 1.2 = 9.4 \times 10^{-5}\,\mathrm{Wb}
+\]&lt;p&gt;(2) 永磁铁的磁矩为
+&lt;/p&gt;
+\[
+m = M V = \frac{J \pi r^2 L}{\mu_0} = \frac{1.20 \times 0.005^2 \times 0.1}{4\pi \times 10^{-7}} = 7.5\,\mathrm{A \cdot m^2}
+\]&lt;p&gt;(3) 利用教材2.5节例2.3关于均匀极化电介质圆棒在轴线上的电场的结果
+&lt;/p&gt;
+\[
+E = -\frac{P}{2\epsilon_0}(2 - \cos\theta_1 - \cos\theta_2)
+\]&lt;p&gt;
+以及静电场解和静磁场解之间的对应关系（参见教材6.8节），可推得永磁铁在磁铁中心处的磁场为
+&lt;/p&gt;
+\[
+H = -\frac{J}{\mu_0}(1 - \cos\theta)
+\]&lt;p&gt;
+式中，$\theta$ 为磁铁中心与端面边沿连线与轴线之间的夹角
+&lt;/p&gt;
+\[
+\cos\theta = \frac{L/2}{\sqrt{(L/2)^2 + r^2}} = \frac{L}{\sqrt{L^2 + 4r^2}}
+\]&lt;p&gt;
+将题给数据代入，最终算得磁铁中心的磁场强度和磁感应强度分别为
+&lt;/p&gt;
+\[
+H = -\frac{J}{\mu_0}\left(1 - \frac{L}{\sqrt{L^2 + 4r^2}}\right)
+= -\frac{1.2}{4\pi \times 10^{-7}} \times \left(1 - \frac{0.1}{\sqrt{0.1^2 + 4 \times 0.005^2}}\right) = -4.739 \times 10^3\,\mathrm{A \cdot m^{-1}}
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+B = \mu_0 H + J = 4\pi \times 10^{-7} \times (-4.739 \times 10^3) + 1.2 = 1.194\,\mathrm{T}
+\]&lt;p&gt;
+$B$ 与 $H$ 的符号相反，亦即 $B$ 与 $H$ 的方向相反。&lt;/p&gt;
+&lt;h2 id=&#34;622&#34;&gt;6.22
+&lt;/h2&gt;&lt;p&gt;解 (1) 取直角坐标，原点位于磁盘中心，$x$ 轴与磁盘面垂直，正磁荷面位于 $x = l/2$，它对考察点处磁场强度的 $x$ 分量的贡献为
+&lt;/p&gt;
+\[
+H_+ = \frac{\sigma_{\mathrm{m}}}{2\mu_0}\left(1 - \frac{x - l/2}{\sqrt{R^2 + (x - l/2)^2}}\right)
+\]&lt;p&gt;
+负磁荷面位于 $x = -l/2$，它对考察点处磁场强度的 $x$ 分量的贡献为
+&lt;/p&gt;
+\[
+H_- = -\frac{\sigma_{\mathrm{m}}}{2\mu_0}\left(1 - \frac{x + l/2}{\sqrt{R^2 + (x + l/2)^2}}\right)
+\]&lt;p&gt;
+将两部分相加，求得总磁场强度
+&lt;/p&gt;
+\[
+H = H_+ + H_- = \frac{\sigma_{\mathrm{m}}}{2\mu_0}\left(\frac{x + l/2}{\sqrt{R^2 + (x + l/2)^2}} - \frac{x - l/2}{\sqrt{R^2 + (x - l/2)^2}}\right)
+\]&lt;p&gt;
+方向向右，即沿 $x$ 轴正向。&lt;/p&gt;
+&lt;p&gt;(2) 磁盘的磁偶极矩和磁矩分别为
+&lt;/p&gt;
+\[
+p_{\mathrm{m}} = \pi R^2 \cdot \sigma_{\mathrm{m}} l = \sigma_{\mathrm{m}} \pi R^2 l,\qquad 
+m = \frac{p_{\mathrm{m}}}{\mu_0} = \frac{\sigma_{\mathrm{m}} \pi R^2 l}{\mu_0}
+\]&lt;p&gt;
+方向向右。&lt;/p&gt;
+&lt;p&gt;(3) 当 $l \ll R$ 时，将上述磁场强度表达式作泰勒展开，保留至 $l/R$ 的一级小量，得
+&lt;/p&gt;
+\[
+H = \frac{\sigma_{\mathrm{m}}}{2\mu_0}\left(\frac{x + l/2}{\sqrt{R^2 + x^2 + xl}} - \frac{x - l/2}{\sqrt{R^2 + x^2 - xl}}\right)
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+\approx \frac{\sigma_{\mathrm{m}}}{2\mu_0} \cdot \frac{1}{\sqrt{R^2 + x^2}} \left[\left(x + \frac{l}{2}\right)\left(1 - \frac{xl}{2(R^2 + x^2)}\right) - \left(x - \frac{l}{2}\right)\left(1 + \frac{xl}{2(R^2 + x^2)}\right)\right]
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+= \frac{R^2 l \sigma_{\mathrm{m}}}{2\mu_0 (R^2 + x^2)^{3/2}} = \frac{m}{2\pi (R^2 + x^2)^{3/2}}
+\]&lt;p&gt;
+而半径为 $R$ 的小电流环的磁场为
+&lt;/p&gt;
+\[
+H = \frac{I R^2}{2(R^2 + x^2)^{3/2}} = \frac{m}{2\pi (R^2 + x^2)^{3/2}}
+\]&lt;p&gt;
+与磁盘产生的磁场一样，证毕.&lt;/p&gt;
+&lt;h2 id=&#34;624&#34;&gt;6.24
+&lt;/h2&gt;&lt;p&gt;已知外磁场 $\boldsymbol{B}&lt;em&gt;0 = B_0 \hat{z}$，球半径 $R$，球内相对磁导率 $\mu&lt;/em&gt;{r2}$，球外 $\mu_{r1}$。&lt;/p&gt;
+&lt;p&gt;令 $\mu_1 = \mu_{r1}\mu_0$，$\mu_2 = \mu_{r2}\mu_0$，$H_0 = B_0 / \mu_1$。&lt;/p&gt;
+&lt;p&gt;电场中，半径为 $R$、介电常数 $\varepsilon_2$ 的球在均匀外电场 $\boldsymbol{E}_0$（背景 $\varepsilon_1$）中，有：
+&lt;/p&gt;
+\[
+\boldsymbol{E}_{\text{in}} = \frac{3\varepsilon_1}{\varepsilon_2 + 2\varepsilon_1} \boldsymbol{E}_0,
+\qquad
+\boldsymbol{p} = 4\pi\varepsilon_1 R^3 \frac{\varepsilon_2 - \varepsilon_1}{\varepsilon_2 + 2\varepsilon_1} \boldsymbol{E}_0.
+\]&lt;p&gt;&lt;strong&gt;类比关系：&lt;/strong&gt;
+$\boldsymbol{E} \to \boldsymbol{H}$，$\varepsilon \to \mu$，$\boldsymbol{p} \to \boldsymbol{m}$。&lt;/p&gt;
+&lt;p&gt;直接写出磁场结果：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1) 磁感应强度 $\boldsymbol{B}$&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;球内：
+&lt;/p&gt;
+\[
+\boldsymbol{H}_{\text{in}} = \frac{3\mu_1}{\mu_2 + 2\mu_1} \boldsymbol{H}_0
+\quad\Rightarrow\quad
+\boldsymbol{B}_{\text{in}} = \mu_2 \boldsymbol{H}_{\text{in}}
+= \frac{3\mu_2\mu_1}{\mu_2 + 2\mu_1} \boldsymbol{H}_0
+= \frac{3\mu_2}{\mu_2 + 2\mu_1} \boldsymbol{B}_0.
+\]&lt;p&gt;
+用相对磁导率表示：
+&lt;/p&gt;
+\[
+\boldsymbol{B}_{\text{in}} = \frac{3\mu_{r2}}{\mu_{r2} + 2\mu_{r1}} \boldsymbol{B}_0.
+\]&lt;p&gt;球外：令
+&lt;/p&gt;
+\[
+\gamma = \frac{\mu_{r2} - \mu_{r1}}{\mu_{r2} + 2\mu_{r1}},
+\]&lt;p&gt;
+则
+[
+\boldsymbol{B}_{\text{out}} = B_0\left[ \left(1 + 2\gamma\frac{R^3}{r^3}\right)\cos\theta\ \hat{r}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;\left(-1 + \gamma\frac{R^3}{r^3}\right)\sin\theta\ \hat{\theta} \right].
+]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;(2) 等效磁矩 $\boldsymbol{m}$&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;等效磁矩m应满足
+&lt;/p&gt;
+\[
+\boldsymbol{H}_{\text{out}}(\boldsymbol{r}) = \frac{1}{4\pi} \left[ \frac{3(\boldsymbol{m} \cdot \boldsymbol{r})\boldsymbol{r}}{r^5} - \frac{\boldsymbol{m}}{r^3} \right]
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+\boldsymbol{m} = 4\pi R^3 \frac{\mu_2 - \mu_1}{\mu_2 + 2\mu_1} \boldsymbol{H}_0.
+\]&lt;p&gt;
+代入 $\mu_1 = \mu_{r1}\mu_0$，$\mu_2 = \mu_{r2}\mu_0$，$\boldsymbol{H}_0 = \boldsymbol{B}&lt;em&gt;0 / (\mu&lt;/em&gt;{r1}\mu_0)$：
+&lt;/p&gt;
+\[
+\boldsymbol{m} = 4\pi R^3 \frac{\boldsymbol{B}_0}{\mu_0\mu_{r1}} \cdot \frac{\mu_{r2} - \mu_{r1}}{\mu_{r2} + 2\mu_{r1}}.
+\]&lt;h2 id=&#34;71&#34;&gt;7.1
+&lt;/h2&gt;&lt;p&gt;解 (1) 线圈中的感应电动势为 $\mathcal{E} = v B a$，方向为逆时针。该电动势在线圈中产生逆时针感应电流，电流强度为 $I = \mathcal{E}/R = v B a / R$。该线圈所受的磁力等于其进入磁场区的长度为 $a$ 的横边所受的安培力 $F = -I a B = -v B^2 a^2 / R$，右边的负号表示受力的方向与线圈运动方向相反。&lt;/p&gt;
+&lt;p&gt;(2) 电流强度为 $I$ 的长直载流导线产生的磁场为 $B = \mu_0 I / (2\pi r)$，$r$ 为离载流导线的距离。设矩形线圈紧靠载流导线一边离导线的距离为 $x$，则穿过线圈的磁通等于
+&lt;/p&gt;
+\[
+\Phi_b = \iint_S \boldsymbol{B} \cdot \mathrm{d}\boldsymbol{S} = \int_x^{x+b} \frac{\mu_0 I}{2\pi r} \cdot a \, \mathrm{d}r = \frac{\mu_0 I a}{2\pi} \ln\left(\frac{x+b}{x}\right)
+\]&lt;p&gt;
+磁通方向指向纸面。规定电动势的方向为顺时针，与磁通方向满足右手定则，得
+&lt;/p&gt;
+\[
+\mathcal{E} = -\frac{\mathrm{d}\Phi_b}{\mathrm{d}t} = -\frac{\mu_0 I a}{2\pi}\left(\frac{1}{x+b} - \frac{1}{x}\right)\frac{\mathrm{d}x}{\mathrm{d}t} = \frac{\mu_0 I a b v}{2\pi x(x+b)} = \frac{\mu_0 I a b}{2\pi t(vt + b)}
+\]&lt;h2 id=&#34;72&#34;&gt;7.2
+&lt;/h2&gt;&lt;p&gt;解 取球坐标 $(r,\theta,\phi)$，原点位于线圈中心，$z$ 轴与转轴一致。磁矩为 $\boldsymbol{\mu} = -\mu \boldsymbol{e}_z$ 的小磁体产生的磁场为
+&lt;/p&gt;
+\[
+\boldsymbol{B} = -\frac{\mu_0 \mu \cos\theta}{2\pi r^3} \boldsymbol{e}_r - \frac{\mu_0 \mu \sin\theta}{4\pi r^3} \boldsymbol{e}_\theta
+\]&lt;p&gt;
+$PC$ 段切割磁力线运动，该段导线上产生的感应电动势等于
+&lt;/p&gt;
+\[
+\mathcal{E}_{PC} = \int_0^{\pi/2} \left[\omega R \sin\theta \boldsymbol{e}_\phi \times \left(-\frac{\mu_0 \mu \cos\theta}{2\pi R^3} \boldsymbol{e}_r - \frac{\mu_0 \mu \sin\theta}{4\pi R^3} \boldsymbol{e}_\theta\right)\right] \cdot \boldsymbol{e}_\theta R \, \mathrm{d}\theta
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+= -\int_0^{\pi/2} \frac{\omega \mu \mu_0 \sin\theta \cos\theta}{2\pi R} \, \mathrm{d}\theta = -\frac{\mu_0 \mu \omega}{4\pi R}
+\]&lt;p&gt;
+负号表示感应电动势（即感应电流）的方向从 $C$ 到 $P$。&lt;/p&gt;
+&lt;h2 id=&#34;73&#34;&gt;7.3
+&lt;/h2&gt;&lt;p&gt;解 取直角坐标 $(x,y,z)$，原点位于 $AB$ 轴的中点，$z$ 轴正向自 $B$ 至 $A$，磁场 $\boldsymbol{B}$ 沿 $y$ 轴正向，$\theta$ 为线圈平面法向与 $y$ 轴之间的夹角。由于线圈刚性旋转，各部分的速度与线圈平面法向一致，亦即速度 $\boldsymbol{v}$ 和磁场 $\boldsymbol{B}$ 之间的夹角也等于 $\theta$。考察线圈 $AC$ 段的某点 $P$，该点离 $A$ 点的距离为 $l$，离 $z$ 轴的距离为 $r = \sqrt{3} l / 2$，速度为 $v = \omega r = \sqrt{3} \omega l / 2$，则作用在单位正电荷上的非静电力为
+&lt;/p&gt;
+\[
+\boldsymbol{K} = \boldsymbol{v} \times \boldsymbol{B} = -v B \sin\theta \boldsymbol{e}_z
+\]&lt;p&gt;
+将其投影至 $AC$ 方向，应当乘以因子 $\cos 60^\circ = 1/2$；然后沿 $AC$ 积分，求得
+&lt;/p&gt;
+\[
+\mathcal{E}_{AC} = \int_A^C (\boldsymbol{v} \times \boldsymbol{B}) \cdot \mathrm{d}\boldsymbol{l} = \int_0^a \frac{\sqrt{3} \omega l B \sin\theta}{2} \cdot \frac{1}{2} \, \mathrm{d}l = \frac{\sqrt{3}}{8} B \omega a^2 \sin\theta
+\]&lt;p&gt;
+采取类似方式可算得 $\mathcal{E}&lt;em&gt;{BC}$，区别仅仅在于：在将非静电力场沿 $BC$ 方向投影时，应乘以因子 $\cos 120^\circ = -1/2$，以至算得的 $\mathcal{E}&lt;/em&gt;{BC}$ 与 $\mathcal{E}_{AC}$ 反号，即
+&lt;/p&gt;
+\[
+\mathcal{E}_{BC} = -\mathcal{E}_{AC} = -\frac{\sqrt{3}}{8} B \omega a^2 \sin\theta
+\]&lt;p&gt;
+$AB$ 段静止，不会有动生电动势。回路的总动生电动势为
+&lt;/p&gt;
+\[
+\mathcal{E} = \mathcal{E}_{AC} + \mathcal{E}_{CB} = \frac{\sqrt{3}}{4} B \omega a^2 \sin\theta
+\]&lt;p&gt;
+由它产生的感应电流为
+&lt;/p&gt;
+\[
+I = \mathcal{E} / R = \frac{\sqrt{3}}{4R} B \omega a^2 \sin\theta
+\]&lt;p&gt;
+将欧姆定律 $\rho \boldsymbol{j} = \boldsymbol{E} + \boldsymbol{K}$ 沿某段线圈导线积分，不妨设为 $AB$ 段，可得
+&lt;/p&gt;
+\[
+IR = V_{AB} + \mathcal{E}_{AB}
+\]&lt;p&gt;
+从上式出发，分别求得顶点之间的电势差为（注意正三角形每边的电阻为 $R/3$）
+&lt;/p&gt;
+\[
+V_{AC} = \frac{IR}{3} - \mathcal{E}_{AC} = \frac{\sqrt{3}}{12} B \omega a^2 \sin\theta - \frac{\sqrt{3}}{8} B \omega a^2 \sin\theta = -\frac{\sqrt{3}}{24} B \omega a^2 \sin\theta
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+V_{CB} = \frac{IR}{3} - \mathcal{E}_{CB} = \frac{\sqrt{3}}{12} B \omega a^2 \sin\theta - \frac{\sqrt{3}}{8} B \omega a^2 \sin\theta = -\frac{\sqrt{3}}{24} B \omega a^2 \sin\theta
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+V_{BA} = \frac{IR}{3} - \mathcal{E}_{BA} = \frac{IR}{3} = \frac{\sqrt{3}}{12} B \omega a^2 \sin\theta
+\]&lt;h2 id=&#34;74&#34;&gt;7.4
+&lt;/h2&gt;&lt;p&gt;解 (1) 取圆柱坐标 $(\rho,\phi,z)$，$z$ 轴与转轴重合。在轮子旋转过程中，轮子各点的速度沿 $-\boldsymbol{e}_\phi$ 方向，磁场沿 $-\boldsymbol{e}&lt;em&gt;z$ 方向，则非静电力场 $\boldsymbol{K} = \boldsymbol{v} \times \boldsymbol{B}$ 沿 $\boldsymbol{e}&lt;/em&gt;\rho$ 方向。于是，可求得感应电动势如下
+&lt;/p&gt;
+\[
+\mathcal{E} = \int_0^a (\boldsymbol{v} \times \boldsymbol{B}) \cdot \mathrm{d}\boldsymbol{l} = \int_0^a \omega \rho B \, \mathrm{d}\rho = \frac{B \omega a^2}{2}
+\]&lt;p&gt;(2) 四根辐条并联，电阻为 $r_0 = r/4$，当 $R = r_0 = r/4$ 时，可获得最大输出功率
+&lt;/p&gt;
+\[
+P_{\max} = I^2 R = \left(\frac{\mathcal{E}}{R + r_0}\right)^2 R = \left(\frac{B \omega a^2 / 2}{r/2}\right)^2 \cdot \frac{r}{4} = \frac{B^2 \omega^2 a^4}{4r}
+\]&lt;h2 id=&#34;75&#34;&gt;7.5
+&lt;/h2&gt;&lt;p&gt;解 (1) 闷罐车两边之间的金属板上的感应电动势为
+&lt;/p&gt;
+\[
+\mathcal{E} = B l v = 0.62 \times 10^{-4} \times 2.5 \times \frac{60 \times 10^3}{3600} \approx 2.6 \times 10^{-3} \, \mathrm{V}
+\]&lt;p&gt;(2) 在地面参考系中，相对车厢静止的电荷随车厢一道运动，速度为 $v$。该电荷受到洛伦兹力；为维持匀速直线运动状态不变，该力需要同样大小但方向相反的静电力与之平衡，据此推得静电场的大小
+&lt;/p&gt;
+\[
+qE = q v B \Rightarrow E = v B = \frac{60 \times 10^3}{3600} \times 0.62 \times 10^{-4} = 1.03 \times 10^{-3} \approx 1.0 \times 10^{-3} \, \mathrm{V \cdot m^{-1}}
+\]&lt;p&gt;
+可是，在车厢参考系中，静止电荷不受洛伦兹力，相应静电力也应当等于零。因此，在车厢参考系中净电场为零。&lt;/p&gt;
+&lt;p&gt;(3) 闷罐车每边上的面电荷密度为
+&lt;/p&gt;
+\[
+\sigma = \epsilon_0 E = 8.85 \times 10^{-12} \times 1.03 \times 10^{-3} = 9.1 \times 10^{-15} \, \mathrm{C \cdot m^{-2}}
+\]&lt;h2 id=&#34;76&#34;&gt;7.6
+&lt;/h2&gt;&lt;p&gt;解 (1) 采用圆柱坐标 $(\rho,\phi,z)$，$z$ 轴与盘轴重合。由对称性，随时间变化的磁场产生的涡旋电场只有 $\hat{\phi}$ 分量，其大小只与 $\rho$ 有关。选择半径为 $\rho$ 的圆形回路，圆面与 $z$ 轴垂直，且圆心位于 $z$ 轴上，利用时变电磁场的环路定理，可算得涡旋电场的分布如下
+&lt;/p&gt;
+\[
+E_\phi \cdot 2\pi \rho = -\frac{\mathrm{d}B_0}{\mathrm{d}t} \cdot \pi \rho^2 \Rightarrow E_\phi(\rho &lt; R) = -\frac{\rho}{2} \frac{\mathrm{d}B_0}{\mathrm{d}t}
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+E_\phi(\rho &gt; R) = -\frac{R^2}{2\rho} \frac{\mathrm{d}B_0}{\mathrm{d}t}
+\]&lt;p&gt;(2) 由欧姆定律算得导体盘的电流密度 $j_\phi = \sigma E_\phi$。&lt;/p&gt;
+&lt;p&gt;(3) 盘耗散的总功率为
+&lt;/p&gt;
+\[
+P = \int_0^R \sigma \cdot \left(\frac{\rho}{2} \frac{\mathrm{d}B_0}{\mathrm{d}t}\right)^2 \cdot \delta \cdot 2\pi \rho \, \mathrm{d}\rho + \int_R^a \sigma \cdot \left(\frac{R^2}{2\rho} \frac{\mathrm{d}B_0}{\mathrm{d}t}\right)^2 \cdot \delta \cdot 2\pi \rho \, \mathrm{d}\rho
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+= \frac{\pi \delta \sigma R^4}{8} \left(\frac{\mathrm{d}B_0}{\mathrm{d}t}\right)^2 \left(1 + 4\ln\frac{a}{R}\right)
+\]&lt;h2 id=&#34;77&#34;&gt;7.7
+&lt;/h2&gt;&lt;p&gt;解 (1) 大线圈中心磁场为 $B = \mu_0 N_x I / (2R)$，小线圈中感应电动势为
+&lt;/p&gt;
+\[
+\mathcal{E} = N_x \frac{\mathrm{d}\Phi}{\mathrm{d}t} = N_x S \frac{\mathrm{d}B}{\mathrm{d}t} = \frac{\mu_0 N_x N_x S}{2R} \frac{\mathrm{d}I}{\mathrm{d}t}
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+= \frac{4\pi \times 10^{-7} \times 10^4 \times 5 \times 10^3 \times 3 \times 10^{-4} \times 5 \times 10^3}{2 \times 0.5} = 94.2 \, \mathrm{V}
+\]&lt;p&gt;(2) 匀速旋转的载流大线圈在静止小线圈中产生的时变电动势
+&lt;/p&gt;
+\[
+\mathcal{E}(t) = N_x \frac{\mathrm{d}\Phi}{\mathrm{d}t} = N_x \frac{\mathrm{d}}{\mathrm{d}t} \left( S \cdot \frac{\mu_0 N_x I}{2R} \cos\omega t \right) = -\frac{\mu_0 N_x N_x S I \omega}{2R} \sin\omega t
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+= -\frac{4\pi \times 10^{-7} \times 10^4 \times 5 \times 10^3 \times 3 \times 10^{-4} \times 0.2 \times 4\pi \times 10^3}{2 \times 0.5 \times 60} \sin\left(\frac{4\pi \times 10^3}{60} t\right)
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+= -0.790 \sin(209t) \, \mathrm{V}
+\]&lt;h2 id=&#34;反馈意见&#34;&gt;反馈意见
+&lt;/h2&gt;&lt;p&gt;个人非常不建议无法理解、经常记错电磁类比的同学死记硬背6.24，习题课可以讲一下怎么直接解Poisson方程。&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Answer to Homework-15 of Electromagnetics.A</title>
+        <link>http://localhost:1313/p/answer-to-homework-15-of-electromagnetics.a/</link>
+        <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/answer-to-homework-15-of-electromagnetics.a/</guid>
+        <description>&lt;img src="http://localhost:1313/p/answer-to-homework-15-of-electromagnetics.a/front%20page%20%282%29.jpg" alt="Featured image of post Answer to Homework-15 of Electromagnetics.A" /&gt;&lt;p&gt;This page is the ONELINE MIRROR VERSION of the answer to homework 15 of the course Electromagnetics.A,
+CourseID PHYS1004.09, 2026 Spring, 5401, USTC.
+Last update : 2026/6/1;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;题目&#34;&gt;题目
+&lt;/h2&gt;&lt;p&gt;电磁学.第三版.习题&lt;/p&gt;
+&lt;h2 id=&#34;78&#34;&gt;7.8
+&lt;/h2&gt;&lt;p&gt;一环形螺线管有 $N$ 匝,环半径为 $R$ ,环的横截面为矩形.
+(1)求此螺线管的自感系数;
+(2)求这个环形螺线管和位于它的对称轴处的长直导线之间的互感系数.&lt;/p&gt;
+&lt;p&gt;解 (1)螺线管内磁场为 $B(r)=\mu_{0} N I /(2 \pi r)$ ,则通过它的全磁通为
+&lt;/p&gt;
+\[
+\Psi=N \iint B \cdot \mathrm{d}S=N \cdot \int_{R-a}^{R+a} \frac{\mu_{0} N I}{2 \pi r} h \mathrm{d}r=\frac{\mu_{0} N^{2} I h}{2 \pi} \ln \left(\frac{R+a}{R-a}\right)
+\]&lt;p&gt;
+螺线管的自感系数等于
+&lt;/p&gt;
+\[
+L=\frac{\Psi}{I}=\frac{\mu_{0} N^{2} h}{2 \pi} \ln \left(\frac{R+a}{R-a}\right)
+\]&lt;p&gt;(2)长直导线产生的磁场为 $B=\mu_{0} I /(2 \pi r)$ ,它通过螺线管的全磁通为
+&lt;/p&gt;
+\[
+\Psi=N \iint_{S} B \mathrm{d}S=\frac{\mu_{0} N I h}{2 \pi} \ln \left(\frac{R+a}{R-a}\right)
+\]&lt;p&gt;
+螺线管和长直导线之间的互感系数等于
+&lt;/p&gt;
+\[
+M=\frac{\Psi}{I}=\frac{\mu_{0} N h}{2 \pi} \ln \left(\frac{R+a}{R-a}\right)
+\]&lt;h2 id=&#34;79&#34;&gt;7.9
+&lt;/h2&gt;&lt;p&gt;在一个半径为10cm、截面积为 $12 ~\mathrm{cm}^{2}$ 的铁环上均匀地绕有1200 匝绝缘导线,环上有一宽度为1mm 的气隙. 设铁的相对磁导率是700,它与磁场强度无关, 且忽略磁滞效应.
+(1)当有1A 的电流通过线圈时,求气隙中的磁场;
+(2)计算该线圈的自感系数.&lt;/p&gt;
+&lt;p&gt;解 (1)设铁环半径为 $r$ ,截面积为 $S$ ,相对磁导率为 $\mu_{r}$ ,则铁芯和气隙的磁阻分别为
+&lt;/p&gt;
+\[
+R_{m1}=\frac{2 \pi r}{\mu_{r} \mu_{0} S},\quad R_{m2}=\frac{d}{\mu_{0} S}
+\]&lt;p&gt;
+对给定的磁动势 $N I$ ,可相继求得铁芯磁通和气隙的磁感应强度:
+&lt;/p&gt;
+\[
+\Phi_{B}=\frac{N I}{R_{m1}+R_{m2}}=\frac{\mu_{0} \mu_{r} S N I}{2 \pi r+\mu_{r} d}
+\]\[
+B=\frac{\Phi_{B}}{S}=\frac{\mu_{0} \mu_{r} N I}{2 \pi r+\mu_{r} d}=\frac{4 \pi \times 10^{-7} \times 700 \times 1200 \times 1}{2 \pi \times 0.1+700 \times 10^{-3}}=0.795\ (\mathrm{T})
+\]&lt;p&gt;(2)线圈的自感系数等于
+&lt;/p&gt;
+\[
+L=\frac{N \Phi_{B}}{I}=\frac{\mu_{0} \mu_{r} S N^{2}}{2 \pi r+\mu_{r} d}=\frac{4 \pi \times 10^{-7} \times 700 \times 12 \times 10^{-4} \times 1200^{2}}{2 \pi \times 0.1+700 \times 10^{-3}}=1.14\ (\mathrm{H})
+\]&lt;h2 id=&#34;710&#34;&gt;7.10
+&lt;/h2&gt;&lt;p&gt;一块铜片被弯成对应形状,已知 $R=2 ~\mathrm{cm}$ , $l=10 ~\mathrm{cm}$ , $a=2\mathrm{cm}$ , $d=0.4 ~\mathrm{cm}$ ,求
+(1) A、B 间管状区的自感系数;
+(2)输入端 A 和输出端 B 铜片之间的电容;
+(3)整个构件的共振频率.&lt;/p&gt;
+&lt;p&gt;解 设自 A、B 进出铜片的电流为 $I$ ,则在以弯曲铜片为边界的圆柱管内的磁感应强度为 $B=\mu_{0} i=\mu_{0} I / l$ ,推得管状区自感系数等于
+&lt;/p&gt;
+\[
+L=\frac{\Phi}{I}=\frac{\mu_{0} \pi R^{2}}{l}=\frac{4 \pi \times 10^{-7} \times \pi \times(0.02)^{2}}{0.1}=1.58 \times 10^{-8}\ (\mathrm{H})
+\]&lt;p&gt;
+输入和输出端铜片之间的电容等于
+&lt;/p&gt;
+\[
+C=\frac{\varepsilon_{0} a l}{d}=\frac{8.85 \times 10^{-12} \times 0.02 \times 0.1}{0.004}=4.43 \times 10^{-12}\ (\mathrm{F})
+\]&lt;p&gt;
+从而求得构件的最低共振频率
+&lt;/p&gt;
+\[
+\omega_{0}=\frac{1}{\sqrt{L C}}=\frac{1}{\sqrt{1.58 \times 10^{-8} \times 4.43 \times 10^{-12}}}=3.78 \times 10^{9}\ (\mathrm{rad \cdot s^{-1}})
+\]&lt;h2 id=&#34;711&#34;&gt;7.11
+&lt;/h2&gt;&lt;p&gt;一个变压器,线圈 A、B、C 的匝数分别为500,1000,500,截面积分别是 $0.005 ~\mathrm{m}^{2}$ , $0.001 ~\mathrm{m}^{2}$ , $0.0005 ~\mathrm{m}^{2}$ ,铁芯的水平臂截面积是 $0.002 ~\mathrm{m}^{2}$ , 如果芯的相对磁导率 $\mu_{r}=10000$ ,求:
+(1)线圈 A 和 C 间的互感;
+(2)线圈 A 和 B 间的互感.&lt;/p&gt;
+&lt;p&gt;解 等效磁路中, $R$ 为单个水平臂的磁阻, $R_{A}$、$R_{B}$ 和 $R_{C}$ 分别为三个线圈所绕铁芯的磁阻,它们的数值为
+&lt;/p&gt;
+\[
+R=\frac{0.2}{4 \pi \times 10^{-7} \times 10^{4} \times 0.002}=7.958 \times 10^{3}\ (\mathrm{H^{-1}})
+\]\[
+R_{A}=\frac{0.1}{4 \pi \times 10^{-7} \times 10^{4} \times 0.005}=\frac{R}{5}
+\]\[
+R_{B}=\frac{0.1}{4 \pi \times 10^{-7} \times 10^{4} \times 0.001}=R
+\]\[
+R_{C}=\frac{0.1}{4 \pi \times 10^{-7} \times 10^{4} \times 0.0005}=2 R
+\]&lt;p&gt;设在线圈 A 中通电流 $I_{A}$ ,相应磁动势等于 $N_{A} I_{A}$ . 磁路含3 个支路,它们的磁阻如下: 含线圈 A 的支路磁阻等于 $R_{1}=R_{A}+2 R=11 R / 5$ ;含线圈 B 的支路磁阻等于 $R_{2}=R_{B}=R$ ; 含线圈 C 的支路磁阻等于 $R_{3}=2 R+R_{C}=4 R$ . 支路2 和3 并联后的磁阻等于 $4 R \cdot R /(4 R+R)=4 R / 5$ ,于是流经支路1 的磁通为
+&lt;/p&gt;
+\[
+\Phi=\frac{N_{A} I_{A}}{R_{1}+4 R / 5}=\frac{N_{A} I_{A}}{11 R / 5+4 R / 5}=\frac{N_{A} I_{A}}{3 R}
+\]&lt;p&gt;
+据此可求得流经线圈 B (支路2)和线圈 C (支路3)的磁通分别为
+&lt;/p&gt;
+\[
+\Phi_{B}=\frac{R_{3} \Phi}{R_{2}+R_{3}}=\frac{4 R}{R+4 R} \frac{N_{A} I_{A}}{3 R}=\frac{4 N_{A} I_{A}}{15 R}=\frac{4 \times 500 I_{A}}{15 \times 7.958 \times 10^{3}}=1.676 \times 10^{-2} I_{A}\ (\mathrm{Wb})
+\]\[
+\Phi_{C}=\frac{R_{2} \Phi}{R_{2}+R_{3}}=\frac{R}{R+4 R} \frac{N_{A} I_{A}}{3 R}=\frac{N_{A} I_{A}}{15 R}=\frac{500 I_{A}}{15 \times 7.958 \times 10^{3}}=4.189 \times 10^{-3} I_{A}\ (\mathrm{Wb})
+\]&lt;p&gt;(1)线圈 A 和线圈 C 之间的互感: $M_{AC}=\Psi_{AC} / I_{A}=N_{C} \Phi_{C} / I_{A}=2.09\ \mathrm{H}$
+(2)线圈 A 和线圈 B 之间的互感: $M_{AB}=\Psi_{AB} / I_{A}=N_{B} \Phi_{B} / I_{A}=16.8\ \mathrm{H}$&lt;/p&gt;
+&lt;h2 id=&#34;712&#34;&gt;7.12
+&lt;/h2&gt;&lt;p&gt;一电磁铁由 $N$ 匝线圈紧绕在环形轭铁上构成,从轭铁上切去一小段形成气隙. 轭铁环的半径为 $b$ ,环截面的半径为 $a$ ,气隙宽度为 $w$ , 铁的磁导率 $\mu$ 为常数. 线圈由半径为 $r$、电阻率为 $\rho$ 的导线构成,磁铁线圈两端加有 电压 $V$. 为简单起见,假设 $b / a \gg 1$ , $a / r \gg 1$ , $b / w \gg 1$ ,推导下列诸量的表达式:
+(1)气隙中的稳定磁场;
+(2)稳态时线圈损耗的功率;
+(3)当电压 $V$ 变化时线圈中电流变化的时间常数.&lt;/p&gt;
+&lt;p&gt;解 (1)磁路方程如下:
+&lt;/p&gt;
+\[
+N I=\frac{w \Phi}{\mu_{0} S}+\frac{2 \pi b \Phi}{\mu S}=\frac{w B}{\mu_{0}}+\frac{2 \pi b B}{\mu} \Rightarrow B=\frac{\mu \mu_{0} N I}{2 \pi \mu_{0} b+\mu w}
+\]&lt;p&gt;
+线圈电流强度为
+&lt;/p&gt;
+\[
+I=\frac{V}{R}=\frac{V}{2 N \pi a \rho /\left(\pi r^{2}\right)}=\frac{V r^{2}}{2 a \rho N}
+\]&lt;p&gt;
+于是求得气隙中的磁感应强度
+&lt;/p&gt;
+\[
+B=\frac{\mu \mu_{0} V r^{2}}{2 a \rho\left(2 \pi \mu_{0} b+\mu w\right)}
+\]&lt;p&gt;(2)线圈损耗的功率
+&lt;/p&gt;
+\[
+P=V I=\frac{V^{2} r^{2}}{2 a \rho N}
+\]&lt;p&gt;(3)线圈中电流变化的时间常数.
+要计算线圈电流变化的时间常数,归结为计算线圈的自感系数. 通过线圈的全 磁通为
+&lt;/p&gt;
+\[
+\Psi=N \cdot B \cdot \pi a^{2}=\frac{\mu \mu_{0} N^{2} \pi a^{2}}{2 \pi \mu_{0} b+\mu w} I
+\]&lt;p&gt;
+于是线圈的自感系数等于 $L=\mu \mu_{0} N^{2} \pi a^{2} /(2 \pi \mu_{0} b+\mu w)$ ,据此求得电流变化的时间常数
+&lt;/p&gt;
+\[
+\tau=\frac{L}{R}=\frac{\mu \mu_{0} N a \pi r^{2}}{2 \rho\left(2 \pi \mu_{0} b+\mu w\right)}
+\]&lt;h2 id=&#34;713&#34;&gt;7.13
+&lt;/h2&gt;&lt;p&gt;一个边长分别为 $l$ 和 $w$ 的长方形线圈,在 $t=0$ 时刻正好从磁场为 $B$ 的区域上方由静止开始向下运动. 线圈的电阻为 $R$ ,自感为 $L$ , 质量为 $m$ ,它的上边处在零磁场区.
+(1)假定自感可以忽略而电阻不能忽略,求出线圈的作为时间函数的电流和 速度;
+(2)假定电阻可以忽略而电感不可以忽略,求出线圈的作为时间函数的电流和 速度.&lt;/p&gt;
+&lt;p&gt;解 (1)忽略线圈自感,考虑电阻,则电动势为 $E=B l v$ ,线圈电流为 $I=E / R=B l v / R$ ,线圈运动方程如下
+&lt;/p&gt;
+\[
+m \frac{\mathrm{d} v}{\mathrm{d} t}=m g-I l B \Rightarrow \frac{\mathrm{d} v}{\mathrm{d} t}=g-\frac{B^{2} l^{2}}{m R} v
+\]&lt;p&gt;
+线圈初始速度为零,由上述方程解得速度,继而由速度得电流,结果如下:
+&lt;/p&gt;
+\[
+v=\frac{m g R}{l^{2} B^{2}}\left[1-\exp\left(-\frac{B^{2} l^{2} t}{m R}\right)\right],\quad I=\frac{m g}{B l}\left[1-\exp\left(-\frac{B^{2} l^{2} t}{m R}\right)\right]
+\]&lt;p&gt;(2)忽略线圈电阻,考虑自感,电动势仍为 $E=B l v$ ,线圈电流满足
+&lt;/p&gt;
+\[
+L \frac{\mathrm{d} I}{\mathrm{d} t}=B l v
+\]&lt;p&gt;
+将上述方程代入线圈运动方程
+&lt;/p&gt;
+\[
+m \frac{\mathrm{d} v}{\mathrm{d} t}=m g-I l B
+\]&lt;p&gt;
+导出电流强度满足的二阶常微分方程如下
+&lt;/p&gt;
+\[
+\frac{\mathrm{d}^{2} I}{\mathrm{d} t^{2}}=\frac{B l g}{L}-\frac{B^{2} l^{2}}{m L} I
+\]&lt;p&gt;
+利用线圈初始速度和初始电流为零的条件,可解得
+&lt;/p&gt;
+\[
+I=\frac{m g}{B l}(1-\cos \omega t),\quad v=\frac{g}{\omega} \sin \omega t,\quad \omega=\frac{B l}{\sqrt{m L}}
+\]&lt;h2 id=&#34;714&#34;&gt;7.14
+&lt;/h2&gt;&lt;p&gt;空心螺线管长为0.5m,截面为 $1 ~\mathrm{cm}^{2}$ ,匝数为1000. 忽略边缘效应,它的 自感多大?一个100 匝的副线圈也绕在这个螺线管的中部,互感多大?现有1A 的 稳恒电流流入副线圈,螺线管连接着 $10^{3} \Omega$ 的负载. 如果上述稳恒电流突然停止,将 有多少电荷流过电阻?&lt;/p&gt;
+&lt;p&gt;解 当有电流 $I$ 流过螺线管,则螺线管中的磁场和全磁通为
+&lt;/p&gt;
+\[
+B=\mu_{0} n I=\frac{\mu_{0} N I}{l},\quad \Psi=N B S=\frac{\mu_{0} N^{2} I S}{l}
+\]&lt;p&gt;
+于是求得螺线管的自感如下
+&lt;/p&gt;
+\[
+L=\frac{\Psi}{I}=\frac{\mu_{0} N^{2} S}{l}=\frac{4 \pi \times 10^{-7} \times 1000^{2} \times 10^{-4}}{0.5}=2.51 \times 10^{-4}\ (\mathrm{H})
+\]&lt;p&gt;通过副线圈的全磁通为 $\Psi&amp;rsquo;=N&amp;rsquo; B S=\mu_{0} N&amp;rsquo; N I S / l$ ,相应原、副线圈之间的互感为
+&lt;/p&gt;
+\[
+M=\frac{\Psi&#39;}{I}=\frac{\mu_{0} N&#39; N S}{l}=\frac{4 \pi \times 10^{-7} \times 100 \times 1000 \times 10^{-4}}{0.5}=2.51 \times 10^{-5}\ (\mathrm{H})
+\]&lt;p&gt;设副线圈电流为 $I&amp;rsquo;$ ,主线圈电流为 $I$ ,则主线圈回路的电路方程如下:
+&lt;/p&gt;
+\[
+I R+L \frac{\mathrm{d} I}{\mathrm{d} t}+M \frac{\mathrm{d} I&#39;}{\mathrm{d} t}=0
+\]&lt;p&gt;
+将上式对时间积分得 $Q R+L \Delta I+M \Delta I&amp;rsquo;=0$ ,式中 $\Delta I$ 为主线圈电流变化,因 $I$ 开始的 初值为零,末态值也等于零,故有 $\Delta I=0$ ; $\Delta I&amp;rsquo;$ 为副线圈的电流变化,按题设, $I&amp;rsquo;$ 的 初值为1A,末态值显然等于零,以至 $\Delta I&amp;rsquo;=-1\ \mathrm{A}$ . 于是,流过电阻的电荷量为
+&lt;/p&gt;
+\[
+Q=-\frac{M \Delta I&#39;}{R}=-\frac{2.51 \times 10^{-5} \times(-1)}{10^{3}}=2.51 \times 10^{-8}\ (\mathrm{C})
+\]&lt;h2 id=&#34;715&#34;&gt;7.15
+&lt;/h2&gt;&lt;p&gt;无电阻的电感器 $L$ 连接金属导轨 M 的一端,施一 恒力 $F$ ,向右拉动金属棒 N. 该棒长为 $l$ ,质量为 $m$ ,在导轨上无摩擦地滑动,并切割 磁力线. 设导轨 M 与金属棒 N 的电阻为零,棒 N 在水平方向上的初始位置是 $x(0)=0$ , 初始速度是 $v(0)=0$ ,那么,
+(1)电路中电流 $I$ 和坐标 $x$ 之间的关系如何?
+(2)滑动棒的运动方程是什么?
+(3)求 $x(t)$ .
+(4)试分析滑动棒运动过程中的能量转换过程.&lt;/p&gt;
+&lt;p&gt;解 (1)金属棒切割磁力线运动产生的感应电动势为 $E=B l v$ ,相应的电路方程为
+&lt;/p&gt;
+\[
+L \frac{\mathrm{d} I}{\mathrm{d} t}=B l v=B l \frac{\mathrm{d} x}{\mathrm{d} t}
+\]&lt;p&gt;
+积分上式,利用初始条件 $x(0)=0$ 和 $I(0)=0$ ,得 $I=B l x / L$ .&lt;/p&gt;
+&lt;p&gt;(2)滑动棒的运动方程为
+&lt;/p&gt;
+\[
+m \frac{\mathrm{d} v}{\mathrm{d} t}=F-I l B \Rightarrow m \frac{\mathrm{d}^{2} x}{\mathrm{d} t^{2}}=F-\frac{B^{2} l^{2}}{L} x
+\]&lt;p&gt;(3)解运动方程,利用初始条件 $x(0)=0$ 和 $v(0)=0$ ,得
+&lt;/p&gt;
+\[
+x(t)=\frac{F L}{B^{2} l^{2}}(1-\cos \omega t) \quad\left(\omega=\frac{B l}{\sqrt{m L}}\right)
+\]&lt;p&gt;(4)由 $x(t)$ 可求得金属棒的速度和流经电感器的电流:
+&lt;/p&gt;
+\[
+v(t)=\frac{F L \omega}{B^{2} l^{2}} \sin \omega t,\quad I(t)=\frac{F}{B l}(1-\cos \omega t)
+\]&lt;p&gt;
+金属棒的动能为 $m v^{2} / 2$ ,电感的磁能为 $L I^{2} / 2$ . 依据上述结果,可分析金属棒运动 过程中的能量转换关系. 一开始,外力 $F$ 做正功,动能和磁能增加,在 $t=\pi /(2 \omega)$ 时, 动能达到最大值 $W_{\text{max }}=L F^{2} /(2 B^{2} l^{2})$ . 在这之后,外力继续做正功,磁能继续增加, 但动能减小. 至 $t=\pi / \omega$ 时,磁能达到最大值 $W_{\text{max }}$ ,动能降至零. 当 $t&amp;gt;\pi / \omega$ ,棒反 向运动,磁能减小,所消耗的磁能用来对外做功(外力 $F$ 做负功)和增加动能. 至 $t=3 \pi /(2 \omega)$ 时,动能达到最大值 $W_{\text{max }}$ . 此后直至 $t=2 \pi / \omega$ ,动能和磁能均减小到零, 所消耗的能量用来对外做功. 上述能量转换过程循环发生,周期为 $2 \pi / \omega$ .&lt;/p&gt;
+&lt;h2 id=&#34;716&#34;&gt;7.16
+&lt;/h2&gt;&lt;p&gt;由 $3 \times 10^{6} \Omega$ 的电阻、$1\mu\mathrm{F}$ 的电容和 $\mathcal{E}=4 ~\mathrm{V}$ 的电源连接成简单回路,试求在 电路接通后1s 的时刻,下列各量的变化率:
+(1)电容上电荷增加的速率;
+(2)电容器内储存能量的速率;
+(3)电阻上产生的热功率;
+(4)电源提供的功率.&lt;/p&gt;
+&lt;p&gt;解 (1)电路方程如下:
+&lt;/p&gt;
+\[
+R \frac{\mathrm{d} q}{\mathrm{d} t}+\frac{1}{C} q=\mathcal{E}
+\]&lt;p&gt;
+令 $\tau_{C}=R C=3 \times 10^{6} \times 10^{-6}=3\ (\mathrm{s})$ ,利用初始条件 $q(0)=0$ ,解得
+&lt;/p&gt;
+\[
+q(t)=C \mathcal{E}\left(1-\exp(-t / \tau_{C})\right)
+\]&lt;p&gt;
+$t=1 ~\mathrm{s}$ 时,电容上电荷的量为
+&lt;/p&gt;
+\[
+q(1)=4 \times 10^{-6} \times\left(1-\exp(-1 / 3)\right)=1.13 \times 10^{-6}\ (\mathrm{C})
+\]&lt;p&gt;
+电容电荷的增加速率为
+&lt;/p&gt;
+\[
+\frac{\mathrm{d} q}{\mathrm{d} t}=\frac{\mathcal{E}}{R} \exp(-t / \tau_{C})=\left(\frac{4}{3 \times 10^{6}}\right) \exp(-1 / 3)=9.55 \times 10^{-7}\ (\mathrm{C \cdot s^{-1}})
+\]&lt;p&gt;(2)电容器的储能 $W=q^{2} /(2 C)$ , $t=1 ~\mathrm{s}$ 时的储能速率为
+&lt;/p&gt;
+\[
+\frac{\mathrm{d} W}{\mathrm{d} t}=\frac{q}{C} \frac{\mathrm{d} q}{\mathrm{d} t}=\frac{1.13 \times 10^{-6}}{10^{-6}} \times 9.55 \times 10^{-7}=1.08 \times 10^{-6}\ (\mathrm{J \cdot s^{-1}})
+\]&lt;p&gt;(3) $t=1 ~\mathrm{s}$ 时的电阻消耗的功率
+&lt;/p&gt;
+\[
+P=I^{2} R=\left(\frac{\mathrm{d} q}{\mathrm{d} t}\right)^{2} R=\left(9.55 \times 10^{-7}\right)^{2} \times 3 \times 10^{6}=2.74 \times 10^{-6}\ (\mathrm{W})
+\]&lt;p&gt;(4) $t=1 ~\mathrm{s}$ 时的电源提供的功率
+&lt;/p&gt;
+\[
+P&#39;=\mathcal{E} I=4 \times 9.55 \times 10^{-7}=3.82 \times 10^{-6}\ (\mathrm{W})
+\]&lt;h2 id=&#34;81&#34;&gt;8.1
+&lt;/h2&gt;&lt;p&gt;有一个平绕于圆筒上的螺旋线圈,长10cm,直径1cm,共1000 匝,用每 千米电阻为247Ω的漆包线绕制. 求线圈的自感系数和电阻. 如果把这线圈接到电动 势为2V 的蓄电池上,问:
+(1)线圈中通电开始时的电流增长率是多少?
+(2)线圈中的电流达到稳定后,稳定电流是多少?
+(3)这回路的时间常数是多少?经过多少时间电流达到稳定值的一半?
+(4)电流稳定后,线圈中所储存的磁能是多少?磁能密度是多少?&lt;/p&gt;
+&lt;p&gt;解 线圈的自感系数和电阻等于
+&lt;/p&gt;
+\[
+L=\frac{\mu_{0} N^{2} S}{l}=\frac{4 \pi \times 10^{-7} \times 1000^{2} \times \pi \times 0.005^{2}}{0.1}=9.87 \times 10^{-4}\ (\mathrm{H})
+\]\[
+R=0.247 \times 1000 \times \pi \times 0.01=7.76\ (\Omega)
+\]&lt;p&gt;设给线圈加上电压 $V$ ,则可写下电路方程如下:
+&lt;/p&gt;
+\[
+V=L \frac{\mathrm{d} I}{\mathrm{d} t}+I R
+\]&lt;p&gt;
+满足上述方程和初始条件 $I(0)=0$ 的解为
+&lt;/p&gt;
+\[
+I=\frac{V}{R}\left(1-\exp\left(-\frac{R t}{L}\right)\right)
+\]&lt;p&gt;(1) $t=0$ 时的电流增长率:
+&lt;/p&gt;
+\[
+\left(\frac{\mathrm{d} I}{\mathrm{d} t}\right)_{t=0}=\frac{V}{L}=\frac{2}{9.87 \times 10^{-4}}=2.03 \times 10^{3}\ (\mathrm{A \cdot s^{-1}})
+\]&lt;p&gt;(2)稳定电流:
+&lt;/p&gt;
+\[
+I_{0}=\frac{V}{R}=\frac{2}{7.76}=0.258\ (\mathrm{A})
+\]&lt;p&gt;(3)时间常数:
+&lt;/p&gt;
+\[
+\tau=\frac{L}{R}=\frac{9.87 \times 10^{-4}}{7.76}=1.27 \times 10^{-4}\ (\mathrm{s})
+\]&lt;p&gt;
+电流降至初值一半所需的时间为
+&lt;/p&gt;
+\[
+t=\tau \ln 2=0.88 \times 10^{-4}\ (\mathrm{s})
+\]&lt;p&gt;(4)电流稳定后储存磁能:
+&lt;/p&gt;
+\[
+W=\frac{1}{2} L I^{2}=\frac{1}{2} \times 9.87 \times 10^{-4} \times 0.258^{2}=3.28 \times 10^{-5}\ (\mathrm{J})
+\]&lt;p&gt;
+相应磁能密度为
+&lt;/p&gt;
+\[
+w=\frac{W}{V_{\text{体}}}=\frac{3.28 \times 10^{-5}}{\pi \times 0.005^{2} \times 0.1}=4.18\ (\mathrm{J \cdot m^{-3}})
+\]&lt;h2 id=&#34;82&#34;&gt;8.2
+&lt;/h2&gt;&lt;p&gt;(1)利用磁场能量方法计算两个同轴导体圆柱面组成 的传输线单位长度的自感系数 $L$.
+(2)如果电流为常数,而将外圆柱面半径加倍,那么磁能(单位长度)增加多少?
+(3)在上述过程中,磁场做了多少功?电池提供了多少能量?二者与磁能的增 加有何关系?&lt;/p&gt;
+&lt;p&gt;解 (1)取圆柱坐标 $(r, \phi, z)$ .在 $a&amp;lt;r&amp;lt;b$ 区,磁感应强度 $B(r)=\mu_{0} I /(2 \pi r)$ , 磁能密度 $w=B^{2} /(2 \mu_{0})=\mu_{0} I^{2} /(8 \pi^{2} r^{2})$ ,单位长度的磁能为
+&lt;/p&gt;
+\[
+W=\int_{0}^{2 \pi} \mathrm{d}\phi \int_{a}^{b} w r \mathrm{d}r=\frac{\mu_{0} I^{2}}{4 \pi} \int_{a}^{b} \frac{1}{r} \mathrm{d}r=\frac{\mu_{0} I^{2}}{4 \pi} \ln \frac{b}{a}
+\]&lt;p&gt;
+由自感磁能(单位长度)公式 $W=L I^{2} / 2$ ,求得单位长度自感系数为
+&lt;/p&gt;
+\[
+L=\frac{2 W}{I^{2}}=\frac{\mu_{0}}{2 \pi} \ln \frac{b}{a}
+\]&lt;p&gt;(2)将外圆柱面半径加倍,磁能(单位长度)增加为
+&lt;/p&gt;
+\[
+\Delta W=\frac{\mu_{0} I^{2}}{4 \pi} \ln \frac{2 b}{a}-\frac{\mu_{0}}{4 \pi} I^{2} \ln \frac{b}{a}=\frac{\mu_{0} I^{2}}{4 \pi} \ln 2
+\]&lt;p&gt;(3)能量分析.
+外圆柱的面电流密度为 $i=I /(2 \pi r)$ , $r$ 为外圆柱半径. 面电流元 $i \mathrm{d}S=i r \mathrm{d}\phi \mathrm{d}z$ 受到 的磁力沿 $r$ 正向,其大小为 $i B \mathrm{d}S$ ,式中 $B$ 为总磁场减去面元的贡献,结果为
+&lt;/p&gt;
+\[
+B=\frac{\mu_{0} I}{2 \pi r}-\frac{\mu_{0} i}{2}=\frac{\mu_{0} I}{2 \pi r}-\frac{\mu_{0} I}{4 \pi r}=\frac{\mu_{0} I}{4 \pi r}
+\]&lt;p&gt;
+在外圆柱半径增大的过程中,运动方向与磁力方向一致,磁场对面电流元做正功. 当 外圆柱半径加倍,则磁场所做的总功为
+&lt;/p&gt;
+\[
+A_{1}=\int_{b}^{2 b} \mathrm{d}r \iint i B \mathrm{d}S=\frac{\mu_{0} I^{2}}{8 \pi^{2}} \int_{b}^{2 b} \mathrm{d}r \int_{0}^{2 \pi} \mathrm{d}\varphi \int_{0}^{1} \mathrm{d}z=\frac{\mu_{0} I^{2}}{4 \pi} \ln 2
+\]&lt;p&gt;
+它正好等于系统的磁能增加. 在上述过程中,电池供能等于
+&lt;/p&gt;
+\[
+A_{2}=-\int I \mathcal{E} \mathrm{d}t=\int I \mathrm{d}\Phi=I^{2} \int \mathrm{d}L=\frac{\mu_{0} I^{2}}{2 \pi}\left(\ln \frac{2 b}{a}-\ln \frac{b}{a}\right)=\frac{\mu_{0} I^{2}}{2 \pi} \ln 2
+\]&lt;p&gt;
+它等于磁场做功的2 倍;也就是说,电池供能等于磁场做功与磁能增加之和.&lt;/p&gt;
+&lt;h2 id=&#34;83&#34;&gt;8.3
+&lt;/h2&gt;&lt;p&gt;一个半径为 $R$ 的单匝圆线圈与长直导线共面,圆心与 直导线的距离为 $d$ ,且 $d&amp;gt;R$ . 设线圈和直导线的电流分别为 $I_{1}$、$I_{2}$ ,求相互作用能.&lt;/p&gt;
+&lt;p&gt;解 取圆柱坐标 $(\rho, \phi, z)$ ,原点位于圆线圈中心, $x$ 轴(对应 $\phi=0$ )与直导线 垂直, $z$ 轴与线圈平面垂直. 直线电流 $I_{2}$ 产生的磁场为 $B=\mu_{0} I_{2} /[2 \pi(d+\rho \cos \phi)]$ ,通 过线圈的全磁通为
+&lt;/p&gt;
+\[
+\begin{aligned}
+\Psi=\iint_{S} B \cdot \mathrm{d}S &amp;= \frac{\mu_{0} I_{2}}{2 \pi} \int_{0}^{R} \int_{0}^{2 \pi} \frac{\rho \mathrm{d}\rho \mathrm{d}\phi}{d+\rho \cos \phi}=\frac{\mu_{0} I_{2}}{\pi} \int_{0}^{R} \rho \mathrm{d}\rho \int_{0}^{\pi} \frac{\mathrm{d}\phi}{d+\rho \cos \phi} \\
+&amp;= \frac{\mu_{0} I_{2}}{\pi} \int_{0}^{R} \rho \mathrm{d}\rho \cdot \frac{2}{\sqrt{d^{2}-\rho^{2}}}\left(\arctan \left(\sqrt{\frac{d-\rho}{d+\rho}} \tan \frac{\phi}{2}\right)\right)\bigg|_{\phi=0}^{\phi=\pi} \\
+&amp;= \mu_{0} I_{2} \int_{0}^{R} \frac{\rho \mathrm{d}\rho}{\sqrt{d^{2}-\rho^{2}}}=\mu_{0} I_{2}\left(d-\sqrt{d^{2}-R^{2}}\right)
+\end{aligned}
+\]&lt;p&gt;
+两线圈之间的相互作用能为
+&lt;/p&gt;
+\[
+W=\Psi I_{1}=\mu_{0} I_{1} I_{2}\left[d-\left(d^{2}-R^{2}\right)^{\frac{1}{2}}\right]
+\]&lt;h2 id=&#34;84&#34;&gt;8.4
+&lt;/h2&gt;&lt;p&gt;把一磁偶极子 $\boldsymbol{m}$ 从无穷远移到一个理想导电环(具有零电阻)轴上一点, 环半径为 $b$ ,自感为 $L$ . 在终了位置上 $\boldsymbol{m}$ 的方向沿圆环的轴,与环心相距为 $z$ .当磁 偶极子在无穷远处时,环上的电流为零.
+(1)在终了位置时,计算环上的电流;
+(2)计算此位置上的磁偶极子与环之间的相互作用能.&lt;/p&gt;
+&lt;p&gt;解 (1)取球坐标 $(r, \theta, \phi)$ ,以磁偶极子所在位置为原点, $z$ 轴指向圆环中心. 磁偶极子在导电环所在球面 $(r=r_{m}=\sqrt{b^{2}+z^{2}})$ 上的磁场的$r$ 分量为
+&lt;/p&gt;
+\[
+B_{mr}=\frac{\mu_{0} m \cos \theta}{2 \pi r_{m}^{3}}
+\]&lt;p&gt;
+导电环位于 $\theta=\theta_{m}=\arcsin (b / r_{m})$ ,通过该环的磁通量为
+&lt;/p&gt;
+\[
+\Phi_{m}=\iint B_{mr} r_{m}^{2} \sin \theta \mathrm{d}\theta \mathrm{d}\phi=\frac{\mu_{0} m}{2 r_{m}} \sin ^{2} \theta_{m}=\frac{\mu_{0} m b^{2}}{2\left(b^{2}+z^{2}\right)^{\frac{3}{2}}}
+\]&lt;p&gt;
+理想导电环内的电场及其环路积分等于零,由法拉第定律可知穿过它的磁通 $\Phi$ 不会 改变,磁偶极子在无穷远处时,环上电流为零, $\Phi=0$ ,以至往后任意时刻均有 $\Phi=0$ . 移近磁偶极子,环上有电流 $I$ ,产生磁通为 $L I$ ,它应当抵消上述磁通 $\Phi_{m}$ ,以至有
+&lt;/p&gt;
+\[
+I=\frac{\Phi_{m}}{L}=\frac{\mu_{0} m b^{2}}{2 L\left(b^{2}+z^{2}\right)^{3 / 2}}
+\]&lt;p&gt;
+电流的方向沿着 $\phi$ 的负向;若沿磁矩 $\boldsymbol{m}$ 的方向看,电流沿逆时针方向.&lt;/p&gt;
+&lt;p&gt;(2)电流环在磁偶极子处的磁场仅有 $z$ 分量
+&lt;/p&gt;
+\[
+B_{z}=-\frac{\mu_{0} b^{2} I}{2\left(b^{2}+z^{2}\right)^{3 / 2}}=-\frac{\mu_{0}^{2} m b^{4}}{4 L\left(b^{2}+z^{2}\right)^{3}}
+\]&lt;p&gt;
+它与磁偶极子之间的相互作用能为
+&lt;/p&gt;
+\[
+W=\boldsymbol{m} \cdot \boldsymbol{B}=m B_{z}=-\frac{\mu_{0}^{2} m^{2} b^{4}}{4 L\left(b^{2}+z^{2}\right)^{3}}
+\]&lt;h2 id=&#34;85&#34;&gt;8.5
+&lt;/h2&gt;&lt;p&gt;将题8.2 中的导体圆柱面换成实心圆柱体,并假定电流沿截面均匀分布, 求单位长度的自感系数.&lt;/p&gt;
+&lt;p&gt;解 取圆柱坐标 $(r, \phi, z)$ . 由对称性,可判断磁场只有 $\phi$ 分量,且仅与 $r$ 有关;由 安培环路定理,可求得各区磁场. 在 $a&amp;lt;r&amp;lt;b$ 区,结果与题8.2 相同:磁感应强度 $B(r)=\mu_{0} I /(2 \pi r)$ ,单位长度磁能 $W_{1}=\mu_{0} I^{2} \ln (b / a) /(4 \pi)$ .在 $r&amp;lt;a$ 区, $B=\mu_{0} I r /(2 \pi a^{2})$ ,相 应单位长度磁能为
+&lt;/p&gt;
+\[
+W_{2}=\int_{0}^{a} \frac{1}{2 \mu_{0}}\left(\frac{\mu_{0} I r}{2 \pi a^{2}}\right)^{2} 2 \pi r \mathrm{d}r=\frac{\mu_{0} I^{2}}{4 \pi a^{4}} \int_{0}^{a} r^{3} \mathrm{d}r=\frac{\mu_{0} I^{2}}{16 \pi}
+\]&lt;p&gt;
+单位长度磁能为 $W=W_{1}+W_{2}$ ,相应单位长度自感系数为
+&lt;/p&gt;
+\[
+L=\frac{2 W}{I^{2}}=\frac{2\left(W_{1}+W_{2}\right)}{I^{2}}=\frac{\mu_{0}}{8 \pi}+\frac{\mu_{0}}{2 \pi} \ln \frac{b}{a}
+\]&lt;h2 id=&#34;86&#34;&gt;8.6
+&lt;/h2&gt;&lt;p&gt;一同轴电缆的芯子和外壳有无限大的电导率,它们的半径分别为$r_1$ 和 $r_2$ . 该电缆被一个可移动的隔板短路. 当电流 $I$ 流过这个电缆时,求作用 到这个隔板上的力.&lt;/p&gt;
+&lt;p&gt;解 取圆柱坐标 $(r, \phi, z)$ ,原点位于电缆输入端, $z$ 轴沿电缆轴线,隔板位于 $z=z_{0}$ . 因隔板的短路作用,电流和磁场仅限于 $z&amp;lt;z_{0}$ 区. 由对称性及安培环路定理求得 $r_{1}&amp;lt;r&amp;lt;r_{2}$ , $z&amp;lt;z_{0}$ 区磁场 $B=\mu_{0} I /(2 \pi r)$ ,从而算得通电电缆内部的总磁能如下
+&lt;/p&gt;
+\[
+W_{m}=\iiint \frac{B^{2}}{2 \mu_{0}} \cdot \mathrm{d}V=\frac{z_{0}}{2 \mu_{0}} \int_{r_{1}}^{r_{2}}\left(\frac{\mu_{0} I}{2 \pi r}\right)^{2} 2 \pi r \mathrm{d}r=\frac{\mu_{0} I^{2} z_{0}}{4 \pi} \ln \frac{r_{2}}{r_{1}}
+\]&lt;p&gt;
+&lt;/p&gt;
+\[
+\boldsymbol{F}=\nabla W_{m}=\frac{\mathrm{d}W}{\mathrm{d}z_{0}} \boldsymbol{e}_{z}=\frac{\mu_{0} I^{2}}{4 \pi} \ln \frac{r_{2}}{r_{1}} \boldsymbol{e}_{z}
+\]&lt;h2 id=&#34;87&#34;&gt;8.7
+&lt;/h2&gt;&lt;p&gt;一电磁铁. 用虚功原理证明:
+1)电磁铁吸引衔铁的起重力为 $F=S B^{2} /(2 \mu_{0})$ ,式中 $S$ 为两磁极与衔铁相接触 的总面积, $B$ 为电磁铁内的磁感应强度.
+2)起重力与磁极、衔铁间的距离 $x$ 有无关系?&lt;/p&gt;
+&lt;p&gt;证 (1)设铁芯长度为 $l$ ,磁路方程为
+&lt;/p&gt;
+\[
+N I=\Phi R_{m}=B\left(\frac{l}{\mu}+\frac{2 x}{\mu_{0}}\right) \Rightarrow B=\frac{\mu \mu_{0} N I}{\mu_{0} l+2 \mu x}
+\]&lt;p&gt;
+系统的磁能为
+&lt;/p&gt;
+\[
+W=\frac{1}{2} I \Psi=\frac{1}{2} I \cdot N B \cdot S=\frac{\mu \mu_{0} S N^{2} I^{2}}{4\left(\mu_{0} l+2 \mu x\right)}
+\]&lt;p&gt;
+由虚功原理求得衔铁受力
+&lt;/p&gt;
+\[
+F=\left(\frac{\mathrm{d} W_{m}}{\mathrm{d} x}\right)_{I}=-\frac{\mu^{2} \mu_{0} S N^{2} I^{2}}{2\left(\mu_{0} l+2 \mu x\right)^{2}}=-\frac{S B^{2}}{2 \mu_{0}}
+\]&lt;p&gt;
+为吸引力,证毕.&lt;/p&gt;
+&lt;p&gt;(2)在 $x$ 很小时,起重力与磁极、衔铁间的距离 $x$ 无关.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>TchrAsst Elecnetics Master</title>
+        <link>http://localhost:1313/p/tchrasst-elecnetics-master/</link>
+        <pubDate>Sun, 31 May 2026 23:55:23 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/tchrasst-elecnetics-master/</guid>
+        <description>&lt;img src="http://localhost:1313/front-page.jpg" alt="Featured image of post TchrAsst Elecnetics Master" /&gt;&lt;p&gt;This page is a control page, which indicates how sub-pages shall be written and organised.
+&amp;lsquo;Teacher Assistance/Electromagnetics&amp;rsquo; means Electromagnetics.A, CourseID PHYS1004.09, 2026 Spring, 5401, USTC.&lt;/p&gt;
+&lt;p&gt;Last update : 2026/5/31;
+Status: @ editing, updating, final&lt;/p&gt;
+&lt;h2 id=&#34;posts-of-course-notes&#34;&gt;Posts of Course Notes
+&lt;/h2&gt;&lt;p&gt;Not in schedule.&lt;/p&gt;
+&lt;h2 id=&#34;posts-of-homeworks&#34;&gt;Posts of Homeworks
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Each homework uss ONE posts.&lt;/li&gt;
+&lt;li&gt;Post directory shall be: &lt;code&gt;content/post/TchrAsst-Elecnetics-HmwkAns?&lt;/code&gt;, where &lt;code&gt;?&lt;/code&gt; refers to the index of each homework.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-write&#34;&gt;How to write
+&lt;/h3&gt;&lt;p&gt;Here is the prompt to transfer &lt;code&gt;.tex&lt;/code&gt; sources into markdown+katex code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;now I&amp;#39;m going to give you a tex document of source codes.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;transfer them into markdown language.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;note that, each \paragraph refers to a second level title in markdown.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;and math formula source codes shall be adopted into the katex language so the website can compile them.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Finally, you must put any outputs shall be in a source code braket, to protect them from being compiled by my browser.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;KEY NOTICE:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;katex do not have so many macros, so when it coms to:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/vb*{F} which means a bold italic F without arrow, thats a vector in physics, use ordinary codes to paraphrase them.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/dd is the non-italic letter &amp;#39;d&amp;#39;, which appears in integral and division. paraphrase them propaly too!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;why-some-katex-does-not-work&#34;&gt;Why some Katex does not work?
+&lt;/h3&gt;$$
+\boldsymbol{E}(r)=-\frac{\sigma R_2^2\boldsymbol{r}}{\varepsilon_0r^3},\quad (R_1&lt;r&lt;R_2)
+$$&lt;p&gt;
+Try add some more blanks:
+&lt;/p&gt;
+$$
+\boldsymbol{E}(r) = -\frac{\sigma R_2^2 \boldsymbol{r}}{\varepsilon_0 r^3}, \quad (R_1 &lt; r &lt; R_2)
+$$&lt;h2 id=&#34;posts-of-notes&#34;&gt;Posts of Notes
+&lt;/h2&gt;&lt;h3 id=&#34;how-to-write-1&#34;&gt;How to write
+&lt;/h3&gt;&lt;p&gt;Here is the prompt to summarize PPT or other documents into a .tex file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是电磁学第5章关于静磁场的讲义。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;现在作为助教，我要为同学们写一个考前复习笔记，用于上习题课。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;请分析讲义，把其中关键概念，核心模型/定理/公式，以及典型的例题摘录下来，
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;形成一个tex格式的源代码。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;要求：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1. 不是原封不动的把讲义全部内容重写出来！只选取核心的，关键的，考试必考的内容，写下来。特别是有一些易错的知识点，附加一些说明，方便同学们复习时更好的理解。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2. 每一个小节对应一个subsection，最大的section就是\section{稳恒电流}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;subsection之下，每一个知识点，用一个paragraph引导，paragraph需要简练的概括本段落知识点讲的是什么。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;3. 数学公式，最重要的，考试/做题极其常用的，必须记忆的那些，放在equation里面，也就是要加编号。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;其余辅助推导性质的，放在\[\]里，不需要编号。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;4. 大段数学公式推导过程一般是不需要的，主要写结论。但是如果与核心概念理解有重要关系，可以简要的写一下。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;5. 数学公式格式：我们已经使用了physics宏包，因此：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;矢量，粗斜体无箭头，使用\vb*{}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;微分符号d，正体，使用\dd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;梯度散度旋度，分别可用\grad{},\div{},\rot{}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;幂指数e，正体，虚数单位i，正体。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;6. 把生成的tex源码放在一个代码框内，防止浏览器编译它们
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;7. 不要把在markdown里面的坏习惯（例如**表示加粗等）带到latex里面！如果需要，可以使用\textcolor{t2}{你要高亮的文字blablabla}来突出强调文字。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这一章在电磁学里面非常重要并且可能对于大多数初学者难以掌握。因此你的复习笔记务必包含以下知识点（这不意味着说别的知识点就不用写了！而是以下的必须涵盖！）：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;XXX知识点/模型/例题
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>MySQL Learn Part B</title>
+        <link>http://localhost:1313/p/mysql-learn-part-b/</link>
+        <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/mysql-learn-part-b/</guid>
+        <description>&lt;img src="http://localhost:1313/front-page.png" alt="Featured image of post MySQL Learn Part B" /&gt;&lt;p&gt;本文是mysql学习笔记.&lt;/p&gt;
+&lt;h2 id=&#34;mysql服务器管理规则&#34;&gt;MySQL服务器管理规则
+&lt;/h2&gt;&lt;h3 id=&#34;存储引擎&#34;&gt;存储引擎
+&lt;/h3&gt;&lt;p&gt;含义：mysql服务器提供表文件管理方案&lt;/p&gt;
+&lt;p&gt;查看mysql服务器存在存储引擎&lt;code&gt;show engines&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;修改mysql服务器默认存储引擎：通过修改my.ini设置默认存储引擎 &lt;code&gt;default-storage-engine=myisam&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看表文件依赖存储引擎&lt;code&gt;show create table 表文件&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;修改表文件依赖存储引擎&lt;code&gt;alter table表文件 engine=新存储引擎名&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;INNODB与MYISAM 区别&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;myisam:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;采用三个文件存储信息 【xx.frm &amp;mdash;- 字段信息、xx.myd &amp;mdash; 数据行、xx.myi &amp;mdash;- 索引】&lt;/li&gt;
+&lt;li&gt;增加表文件操作速度,不支持事务管理&lt;/li&gt;
+&lt;li&gt;如果表文件操作以查询为主,建议采用myisam&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;innodb:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;采用frm文件存储信息（字段,数据行,索引）&lt;/li&gt;
+&lt;li&gt;增加表文件数据安全性。在九种存储引擎中唯一支持事务管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;约束管理方案&#34;&gt;约束管理方案
+&lt;/h3&gt;&lt;p&gt;确保字段内容符合实际情况。&lt;/p&gt;
+&lt;p&gt;MySQL有五种约束：&lt;/p&gt;
+&lt;h4 id=&#34;非空约束&#34;&gt;非空约束
+&lt;/h4&gt;&lt;p&gt;不允许字段值为NULL。格式&lt;code&gt;create table tb(字段名 字段类型 not null)&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;唯一性约束&#34;&gt;唯一性约束
+&lt;/h4&gt;&lt;p&gt;字段值不能重复，但是可有多个NULL。格式&lt;code&gt;create table tb(字段名 字段类型 unique)&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;主键约束&#34;&gt;主键约束
+&lt;/h4&gt;&lt;p&gt;用于管理主键字段，不能重复也不能为NULL。格式&lt;code&gt;create table tb(字段名 字段类型 primary key)&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;外键约束&#34;&gt;外键约束
+&lt;/h4&gt;&lt;p&gt;用于管理外键字段，要求字段值必须来自于一方表主键字段已经存在的值，同时允许NULL。
+格式&lt;code&gt;alter table 多方表 add constraint 约束对象名 foreign key(多方表外键字段名) references 一方表(一方表主键字段名)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;例如，为emp添加了约束：&lt;code&gt;alter table emp add constraint extkey_deptno foreign key(deptno) references dept(deptno)&lt;/code&gt;，
+那么就无法执行如下添加：&lt;code&gt;insert into emp(empno,ename,deptno) values(555,&#39;Nagisa&#39;,50)&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;自定义约束&#34;&gt;自定义约束
+&lt;/h4&gt;&lt;h2 id=&#34;视图背-&#34;&gt;视图（背 @@@）
+&lt;/h2&gt;&lt;p&gt;视图是MySQL提供的内置管理对象。
+视图对象内部采用 键值对 的形式存储，key 存储查询语句，value 存储查询语句对应字段管理权.&lt;/p&gt;
+&lt;p&gt;这是由于，大项目中一个数据库可服务于多个业务，要对不同业务访问数据库做权限管理。&lt;/p&gt;
+&lt;p&gt;例子：视图一对象&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;key&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/th&gt;
+          &lt;th&gt;value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;select deptno from dept&lt;/td&gt;
+          &lt;td&gt;deptno 使用权&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;视图的创建：&lt;code&gt;create view 视图对象名 as 查询语句&lt;/code&gt;，例如&lt;code&gt;create view view_one as select empno,ename,job,sal from emp&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;视图的作用：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;提高查询语句的复用率。举例：可以直接使用&lt;code&gt;select * from view_one&lt;/code&gt;，直接得到&lt;code&gt;select ename,job,sal from emp&lt;/code&gt;的结果。
+这有利于复用复杂的查询语句&lt;/li&gt;
+&lt;li&gt;分发开发者对表的使用权力。举例：
+&lt;ul&gt;
+&lt;li&gt;插&lt;code&gt;insert into view_one(empno,ename,job) values(7766,&#39;MIO&#39;, &#39;Manager&#39;)&lt;/code&gt;&lt;cite&gt;注意&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/li&gt;
+&lt;li&gt;删&lt;code&gt;delete from view_one where ename=&#39;Nagisa&#39;&lt;/code&gt;，&lt;/li&gt;
+&lt;li&gt;改&lt;code&gt;update view_one set ename=&#39;BoBB&#39; where ename=&#39;AliceWang&#39;&lt;/code&gt;
+避免开发者直接操作整个emp表的所有字段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;索引-index--sql优化必考-&#34;&gt;索引 index &amp;ndash; SQL优化（必考 @@@）
+&lt;/h2&gt;&lt;h3 id=&#34;什么是索引&#34;&gt;什么是索引
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;索引存在硬盘中一个数组&lt;/li&gt;
+&lt;li&gt;数组有序存放表文件中某个字段下所有数据以及数据所在行数&lt;/li&gt;
+&lt;li&gt;如果表文件采用INNODB引擎管理,索引存在frm文件；如果表文件采用myisam引擎管理,索引存在myi文件&lt;/li&gt;
+&lt;li&gt;索引作用: 减少遍历临时表中数据行次数,增加查询速度【但是增删查会影响速度，因为要更新索引】&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例如&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/static/append/MySQL-Learn-Part.B/005.xlsx&#34; &gt;参考脚本&lt;/a&gt;中，为年龄字段构建索引。
+一般来说，&lt;code&gt;where age=20&lt;/code&gt;定位条件要遍历整张表，若有索引则会使用Btree算法&lt;/p&gt;
+&lt;h3 id=&#34;索引的操作&#34;&gt;索引的操作：
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;查看已经存在的索引：&lt;code&gt;show index from 表名&lt;/code&gt;；MySQL自动为主键、外键约束设置索引&lt;/li&gt;
+&lt;li&gt;创建索引：&lt;code&gt;create index 索引名 on 表名(字段名)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;删除索引：&lt;code&gt;drop index 索引名 on 表名&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;执行计划&#34;&gt;执行计划
+&lt;/h3&gt;&lt;p&gt;作用：查看一条查询语句是通过 索引还是遍历 来获取数据行&lt;br&gt;
+格式：&lt;code&gt;explain 查询语句&lt;/code&gt;，查询结果中的 type 代表运行速度（all 最慢），rows 为实际遍历行数&lt;/p&gt;
+&lt;p&gt;type 有几种取值：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;all：最烂，没有通过索引定位数据行而是全表扫描。SQL优化要避免存在 all 级别的语句；&lt;/li&gt;
+&lt;li&gt;index：比较烂，采用全表扫描定位数据行，但select数据抓取是从索引中得到的（几乎没优化）。SQL优化要避免存在 all 级别的语句；&lt;/li&gt;
+&lt;li&gt;range：还行，采用索引提供数据行位置，同时一次&lt;strong&gt;返回多个数据行&lt;/strong&gt;。range级别并不稳定，如果通过索引返回的行数 &amp;gt; 总行数三分之一，则MySQL（处于性能考虑）会放弃使用索引。SQL优化的最低标准；&lt;/li&gt;
+&lt;li&gt;ref：理想，采用索引提供数据行位置，每次返回一行数据。SQL优化的最高标准；&lt;/li&gt;
+&lt;li&gt;const：最快，采用聚簇索引提供数据行位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#39;aqua&#39;&gt;聚簇与非聚簇索引&lt;br&gt;
+非主键字段的索引是非聚簇索引；主键字段的索引是聚簇索引。&lt;br&gt;
+聚簇索引的 value 不再是行号，而是完整的一行数据，因此节省了通过行号读内存数据的时间（读索引这一步就完成了）&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;索引失效&#34;&gt;索引失效
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;如果通过索引定位行数达到了总行数1/3时,必然导致索引失效&lt;/li&gt;
+&lt;li&gt;如果在索引字段进行数学运算,必然导致索引失效&lt;/li&gt;
+&lt;li&gt;如果在索引字段进行函数处理,必然导致索引失效&lt;/li&gt;
+&lt;li&gt;前置模糊查询可以达到range；后置模糊查询和包含模糊查询一定会导致索引失效&lt;/li&gt;
+&lt;li&gt;使用MySQL自动类型转化，必然导致索引失效&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/static/append/MySQL-Learn-Part.B/005.xlsx&#34; &gt;参考脚本&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;事务管理-transaction&#34;&gt;事务管理 Transaction
+&lt;/h2&gt;&lt;p&gt;什么是事务&lt;br&gt;
+对于采用innodb管理的表文件,在进行数据修改时(insert,update,delete)
+mysql服务器自动对当前表文件中数据进行一次备份然后再进行操作。这个备份就是事务&lt;/p&gt;
+&lt;p&gt;事务作用&lt;br&gt;
+在操作之后,如果需要反悔。可以通过事务覆盖表文件实现操作撤销&lt;/p&gt;
+&lt;p&gt;事务管理方式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;mysql服务器自动管理事务，如果当前DML命令无法正常执行。此时mysql服务器使用事务撤销本次操作。如果当前DML命令正常执行,mysql服务器销毁掉事务&lt;/li&gt;
+&lt;li&gt;手动事务管理方式,要求mysql服务器将多个SQL命令产生备份，交给同一个事务对象管理，操作完毕后由开发人员根据实际情况决定是否测校&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;手动事务管理格式：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;start&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;transaction&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;执行任何操作
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;*/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;rollback&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;/* 回滚，期间操作无效，备份回复，事务结束 */&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;commit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;/* 提交，期间操作生效，无法撤销，事务结束 */&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;事务的使用原则-acid&#34;&gt;事务的使用原则 ACID
+&lt;/h2&gt;&lt;p&gt;Atom 原子性：只有来自于同一个业务中的SQL命令才应该交给同一个事务管理对象进行管理。&lt;/p&gt;
+&lt;p&gt;例如，撤销部门20并删除其下员工信息，则可归为同一事务；
+删除一员工信息，同时新增一部门，这不是一件事情，不应该用同一事务管理。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;start&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;transaction&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;delete&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dept&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;where&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deptno&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;delete&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;emp&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;where&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deptno&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;commit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;/* rollback; */&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Consistency 一致性：一个多分支业务只要有一个分支执行失败或反悔（rollback），则就应该将事务中所有sql操作视为无效。&lt;/p&gt;
+&lt;p&gt;Isolation 隔离性：两个事务对同一表的操作应当彼此互相影响（与多线程有关）&lt;/p&gt;
+&lt;p&gt;Durability 持久性：commit 后无法恢复&lt;/p&gt;
+&lt;h2 id=&#34;字段值的数据类型&#34;&gt;字段值的数据类型
+&lt;/h2&gt;&lt;h3 id=&#34;整型&#34;&gt;整型
+&lt;/h3&gt;&lt;p&gt;用 int 即可&lt;/p&gt;
+&lt;h3 id=&#34;小数&#34;&gt;小数
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;float, 7位有效数字&lt;/li&gt;
+&lt;li&gt;double, 15位有效数字&lt;/li&gt;
+&lt;li&gt;decimal(M, D)，定点小数，以字符串存储，主要用于货币计算&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;字符串常考-&#34;&gt;字符串（常考 @@@）
+&lt;/h3&gt;&lt;p&gt;char(m)：固定不可变字符串。意思是可以接受的字符个数固定，赋值时不能超过这个个数。磁盘上存贮值的空间是&lt;strong&gt;固定&lt;/strong&gt;的。&lt;/p&gt;
+&lt;p&gt;例如，字段类型 &lt;code&gt;char(5)&lt;/code&gt;，则不论存什么内容，都占那么多空间。
+若存入&lt;code&gt;&#39;abc&#39;&lt;/code&gt;，则内存中是&lt;code&gt;&#39;abc  &#39;&lt;/code&gt;；但是，SQL读取char类型数据时会自动把空格抹掉&lt;/p&gt;
+&lt;p&gt;varchar(m)：固定不可变字符串。意思是可以接受的字符个数固定，赋值时不能超过这个个数。磁盘上存贮值的空间是可变的。
+存入合法的不同长度的值，占用存储大小不一样。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;drop&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;create&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;varchar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;into&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;ab &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;ab &amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;from&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;/*输出结果2,3,原因如上*/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;jdbc-通信规范&#34;&gt;JDBC 通信规范
+&lt;/h2&gt;&lt;h3 id=&#34;jar包基础知识&#34;&gt;jar包基础知识
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;以.jar结尾文件。类似于压缩文件&lt;/li&gt;
+&lt;li&gt;jar包存放class文件,用于工程与工程之间类文件复用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;jar包的分类&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一方jar包:SUN公司提供JDK.jar&lt;/li&gt;
+&lt;li&gt;第二方jar包:开发人员自行生成jar&lt;/li&gt;
+&lt;li&gt;第三方jar包:其他人或则组织提供jar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;接口与jar包开发形式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开发人员不需要关心工具类实现细节&lt;/li&gt;
+&lt;li&gt;开发人员只需要根据固有步骤组装工具类即可完成开发任务&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jdbc通信规范介绍&#34;&gt;JDBC通信规范介绍
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;JDBC通信规范是SUN公司提供通信规范,用于让Java应用程序与关系型数据库服务器进行通信标准&lt;/li&gt;
+&lt;li&gt;SUN公司为JDBC通信规范提供一套接口,存在JDK.jar中java.sql包&lt;/li&gt;
+&lt;li&gt;JDBC通信规范涉及的接口实现类由关系型数据库服务器厂商提供以jar包形式对外输出。&lt;/li&gt;
+&lt;li&gt;普通的Java应用程序工程师只需要将指定jar包引入到工程,并按照JDBC规范指定开发流程进行命令组装即可实现与数据库服务器通信&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;JDBC规范中接口介绍&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;java.sql.Connection：指定连接通道管理规则&lt;/li&gt;
+&lt;li&gt;java.sql.PrepareStatement：指定数据通道“交通工具”管理规则&lt;/li&gt;
+&lt;li&gt;java.sql.ResultSet：指定临时表操作规则&lt;/li&gt;
+&lt;li&gt;java.sql.DriverManager工具类：负责在java类与数据库服务器之间建立连接通道&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;jdbc开发步骤&#34;&gt;JDBC开发步骤
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;建立连接通道 &amp;ndash; DriverManager&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;建立交通工具 &amp;ndash; PreparedStatement&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;由交通工具负责将SQL命令推送到数据库服务器，服务器返回结果由交通工具带回发送请求的java类中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;销毁通信涉及所有资源（交通工具、连接通道），以节省资源&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用JDBC协议连接到MySQL需要用到MySQL提供的jar包：
+&lt;a class=&#34;link&#34; href=&#34;https://downloads.mysql.com/archives/c-j/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载链接&lt;/a&gt;，注意主版本号要与MySQL主版本号对应。
+&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/static/append/MySQL-Learn-Part.B/mysql-connector-java-5.1.49.zip&#34; &gt;直接下载&lt;/a&gt;。
+将jar包复制到Module目录下，右键 Add as Library 即可添加。&lt;/p&gt;
+&lt;h3 id=&#34;使用jdbc访问数据库&#34;&gt;使用JDBC访问数据库
+&lt;/h3&gt;&lt;h3 id=&#34;dml-三条命令&#34;&gt;DML 三条命令
+&lt;/h3&gt;&lt;p&gt;模板如下，遵循：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DriverManager建立通道对象A（需要参数：url，用户名和密码）&lt;/li&gt;
+&lt;li&gt;对象A建立PreparedStatement交通工具对象B（需要参数：SQL命令）&lt;/li&gt;
+&lt;li&gt;对象B执行方法，从而向数据库服务器发送请求并接受返回内容（调用恰当的方法，DML要用&lt;code&gt;executeUpdate()&lt;/code&gt;，DQL要用&lt;code&gt;executeQuery()&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;executeUpdate()返回受影响的行数，无异常则执行成功&lt;/li&gt;
+&lt;li&gt;想知道对象方法返回类型，就用ctrl查看接口的定义即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;com.foo.test&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;java.sql.Connection&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;java.sql.DriverManager&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;java.sql.PreparedStatement&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// DML命令，insert, delete, update 命令的模板即如下,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 只需要改sqlCommand 即可&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;CmdInsertProc&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// throw Exception 必须加, 否则getConnection报错无法处理&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;throws&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Exception&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 命令&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sqlCommand&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;insert into dept values(60, &amp;#39;ASSIST&amp;#39;, &amp;#39;SHANGHAI&amp;#39;)&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 基本信息&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;userName&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;root&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;passwd&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;pb23000061&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;jdbc:mysql://localhost:3306/sandbox&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 1. 建立通道&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Connection&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;con&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DriverManager&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;getConnection&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;userName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;passwd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 2. 建立交通工具&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PreparedStatement&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prep&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;con&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;prepareStatement&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sqlCommand&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 3. 发送和收回&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rowsAffected&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prep&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;executeUpdate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rowsAffected&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;行受影响&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 4. 销毁资源, 不要搞错顺序&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prep&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;prep&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;con&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;con&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;dql命令&#34;&gt;DQL命令
+&lt;/h3&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;使用视图操作表最终会作用于底层表，因此使用视图操作表文件也要始终满足表的字段约束，否则失败&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
         </item>
         <item>
         <title>MySQL Learn</title>
@@ -6736,6 +8393,318 @@ D. 重置按钮的作用是将表单恢复为默认状态
 &lt;/div&gt;</description>
         </item>
         <item>
+        <title>MyZeroBlog</title>
+        <link>http://localhost:1313/p/myzeroblog/</link>
+        <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/myzeroblog/</guid>
+        <description>&lt;img src="http://localhost:1313/p/myzeroblog/tamako-frontpage.jpg" alt="Featured image of post MyZeroBlog" /&gt;&lt;h2 id=&#34;hello-world-_&#34;&gt;Hello world ^_^
+&lt;/h2&gt;&lt;p&gt;Hi there everyone and tihs is BZLIUSTC (春节序曲),
+a beginner of Hugo &lt;em&gt;static blog&lt;/em&gt; page writer.&lt;/p&gt;
+&lt;p&gt;Thanks to the &lt;strong&gt;hugo-theme-stack&lt;/strong&gt; and manuals written by other bloggers,
+we are able to set up this page so fast. Thank you for all contributors !
+I would by a coffee for you if possible. &lt;del&gt;Nope, noway&lt;/del&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This page, as the title said, is a rough work page for any try-outs.
+So do not hesitate if any great idea comes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Have fun with Hugo.&lt;/p&gt;
+&lt;h2 id=&#34;math-settings&#34;&gt;Math Settings
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;参考文献：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhouxin.space/notes/using-katex-to-render-math-in-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;某博主的优秀教程&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;试着写一个数学公式：记得一定要用一对&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; &lt;code&gt;&amp;lt;/div&amp;gt;&lt;/code&gt;包起来！
+如果还无法启用的话，检查根目录config文件里面是不是有&lt;code&gt;math: false&lt;/code&gt;。如果是，改成true就好啦。&lt;/p&gt;
+$$
+\theta :=\theta _0-\alpha \nabla f\left( \theta _0 \right)
+$$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
+&lt;/h2&gt;&lt;p&gt;想要添加任何附件，请放到&lt;code&gt;/static/append/&lt;/code&gt;目录中。
+为了管理方便，最好为每篇文章的附件们创建一个子目录，统一存放。&lt;/p&gt;
+&lt;p&gt;reference:
+&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/MyZeroBlog/002.html&#34; &gt;article&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;侧栏头像和简介&#34;&gt;侧栏头像和简介
+&lt;/h2&gt;&lt;p&gt;标题（网站标题）和简介在根目录的hugo.yaml文件中编辑；
+头像存储的默认根路径为&lt;code&gt;/themes/assets/&lt;/code&gt;，头像路径也在项目根目录的hugo.yaml中设置。&lt;/p&gt;
+&lt;h2 id=&#34;change-the-page-size-here&#34;&gt;Change the page size here
+&lt;/h2&gt;&lt;p&gt;in the hugo.yaml in root directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;pagination&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pagerSize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;在hugo中添加html内容&#34;&gt;在Hugo中添加HTML内容
+&lt;/h2&gt;&lt;p&gt;(参考)[https://www.ququ123.top/2025/10/hugo-custom-html-guide/]&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Markdown Syntax Guide</title>
+        <link>http://localhost:1313/p/markdown-syntax-guide/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+&lt;h2 id=&#34;headings&#34;&gt;Headings
+&lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
+&lt;h1 id=&#34;h1&#34;&gt;H1
+&lt;/h1&gt;&lt;h2 id=&#34;h2&#34;&gt;H2
+&lt;/h2&gt;&lt;h3 id=&#34;h3&#34;&gt;H3
+&lt;/h3&gt;&lt;h4 id=&#34;h4&#34;&gt;H4
+&lt;/h4&gt;&lt;h5 id=&#34;h5&#34;&gt;H5
+&lt;/h5&gt;&lt;h6 id=&#34;h6&#34;&gt;H6
+&lt;/h6&gt;&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph
+&lt;/h2&gt;&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
+&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes
+&lt;/h2&gt;&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
+&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;br&gt;
+— &lt;cite&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables
+&lt;/h2&gt;&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Age&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Bob&lt;/td&gt;
+          &lt;td&gt;27&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Alice&lt;/td&gt;
+          &lt;td&gt;23&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables
+&lt;/h4&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Italics&lt;/th&gt;
+          &lt;th&gt;Bold&lt;/th&gt;
+          &lt;th&gt;Code&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;A&lt;/th&gt;
+          &lt;th&gt;B&lt;/th&gt;
+          &lt;th&gt;C&lt;/th&gt;
+          &lt;th&gt;D&lt;/th&gt;
+          &lt;th&gt;E&lt;/th&gt;
+          &lt;th&gt;F&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+          &lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
+          &lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
+          &lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
+          &lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
+          &lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks
+&lt;/h2&gt;&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;Code block indented with four spaces
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;Code block with Hugo&amp;rsquo;s internal highlight shortcode
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;diff-code-block&#34;&gt;Diff code block
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[dependencies.bevy]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git = &amp;#34;https://github.com/bevyengine/bevy&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;- features = [&amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gi&#34;&gt;+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;list-types&#34;&gt;List Types
+&lt;/h2&gt;&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;Another item&lt;/li&gt;
+&lt;li&gt;And another item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nested-list&#34;&gt;Nested list
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Fruit
+&lt;ul&gt;
+&lt;li&gt;Apple&lt;/li&gt;
+&lt;li&gt;Orange&lt;/li&gt;
+&lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dairy
+&lt;ul&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;li&gt;Cheese&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark
+&lt;/h2&gt;&lt;p&gt;&lt;abbr title=&#34;Graphics Interchange Format&#34;&gt;GIF&lt;/abbr&gt; is a bitmap image format.&lt;/p&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;p&gt;X&lt;sup&gt;n&lt;/sup&gt; + Y&lt;sup&gt;n&lt;/sup&gt; = Z&lt;sup&gt;n&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;ALT&lt;/kbd&gt; + &lt;kbd&gt;Delete&lt;/kbd&gt; to end the session.&lt;/p&gt;
+&lt;p&gt;Most &lt;mark&gt;salamanders&lt;/mark&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
+&lt;h2 id=&#34;hyperlinked-image&#34;&gt;Hyperlinked image
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Google&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Placeholder Text</title>
+        <link>http://localhost:1313/p/placeholder-text/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/placeholder-text/</guid>
+        <description>&lt;img src="http://localhost:1313/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
+&lt;li&gt;Duce pollice&lt;/li&gt;
+&lt;li&gt;Eris modo&lt;/li&gt;
+&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
+&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
+&lt;li&gt;Flumen querellas&lt;/li&gt;
+&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
+&lt;li&gt;Quidem et&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;vagus-elidunt&#34;&gt;Vagus elidunt
+&lt;/h1&gt;&lt;p&gt;&lt;svg class=&#34;canon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; overflow=&#34;visible&#34; viewBox=&#34;0 0 496 373&#34; height=&#34;373&#34; width=&#34;496&#34;&gt;&lt;g fill=&#34;none&#34;&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#ED1C24&#34; stroke-width=&#34;.75&#34; d=&#34;M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.479.375h495v372h-495zM247.979.875v372&#34;&gt;&lt;/path&gt;&lt;ellipse cx=&#34;498.729&#34; cy=&#34;177.625&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;ellipse cx=&#34;247.229&#34; cy=&#34;377.375&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;Mane refeci capiebant unda mulcebat
+&lt;/h2&gt;&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
+&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
+&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt;</description>
+        </item>
+        <item>
         <title>Math Typesetting</title>
         <link>http://localhost:1313/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
@@ -6776,6 +8745,37 @@ D. 重置按钮的作用是将表单恢复为默认状态
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
 $$</description>
+        </item>
+        <item>
+        <title>Emoji Support</title>
+        <link>http://localhost:1313/p/emoji-support/</link>
+        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/emoji-support/</guid>
+        <description>&lt;img src="http://localhost:1313/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙈&lt;/span&gt; &lt;code&gt;:see_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙉&lt;/span&gt; &lt;code&gt;:hear_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙊&lt;/span&gt; &lt;code&gt;:speak_no_evil:&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://www.webfx.com/tools/emoji-cheat-sheet/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.emoji {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         </item>
         
     </channel>
