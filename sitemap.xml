@@ -2,29 +2,29 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>http://localhost:1313/en/sitemap.xml</loc>
+    <loc>https://bzliustc.github.io/en/sitemap.xml</loc>
     
-      <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://localhost:1313/ja/sitemap.xml</loc>
+      <lastmod>2026-06-25T00:08:07+08:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:1313/zh-cn/sitemap.xml</loc>
+    <loc>https://bzliustc.github.io/ja/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:1313/zh-tw/sitemap.xml</loc>
+    <loc>https://bzliustc.github.io/zh-cn/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:1313/ar/sitemap.xml</loc>
+    <loc>https://bzliustc.github.io/zh-tw/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://bzliustc.github.io/ar/sitemap.xml</loc>
     
   </sitemap>
   

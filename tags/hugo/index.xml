@@ -56,6 +56,173 @@ $$&lt;h2 id=&#34;hyperlink&#34;&gt;Hyperlink
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;在hugo中添加html内容&#34;&gt;在Hugo中添加HTML内容
 &lt;/h2&gt;&lt;p&gt;(参考)[https://www.ququ123.top/2025/10/hugo-custom-html-guide/]&lt;/p&gt;
+&lt;h3 id=&#34;use-picturesshotcode-card&#34;&gt;use pictures.shotcode card
+&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;style&gt;
+.picture-card-wrap-64983527 {
+  width: 90%;
+  margin: 0 auto;
+  background: transparent;
+}
+.picture-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+.picture-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.img-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+.img-inner {
+  width: 100%;
+  padding-bottom: calc(16 / 9 * 100%);
+  position: relative;
+}
+.img-inner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.caption-sub {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0.9em;
+}
+.caption-group {
+  text-align: center;
+  margin-top: 12px;
+}
+
+ 
+#lightbox-64983527 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#lightbox-64983527 img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
+&lt;/style&gt;
+
+&lt;div class=&#34;picture-card-wrap-64983527&#34;&gt;
+  &lt;div class=&#34;picture-row&#34;&gt;
+    
+    
+    
+    
+    &lt;div class=&#34;picture-item&#34;&gt;
+      &lt;div class=&#34;img-container&#34; data-src=&#34;tamako-frontpage.jpg&#34;&gt;
+        &lt;div class=&#34;img-inner&#34;&gt;
+          &lt;img src=&#34;tamako-frontpage.jpg&#34; alt=&#34;第一张图内容&#34;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;caption-sub&#34;&gt;(a) 第一张图内容&lt;/div&gt;
+    &lt;/div&gt;
+    
+    
+    
+    
+    &lt;div class=&#34;picture-item&#34;&gt;
+      &lt;div class=&#34;img-container&#34; data-src=&#34;tamako-frontpage.jpg&#34;&gt;
+        &lt;div class=&#34;img-inner&#34;&gt;
+          &lt;img src=&#34;tamako-frontpage.jpg&#34; alt=&#34;第二张图内容&#34;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;caption-sub&#34;&gt;(b) 第二张图内容&lt;/div&gt;
+    &lt;/div&gt;
+    
+    
+    
+    
+    &lt;div class=&#34;picture-item&#34;&gt;
+      &lt;div class=&#34;img-container&#34; data-src=&#34;tamako-frontpage.jpg&#34;&gt;
+        &lt;div class=&#34;img-inner&#34;&gt;
+          &lt;img src=&#34;tamako-frontpage.jpg&#34; alt=&#34;第三张图内容&#34;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;caption-sub&#34;&gt;(c) 第三张图内容&lt;/div&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+  
+  &lt;div class=&#34;caption-group&#34;&gt;
+整组图片总题注（放在所有子图下方）
+&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;div id=&#34;lightbox-64983527&#34;&gt;
+  &lt;img id=&#34;lightbox-img-64983527&#34; alt=&#34;fullscreen&#34;&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+(function(){
+  const root = document.querySelector(&#39;.picture-card-wrap-64983527&#39;);
+  if (!root) return;
+
+  const items = root.querySelectorAll(&#39;.img-container&#39;);
+  const lightbox = document.getElementById(&#39;lightbox-64983527&#39;);
+  const lightImg = document.getElementById(&#39;lightbox-img-64983527&#39;);
+
+  items.forEach(el =&gt; {
+    el.onclick = function() {
+      lightImg.src = this.dataset.src;
+      lightbox.style.display = &#39;flex&#39;;
+    }
+  });
+
+  
+  document.addEventListener(&#39;keydown&#39;, function escClose(e) {
+    if (e.key === &#39;Escape&#39;) {
+      lightbox.style.display = &#39;none&#39;;
+    }
+  });
+
+  
+  lightbox.onclick = function(e) {
+    if (e.target === lightbox) {
+      lightbox.style.display = &#39;none&#39;;
+    }
+  };
+})();
+&lt;/script&gt;
+
 </description>
         </item>
         

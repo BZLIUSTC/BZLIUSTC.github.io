@@ -2,105 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on CALLUVISSE, Lv4 mailler</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>https://bzliustc.github.io/tags/</link>
         <description>Recent content in Tags on CALLUVISSE, Lv4 mailler</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Mon, 01 Jun 2026 00:14:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 25 Jun 2026 00:08:07 +0800</lastBuildDate><atom:link href="https://bzliustc.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CPC</title>
+        <link>https://bzliustc.github.io/tags/cpc/</link>
+        <pubDate>Thu, 25 Jun 2026 00:08:07 +0800</pubDate>
+        
+        <guid>https://bzliustc.github.io/tags/cpc/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Report</title>
+        <link>https://bzliustc.github.io/tags/report/</link>
+        <pubDate>Thu, 25 Jun 2026 00:08:07 +0800</pubDate>
+        
+        <guid>https://bzliustc.github.io/tags/report/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Travel</title>
+        <link>https://bzliustc.github.io/tags/travel/</link>
+        <pubDate>Thu, 25 Jun 2026 00:08:07 +0800</pubDate>
+        
+        <guid>https://bzliustc.github.io/tags/travel/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Answer</title>
-        <link>http://localhost:1313/tags/answer/</link>
+        <link>https://bzliustc.github.io/tags/answer/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/answer/</guid>
+        <guid>https://bzliustc.github.io/tags/answer/</guid>
         <description></description>
         </item>
         <item>
         <title>Electromagnetics</title>
-        <link>http://localhost:1313/tags/electromagnetics/</link>
+        <link>https://bzliustc.github.io/tags/electromagnetics/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/electromagnetics/</guid>
+        <guid>https://bzliustc.github.io/tags/electromagnetics/</guid>
         <description></description>
         </item>
         <item>
         <title>Homework</title>
-        <link>http://localhost:1313/tags/homework/</link>
+        <link>https://bzliustc.github.io/tags/homework/</link>
         <pubDate>Mon, 01 Jun 2026 00:14:09 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/homework/</guid>
+        <guid>https://bzliustc.github.io/tags/homework/</guid>
         <description></description>
         </item>
         <item>
         <title>Javaweb</title>
-        <link>http://localhost:1313/tags/javaweb/</link>
+        <link>https://bzliustc.github.io/tags/javaweb/</link>
         <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/javaweb/</guid>
+        <guid>https://bzliustc.github.io/tags/javaweb/</guid>
         <description></description>
         </item>
         <item>
         <title>Mysql</title>
-        <link>http://localhost:1313/tags/mysql/</link>
+        <link>https://bzliustc.github.io/tags/mysql/</link>
         <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/mysql/</guid>
+        <guid>https://bzliustc.github.io/tags/mysql/</guid>
         <description></description>
         </item>
         <item>
         <title>Website</title>
-        <link>http://localhost:1313/tags/website/</link>
+        <link>https://bzliustc.github.io/tags/website/</link>
         <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/website/</guid>
+        <guid>https://bzliustc.github.io/tags/website/</guid>
         <description></description>
         </item>
         <item>
         <title>Css</title>
-        <link>http://localhost:1313/tags/css/</link>
+        <link>https://bzliustc.github.io/tags/css/</link>
         <pubDate>Mon, 16 Feb 2026 17:47:16 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/css/</guid>
+        <guid>https://bzliustc.github.io/tags/css/</guid>
         <description></description>
         </item>
         <item>
         <title>Html</title>
-        <link>http://localhost:1313/tags/html/</link>
+        <link>https://bzliustc.github.io/tags/html/</link>
         <pubDate>Mon, 16 Feb 2026 17:47:16 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/html/</guid>
+        <guid>https://bzliustc.github.io/tags/html/</guid>
         <description></description>
         </item>
         <item>
         <title>Javascript</title>
-        <link>http://localhost:1313/tags/javascript/</link>
+        <link>https://bzliustc.github.io/tags/javascript/</link>
         <pubDate>Mon, 16 Feb 2026 17:47:16 +0800</pubDate>
         
-        <guid>http://localhost:1313/tags/javascript/</guid>
+        <guid>https://bzliustc.github.io/tags/javascript/</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown</title>
-        <link>http://localhost:1313/tags/markdown/</link>
+        <link>https://bzliustc.github.io/tags/markdown/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/markdown/</guid>
+        <guid>https://bzliustc.github.io/tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>Tag With Whitespaces</title>
-        <link>http://localhost:1313/tags/tag-with-whitespaces/</link>
+        <link>https://bzliustc.github.io/tags/tag-with-whitespaces/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/tag-with-whitespaces/</guid>
+        <guid>https://bzliustc.github.io/tags/tag-with-whitespaces/</guid>
         <description></description>
         </item>
         <item>
         <title>Text</title>
-        <link>http://localhost:1313/tags/text/</link>
+        <link>https://bzliustc.github.io/tags/text/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/text/</guid>
+        <guid>https://bzliustc.github.io/tags/text/</guid>
         <description></description>
         </item>
         

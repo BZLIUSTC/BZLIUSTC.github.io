@@ -307,7 +307,11 @@ Dept. of Optics &amp; Optical Engineering, USTC, Major in Optoelectronic Informa
     <li><a href="#hyperlink">Hyperlink</a></li>
     <li><a href="#侧栏头像和简介">侧栏头像和简介</a></li>
     <li><a href="#change-the-page-size-here">Change the page size here</a></li>
-    <li><a href="#在hugo中添加html内容">在Hugo中添加HTML内容</a></li>
+    <li><a href="#在hugo中添加html内容">在Hugo中添加HTML内容</a>
+      <ol>
+        <li><a href="#use-picturesshotcode-card">use pictures.shotcode card</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -450,6 +454,173 @@ $$<h2 id="hyperlink">Hyperlink
 </div>
 </div><h2 id="在hugo中添加html内容">在Hugo中添加HTML内容
 </h2><p>(参考)[https://www.ququ123.top/2025/10/hugo-custom-html-guide/]</p>
+<h3 id="use-picturesshotcode-card">use pictures.shotcode card
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.picture-card-wrap-64983527 {
+  width: 90%;
+  margin: 0 auto;
+  background: transparent;
+}
+.picture-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+.picture-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.img-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+.img-inner {
+  width: 100%;
+  padding-bottom: calc(16 / 9 * 100%);
+  position: relative;
+}
+.img-inner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.caption-sub {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0.9em;
+}
+.caption-group {
+  text-align: center;
+  margin-top: 12px;
+}
+
+ 
+#lightbox-64983527 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#lightbox-64983527 img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
+</style>
+
+<div class="picture-card-wrap-64983527">
+  <div class="picture-row">
+    
+    
+    
+    
+    <div class="picture-item">
+      <div class="img-container" data-src="tamako-frontpage.jpg">
+        <div class="img-inner">
+          <img src="tamako-frontpage.jpg" alt="第一张图内容">
+        </div>
+      </div>
+      <div class="caption-sub">(a) 第一张图内容</div>
+    </div>
+    
+    
+    
+    
+    <div class="picture-item">
+      <div class="img-container" data-src="tamako-frontpage.jpg">
+        <div class="img-inner">
+          <img src="tamako-frontpage.jpg" alt="第二张图内容">
+        </div>
+      </div>
+      <div class="caption-sub">(b) 第二张图内容</div>
+    </div>
+    
+    
+    
+    
+    <div class="picture-item">
+      <div class="img-container" data-src="tamako-frontpage.jpg">
+        <div class="img-inner">
+          <img src="tamako-frontpage.jpg" alt="第三张图内容">
+        </div>
+      </div>
+      <div class="caption-sub">(c) 第三张图内容</div>
+    </div>
+    
+  </div>
+  
+  <div class="caption-group">
+整组图片总题注（放在所有子图下方）
+</div>
+  
+</div>
+
+<div id="lightbox-64983527">
+  <img id="lightbox-img-64983527" alt="fullscreen">
+</div>
+
+<script>
+(function(){
+  const root = document.querySelector('.picture-card-wrap-64983527');
+  if (!root) return;
+
+  const items = root.querySelectorAll('.img-container');
+  const lightbox = document.getElementById('lightbox-64983527');
+  const lightImg = document.getElementById('lightbox-img-64983527');
+
+  items.forEach(el => {
+    el.onclick = function() {
+      lightImg.src = this.dataset.src;
+      lightbox.style.display = 'flex';
+    }
+  });
+
+  
+  document.addEventListener('keydown', function escClose(e) {
+    if (e.key === 'Escape') {
+      lightbox.style.display = 'none';
+    }
+  });
+
+  
+  lightbox.onclick = function(e) {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  };
+})();
+</script>
+
 
 </section>
 

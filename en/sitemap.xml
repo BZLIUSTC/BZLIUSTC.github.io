@@ -2,236 +2,254 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+    <loc>https://bzliustc.github.io/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/"
+                href="https://bzliustc.github.io/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/"
+                href="https://bzliustc.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/"
+                href="https://bzliustc.github.io/zh-tw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/"
+                href="https://bzliustc.github.io/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://bzliustc.github.io/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/answer/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-01-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-02-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-03-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-04-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-05-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-06-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-07-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-08-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-09-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/answer-to-homework-11-of-electromagnetics.a/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+    <loc>https://bzliustc.github.io/categories/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/"
+                href="https://bzliustc.github.io/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/categories/"
+                href="https://bzliustc.github.io/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/"
+                href="https://bzliustc.github.io/zh-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/categories/"
+                href="https://bzliustc.github.io/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="https://bzliustc.github.io/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/electromagnetics/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+    <loc>https://bzliustc.github.io/tags/cpc/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/homework/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+    <loc>https://bzliustc.github.io/tags/report/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+    <loc>https://bzliustc.github.io/categories/social-practice/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/tags/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/tags/"
+                href="https://bzliustc.github.io/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/tags/"
+                href="https://bzliustc.github.io/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/"
+                href="https://bzliustc.github.io/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="http://localhost:1313/ar/tags/"
+                href="https://bzliustc.github.io/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="https://bzliustc.github.io/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/teacher-assistance/</loc>
+    <loc>https://bzliustc.github.io/tags/travel/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/%E5%B0%91%E5%B9%B4%E7%8F%AD%E5%AD%A6%E9%99%A2%E6%9A%91%E6%9C%9F%E4%B8%89%E4%B8%8B%E4%B9%A1%E6%96%B0%E7%96%86%E5%AE%9E%E8%B7%B5%E6%8A%A5%E5%91%8A/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/%E8%BF%94%E5%AE%B6%E4%B9%A1%E7%A4%BE%E4%BC%9A%E5%AE%9E%E8%B7%B5%E4%B8%AD%E5%85%B1%E4%B8%89%E5%A4%A7%E4%BC%9A%E5%9D%80%E7%BA%AA%E5%BF%B5%E9%A6%86%E8%80%83%E5%AF%9F%E6%8A%A5%E5%91%8A/</loc>
+    <lastmod>2026-06-25T00:08:07+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/tags/answer/</loc>
     <lastmod>2026-06-01T00:14:09+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/javaweb/</loc>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-01-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-02-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-03-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-04-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-05-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-06-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-07-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-08-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-09-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/p/answer-to-homework-11-of-electromagnetics.a/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/tags/electromagnetics/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/tags/homework/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/categories/teacher-assistance/</loc>
+    <lastmod>2026-06-01T00:14:09+08:00</lastmod>
+  </url><url>
+    <loc>https://bzliustc.github.io/categories/javaweb/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/javaweb/</loc>
+    <loc>https://bzliustc.github.io/tags/javaweb/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mysql/</loc>
+    <loc>https://bzliustc.github.io/tags/mysql/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/mysql-learn/</loc>
+    <loc>https://bzliustc.github.io/p/mysql-learn/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/website/</loc>
+    <loc>https://bzliustc.github.io/tags/website/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/css/</loc>
+    <loc>https://bzliustc.github.io/tags/css/</loc>
     <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
+    <loc>https://bzliustc.github.io/tags/html/</loc>
     <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
+    <loc>https://bzliustc.github.io/tags/javascript/</loc>
     <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/javascript-learn-part.c/</loc>
+    <loc>https://bzliustc.github.io/p/javascript-learn-part.c/</loc>
     <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/website/</loc>
+    <loc>https://bzliustc.github.io/categories/website/</loc>
     <lastmod>2026-02-16T17:47:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/javascript-learn-part.b/</loc>
+    <loc>https://bzliustc.github.io/p/javascript-learn-part.b/</loc>
     <lastmod>2026-02-13T16:33:41+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/javascript-learn-part-a/</loc>
+    <loc>https://bzliustc.github.io/p/javascript-learn-part-a/</loc>
     <lastmod>2026-02-08T15:08:15+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/css-learn/</loc>
+    <loc>https://bzliustc.github.io/p/css-learn/</loc>
     <lastmod>2026-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/html-learn/</loc>
+    <loc>https://bzliustc.github.io/p/html-learn/</loc>
     <lastmod>2026-01-28T11:55:57+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://bzliustc.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/</loc>
+    <loc>https://bzliustc.github.io/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/page/"
+                href="https://bzliustc.github.io/zh-cn/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/page/"
+                href="https://bzliustc.github.io/page/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://bzliustc.github.io/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/%E5%85%B3%E4%BA%8E/"
+                href="https://bzliustc.github.io/zh-cn/%E5%85%B3%E4%BA%8E/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/about/"
+                href="https://bzliustc.github.io/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/game-center/</loc>
+    <loc>https://bzliustc.github.io/game-center/</loc>
   </url><url>
-    <loc>http://localhost:1313/links/</loc>
+    <loc>https://bzliustc.github.io/links/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>https://bzliustc.github.io/tags/markdown/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://bzliustc.github.io/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/tag-with-whitespaces/</loc>
+    <loc>https://bzliustc.github.io/tags/tag-with-whitespaces/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/test/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/categories/test/"
-                />
+    <loc>https://bzliustc.github.io/categories/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/test/"
+                href="https://bzliustc.github.io/zh-tw/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/test/"
+                href="https://bzliustc.github.io/ja/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://bzliustc.github.io/zh-cn/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/test/"
+                href="https://bzliustc.github.io/categories/test/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/test-with-whitespaces/</loc>
+    <loc>https://bzliustc.github.io/categories/test-with-whitespaces/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/text/</loc>
+    <loc>https://bzliustc.github.io/tags/text/</loc>
   </url>
 </urlset>

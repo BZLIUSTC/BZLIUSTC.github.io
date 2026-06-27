@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on CALLUVISSE, Lv4 mailler</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://bzliustc.github.io/page/</link>
         <description>Recent content in Pages on CALLUVISSE, Lv4 mailler</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>春节序曲</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://bzliustc.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>http://localhost:1313/archives/</link>
+        <link>https://bzliustc.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/archives/</guid>
+        <guid>https://bzliustc.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About</title>
-        <link>http://localhost:1313/about/</link>
+        <link>https://bzliustc.github.io/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/about/</guid>
+        <guid>https://bzliustc.github.io/about/</guid>
         <description>&lt;!-- Written in Go, Hugo is an open source static site generator available under the [Apache License 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 
 Hugo makes use of a variety of open source projects including:
@@ -176,7 +176,7 @@ li {
   &lt;/div&gt;
 
   &lt;div class=&#34;cv-avatar&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/append/about/head.jpg&#34; alt=&#34;Bingzai Li&#34;&gt;
+    &lt;img src=&#34;https://bzliustc.github.io/append/about/head.jpg&#34; alt=&#34;Bingzai Li&#34;&gt;
   &lt;/div&gt;
 
   
@@ -410,7 +410,7 @@ langBtn.addEventListener(&#39;click&#39;, () =&gt; {
   
   &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
-      src=&#34;http://localhost:1313/append/about/cv_v2.html&#34; 
+      src=&#34;https://bzliustc.github.io/append/about/cv_v2.html&#34; 
       frameborder=&#34;0&#34;
       seamless
       class=&#34;embed-iframe&#34;
@@ -635,11 +635,11 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
         </item>
         <item>
         <title>Game Center</title>
-        <link>http://localhost:1313/game-center/</link>
+        <link>https://bzliustc.github.io/game-center/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/game-center/</guid>
-        <description>&lt;h2 id=&#34;2048&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/gadgets/2048.html&#34; &gt;2048&lt;/a&gt;
+        <guid>https://bzliustc.github.io/game-center/</guid>
+        <description>&lt;h2 id=&#34;2048&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/2048.html&#34; &gt;2048&lt;/a&gt;
 &lt;/h2&gt;&lt;!-- 
 &lt;div class=&#34;game-2048-card&#34; style=&#34;
   max-width: 460px;
@@ -943,7 +943,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
   
   &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
-      src=&#34;http://localhost:1313/append/gadgets/2048.html&#34; 
+      src=&#34;https://bzliustc.github.io/append/gadgets/2048.html&#34; 
       frameborder=&#34;0&#34;
       seamless
       class=&#34;embed-iframe&#34;
@@ -1108,7 +1108,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
 });
 &lt;/script&gt;
 
-&lt;h2 id=&#34;sudoku&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/gadgets/sudoku.html&#34; &gt;Sudoku&lt;/a&gt;
+&lt;h2 id=&#34;sudoku&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/sudoku.html&#34; &gt;Sudoku&lt;/a&gt;
 &lt;/h2&gt;&lt;!-- 
 &lt;div class=&#34;sudoku-card&#34; style=&#34;width: 100%; max-width: 1080px; margin: 0 auto; padding: 0;&#34;&gt;
   
@@ -2457,7 +2457,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
   
   &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
-      src=&#34;http://localhost:1313/append/gadgets/sudoku.html&#34; 
+      src=&#34;https://bzliustc.github.io/append/gadgets/sudoku.html&#34; 
       frameborder=&#34;0&#34;
       seamless
       class=&#34;embed-iframe&#34;
@@ -2644,7 +2644,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
   
   &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
-      src=&#34;http://localhost:1313/append/gadgets/snaky.html&#34; 
+      src=&#34;https://bzliustc.github.io/append/gadgets/snaky.html&#34; 
       frameborder=&#34;0&#34;
       seamless
       class=&#34;embed-iframe&#34;
@@ -2809,7 +2809,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
 });
 &lt;/script&gt;
  --&gt;
-&lt;h2 id=&#34;tetris&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/append/gadgets/teris.html&#34; &gt;Tetris&lt;/a&gt;
+&lt;h2 id=&#34;tetris&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://bzliustc.github.io/append/gadgets/teris.html&#34; &gt;Tetris&lt;/a&gt;
 &lt;/h2&gt;&lt;!-- 
 
 
@@ -2831,7 +2831,7 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
   
   &lt;div class=&#34;iframe-card-container&#34;&gt;
     &lt;iframe 
-      src=&#34;http://localhost:1313/append/gadgets/teris.html&#34; 
+      src=&#34;https://bzliustc.github.io/append/gadgets/teris.html&#34; 
       frameborder=&#34;0&#34;
       seamless
       class=&#34;embed-iframe&#34;
@@ -3187,10 +3187,10 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
         </item>
         <item>
         <title>Links</title>
-        <link>http://localhost:1313/links/</link>
+        <link>https://bzliustc.github.io/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/links/</guid>
+        <guid>https://bzliustc.github.io/links/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3222,10 +3222,10 @@ document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/search/</link>
+        <link>https://bzliustc.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/search/</guid>
+        <guid>https://bzliustc.github.io/search/</guid>
         <description></description>
         </item>
         
